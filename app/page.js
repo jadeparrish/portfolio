@@ -185,7 +185,7 @@ export default function PortfolioHomepage() {
             </div>
 
             <div className="pt-2">
-              
+              <a
                 href="#work"
                 className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-black hover:translate-x-0.5 transition-all"
               >
@@ -244,7 +244,7 @@ export default function PortfolioHomepage() {
             ))}
           </div>
           <div className="mt-12">
-            
+            <a
               href="#"
               className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-black"
             >
@@ -287,7 +287,7 @@ export default function PortfolioHomepage() {
 
                 <div className="lg:col-span-3 lg:text-right">
                   {item.href ? (
-                    
+                    <a
                       href={item.href}
                       className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase group-hover:translate-x-1 transition-transform"
                     >
@@ -378,7 +378,7 @@ export default function PortfolioHomepage() {
             Let&rsquo;s improve something together.
           </h2>
           <div className="pt-2">
-            
+            <a
               href="mailto:jade@jadeparrish.com"
               className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-neutral-900 transition-colors"
             >

@@ -5,21 +5,23 @@ export const metadata = {
   description: 'Designing complex services and data systems that work better for everyone.',
 };
 
+const tailwindConfigScript = `
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+        },
+      },
+    },
+  }
+`;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                fontFamily: {
-                  serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
-                },
-              },
-            },
-          }
-        </script>
+        <script dangerouslySetInnerHTML={{ __html: tailwindConfigScript }} />
         <script src="https://cdn.tailwindcss.com"></script>
         <link
           href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400&display=swap"
