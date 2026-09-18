@@ -1,4 +1,5 @@
 import React from 'react';
+import jadePhoto from './jade-photo.jpg';
 import {
   ArrowDownRight,
   ArrowRight,
@@ -223,7 +224,7 @@ export default function PortfolioHomepage() {
             <div className="md:col-span-4">
               <div className="aspect-[4/5] max-h-[460px] md:max-h-none w-full max-w-xs md:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm overflow-hidden">
                 <img
-                  src="/jade-photo.jpg"
+                  src={jadePhoto.src}
                   alt="Jade Parrish"
                   className="w-full h-full object-cover"
                 />
