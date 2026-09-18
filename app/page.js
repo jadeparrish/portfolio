@@ -186,8 +186,6 @@ export default function PortfolioHomepage() {
 
             <div className="pt-2">
               
-                            <div className="pt-2">
-              
                 href="#work"
                 className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-black hover:translate-x-0.5 transition-all"
               >
