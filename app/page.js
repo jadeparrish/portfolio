@@ -94,10 +94,20 @@ const caseStudies = [
     title: 'Turning disconnected data into clearer decisions',
     tag: 'Internal Platform',
     description:
-      'Brought fragmented reporting into one scalable experience, helping teams understand what\u2019s happening and make better-informed decisions.',
+      'Brought fragmented reporting into one scalable experience, cutting reporting time by over 50% and giving teams a shared, trusted view to make better-informed decisions.',
     cta: 'View case study',
     href: '#',
     tint: 'bg-[#DDE3E6]',
+  },
+  {
+    num: '05',
+    title: 'Making a legacy platform simple, accessible and built to scale',
+    tag: 'Enterprise Product & Rebrand',
+    description:
+      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40% while meeting strict accessibility standards through a cross-border rebrand.',
+    cta: 'View case study',
+    href: '#',
+    tint: 'bg-[#E9E4DE]',
   },
 ];
 
@@ -141,7 +151,7 @@ export default function PortfolioHomepage() {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
       {/* Top Navigation */}
-      <header className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 lg:py-12 flex justify-between items-baseline">
+      <header className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-8 sm:py-10 lg:py-12 flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-baseline">
         <div className="space-y-1">
           <h1 className="font-semibold tracking-[0.18em] text-xs uppercase text-neutral-900">
             JADE PARRISH
@@ -150,7 +160,7 @@ export default function PortfolioHomepage() {
             Human-centred service &amp; systems designer
           </p>
         </div>
-        <nav className="flex items-center gap-8 lg:gap-10 text-xs tracking-[0.15em] uppercase text-neutral-600">
+        <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 lg:gap-x-10 text-xs tracking-[0.15em] uppercase text-neutral-600">
           <a href="#work" className="hover:text-neutral-900 transition-colors">Work</a>
           <a href="#thinking" className="hover:text-neutral-900 transition-colors">Thinking</a>
           <a href="#about" className="hover:text-neutral-900 transition-colors">About</a>
@@ -160,8 +170,8 @@ export default function PortfolioHomepage() {
 
       <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Hero */}
-        <section className="py-16 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center border-b border-neutral-200/80">
-          <div className="lg:col-span-6 space-y-8">
+        <section className="py-16 sm:py-20 lg:py-28 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-20 items-center border-b border-neutral-200/80">
+          <div className="md:col-span-6 space-y-8">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               Better systems <br />
               create better <span className="italic">lives</span>.
@@ -195,8 +205,8 @@ export default function PortfolioHomepage() {
           </div>
 
           {/* Hero illustration placeholder */}
-          <div className="lg:col-span-6">
-            <div className="aspect-[4/3] w-full rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
+          <div className="md:col-span-6">
+            <div className="aspect-[4/3] w-full max-h-[320px] md:max-h-none rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
               <ImageIcon className="w-6 h-6 text-neutral-300" strokeWidth={1.5} />
               <p className="text-xs uppercase tracking-[0.15em] text-neutral-400 font-medium">
                 Hero illustration &mdash; coming soon
@@ -260,11 +270,11 @@ export default function PortfolioHomepage() {
             {caseStudies.map((item) => (
               <div
                 key={item.num}
-                className="group grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center py-10 lg:py-12 first:pt-0 last:pb-0"
+                className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 items-start md:items-center py-10 lg:py-12 first:pt-0 last:pb-0"
               >
-                <div className="lg:col-span-3">
+                <div className="md:col-span-1 lg:col-span-3">
                   <div
-                    className={`aspect-[4/3] rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
+                    className={`aspect-[4/3] max-h-[240px] md:max-h-none rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
                   >
                     <span className="font-serif text-2xl text-neutral-400">{item.num}</span>
                     <span className="text-[9px] uppercase tracking-[0.15em] text-neutral-400">
@@ -273,31 +283,33 @@ export default function PortfolioHomepage() {
                   </div>
                 </div>
 
-                <div className="lg:col-span-6 space-y-2">
-                  <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-medium">
-                    {item.tag}
-                  </p>
-                  <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed max-w-lg">
-                    {item.description}
-                  </p>
-                </div>
+                <div className="md:col-span-1 lg:col-span-9 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
+                  <div className="space-y-2 lg:max-w-lg">
+                    <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-medium">
+                      {item.tag}
+                    </p>
+                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
 
-                <div className="lg:col-span-3 lg:text-right">
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase group-hover:translate-x-1 transition-transform"
-                    >
-                      {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400 group-hover:text-neutral-900" />
-                    </a>
-                  ) : (
-                    <span className="inline-flex items-center gap-1.5 text-xs text-neutral-400 font-medium tracking-wider uppercase">
-                      {item.cta}
-                    </span>
-                  )}
+                  <div className="shrink-0 lg:pt-1 lg:text-right">
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase group-hover:translate-x-1 transition-transform"
+                      >
+                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400 group-hover:text-neutral-900" />
+                      </a>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 text-xs text-neutral-400 font-medium tracking-wider uppercase">
+                        {item.cta}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
@@ -320,14 +332,14 @@ export default function PortfolioHomepage() {
 
         {/* About */}
         <section id="about" className="py-20 lg:py-28 border-b border-neutral-200/80">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <div className="lg:col-span-4">
-              <div className="aspect-[4/5] bg-neutral-100 border border-neutral-200 rounded-sm flex items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-16 items-start">
+            <div className="md:col-span-4">
+              <div className="aspect-[4/5] max-h-[380px] md:max-h-none w-full max-w-xs md:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm flex items-center justify-center">
                 <User className="w-10 h-10 text-neutral-300" strokeWidth={1.2} />
               </div>
             </div>
 
-            <div className="lg:col-span-8 space-y-8">
+            <div className="md:col-span-8 space-y-8">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
                   About
