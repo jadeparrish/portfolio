@@ -397,7 +397,7 @@ export default function PortfolioHomepage() {
         {/* Contact */}
         <section id="contact" className="py-24 lg:py-32 text-center space-y-8">
           <div className="inline-block px-4 py-1.5 bg-[#A47864]/10 border border-[#A47864]/30 text-[#A47864] rounded-full text-xs font-mono tracking-wide">
-            Available for Fractional / Advisory (2&ndash;3 days/week) &amp; Select Contracts
+            Open to Part-Time Roles &amp; Fractional Contracts (2&ndash;3 days/week)
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 tracking-tight">
             Let&rsquo;s improve something together.
