@@ -305,33 +305,6 @@ export default function PortfolioHomepage() {
           </div>
         </section>
 
-        {/* What I'm Noticing */}
-        <section id="thinking" className="py-16 lg:py-24 border-b border-neutral-200/80">
-          <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
-            {thoughts.map((article) => (
-              <div
-                key={article.title}
-                className="group cursor-pointer border-t border-neutral-200/60 pt-5 space-y-3"
-              >
-                <article.icon className="w-5 h-5 text-neutral-300" strokeWidth={1.5} />
-                <h4 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-300">
-                  {article.title}
-                </h4>
-                <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12">
-            <a
-              href="#"
-              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#A47864] transition-colors"
-            >
-              View all thoughts <ArrowRight className="w-3.5 h-3.5" />
-            </a>
-          </div>
-        </section>
-
         {/* Selected Work */}
         <section id="work" className="py-16 lg:py-24 border-b border-neutral-200/80">
           <SectionLabel>Selected Work</SectionLabel>
@@ -382,6 +355,33 @@ export default function PortfolioHomepage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* What I'm Noticing */}
+        <section id="thinking" className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+            {thoughts.map((article) => (
+              <div
+                key={article.title}
+                className="group cursor-pointer border-t border-neutral-200/60 pt-5 space-y-3"
+              >
+                <article.icon className="w-5 h-5 text-neutral-300" strokeWidth={1.5} />
+                <h4 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-300">
+                  {article.title}
+                </h4>
+                <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12">
+            <a
+              href="#"
+              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#A47864] transition-colors"
+            >
+              View all thoughts <ArrowRight className="w-3.5 h-3.5" />
+            </a>
           </div>
         </section>
 
