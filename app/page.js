@@ -104,7 +104,7 @@ const caseStudies = [
     title: 'Making a legacy platform simple, accessible and built to scale',
     tag: 'Enterprise Product & Rebrand',
     description:
-      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40% while meeting strict accessibility standards through a cross-border rebrand.',
+      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40% while resolving WCAG 2.1 AA compliance issues through a cross-border rebrand.',
     cta: 'View case study',
     href: '#',
     tint: 'bg-[#E9E4DE]',
@@ -332,9 +332,9 @@ export default function PortfolioHomepage() {
 
         {/* About */}
         <section id="about" className="py-20 lg:py-28 border-b border-neutral-200/80">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-16">
             <div className="md:col-span-4">
-              <div className="aspect-[4/5] max-h-[380px] md:max-h-none w-full max-w-xs md:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm flex items-center justify-center">
+              <div className="aspect-[4/5] max-h-[380px] md:aspect-auto md:max-h-none md:h-full w-full max-w-xs md:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm flex items-center justify-center">
                 <User className="w-10 h-10 text-neutral-300" strokeWidth={1.2} />
               </div>
             </div>
@@ -378,13 +378,15 @@ export default function PortfolioHomepage() {
                 </p>
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
                   <span>Service Design</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
                   <span>Systems Thinking</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
                   <span>Product Design</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                  <span>Accessibility</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
                   <span>Research</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
                   <span>Strategy</span>
                 </div>
               </div>
