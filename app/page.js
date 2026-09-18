@@ -2,9 +2,9 @@ import React from 'react';
 import {
   ArrowDownRight,
   ArrowRight,
-  Layers,
-  Box,
-  Network,
+  ArrowRightLeft,
+  Search,
+  Target,
   Users,
   Building2,
   Brain,
@@ -13,25 +13,24 @@ import {
   Stethoscope,
   GraduationCap,
   Heart,
-  User,
   Image as ImageIcon,
 } from 'lucide-react';
 
 const whatIDo = [
   {
-    icon: Layers,
-    title: 'Service Design',
-    description: 'Redesigning services across organisations, teams and touchpoints.',
+    icon: Search,
+    title: 'Start with what\u2019s real',
+    description: 'Auditing how a service actually works today, including the workarounds and handoffs, before designing anything new.',
   },
   {
-    icon: Box,
-    title: 'Product Design',
-    description: 'Designing digital products that solve real operational problems.',
+    icon: ArrowRightLeft,
+    title: 'Work across the boundary',
+    description: 'Sitting between teams, tools and departments to fix the handoff, not just the screen.',
   },
   {
-    icon: Network,
-    title: 'Systems Thinking',
-    description: 'Finding the real problem before designing the solution.',
+    icon: Target,
+    title: 'Make the case, not just the mockup',
+    description: 'Framing decisions in terms leadership can act on: cost, risk and outcome, not just usability.',
   },
 ];
 
@@ -209,7 +208,7 @@ export default function PortfolioHomepage() {
             <div className="aspect-[4/3] w-full max-h-[320px] md:max-h-none rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
               <ImageIcon className="w-6 h-6 text-neutral-300" strokeWidth={1.5} />
               <p className="text-xs uppercase tracking-[0.15em] text-neutral-400 font-medium">
-                Hero illustration &mdash; coming soon
+                Hero illustration: coming soon
               </p>
               <p className="text-xs text-neutral-400 max-w-[220px]">
                 Hand-drawn systems ecosystem map
@@ -218,9 +217,77 @@ export default function PortfolioHomepage() {
           </div>
         </section>
 
-        {/* What I Do */}
+        {/* About */}
+        <section id="about" className="py-20 lg:py-28 border-b border-neutral-200/80">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-16 items-start">
+            <div className="md:col-span-4">
+              <div className="aspect-[4/5] max-h-[460px] md:max-h-none w-full max-w-xs md:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm overflow-hidden">
+                <img
+                  src="/jade-photo.jpg"
+                  alt="Jade Parrish"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="md:col-span-8 space-y-8">
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
+                  About
+                </p>
+                <h3 className="text-2xl sm:text-3xl font-serif text-neutral-900 leading-snug">
+                  I&rsquo;m a human-centred service and systems designer.
+                </h3>
+              </div>
+
+              <div className="space-y-5 text-neutral-600 text-base leading-relaxed max-w-2xl font-normal">
+                <p>
+                  I combine service design, product design, research and systems thinking
+                  to understand how complex services really work, then redesign them
+                  around the people who use and deliver them.
+                </p>
+                <p>
+                  My work often spans teams, touchpoints and organisational boundaries. I
+                  look beyond individual screens to understand the wider system: where
+                  things break down, where complexity gets passed on to people, and where
+                  design can make things work better.
+                </p>
+                <p>
+                  I&rsquo;m most interested in complex, real-world problems where better
+                  design can create clearer experiences, better services and meaningful
+                  change.
+                </p>
+                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
+                  &ldquo;I care about designing systems that improve people&rsquo;s everyday
+                  lives.&rdquo;
+                </blockquote>
+              </div>
+
+              <div className="pt-8 border-t border-neutral-200/80">
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
+                  Capabilities
+                </p>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
+                  <span>Service Design</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                  <span>Systems Thinking</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                  <span>Product Design</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                  <span>Accessibility</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                  <span>Research</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                  <span>Strategy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* How I Work */}
         <section className="py-16 lg:py-24 border-b border-neutral-200/80">
-          <SectionLabel>What I Do</SectionLabel>
+          <SectionLabel>How I Work</SectionLabel>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
             {whatIDo.map((item) => (
               <div key={item.title} className="space-y-4">
@@ -327,70 +394,6 @@ export default function PortfolioHomepage() {
                 <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* About */}
-        <section id="about" className="py-20 lg:py-28 border-b border-neutral-200/80">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-16 items-start">
-            <div className="md:col-span-4">
-              <div className="aspect-[4/5] max-h-[460px] md:max-h-none w-full max-w-xs md:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm flex items-center justify-center">
-                <User className="w-10 h-10 text-neutral-300" strokeWidth={1.2} />
-              </div>
-            </div>
-
-            <div className="md:col-span-8 space-y-8">
-              <div>
-                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
-                  About
-                </p>
-                <h3 className="text-2xl sm:text-3xl font-serif text-neutral-900 leading-snug">
-                  I&rsquo;m a human-centred service and systems designer.
-                </h3>
-              </div>
-
-              <div className="space-y-5 text-neutral-600 text-base leading-relaxed max-w-2xl font-normal">
-                <p>
-                  I combine service design, product design, research and systems thinking
-                  to understand how complex services really work &mdash; then redesign them
-                  around the people who use and deliver them.
-                </p>
-                <p>
-                  My work often spans teams, touchpoints and organisational boundaries. I
-                  look beyond individual screens to understand the wider system: where
-                  things break down, where complexity gets passed on to people, and where
-                  design can make things work better.
-                </p>
-                <p>
-                  I&rsquo;m most interested in complex, real-world problems where better
-                  design can create clearer experiences, better services and meaningful
-                  change.
-                </p>
-                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
-                  &ldquo;I care about designing systems that improve people&rsquo;s everyday
-                  lives.&rdquo;
-                </blockquote>
-              </div>
-
-              <div className="pt-8 border-t border-neutral-200/80">
-                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
-                  Capabilities
-                </p>
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
-                  <span>Service Design</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Systems Thinking</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Product Design</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Accessibility</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Research</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Strategy</span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
