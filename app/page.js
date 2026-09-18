@@ -161,10 +161,10 @@ export default function PortfolioHomepage() {
           </p>
         </div>
         <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 lg:gap-x-10 text-xs tracking-[0.15em] uppercase text-neutral-600">
-          <a href="#work" className="hover:text-neutral-900 transition-colors">Work</a>
-          <a href="#thinking" className="hover:text-neutral-900 transition-colors">Thinking</a>
-          <a href="#about" className="hover:text-neutral-900 transition-colors">About</a>
-          <a href="#contact" className="hover:text-neutral-900 transition-colors">Contact</a>
+          <a href="#work" className="hover:text-[#A47864] transition-colors">Work</a>
+          <a href="#thinking" className="hover:text-[#A47864] transition-colors">Thinking</a>
+          <a href="#about" className="hover:text-[#A47864] transition-colors">About</a>
+          <a href="#contact" className="hover:text-[#A47864] transition-colors">Contact</a>
         </nav>
       </header>
 
@@ -174,7 +174,7 @@ export default function PortfolioHomepage() {
           <div className="md:col-span-6 space-y-8">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               Better systems <br />
-              create better <span className="italic">lives</span>.
+              create better <span className="italic text-[#A47864]">lives</span>.
             </h2>
             <div className="space-y-5 text-neutral-600 text-base sm:text-lg leading-relaxed max-w-lg font-normal">
               <p>Every day, people rely on services they didn&rsquo;t choose.</p>
@@ -197,9 +197,9 @@ export default function PortfolioHomepage() {
             <div className="pt-2">
               <a
                 href="#work"
-                className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-black hover:translate-x-0.5 transition-all"
+                className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#A47864] hover:translate-x-0.5 transition-all"
               >
-                View selected work <ArrowDownRight className="w-4 h-4 text-neutral-500" />
+                View selected work <ArrowDownRight className="w-4 h-4 text-[#A47864]" />
               </a>
             </div>
           </div>
@@ -256,7 +256,7 @@ export default function PortfolioHomepage() {
           <div className="mt-12">
             <a
               href="#"
-              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-black"
+              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#A47864] transition-colors"
             >
               View all thoughts <ArrowRight className="w-3.5 h-3.5" />
             </a>
@@ -300,9 +300,9 @@ export default function PortfolioHomepage() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase group-hover:translate-x-1 transition-transform"
+                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#A47864] group-hover:translate-x-1 transition-all"
                       >
-                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400 group-hover:text-neutral-900" />
+                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#A47864] transition-colors" />
                       </a>
                     ) : (
                       <span className="inline-flex items-center gap-1.5 text-xs text-neutral-400 font-medium tracking-wider uppercase">
@@ -394,13 +394,16 @@ export default function PortfolioHomepage() {
 
         {/* Contact */}
         <section id="contact" className="py-24 lg:py-32 text-center space-y-8">
+          <div className="inline-block px-4 py-1.5 bg-[#A47864]/10 border border-[#A47864]/30 text-[#A47864] rounded-full text-xs font-mono tracking-wide">
+            Available for Fractional / Advisory (2&ndash;3 days/week) &amp; Select Contracts
+          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 tracking-tight">
             Let&rsquo;s improve something together.
           </h2>
           <div className="pt-2">
             <a
               href="mailto:jade@jadeparrish.com"
-              className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-neutral-900 transition-colors"
+              className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
             >
               jade@jadeparrish.com &rarr;
             </a>
@@ -413,8 +416,8 @@ export default function PortfolioHomepage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
           <div className="flex gap-8 tracking-wider uppercase text-[11px]">
-            <a href="#" className="hover:text-neutral-900 transition-colors">LinkedIn</a>
-            <a href="mailto:jade@jadeparrish.com" className="hover:text-neutral-900 transition-colors">Email</a>
+            <a href="#" className="hover:text-[#A47864] transition-colors">LinkedIn</a>
+            <a href="mailto:jade@jadeparrish.com" className="hover:text-[#A47864] transition-colors">Email</a>
           </div>
         </div>
       </footer>
