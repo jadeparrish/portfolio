@@ -404,10 +404,10 @@ export default function PortfolioHomepage() {
           </h2>
           <div className="pt-2">
             <a
-              href="mailto:jade@jadeparrish.com"
+              href="mailto:hello@jadeparrish.me"
               className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
             >
-              jade@jadeparrish.com &rarr;
+              hello@jadeparrish.me &rarr;
             </a>
           </div>
         </section>
@@ -419,7 +419,7 @@ export default function PortfolioHomepage() {
           <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
           <div className="flex gap-8 tracking-wider uppercase text-[11px]">
             <a href="#" className="hover:text-[#A47864] transition-colors">LinkedIn</a>
-            <a href="mailto:jade@jadeparrish.com" className="hover:text-[#A47864] transition-colors">Email</a>
+            <a href="mailto:hello@jadeparrish.me" className="hover:text-[#A47864] transition-colors">Email</a>
           </div>
         </div>
       </footer>
