@@ -242,9 +242,10 @@ export default function PortfolioHomepage() {
 
               <div className="space-y-5 text-neutral-600 text-base leading-relaxed max-w-2xl font-normal">
                 <p>
-                  I combine service design, product design, research and systems thinking
-                  to understand how complex services really work, then redesign them
-                  around the people who use and deliver them.
+                  Over 15 years I&rsquo;ve moved from graphic design, through web, into
+                  senior product design, picking up service design and systems thinking
+                  along the way. I use all of it to understand how complex services really
+                  work, then redesign them around the people who use and deliver them.
                 </p>
                 <p>
                   My work often spans teams, touchpoints and organisational boundaries. I
@@ -253,9 +254,10 @@ export default function PortfolioHomepage() {
                   design can make things work better.
                 </p>
                 <p>
-                  I&rsquo;m most interested in complex, real-world problems where better
-                  design can create clearer experiences, better services and meaningful
-                  change.
+                  This isn&rsquo;t abstract for me. As a parent to two children with SEND,
+                  I&rsquo;ve seen first-hand how disconnected systems make already hard
+                  situations harder, and how much difference joined-up design can make.
+                  It&rsquo;s part of why this work matters to me.
                 </p>
                 <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
                   &ldquo;I care about designing systems that improve people&rsquo;s everyday
