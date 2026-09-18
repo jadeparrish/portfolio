@@ -1,0 +1,403 @@
+import React from 'react';
+import {
+  ArrowDownRight,
+  ArrowRight,
+  Layers,
+  Box,
+  Network,
+  Users,
+  Building2,
+  Brain,
+  Sprout,
+  Landmark,
+  Stethoscope,
+  GraduationCap,
+  Heart,
+  User,
+  Image as ImageIcon,
+} from 'lucide-react';
+
+const whatIDo = [
+  {
+    icon: Layers,
+    title: 'Service Design',
+    description: 'Redesigning services across organisations, teams and touchpoints.',
+  },
+  {
+    icon: Box,
+    title: 'Product Design',
+    description: 'Designing digital products that solve real operational problems.',
+  },
+  {
+    icon: Network,
+    title: 'Systems Thinking',
+    description: 'Finding the real problem before designing the solution.',
+  },
+];
+
+const thoughts = [
+  {
+    icon: Users,
+    title: 'Why families become project managers.',
+    readTime: '5 min read',
+  },
+  {
+    icon: Building2,
+    title: 'Why public services optimise for departments instead of people.',
+    readTime: '7 min read',
+  },
+  {
+    icon: Brain,
+    title: "AI won't fix broken services.",
+    readTime: '6 min read',
+  },
+  {
+    icon: Sprout,
+    title: 'What gardening taught me about systems.',
+    readTime: '4 min read',
+  },
+];
+
+const caseStudies = [
+  {
+    num: '01',
+    title: 'Making SEND journeys easier for families to navigate',
+    tag: 'Service Design',
+    description:
+      'Explored how families and professionals experience SEND services across organisational boundaries, identifying where joined-up design could reduce friction.',
+    cta: 'Coming soon',
+    href: null,
+    tint: 'bg-[#EDEAE4]',
+  },
+  {
+    num: '02',
+    title: 'Making complex warehouse operations easier to navigate',
+    tag: 'Operations & Service Design',
+    description:
+      'Redesigned fragmented workflows around how warehouse teams actually work, reducing unnecessary complexity and improving accuracy and visibility.',
+    cta: 'View case study',
+    href: '#',
+    tint: 'bg-[#E3E6E1]',
+  },
+  {
+    num: '03',
+    title: 'Helping commercial teams see the value they create',
+    tag: 'Commercial Product',
+    description:
+      'Rebuilt the reporting model around how teams understand performance, turning complex metrics into clearer evidence of the value being created.',
+    cta: 'View case study',
+    href: '#',
+    tint: 'bg-[#E7E2DC]',
+  },
+  {
+    num: '04',
+    title: 'Turning disconnected data into clearer decisions',
+    tag: 'Internal Platform',
+    description:
+      'Brought fragmented reporting into one scalable experience, helping teams understand what\u2019s happening and make better-informed decisions.',
+    cta: 'View case study',
+    href: '#',
+    tint: 'bg-[#DDE3E6]',
+  },
+];
+
+const whoIWorkWith = [
+  {
+    icon: Landmark,
+    title: 'Public Sector',
+    description: 'Local and central government organisations.',
+  },
+  {
+    icon: Stethoscope,
+    title: 'NHS & Healthcare',
+    description: 'NHS trusts, ICSs and healthcare organisations.',
+  },
+  {
+    icon: GraduationCap,
+    title: 'Education',
+    description: 'Schools, trusts and education technology providers.',
+  },
+  {
+    icon: Heart,
+    title: 'Charities & NFPs',
+    description: 'Mission-led organisations creating social impact.',
+  },
+  {
+    icon: Users,
+    title: 'Enterprise Teams',
+    description: 'Complex product and operations teams.',
+  },
+];
+
+function SectionLabel({ children }) {
+  return (
+    <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-10 lg:mb-12">
+      {children}
+    </p>
+  );
+}
+
+export default function PortfolioHomepage() {
+  return (
+    <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
+      {/* Top Navigation */}
+      <header className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 lg:py-12 flex justify-between items-baseline">
+        <div className="space-y-1">
+          <h1 className="font-semibold tracking-[0.18em] text-xs uppercase text-neutral-900">
+            JADE PARRISH
+          </h1>
+          <p className="text-neutral-500 normal-case text-xs tracking-normal font-normal">
+            Human-centred service &amp; systems designer
+          </p>
+        </div>
+        <nav className="flex items-center gap-8 lg:gap-10 text-xs tracking-[0.15em] uppercase text-neutral-600">
+          <a href="#work" className="hover:text-neutral-900 transition-colors">Work</a>
+          <a href="#thinking" className="hover:text-neutral-900 transition-colors">Thinking</a>
+          <a href="#about" className="hover:text-neutral-900 transition-colors">About</a>
+          <a href="#contact" className="hover:text-neutral-900 transition-colors">Contact</a>
+        </nav>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Hero */}
+        <section className="py-16 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center border-b border-neutral-200/80">
+          <div className="lg:col-span-6 space-y-8">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
+              Better systems <br />
+              create better <span className="italic">lives</span>.
+            </h2>
+            <div className="space-y-5 text-neutral-600 text-base sm:text-lg leading-relaxed max-w-lg font-normal">
+              <p>Every day, people rely on services they didn&rsquo;t choose.</p>
+              <p>
+                I help organisations redesign services, products and processes so they
+                work better for the people who depend on them.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-neutral-500 tracking-wide">
+              <span>Public Sector</span>
+              <span className="w-1 h-1 rounded-full bg-neutral-300" />
+              <span>Healthcare</span>
+              <span className="w-1 h-1 rounded-full bg-neutral-300" />
+              <span>Education</span>
+              <span className="w-1 h-1 rounded-full bg-neutral-300" />
+              <span>Complex Digital Products</span>
+            </div>
+
+            <div className="pt-2">
+              
+                href="#work"
+                className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-black hover:translate-x-0.5 transition-all"
+              >
+                View selected work <ArrowDownRight className="w-4 h-4 text-neutral-500" />
+              </a>
+            </div>
+          </div>
+
+          {/* Hero illustration placeholder */}
+          <div className="lg:col-span-6">
+            <div className="aspect-[4/3] w-full rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
+              <ImageIcon className="w-6 h-6 text-neutral-300" strokeWidth={1.5} />
+              <p className="text-xs uppercase tracking-[0.15em] text-neutral-400 font-medium">
+                Hero illustration &mdash; coming soon
+              </p>
+              <p className="text-xs text-neutral-400 max-w-[220px]">
+                Hand-drawn systems ecosystem map
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* What I Do */}
+        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>What I Do</SectionLabel>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
+            {whatIDo.map((item) => (
+              <div key={item.title} className="space-y-4">
+                <item.icon className="w-5 h-5 text-neutral-400" strokeWidth={1.5} />
+                <h3 className="font-serif text-xl font-normal text-neutral-900">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* What I'm Noticing */}
+        <section id="thinking" className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+            {thoughts.map((article) => (
+              <div
+                key={article.title}
+                className="group cursor-pointer border-t border-neutral-200/60 pt-5 space-y-3"
+              >
+                <article.icon className="w-5 h-5 text-neutral-300" strokeWidth={1.5} />
+                <h4 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-300">
+                  {article.title}
+                </h4>
+                <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12">
+            
+              href="#"
+              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-black"
+            >
+              View all thoughts <ArrowRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+        </section>
+
+        {/* Selected Work */}
+        <section id="work" className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>Selected Work</SectionLabel>
+          <div className="divide-y divide-neutral-200/70">
+            {caseStudies.map((item) => (
+              <div
+                key={item.num}
+                className="group grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center py-10 lg:py-12 first:pt-0 last:pb-0"
+              >
+                <div className="lg:col-span-3">
+                  <div
+                    className={`aspect-[4/3] rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
+                  >
+                    <span className="font-serif text-2xl text-neutral-400">{item.num}</span>
+                    <span className="text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                      Visual coming soon
+                    </span>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-6 space-y-2">
+                  <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-medium">
+                    {item.tag}
+                  </p>
+                  <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed max-w-lg">
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="lg:col-span-3 lg:text-right">
+                  {item.href ? (
+                    
+                      href={item.href}
+                      className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase group-hover:translate-x-1 transition-transform"
+                    >
+                      {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400 group-hover:text-neutral-900" />
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-1.5 text-xs text-neutral-400 font-medium tracking-wider uppercase">
+                      {item.cta}
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Who I Work With */}
+        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>Who I Work With</SectionLabel>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
+            {whoIWorkWith.map((item) => (
+              <div key={item.title} className="space-y-3">
+                <item.icon className="w-5 h-5 text-neutral-400" strokeWidth={1.5} />
+                <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
+                <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* About */}
+        <section id="about" className="py-20 lg:py-28 border-b border-neutral-200/80">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div className="lg:col-span-4">
+              <div className="aspect-[4/5] bg-neutral-100 border border-neutral-200 rounded-sm flex items-center justify-center">
+                <User className="w-10 h-10 text-neutral-300" strokeWidth={1.2} />
+              </div>
+            </div>
+
+            <div className="lg:col-span-8 space-y-8">
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
+                  About
+                </p>
+                <h3 className="text-2xl sm:text-3xl font-serif text-neutral-900 leading-snug">
+                  I&rsquo;m a human-centred service and systems designer.
+                </h3>
+              </div>
+
+              <div className="space-y-5 text-neutral-600 text-base leading-relaxed max-w-2xl font-normal">
+                <p>
+                  I combine service design, product design, research and systems thinking
+                  to understand how complex services really work &mdash; then redesign them
+                  around the people who use and deliver them.
+                </p>
+                <p>
+                  My work often spans teams, touchpoints and organisational boundaries. I
+                  look beyond individual screens to understand the wider system: where
+                  things break down, where complexity gets passed on to people, and where
+                  design can make things work better.
+                </p>
+                <p>
+                  I&rsquo;m most interested in complex, real-world problems where better
+                  design can create clearer experiences, better services and meaningful
+                  change.
+                </p>
+                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
+                  &ldquo;I care about designing systems that improve people&rsquo;s everyday
+                  lives.&rdquo;
+                </blockquote>
+              </div>
+
+              <div className="pt-8 border-t border-neutral-200/80">
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
+                  Capabilities
+                </p>
+                <p className="text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
+                  Service Design &middot; Systems Thinking &middot; Product Design &middot; Research &middot; Strategy
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="py-24 lg:py-32 text-center space-y-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 tracking-tight">
+            Let&rsquo;s improve something together.
+          </h2>
+          <div className="pt-2">
+            
+              href="mailto:jade@jadeparrish.com"
+              className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-neutral-900 transition-colors"
+            >
+              jade@jadeparrish.com &rarr;
+            </a>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
+          <div className="flex gap-8 tracking-wider uppercase text-[11px]">
+            <a href="#" className="hover:text-neutral-900 transition-colors">LinkedIn</a>
+            <a href="mailto:jade@jadeparrish.com" className="hover:text-neutral-900 transition-colors">Email</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
