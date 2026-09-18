@@ -359,6 +359,20 @@ export default function PortfolioHomepage() {
           </div>
         </section>
 
+        {/* Who I Work With */}
+        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>Who I Work With</SectionLabel>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
+            {whoIWorkWith.map((item) => (
+              <div key={item.title} className="space-y-3">
+                <item.icon className="w-5 h-5 text-neutral-400" strokeWidth={1.5} />
+                <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
+                <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* What I'm Noticing */}
         <section id="thinking" className="py-16 lg:py-24 border-b border-neutral-200/80">
           <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
@@ -383,20 +397,6 @@ export default function PortfolioHomepage() {
             >
               View all thoughts <ArrowRight className="w-3.5 h-3.5" />
             </a>
-          </div>
-        </section>
-
-        {/* Who I Work With */}
-        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
-          <SectionLabel>Who I Work With</SectionLabel>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
-            {whoIWorkWith.map((item) => (
-              <div key={item.title} className="space-y-3">
-                <item.icon className="w-5 h-5 text-neutral-400" strokeWidth={1.5} />
-                <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
-                <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
-              </div>
-            ))}
           </div>
         </section>
 
