@@ -376,9 +376,17 @@ export default function PortfolioHomepage() {
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
                   Capabilities
                 </p>
-                <p className="text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
-                  Service Design &middot; Systems Thinking &middot; Product Design &middot; Research &middot; Strategy
-                </p>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
+                  <span>Service Design</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span>Systems Thinking</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span>Product Design</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span>Research</span>
+                  <span className="w-1 h-1 rounded-full bg-neutral-400" />
+                  <span>Strategy</span>
+                </div>
               </div>
             </div>
           </div>
