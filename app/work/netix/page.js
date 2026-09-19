@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
 
 export const metadata = {
   title: 'NetIX Redesign & Rebrand: Jade Parrish',
@@ -12,6 +12,27 @@ function SectionLabel({ children }) {
     <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-6">
       {children}
     </p>
+  );
+}
+
+function SubLabel({ children }) {
+  return (
+    <h3 className="flex items-center gap-2 text-sm uppercase tracking-[0.15em] font-semibold text-neutral-800 mb-4">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
+      {children}
+    </h3>
+  );
+}
+
+function ImagePlaceholder({ tint, caption }) {
+  return (
+    <div className={`aspect-[16/9] w-full rounded-sm border border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
+      <ImageIcon className="w-6 h-6 text-neutral-400" strokeWidth={1.5} />
+      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
+        Visual coming soon
+      </p>
+      <p className="text-xs text-neutral-400">{caption}</p>
+    </div>
   );
 }
 
@@ -30,7 +51,7 @@ export default function NetIXCaseStudy() {
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
-        <section className="pb-12 border-b border-neutral-200/80">
+        <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-4">
             Enterprise Product &amp; Rebrand &middot; Sole Designer
           </p>
@@ -40,6 +61,28 @@ export default function NetIXCaseStudy() {
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
             Transforming a legacy EDI platform into a scalable, accessible SaaS product.
           </p>
+        </section>
+
+        {/* At a Glance */}
+        <section className="py-8 border-b border-neutral-200/80">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Role</p>
+              <p className="text-sm font-medium text-neutral-900">Sole Designer</p>
+            </div>
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Clients</p>
+              <p className="text-sm font-medium text-neutral-900">DPD, Radley, NHS Supply Chain</p>
+            </div>
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Outcome</p>
+              <p className="text-sm font-medium text-[#A47864]">40%+ faster processes</p>
+            </div>
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Standard</p>
+              <p className="text-sm font-medium text-neutral-900">WCAG 2.1 AA</p>
+            </div>
+          </div>
         </section>
 
         {/* Setting the Scene */}
@@ -63,6 +106,8 @@ export default function NetIXCaseStudy() {
               customer integrations.
             </p>
           </div>
+
+          <ImagePlaceholder tint="bg-[#E9E4DE]" caption="NetIX interface, before redesign" />
         </section>
 
         {/* Part 1: Modernising NetIX */}
@@ -70,21 +115,19 @@ export default function NetIXCaseStudy() {
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#A47864] mb-2">
             Part One
           </p>
-          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-8">
+          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
             Modernising NetIX
           </h2>
 
           <div className="space-y-10">
             <div>
-              <h3 className="text-sm uppercase tracking-[0.15em] font-medium text-neutral-500 mb-4">
-                Problem
-              </h3>
+              <SubLabel>Problem</SubLabel>
               <p className="text-neutral-700 leading-relaxed mb-4">
                 The legacy platform was functional but inefficient and difficult to use.
                 It looked and behaved like a system designed for engineers, not for
                 people managing business operations.
               </p>
-              <ul className="space-y-2 text-neutral-700 text-sm">
+              <ul className="space-y-2.5 text-neutral-700 text-sm">
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Complex terminology and poor hierarchy</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Minimal validation, feedback or error handling</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Inconsistent layouts and navigation</li>
@@ -93,9 +136,7 @@ export default function NetIXCaseStudy() {
             </div>
 
             <div>
-              <h3 className="text-sm uppercase tracking-[0.15em] font-medium text-neutral-500 mb-4">
-                Process
-              </h3>
+              <SubLabel>Process</SubLabel>
               <p className="text-neutral-700 leading-relaxed mb-4">
                 I began by mapping every workflow, from document processing to profile
                 setup and error resolution. I interviewed support and engineering teams
@@ -105,7 +146,7 @@ export default function NetIXCaseStudy() {
               <p className="text-neutral-700 leading-relaxed mb-4">
                 From there, I designed new structures for:
               </p>
-              <ul className="space-y-2 text-neutral-700 text-sm mb-4">
+              <ul className="space-y-2.5 text-neutral-700 text-sm mb-4">
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Dashboards showing live order and invoice volumes at a glance</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Editor and process screens simplified for data entry and validation</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Document overviews with clear state, buyer and seller visibility</li>
@@ -116,12 +157,12 @@ export default function NetIXCaseStudy() {
                 resulting in a modular system that could scale across devices and screen
                 sizes.
               </p>
+
+              <ImagePlaceholder tint="bg-[#E3E6E1]" caption="Redesigned dashboard and process screens" />
             </div>
 
             <div>
-              <h3 className="text-sm uppercase tracking-[0.15em] font-medium text-neutral-500 mb-4">
-                Outcome
-              </h3>
+              <SubLabel>Outcome</SubLabel>
               <p className="text-neutral-700 leading-relaxed mb-2">
                 The new NetIX interface replaced Silverlight with a modern, modular
                 design system.
@@ -162,15 +203,13 @@ export default function NetIXCaseStudy() {
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#A47864] mb-2">
             Part Two
           </p>
-          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-8">
+          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
             Post-Acquisition Rebrand
           </h2>
 
           <div className="space-y-10">
             <div>
-              <h3 className="text-sm uppercase tracking-[0.15em] font-medium text-neutral-500 mb-4">
-                Context
-              </h3>
+              <SubLabel>Context</SubLabel>
               <p className="text-neutral-700 leading-relaxed">
                 In late 2019, NetEDI was acquired by Cegedim Group, a French SaaS
                 provider headquartered in Boulogne-Billancourt, Paris. NetIX became part
@@ -180,10 +219,8 @@ export default function NetIXCaseStudy() {
             </div>
 
             <div>
-              <h3 className="text-sm uppercase tracking-[0.15em] font-medium text-neutral-500 mb-4">
-                Challenges
-              </h3>
-              <ul className="space-y-2 text-neutral-700 text-sm">
+              <SubLabel>Challenges</SubLabel>
+              <ul className="space-y-2.5 text-neutral-700 text-sm">
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Redesigning a product that had just launched</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Raising WCAG 2.1 AA compliance concerns around the parent company&rsquo;s colour palette</li>
@@ -193,9 +230,7 @@ export default function NetIXCaseStudy() {
             </div>
 
             <div>
-              <h3 className="text-sm uppercase tracking-[0.15em] font-medium text-neutral-500 mb-4">
-                Process
-              </h3>
+              <SubLabel>Process</SubLabel>
               <div className="space-y-4 text-neutral-700 leading-relaxed">
                 <p>
                   I reviewed Cegedim&rsquo;s brand library, compared colour and
@@ -220,18 +255,18 @@ export default function NetIXCaseStudy() {
                   both product ecosystems.
                 </p>
               </div>
+
+              <ImagePlaceholder tint="bg-[#E4E1E8]" caption="Rebrand: before and after Cegedim alignment" />
             </div>
 
             <div>
-              <h3 className="text-sm uppercase tracking-[0.15em] font-medium text-neutral-500 mb-4">
-                Outcome
-              </h3>
+              <SubLabel>Outcome</SubLabel>
               <p className="text-neutral-700 leading-relaxed mb-4">
                 The rebrand delivered a unified, accessible interface that preserved
                 NetIX&rsquo;s usability while aligning it with Cegedim&rsquo;s broader
                 SaaS suite.
               </p>
-              <ul className="space-y-2 text-neutral-700 text-sm">
+              <ul className="space-y-2.5 text-neutral-700 text-sm">
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Established WCAG-compliant colour tokens and typography scales</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Improved user trust and engagement post-acquisition</li>
