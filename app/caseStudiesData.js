@@ -100,8 +100,9 @@ export function CaseStudyNav({ currentSlug }) {
 export function CaseStudyFooter({ currentSlug }) {
   return (
     <>
-      {/* Contact CTA: owns its own 48px above and below, with a rule underneath */}
-      <section className="py-12 border-b border-neutral-200/80 text-center space-y-6">
+      {/* Contact CTA: 48px below, 40px above. The heading's line-height adds ~8px of
+          invisible space above its letters, so pt-10 makes the gaps look equal. */}
+      <section className="pt-10 pb-12 border-b border-neutral-200/80 text-center space-y-6">
         <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 tracking-tight">
           Let&rsquo;s improve something together.
         </h2>
