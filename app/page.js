@@ -66,16 +66,6 @@ const caseStudies = [
   },
   {
     num: '02',
-    title: 'Making complex warehouse operations easier to navigate',
-    tag: 'Operations & Service Design',
-    description:
-      'Redesigned fragmented workflows around how warehouse teams actually work, reducing unnecessary complexity and improving accuracy and visibility.',
-    cta: 'View case study',
-    href: '/work/warehouse',
-    tint: 'bg-[#E3E6E1]',
-  },
-  {
-    num: '03',
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
     description:
@@ -83,6 +73,16 @@ const caseStudies = [
     cta: 'View case study',
     href: '#',
     tint: 'bg-[#E7E2DC]',
+  },
+  {
+    num: '03',
+    title: 'Making complex stock and fulfilment data easier to navigate',
+    tag: 'Operations & Service Design',
+    description:
+      'Untangled shared stock pools into one clear, consistent view of stock and fulfilment health, carrying the same clarity into Campaign Manager reporting.',
+    cta: 'View case study',
+    href: '/work/stock',
+    tint: 'bg-[#E3E6E1]',
   },
   {
     num: '04',
@@ -96,16 +96,6 @@ const caseStudies = [
   },
   {
     num: '05',
-    title: 'Making a legacy platform simple, accessible and built to scale',
-    tag: 'Enterprise Product & Rebrand',
-    description:
-      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40% while resolving WCAG 2.1 AA compliance issues through a cross-border rebrand.',
-    cta: 'View case study',
-    href: '/work/netix',
-    tint: 'bg-[#E9E4DE]',
-  },
-  {
-    num: '06',
     title: 'Making a scattered platform navigable at scale',
     tag: 'Product Design & Information Architecture',
     description:
@@ -113,6 +103,16 @@ const caseStudies = [
     cta: 'View case study',
     href: '#',
     tint: 'bg-[#E4E1E8]',
+  },
+  {
+    num: '06',
+    title: 'Making a legacy platform simple, accessible and built to scale',
+    tag: 'Enterprise Product & Rebrand',
+    description:
+      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40% while resolving WCAG 2.1 AA compliance issues through a cross-border rebrand.',
+    cta: 'View case study',
+    href: '/work/netix',
+    tint: 'bg-[#E9E4DE]',
   },
 ];
 
