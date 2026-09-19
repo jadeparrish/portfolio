@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
+import { CaseStudyNav } from '../caseStudiesData';
 
 export const metadata = {
   title: 'NetIX Redesign & Rebrand: Jade Parrish',
@@ -315,15 +316,19 @@ export default function NetIXCaseStudy() {
               hello@jadeparrish.me &rarr;
             </a>
           </div>
-          <div>
-            <Link
-              href="/#work"
-              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
-            >
-              <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
-            </Link>
-          </div>
         </section>
+
+        {/* Prev/Next Case Study Navigation */}
+        <CaseStudyNav currentSlug="netix" />
+
+        <div className="text-center pt-4">
+          <Link
+            href="/#work"
+            className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
+          </Link>
+        </div>
       </main>
 
       {/* Footer */}
