@@ -304,7 +304,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* Contact CTA */}
-        <section className="pt-12 border-t border-neutral-200/80 text-center space-y-6">
+        <section className="py-12 border-b border-neutral-200/80 text-center space-y-6">
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 tracking-tight">
             Let&rsquo;s improve something together.
           </h2>
