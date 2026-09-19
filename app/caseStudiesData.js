@@ -68,7 +68,7 @@ export function CaseStudyNav({ currentSlug }) {
   if (!prev && !next) return null;
 
   return (
-    <div className="grid grid-cols-2 gap-6 py-8 border-t border-neutral-200/80 mt-4">
+    <div className="grid grid-cols-2 gap-6 py-6 border-t border-neutral-200/80 mt-10">
       <div>
         {prev && (
           <Link href={`/work/${prev.slug}`} className="group block">
