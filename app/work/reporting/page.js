@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyNav } from '../caseStudiesData';
+import { CaseStudyNav } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Reporting Area Redesign: Jade Parrish',
