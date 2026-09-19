@@ -96,3 +96,36 @@ export function CaseStudyNav({ currentSlug }) {
     </div>
   );
 }
+
+export function CaseStudyFooter({ currentSlug }) {
+  return (
+    <>
+      {/* Contact CTA: owns its own 48px above and below, with a rule underneath */}
+      <section className="py-12 border-b border-neutral-200/80 text-center space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 tracking-tight">
+          Let&rsquo;s improve something together.
+        </h2>
+        <div>
+          <a
+            href="mailto:hello@jadeparrish.me"
+            className="text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
+          >
+            hello@jadeparrish.me &rarr;
+          </a>
+        </div>
+      </section>
+
+      {/* Previous / Next */}
+      <CaseStudyNav currentSlug={currentSlug} />
+
+      <div className="text-center pt-4">
+        <Link
+          href="/#work"
+          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
+        >
+          <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
+        </Link>
+      </div>
+    </>
+  );
+}
