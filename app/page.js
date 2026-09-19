@@ -71,7 +71,7 @@ const caseStudies = [
     description:
       'Redesigned fragmented workflows around how warehouse teams actually work, reducing unnecessary complexity and improving accuracy and visibility.',
     cta: 'View case study',
-    href: '#',
+    href: '/work/warehouse',
     tint: 'bg-[#E3E6E1]',
   },
   {
