@@ -11,17 +11,17 @@ export const caseStudiesList = [
   },
   {
     num: '02',
-    slug: 'warehouse',
-    title: 'Making complex warehouse operations easier to navigate',
-    tag: 'Operations & Service Design',
-    hasPage: false,
-  },
-  {
-    num: '03',
     slug: 'commercial-value',
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
     hasPage: false,
+  },
+  {
+    num: '03',
+    slug: 'stock',
+    title: 'Making complex stock and fulfilment data easier to navigate',
+    tag: 'Operations & Service Design',
+    hasPage: true,
   },
   {
     num: '04',
@@ -32,17 +32,17 @@ export const caseStudiesList = [
   },
   {
     num: '05',
-    slug: 'netix',
-    title: 'Making a legacy platform simple, accessible and built to scale',
-    tag: 'Enterprise Product & Rebrand',
-    hasPage: true,
-  },
-  {
-    num: '06',
     slug: 'cm-navigation',
     title: 'Making a scattered platform navigable at scale',
     tag: 'Product Design & Information Architecture',
     hasPage: false,
+  },
+  {
+    num: '06',
+    slug: 'netix',
+    title: 'Making a legacy platform simple, accessible and built to scale',
+    tag: 'Enterprise Product & Rebrand',
+    hasPage: true,
   },
 ];
 
