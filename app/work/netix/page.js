@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyNav } from '../../caseStudiesData';
+import { CaseStudyFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'NetIX Redesign & Rebrand: Jade Parrish',
@@ -278,7 +278,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
@@ -303,32 +303,7 @@ export default function NetIXCaseStudy() {
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <section className="py-12 border-b border-neutral-200/80 text-center space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 tracking-tight">
-            Let&rsquo;s improve something together.
-          </h2>
-          <div>
-            <a
-              href="mailto:hello@jadeparrish.me"
-              className="text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
-            >
-              hello@jadeparrish.me &rarr;
-            </a>
-          </div>
-        </section>
-
-        {/* Prev/Next Case Study Navigation */}
-        <CaseStudyNav currentSlug="netix" />
-
-        <div className="text-center pt-4">
-          <Link
-            href="/#work"
-            className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
-          >
-            <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
-          </Link>
-        </div>
+        <CaseStudyFooter currentSlug="netix" />
       </main>
 
       {/* Footer */}
