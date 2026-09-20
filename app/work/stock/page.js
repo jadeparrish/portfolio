@@ -57,11 +57,11 @@ export default function StockCaseStudy() {
             Operations &amp; Service Design &middot; Design Lead
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Making complex stock and fulfilment data easier to navigate.
+            Bringing stock and fulfilment data into one clear view.
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
-            Untangling shared stock pools into one clear, consistent view across the
-            WMS and Campaign Manager reporting.
+            Untangling shared stock pools into a consistent view across the WMS and
+            Campaign Manager reporting.
           </p>
         </section>
 
