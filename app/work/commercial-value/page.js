@@ -275,9 +275,9 @@ export default function CommercialValueCaseStudy() {
             <div>
               <SubLabel>Why it mattered</SubLabel>
               <p className="text-neutral-700 leading-relaxed mb-4">
-                Commercial and CSM teams were rebuilding the same story for every
-                campaign. They needed a quick, standard way to answer questions that kept
-                coming up:
+                The Commercial team asked for this. They and the CSMs were rebuilding the
+                same story for every campaign, and needed a quick, standard way to answer
+                questions that kept coming up:
               </p>
               <Bullets
                 items={[
@@ -339,8 +339,9 @@ export default function CommercialValueCaseStudy() {
             <div>
               <SubLabel>Expected impact</SubLabel>
               <p className="text-neutral-700 leading-relaxed">
-                The framework was designed to take most of the manual work out of
-                comparison reporting. Tables that Commercial teams built by hand,
+                The framework was designed to cut the time spent on comparison reporting
+                sharply, by taking most of the manual work out of it. Tables that
+                Commercial teams built by hand,
                 collating data from Looker, slides and exports, would come from one view in
                 one consistent format, and the same question could be answered for every
                 campaign without rebuilding the story each time.
