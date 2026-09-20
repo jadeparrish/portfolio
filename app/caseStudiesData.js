@@ -35,7 +35,7 @@ export const caseStudiesList = [
     slug: 'cm-navigation',
     title: 'Giving a scattered platform a navigation that scales',
     tag: 'Product Design & Information Architecture',
-    hasPage: false,
+    hasPage: true,
   },
   {
     num: '06',
