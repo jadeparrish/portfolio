@@ -4,6 +4,7 @@ import {
   ArrowDownRight,
   ArrowRight,
   ArrowRightLeft,
+  ChevronDown,
   Search,
   Target,
   Users,
@@ -113,6 +114,33 @@ const caseStudies = [
     cta: 'View case study',
     href: '/work/netix',
     tint: 'bg-[#E9E4DE]',
+  },
+];
+
+const moreWork = [
+  {
+    tag: 'Compliance & Service Design',
+    title: 'Turning a compliance risk into a simple first step',
+    description:
+      'Led a cross-functional review of how feedback journeys captured consent, then designed one global pattern that protects users and brands without adding friction.',
+    cta: 'Coming soon',
+    href: null,
+  },
+  {
+    tag: 'Product Design & Systems',
+    title: 'Designing notifications that scale beyond a single alert',
+    description:
+      'Defined a notification framework that began with low-stock alerts for CSMs and now extends across data lifecycle and comments, saving hours of manual checking.',
+    cta: 'Coming soon',
+    href: null,
+  },
+  {
+    tag: 'Product Design',
+    title: 'Turning a technical bottleneck into a guided setup',
+    description:
+      'Redesigned integration setup into one guided, self-serve flow across seven integrations, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
+    cta: 'Coming soon',
+    href: null,
   },
 ];
 
@@ -362,6 +390,41 @@ export default function PortfolioHomepage() {
               </div>
             ))}
           </div>
+
+          {/* More work: native details element, no client-side code needed */}
+          <details className="group mt-12 border-t border-neutral-200/80">
+            <summary className="flex items-center justify-between cursor-pointer list-none py-6 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#A47864] transition-colors [&::-webkit-details-marker]:hidden">
+              <span>More work ({moreWork.length})</span>
+              <ChevronDown className="w-4 h-4 text-neutral-400 transition-transform group-open:rotate-180" />
+            </summary>
+            <div className="divide-y divide-neutral-200/60 border-t border-neutral-200/60">
+              {moreWork.map((item) => (
+                <div key={item.title} className="py-8 grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-8">
+                  <p className="lg:col-span-3 text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-medium lg:pt-2">
+                    {item.tag}
+                  </p>
+                  <div className="lg:col-span-7 space-y-2">
+                    <h3 className="font-serif text-xl text-neutral-900 leading-snug">{item.title}</h3>
+                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">{item.description}</p>
+                  </div>
+                  <div className="lg:col-span-2 lg:text-right lg:pt-1">
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#A47864] transition-colors"
+                      >
+                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400" />
+                      </a>
+                    ) : (
+                      <span className="text-xs text-neutral-400 font-medium tracking-wider uppercase">
+                        {item.cta}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </details>
         </section>
 
         {/* Where I Can Help */}
