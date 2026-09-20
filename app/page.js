@@ -39,17 +39,17 @@ const thoughts = [
   {
     icon: FileText,
     title: 'Most "complex" systems are just undocumented ones.',
-    readTime: '4 min read',
+    readTime: 'Coming soon',
   },
   {
     icon: Wrench,
     title: 'Nobody wants the new feature. They want the old one to work.',
-    readTime: '5 min read',
+    readTime: 'Coming soon',
   },
   {
     icon: TrendingUp,
     title: 'What "did it work?" misses.',
-    readTime: '7 min read',
+    readTime: 'Coming soon',
   },
 ];
 
@@ -59,7 +59,7 @@ const caseStudies = [
     title: 'Making SEND journeys easier for families to navigate',
     tag: 'Service Design',
     description:
-      'Explored how families and professionals experience SEND services across organisational boundaries, identifying where joined-up design could reduce friction.',
+      'A self-initiated project exploring how families and professionals experience SEND services across organisational boundaries, and where joined-up design could reduce friction.',
     cta: 'Coming soon',
     href: null,
     tint: 'bg-[#EDEAE4]',
@@ -69,17 +69,17 @@ const caseStudies = [
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
     description:
-      'Rebuilt the reporting model around how teams understand performance, turning complex metrics into clearer evidence of the value being created.',
+      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so commercial teams could demonstrate impact instead of defending it.',
     cta: 'View case study',
-    href: '#',
+    href: '/work/commercial-value',
     tint: 'bg-[#E7E2DC]',
   },
   {
     num: '03',
-    title: 'Making complex stock and fulfilment data easier to navigate',
+    title: 'Bringing stock and fulfilment data into one clear view',
     tag: 'Operations & Service Design',
     description:
-      'Untangled shared stock pools into one clear, consistent view of stock and fulfilment health, carrying the same clarity into Campaign Manager reporting.',
+      'Untangled shared stock pools into a consistent view of stock health and fulfilment status, carrying the same clarity into Campaign Manager reporting.',
     cta: 'View case study',
     href: '/work/stock',
     tint: 'bg-[#E3E6E1]',
@@ -89,19 +89,19 @@ const caseStudies = [
     title: 'Turning disconnected data into clearer decisions',
     tag: 'Internal Platform',
     description:
-      'Brought fragmented reporting into one scalable experience, cutting reporting time by over 50% and giving teams a shared, trusted view to make better-informed decisions.',
+      'Audited every reporting view across two systems, then rebuilt them into a single reporting hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
     cta: 'View case study',
     href: '/work/reporting',
     tint: 'bg-[#DDE3E6]',
   },
   {
     num: '05',
-    title: 'Making a scattered platform navigable at scale',
+    title: 'Giving a scattered platform a navigation that scales',
     tag: 'Product Design & Information Architecture',
     description:
       'Rebuilt a SaaS platform\u2019s navigation from the ground up, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
-    cta: 'View case study',
-    href: '#',
+    cta: 'Coming soon',
+    href: null,
     tint: 'bg-[#E4E1E8]',
   },
   {
@@ -364,9 +364,9 @@ export default function PortfolioHomepage() {
           </div>
         </section>
 
-        {/* Who I Work With */}
+        {/* Where I Can Help */}
         <section className="py-16 lg:py-24 border-b border-neutral-200/80">
-          <SectionLabel>Who I Work With</SectionLabel>
+          <SectionLabel>Where I Can Help</SectionLabel>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
             {whoIWorkWith.map((item) => (
               <div key={item.title} className="space-y-3">
@@ -385,23 +385,15 @@ export default function PortfolioHomepage() {
             {thoughts.map((article) => (
               <div
                 key={article.title}
-                className="group cursor-pointer border-t border-neutral-200/60 pt-5 space-y-3"
+                className="border-t border-neutral-200/60 pt-5 space-y-3"
               >
                 <article.icon className="w-5 h-5 text-neutral-300" strokeWidth={1.5} />
-                <h4 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-300">
+                <h4 className="font-serif text-lg text-neutral-900 leading-snug">
                   {article.title}
                 </h4>
                 <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
               </div>
             ))}
-          </div>
-          <div className="mt-12">
-            <a
-              href="#"
-              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#A47864] transition-colors"
-            >
-              View all thoughts <ArrowRight className="w-3.5 h-3.5" />
-            </a>
           </div>
         </section>
 
