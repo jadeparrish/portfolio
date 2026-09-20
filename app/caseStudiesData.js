@@ -44,6 +44,27 @@ export const caseStudiesList = [
     tag: 'Enterprise Product & Rebrand',
     hasPage: true,
   },
+  {
+    num: '07',
+    slug: 'consent',
+    title: 'Turning a compliance risk into a simple first step',
+    tag: 'Compliance & Service Design',
+    hasPage: false,
+  },
+  {
+    num: '08',
+    slug: 'notifications',
+    title: 'Designing notifications that scale beyond a single alert',
+    tag: 'Product Design & Systems',
+    hasPage: false,
+  },
+  {
+    num: '09',
+    slug: 'integrations',
+    title: 'Turning a technical bottleneck into a guided setup',
+    tag: 'Product Design',
+    hasPage: false,
+  },
 ];
 
 export function CaseStudyNav({ currentSlug }) {
