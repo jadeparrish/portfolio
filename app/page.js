@@ -100,8 +100,8 @@ const caseStudies = [
     tag: 'Product Design & Information Architecture',
     description:
       'Rebuilt a SaaS platform\u2019s navigation from the ground up, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
-    cta: 'Coming soon',
-    href: null,
+    cta: 'View case study',
+    href: '/work/cm-navigation',
     tint: 'bg-[#E4E1E8]',
   },
   {
