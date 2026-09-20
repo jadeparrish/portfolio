@@ -14,12 +14,12 @@ export const caseStudiesList = [
     slug: 'commercial-value',
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
-    hasPage: false,
+    hasPage: true,
   },
   {
     num: '03',
     slug: 'stock',
-    title: 'Making complex stock and fulfilment data easier to navigate',
+    title: 'Bringing stock and fulfilment data into one clear view',
     tag: 'Operations & Service Design',
     hasPage: true,
   },
@@ -33,7 +33,7 @@ export const caseStudiesList = [
   {
     num: '05',
     slug: 'cm-navigation',
-    title: 'Making a scattered platform navigable at scale',
+    title: 'Giving a scattered platform a navigation that scales',
     tag: 'Product Design & Information Architecture',
     hasPage: false,
   },
