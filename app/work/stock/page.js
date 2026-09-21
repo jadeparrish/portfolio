@@ -184,9 +184,15 @@ export default function StockCaseStudy() {
                 The designs were validated internally and rolled out in phases. They
                 informed the next phase of Campaign Manager reporting, bringing the same
                 clarity and hierarchy into brand-facing dashboards. The same stock
-                visibility also led into a scalable notification system, first released in
-                2025, so teams are alerted when stock runs low instead of checking balances
-                by hand.
+                visibility also led into a{' '}
+                <Link
+                  href="/work/notifications"
+                  className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
+                >
+                  scalable notification system
+                </Link>
+                , first released in 2025, so teams are alerted when stock runs low
+                instead of checking balances by hand.
               </p>
             </div>
           </div>
