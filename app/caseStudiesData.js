@@ -56,7 +56,7 @@ export const caseStudiesList = [
     slug: 'notifications',
     title: 'Designing notifications that scale beyond a single alert',
     tag: 'Product Design & Systems',
-    hasPage: false,
+    hasPage: true,
   },
   {
     num: '09',
