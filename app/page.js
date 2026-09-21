@@ -131,8 +131,8 @@ const moreWork = [
     title: 'Designing notifications that scale beyond a single alert',
     description:
       'Defined a notification framework that began with low-stock alerts for CSMs and now extends across data lifecycle and comments, saving hours of manual checking.',
-    cta: 'Coming soon',
-    href: null,
+    cta: 'View case study',
+    href: '/work/notifications',
   },
   {
     tag: 'Product Design',
