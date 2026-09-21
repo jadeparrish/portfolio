@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Reporting Area Redesign: Jade Parrish',
@@ -149,8 +149,17 @@ export default function ReportingCaseStudy() {
               <SubLabel>Process</SubLabel>
               <div className="space-y-4 text-neutral-700 leading-relaxed">
                 <p>
+                  The audit started with the people using the data. Commercial team
+                  members in different countries kept coming to me with gaps and
+                  differences in their numbers, which made their decks hard to understand
+                  and talk through. Building the WMS had already uncovered discrepancies
+                  in the data, including mismatched refresh rates between the two systems.
+                </p>
+                <p>
                   I audited every existing reporting view across Campaign Manager and
-                  Mission Control, documenting duplication and logic gaps.
+                  Mission Control, documenting duplication and logic gaps. The picture
+                  became much clearer: the discrepancies ran deep, and there was no single,
+                  central reporting hub.
                 </p>
                 <p>
                   In parallel, I worked with the Commercial team to review the reports
@@ -282,16 +291,7 @@ export default function ReportingCaseStudy() {
         <CaseStudyFooter currentSlug="reporting" />
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
-          <div className="flex gap-8 tracking-wider uppercase text-[11px]">
-            <a href="#" className="hover:text-[#A47864] transition-colors">LinkedIn</a>
-            <a href="mailto:hello@jadeparrish.me" className="hover:text-[#A47864] transition-colors">Email</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
