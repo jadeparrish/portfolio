@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Stock and Fulfilment Visualisation: Jade Parrish',
@@ -222,16 +222,7 @@ export default function StockCaseStudy() {
         <CaseStudyFooter currentSlug="stock" />
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
-          <div className="flex gap-8 tracking-wider uppercase text-[11px]">
-            <a href="#" className="hover:text-[#A47864] transition-colors">LinkedIn</a>
-            <a href="mailto:hello@jadeparrish.me" className="hover:text-[#A47864] transition-colors">Email</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
