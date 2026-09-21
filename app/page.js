@@ -484,7 +484,7 @@ export default function PortfolioHomepage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
           <div className="flex gap-8 tracking-wider uppercase text-[11px]">
-            <a href="#" className="hover:text-[#A47864] transition-colors">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jade-parrish/" target="_blank" rel="noopener noreferrer" className="hover:text-[#A47864] transition-colors">LinkedIn</a>
             <a href="mailto:hello@jadeparrish.me" className="hover:text-[#A47864] transition-colors">Email</a>
           </div>
         </div>
