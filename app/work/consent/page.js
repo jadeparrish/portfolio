@@ -81,7 +81,7 @@ export default function ConsentCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Started with</p>
-              <p className="text-sm font-medium text-neutral-900">A client&rsquo;s data compliance concern</p>
+              <p className="text-sm font-medium text-neutral-900">Data compliance concerns from L&rsquo;Oréal US</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Outcome</p>
@@ -96,8 +96,8 @@ export default function ConsentCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              A US brand client raised a concern: data was being stored before people had
-              agreed to the Terms and Conditions. I led a cross-functional review of how
+              After L&rsquo;Oréal US raised concerns about data being stored before people
+              had agreed to the Terms and Conditions, I led a cross-functional review of how
               consent was captured across SoPost&rsquo;s feedback journeys.
             </p>
             <p>
