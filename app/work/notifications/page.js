@@ -199,16 +199,20 @@ export default function NotificationsCaseStudy() {
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Outcome and Next Steps</SectionLabel>
           <p className="text-neutral-700 leading-relaxed mb-4">
-            The first release, in 2025, focused on stock notifications and included:
+            The framework has three parts. The first release, in 2025, focused on stock
+            notifications and delivered all three:
           </p>
           <Bullets
             items={[
               'In-app toasts for quick updates',
               'Email summaries for detail and history',
               'A Notifications area for tracking and review',
-              'User preferences to manage notification type and frequency',
             ]}
           />
+          <p className="text-neutral-700 leading-relaxed mt-4">
+            User preferences sit on top, so people can manage the type and frequency of
+            what they receive.
+          </p>
           <p className="text-neutral-700 leading-relaxed mt-4">
             Since that first rollout, the system has grown to include data lifecycle
             notifications for opt-in data, and commenting within the campaign builder.
