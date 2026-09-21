@@ -49,7 +49,7 @@ export const caseStudiesList = [
     slug: 'consent',
     title: 'Turning a compliance risk into a simple first step',
     tag: 'Compliance & Service Design',
-    hasPage: false,
+    hasPage: true,
   },
   {
     num: '08',
@@ -63,7 +63,7 @@ export const caseStudiesList = [
     slug: 'integrations',
     title: 'Turning a technical bottleneck into a guided setup',
     tag: 'Product Design',
-    hasPage: false,
+    hasPage: true,
   },
 ];
 
