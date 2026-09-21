@@ -5,7 +5,7 @@ import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Stock and Fulfilment Visualisation: Jade Parrish',
-  description: 'Untangling shared stock pools into one clear, consistent view of stock and fulfilment health.',
+  description: 'Untangling shared stock pools into a consistent view of stock health and fulfilment status.',
 };
 
 function SectionLabel({ children }) {
