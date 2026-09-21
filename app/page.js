@@ -123,8 +123,8 @@ const moreWork = [
     title: 'Turning a compliance risk into a simple first step',
     description:
       'Led a cross-functional review of how feedback journeys captured consent, then designed one global pattern that protects users and brands without adding friction.',
-    cta: 'Coming soon',
-    href: null,
+    cta: 'View case study',
+    href: '/work/consent',
   },
   {
     tag: 'Product Design & Systems',
@@ -139,8 +139,8 @@ const moreWork = [
     title: 'Turning a technical bottleneck into a guided setup',
     description:
       'Redesigned integration setup into one guided, self-serve flow across seven integrations, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
-    cta: 'Coming soon',
-    href: null,
+    cta: 'View case study',
+    href: '/work/integrations',
   },
 ];
 
