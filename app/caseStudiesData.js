@@ -118,7 +118,7 @@ export function CaseStudyNav({ currentSlug }) {
   );
 }
 
-export function CaseStudyFooter({ currentSlug }) {
+function ContactCTA() {
   return (
     <>
       {/* Contact CTA: 48px below, 40px above. The heading's line-height adds ~8px of
@@ -136,6 +136,30 @@ export function CaseStudyFooter({ currentSlug }) {
           </a>
         </div>
       </section>
+    </>
+  );
+}
+
+export function ArticleFooter() {
+  return (
+    <>
+      <ContactCTA />
+      <div className="text-center pt-12">
+        <Link
+          href="/#thinking"
+          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
+        >
+          <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
+        </Link>
+      </div>
+    </>
+  );
+}
+
+export function CaseStudyFooter({ currentSlug }) {
+  return (
+    <>
+      <ContactCTA />
 
       {/* Previous / Next */}
       <CaseStudyNav currentSlug={currentSlug} />
