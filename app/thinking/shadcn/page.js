@@ -31,7 +31,7 @@ export default function ShadcnArticle() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-4">
-            Design systems &middot; 4 min read
+            Design systems &middot; 3 min read
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             The hard part of adopting ShadCN wasn&rsquo;t technical.
@@ -52,6 +52,11 @@ export default function ShadcnArticle() {
               different companies, so this isn&rsquo;t a technical comparison. It&rsquo;s
               what I&rsquo;ve learned about how teams actually work when they&rsquo;re
               balancing speed, quality and limited time.
+            </p>
+            <p>
+              None of this is a new tension. Every small team scaling past a handful of
+              components eventually asks whether more structure is worth the overhead. What
+              I can offer is what actually happened when I ran it twice.
             </p>
             <p>
               The clearest win was practical: one shared set of styles between design and
