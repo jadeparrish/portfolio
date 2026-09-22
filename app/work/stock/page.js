@@ -4,7 +4,7 @@ import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'Stock and Fulfilment Visualisation: Jade Parrish',
+  title: 'Bringing stock and fulfilment data into one clear view: Jade Parrish',
   description: 'Untangling shared stock pools into a consistent view of stock health and fulfilment status.',
 };
 
@@ -83,7 +83,8 @@ export default function StockCaseStudy() {
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Outcome</p>
               {/* TODO: replace with a real metric (e.g. time saved, fewer manual checks) */}
-              <p className="text-sm font-medium text-[#A47864]">Metric to add</p>
+              {/* TODO: swap in a real figure once you have one (e.g. hours saved, fewer manual checks) */}
+              <p className="text-sm font-medium text-neutral-900">Real-time stock and SLA visibility</p>
             </div>
           </div>
         </section>
