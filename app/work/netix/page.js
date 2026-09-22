@@ -73,7 +73,7 @@ export default function NetIXCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Clients</p>
-              <p className="text-sm font-medium text-neutral-900">DPD, Radley, NHS Supply Chain</p>
+              <p className="text-sm font-medium text-neutral-900">DPD, Radley, NHS Supply Chain +1</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Outcome</p>
