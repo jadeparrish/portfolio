@@ -47,10 +47,11 @@ export default function ShadcnArticle() {
           <div className="space-y-4">
             <p>
               I&rsquo;ve worked with both structured, token-driven design systems and newer,
-              developer-first tools like ShadCN. I ran the project that brought ShadCN into
-              a smaller product team, so this isn&rsquo;t a technical comparison. It&rsquo;s
-              what I learned about how teams actually work when they&rsquo;re balancing
-              speed, quality and limited time.
+              developer-first tools like ShadCN. I&rsquo;ve taken this approach more than
+              once, aligning design and code from day one with senior engineers at two
+              different companies, so this isn&rsquo;t a technical comparison. It&rsquo;s
+              what I&rsquo;ve learned about how teams actually work when they&rsquo;re
+              balancing speed, quality and limited time.
             </p>
             <p>
               The clearest win was practical: one shared set of styles between design and
@@ -63,10 +64,9 @@ export default function ShadcnArticle() {
             <div className="space-y-4">
               <p>
                 Before changing anything in Figma, I audited how the engineers were
-                building and styling their CSS, then aligned those conventions with
-                ShadCN. That mattered more than any component choice. It meant design and
-                code started from the same place. I also wrote the documentation that went
-                with it.
+                building and styling their CSS, then aligned those conventions with ShadCN. That mattered more than any component choice. It
+                meant design and code started from the same place. I also wrote the
+                documentation that went with it.
               </p>
               <p>
                 The codebase felt accessible rather than imposed. Developers could work
