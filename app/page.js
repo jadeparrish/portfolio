@@ -9,6 +9,7 @@ import {
   Target,
   Users,
   FileText,
+  Layers,
   Wrench,
   TrendingUp,
   Landmark,
@@ -37,6 +38,12 @@ const whatIDo = [
 ];
 
 const thoughts = [
+  {
+    icon: Layers,
+    title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
+    readTime: '4 min read',
+    href: '/thinking/shadcn',
+  },
   {
     icon: FileText,
     title: 'Most "complex" systems are just undocumented ones.',
@@ -444,19 +451,34 @@ export default function PortfolioHomepage() {
         {/* What I'm Noticing */}
         <section id="thinking" className="py-16 lg:py-24 border-b border-neutral-200/80">
           <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {thoughts.map((article) => (
-              <div
-                key={article.title}
-                className="border-t border-neutral-200/60 pt-5 space-y-3"
-              >
-                <article.icon className="w-5 h-5 text-neutral-300" strokeWidth={1.5} />
-                <h4 className="font-serif text-lg text-neutral-900 leading-snug">
-                  {article.title}
-                </h4>
-                <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
+            {thoughts.map((article) => {
+              const inner = (
+                <>
+                  <article.icon
+                    className={`w-5 h-5 ${article.href ? 'text-[#A47864]' : 'text-neutral-300'}`}
+                    strokeWidth={1.5}
+                  />
+                  <h4 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-300">
+                    {article.title}
+                  </h4>
+                  <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
+                </>
+              );
+              return article.href ? (
+                <a
+                  key={article.title}
+                  href={article.href}
+                  className="group block border-t border-neutral-200/60 pt-5 space-y-3"
+                >
+                  {inner}
+                </a>
+              ) : (
+                <div key={article.title} className="border-t border-neutral-200/60 pt-5 space-y-3">
+                  {inner}
+                </div>
+              );
+            })}
           </div>
         </section>
 
