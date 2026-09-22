@@ -5,7 +5,7 @@ import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: "The hard part of adopting ShadCN wasn't technical: Jade Parrish",
-  description: 'A senior product designer on running a ShadCN rollout, and why speed, structure and trust matter more than the tooling.',
+  description: 'A senior product designer on running a ShadCN rollout, and why aligning design and code from day one saves real time.',
 };
 
 function Heading({ children }) {
@@ -38,7 +38,7 @@ export default function ShadcnArticle() {
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
             A senior product designer on running a ShadCN rollout, and what it taught me
-            about structure, speed and trust in small teams.
+            about aligning design and code from day one.
           </p>
         </section>
 
