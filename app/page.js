@@ -11,7 +11,6 @@ import {
   FileText,
   Layers,
   Wrench,
-  TrendingUp,
   Landmark,
   Stethoscope,
   GraduationCap,
@@ -41,23 +40,20 @@ const thoughts = [
   {
     icon: Layers,
     title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
-    readTime: '4 min read',
+    readTime: '3 min read',
     href: '/thinking/shadcn',
   },
   {
     icon: FileText,
     title: 'Most "complex" systems are just undocumented ones.',
-    readTime: 'Coming soon',
+    readTime: '2 min read',
+    href: '/thinking/undocumented',
   },
   {
     icon: Wrench,
     title: 'Nobody wants the new feature. They want the old one to work.',
-    readTime: 'Coming soon',
-  },
-  {
-    icon: TrendingUp,
-    title: 'What "did it work?" misses.',
-    readTime: 'Coming soon',
+    readTime: '2 min read',
+    href: '/thinking/legacy',
   },
 ];
 
