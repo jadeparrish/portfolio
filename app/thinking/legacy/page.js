@@ -5,7 +5,7 @@ import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: "Nobody wants the new feature. They just want the old one to work: Jade Parrish",
-  description: 'A service designer on the pull between shipping something new and making the old thing reliable, and what replacing a legacy platform taught me.',
+  description: 'A service designer on why shipping something new and keeping the old thing reliable are so hard to balance, and what replacing a legacy platform taught me.',
 };
 
 function Heading({ children }) {
@@ -60,8 +60,9 @@ export default function LegacyArticle() {
             Nobody wants the new feature. They just want the old one to work.
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
-            On the pull between shipping something new and making the old thing reliable,
-            and what replacing a legacy platform taught me about the middle ground.
+            Shipping something new and keeping the old thing reliable are hard to
+            balance. Here&rsquo;s what replacing a legacy platform taught me about the
+            middle ground.
           </p>
         </section>
 
@@ -76,9 +77,10 @@ export default function LegacyArticle() {
             </p>
             <p>
               The natural response is to compromise: build the new thing on top of what&rsquo;s
-              already fragile. In my experience that rarely works. You spend your time
-              patching edge cases, delivery slows everywhere, and the experience gets worse
-              at both ends, the old and the new.
+              already fragile, whilst trying to improve the foundations too. In my
+              experience that rarely works. You spend your time patching edge cases,
+              delivery slows everywhere, and the experience gets worse at both ends, the
+              old and the new.
             </p>
             <p>
               This tension isn&rsquo;t unique to any one company, and plenty of people have
@@ -88,7 +90,7 @@ export default function LegacyArticle() {
           </div>
 
           <div>
-            <Heading>The pull in four directions</Heading>
+            <Heading>Four pressures at once</Heading>
             <div className="space-y-4">
               <p>In practice, it&rsquo;s rarely just two sides. It&rsquo;s usually four pressures at once:</p>
               <Bullets
@@ -96,7 +98,7 @@ export default function LegacyArticle() {
                   'Leadership pushes for innovation. New features win deals and signal momentum, so pausing to fix the foundations can feel like standing still.',
                   'The foundations are already too weak to build on cleanly. Every new thing costs more to ship and delivers less than it should, because it\u2019s fighting the platform underneath it.',
                   'At the same time, pressure to streamline and cut costs squeezes the very investment innovation needs, and management doesn\u2019t always agree on which to prioritise.',
-                  'Managers come and go faster than any one direction can stick. Each one arrives under pressure to show impact quickly, which understandably favours starting something visible over finishing what\u2019s already there, and that adds another layer to the pile.',
+                  'Managers don\u2019t always stay long enough for one direction to stick, and even the ones who do can struggle to manage upwards, so priorities keep shifting either way. That pressure to show impact quickly favours starting something visible over finishing what\u2019s already there, and that adds another layer to the pile.',
                 ]}
               />
               <p>
@@ -104,7 +106,8 @@ export default function LegacyArticle() {
                 service ends up held together by workarounds nobody remembers agreeing to.
               </p>
               <p>
-                I&rsquo;ve seen the third one play out in a literal way. Design started
+                I&rsquo;ve seen this kind of misalignment play out a few times, and once in
+                a very real way. Design started
                 working in Shape Up cycles, without much training in how the method was
                 meant to run. Engineering, reasonably, saw no reason to give up a rhythm
                 that was already working for them and stayed in sprints. Neither choice was
@@ -125,7 +128,10 @@ export default function LegacyArticle() {
                 of an old system. The intent was reasonable: keep moving without stopping
                 to rebuild. But it meant every new feature was also a fight against the
                 legacy code underneath it, and that friction showed up as delays and
-                fragile releases.
+                fragile releases. The funny part is that it only delayed the inevitable.
+                Before I left, we overhauled the whole thing anyway, which is part of what
+                led to the{' '}
+                <InlineLink href="/thinking/shadcn">ShadCN work</InlineLink>.
               </p>
               <p>
                 On another, at NetEDI, we took the harder route and replaced the legacy
@@ -141,21 +147,21 @@ export default function LegacyArticle() {
           </div>
 
           <div>
-            <Heading>The cost compounds, it doesn&rsquo;t arrive as a bill</Heading>
+            <Heading>The cost is a leak, not a bill</Heading>
             <div className="space-y-4">
               <p>
                 Most conversations about this treat the cost as a series of one-off
                 charges: this feature took longer, that bug took a day to trace. That
                 framing makes it easy to justify each individual decision to delay the
-                fix, because no single bill looks large enough to act on.
+                fix, because no single instance looks large enough to act on.
               </p>
               <p>
-                The more honest comparison is interest. Every workaround left in place
-                keeps quietly compounding against everything built on top of it, until one
-                day a small, ordinary change needs far more care than it should, and nobody
-                can quite explain why. By the time the cost is visible enough for leadership
-                to notice, it&rsquo;s already many times what it would have been to fix
-                early.
+                The more honest comparison is a slow leak behind a wall. Every workaround
+                left in place keeps quietly doing damage to everything built around it,
+                until one day a small, ordinary change needs far more care than it should,
+                and nobody can quite explain why. By the time the damage is visible enough
+                for leadership to notice, it&rsquo;s already cost far more to reach that
+                point than it would have to fix early.
               </p>
             </div>
           </div>
@@ -166,7 +172,7 @@ export default function LegacyArticle() {
               <p>
                 Here&rsquo;s the part I rarely hear said out loud: even
                 people who know the right call is to stabilise something rather than ship
-                the next new thing are individually pulled toward the visible option,
+                the next new thing are individually drawn toward the visible option,
                 because that&rsquo;s what gets noticed, reviewed and promoted.
               </p>
               <p>
