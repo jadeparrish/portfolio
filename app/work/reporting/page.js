@@ -92,9 +92,9 @@ export default function ReportingCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              In 2024, I led the redesign of SoPost&rsquo;s Reporting Area, transforming
-              how campaign performance was viewed, shared and trusted across the
-              business.
+              In 2024, I led the redesign of SoPost&rsquo;s Reporting Area. That sounds tidy
+              written like that. The honest version is that nobody trusted the numbers
+              anymore, and I got to be the person who fixed it.
             </p>
             <p>
               Before this work, results were scattered across Campaign Manager,
@@ -282,8 +282,9 @@ export default function ReportingCaseStudy() {
               strategic, insight-led system.
             </p>
             <p>
-              The work became the foundation for everything that followed, connecting
-              fulfilment, ROI and long-term value into one coherent reporting framework.
+              It became the foundation for everything that followed. The stock work, the
+              ROI dashboards, all of it traces back to one audit that started because
+              people simply couldn&rsquo;t agree on the numbers anymore.
             </p>
           </div>
         </section>
