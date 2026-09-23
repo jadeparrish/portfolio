@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
-  title: "Nobody wants the new feature. They want the old one to work: Jade Parrish",
+  title: "Nobody wants the new feature. They just want the old one to work: Jade Parrish",
   description: 'A service designer on the pull between shipping something new and making the old thing reliable, and what replacing a legacy platform taught me.',
 };
 
@@ -57,7 +57,7 @@ export default function LegacyArticle() {
             Product Strategy &middot; 6 min read
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Nobody wants the new feature. They want the old one to work.
+            Nobody wants the new feature. They just want the old one to work.
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
             On the pull between shipping something new and making the old thing reliable,
