@@ -4,7 +4,7 @@ import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'Giving a scattered platform a navigation that scales: Jade Parrish',
+  title: 'Giving a siloed platform a navigation that scales: Jade Parrish',
   description: 'Designing a scalable information architecture for a next-generation SaaS platform.',
 };
 
@@ -71,7 +71,7 @@ export default function NavigationCaseStudy() {
             Product Design &amp; Information Architecture &middot; Design Lead
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Giving a scattered platform a navigation that scales.
+            Giving a siloed platform a navigation that scales.
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
             Designing a scalable information architecture for SoPost&rsquo;s
