@@ -104,15 +104,15 @@ export default function CommercialValueCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              Once reporting had a solid foundation (see the{' '}
+              Once reporting actually had a solid foundation (that&rsquo;s the{' '}
               <Link
                 href="/work/reporting"
                 className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
               >
                 Reporting Area Redesign
               </Link>
-              ), the next question was what it should help commercial teams say. In 2025 I
-              led two connected pieces of work on that.
+              ), the obvious next question was what all that reliable data should actually
+              help people say. In 2025 I led two connected pieces of work to answer it.
             </p>
             <p>
               The first was an ROI Impact Dashboard, to show the value of a campaign over
@@ -366,15 +366,16 @@ export default function CommercialValueCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              Together these gave commercial teams two things they lacked: a credible way
-              to show value over time, and a fast, consistent way to compare results. One
-              answered &ldquo;what did this create?&rdquo; and the other &ldquo;how does it
-              compare?&rdquo;, so teams could spend their time on the story rather than on
-              rebuilding it.
+              Together, these gave commercial teams two things they&rsquo;d been missing: a
+              credible way to show value over time, and a fast way to compare results
+              without rebuilding the same table from scratch every time. One answers
+              &ldquo;what did this create?&rdquo;, the other &ldquo;how does it
+              compare?&rdquo;
             </p>
             <p>
-              Both pieces of work showed that good design isn&rsquo;t just about how data
-              looks. It&rsquo;s about how quickly people can trust it and act on it.
+              Both taught me the same lesson, really. Good design isn&rsquo;t about how the
+              data looks. It&rsquo;s about how quickly someone can trust it enough to act on
+              it.
             </p>
           </div>
         </section>
