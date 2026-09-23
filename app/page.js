@@ -73,7 +73,7 @@ const caseStudies = [
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
     description:
-      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so commercial teams could demonstrate impact instead of defending it.',
+      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so our commercial team could demonstrate impact instead of defending it.',
     cta: 'View case study',
     href: '/work/commercial-value',
     tint: 'bg-[#E7E2DC]',
@@ -93,7 +93,7 @@ const caseStudies = [
     title: 'Turning disconnected data into clearer decisions',
     tag: 'Internal Platform',
     description:
-      'Audited every reporting view across two systems, then rebuilt them into a single reporting hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
+      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
     cta: 'View case study',
     href: '/work/reporting',
     tint: 'bg-[#DDE3E6]',
