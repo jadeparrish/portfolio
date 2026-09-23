@@ -54,7 +54,7 @@ export default function LegacyArticle() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-4">
-            Product Strategy &middot; 2 min read
+            Product Strategy &middot; 6 min read
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Nobody wants the new feature. They want the old one to work.
@@ -88,20 +88,31 @@ export default function LegacyArticle() {
           </div>
 
           <div>
-            <Heading>The pull in three directions</Heading>
+            <Heading>The pull in four directions</Heading>
             <div className="space-y-4">
-              <p>The tension usually comes down to three groups pulling against each other:</p>
+              <p>In practice, it&rsquo;s rarely just two sides. It&rsquo;s usually four pressures at once:</p>
               <Bullets
                 items={[
-                  'Leadership sees speed and growth. New features win deals and signal momentum, so pausing to fix the foundations can feel like standing still.',
-                  'Product and design carry the daily friction. They want to ship something good, but old technology turns a simple change into a complicated one.',
-                  'Engineering can get stuck between two right answers. Even when everyone agrees the foundation needs work, it\u2019s easy for a team to spend weeks debating the ideal architecture instead of picking a workable one and building it.',
+                  'Leadership pushes for innovation. New features win deals and signal momentum, so pausing to fix the foundations can feel like standing still.',
+                  'The foundations are already too weak to build on cleanly. Every new thing costs more to ship and delivers less than it should, because it\u2019s fighting the platform underneath it.',
+                  'At the same time, pressure to streamline and cut costs squeezes the very investment innovation needs, and management doesn\u2019t always agree on which to prioritise.',
+                  'Managers come and go faster than any one direction can stick. Each one arrives under pressure to show impact quickly, which understandably favours starting something visible over finishing what\u2019s already there, and that adds another layer to the pile.',
                 ]}
               />
               <p>
-                When leadership pushes for innovation without allowing time to fix the
-                base, and the team gets stuck debating the ideal fix, what&rsquo;s left is
-                a pile of mismatched pieces held together by workarounds.
+                Any one of these on its own is manageable. Together, they&rsquo;re how a
+                service ends up held together by workarounds nobody remembers agreeing to.
+              </p>
+              <p>
+                I&rsquo;ve seen the third one play out in a very literal way. Design started
+                working in Shape Up cycles, without much training in how the method was
+                meant to run. Engineering, reasonably, saw no reason to give up a rhythm
+                that was already working for them and stayed in sprints. Neither choice was
+                wrong on its own, but the result was two different definitions of
+                &ldquo;done,&rdquo; running on the same product at the same time. Without an
+                agreement between the two sides, it didn&rsquo;t bring design and
+                engineering closer. It added another seam between two teams that already
+                needed to be closer, not further apart.
               </p>
             </div>
           </div>
@@ -130,6 +141,88 @@ export default function LegacyArticle() {
           </div>
 
           <div>
+            <Heading>The cost compounds, it doesn&rsquo;t arrive as a bill</Heading>
+            <div className="space-y-4">
+              <p>
+                Most conversations about this treat the cost as a series of one-off
+                charges: this feature took longer, that bug took a day to trace. That
+                framing makes it easy to justify each individual decision to delay the
+                fix, because no single bill looks large enough to act on.
+              </p>
+              <p>
+                The more honest comparison is interest. Every workaround left in place
+                keeps quietly compounding against everything built on top of it, until one
+                day a small, ordinary change needs far more care than it should, and nobody
+                can quite explain why. By the time the cost is visible enough for leadership
+                to notice, it&rsquo;s already many times what it would have been to fix
+                early.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <Heading>Why the invisible work rarely gets rewarded</Heading>
+            <div className="space-y-4">
+              <p>
+                Here&rsquo;s the part I don&rsquo;t hear said out loud very often: even
+                people who know the right call is to stabilise something rather than ship
+                the next new thing are individually pulled toward the visible option,
+                because that&rsquo;s what gets noticed, reviewed and promoted.
+              </p>
+              <p>
+                Preventing a problem well means, from the outside, that nothing happened.
+                Shipping something new is a story anyone can tell in a meeting. That&rsquo;s
+                not a character problem in any one person, it&rsquo;s an incentive problem
+                across the whole organisation, and it&rsquo;s a big part of why foundations
+                keep losing to features even when everyone privately agrees they
+                shouldn&rsquo;t.
+              </p>
+              <p>
+                I felt this directly at one company. For a long time, saying the reporting
+                numbers didn&rsquo;t line up wasn&rsquo;t enough on its own, and that&rsquo;s
+                a fair position for anyone to hold: a general worry is a hard thing to act
+                on without more to point to. What actually changed things was building the
+                argument properly, auditing every reporting view and documenting exactly
+                where and why the numbers diverged, then taking that to the CTO as a
+                proposal rather than a concern. &ldquo;This is a mess&rdquo; only became a
+                mandate to fix it once it came with the evidence attached.
+              </p>
+              <p>
+                That&rsquo;s where I think design has a specific, under-discussed job to
+                do: turning an invisible risk into something leadership can actually act
+                on, in terms of cost, risk and outcome, rather than leaving it as a
+                technical concern that never makes it into the room where the decision
+                gets made.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <Heading>Most of the risk lives below the screen</Heading>
+            <div className="space-y-4">
+              <p>
+                A lot of design attention stops at the interface: does this flow make
+                sense, is this state clear, is this accessible. Those questions matter, but
+                on their own they miss where a lot of the real risk actually sits, which is
+                in the operational layer underneath. How data moves between systems, who
+                gets affected when two tools disagree, what breaks quietly weeks before it
+                breaks loudly enough for anyone to notice.
+              </p>
+              <p>
+                That&rsquo;s the layer I keep finding myself drawn into. Mismatched refresh
+                rates between two systems, in the{' '}
+                <InlineLink href="/work/stock">stock and fulfilment work</InlineLink>, or
+                the{' '}
+                <InlineLink href="/work/reporting">reporting audit</InlineLink>{' '}
+                it led to, were never visible on a screen. They only showed up as
+                confusion, in decks that didn&rsquo;t add up and numbers nobody quite
+                trusted. Noticing that, and tracing it back to its source, is as much a
+                part of the job as anything you&rsquo;d see in a Figma file.
+              </p>
+            </div>
+          </div>
+
+          <div>
             <Heading>The hidden cost of &ldquo;no downtime&rdquo;</Heading>
             <div className="space-y-4">
               <p>
@@ -143,6 +236,28 @@ export default function LegacyArticle() {
                   'Trust erodes: people don\u2019t care about the roadmap if the tool they use every day feels unreliable',
                 ]}
               />
+            </div>
+          </div>
+
+          <div>
+            <Heading>This is a service risk, not just a delivery one</Heading>
+            <div className="space-y-4">
+              <p>
+                Most of this gets measured in delivery terms: velocity, cost, how many
+                sprints something ate. That framing keeps the conversation inside
+                engineering and product, where it&rsquo;s easiest to argue against, because
+                the numbers can always be explained away by a busy quarter.
+              </p>
+              <p>
+                Widen the frame and the same problem looks different. It&rsquo;s the support
+                team fielding the same workaround-shaped ticket every week, because nobody
+                ever fixed the thing underneath it. It&rsquo;s the one person the whole team
+                quietly depends on to explain how a process actually works, and the risk
+                that creates the day they&rsquo;re on leave, or leave for good. It&rsquo;s the
+                trust a brand or a customer loses long before anyone in a delivery meeting
+                notices a metric move. None of that shows up on a roadmap, but all of it is
+                the service, not a side effect of it.
+              </p>
             </div>
           </div>
 
@@ -165,6 +280,13 @@ export default function LegacyArticle() {
           </div>
 
           <div className="space-y-4">
+            <p>
+              None of the people in any of this are the problem: leadership under real
+              pressure to show growth, managers trying to make a mark quickly in a new
+              role, engineers protecting a rhythm that genuinely works, designers doing
+              their best with what they&rsquo;ve been given. The gap is usually that nobody
+              owns the whole picture end to end. That&rsquo;s the gap I like to stand in.
+            </p>
             <p className="font-serif text-2xl text-neutral-900 leading-snug">
               If you want a service that feels new, you can&rsquo;t build it on
               foundations that are{' '}
