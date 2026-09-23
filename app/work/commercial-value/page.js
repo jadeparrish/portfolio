@@ -104,7 +104,7 @@ export default function CommercialValueCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              Once reporting actually had a solid foundation (that&rsquo;s the{' '}
+              Once reporting had a real foundation (that&rsquo;s the{' '}
               <Link
                 href="/work/reporting"
                 className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
@@ -373,7 +373,7 @@ export default function CommercialValueCaseStudy() {
               compare?&rdquo;
             </p>
             <p>
-              Both taught me the same lesson, really. Good design isn&rsquo;t about how the
+              Both taught me the same lesson. Good design isn&rsquo;t about how the
               data looks. It&rsquo;s about how quickly someone can trust it enough to act on
               it.
             </p>
