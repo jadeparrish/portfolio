@@ -98,9 +98,10 @@ export default function ReportingCaseStudy() {
             </p>
             <p>
               Before this work, results were scattered across Campaign Manager,
-              spreadsheets, Google Docs, and a complex internal tool called Mission
-              Control. Each used different data refresh rates, so totals rarely matched.
-              Reports were time-consuming to compile and confidence in the numbers was
+              spreadsheets, standalone Looker dashboards, Google Docs, and a complex
+              internal tool called Mission Control. Each used different data refresh
+              rates, so totals rarely matched. Reports were time-consuming to compile and
+              confidence in the numbers was
               low.
             </p>
             <p>
