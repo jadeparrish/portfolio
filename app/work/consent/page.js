@@ -210,10 +210,10 @@ export default function ConsentCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              This was a small but critical piece of work. It set out one way for SoPost to
-              handle consent globally, designed to strengthen legal compliance for
-              enterprise clients, and it showed how micro-level design decisions can
-              de-risk a system without damaging the experience.
+              This was a small piece of work on paper, and one of the more important ones
+              I&rsquo;ve done. It set out one way for SoPost to handle consent globally,
+              built to strengthen legal compliance for enterprise clients, and it taught me
+              again that the smallest screen in a flow can carry the most risk.
             </p>
             <p>
               It also reinforced how design can act as the link between policy, technology
