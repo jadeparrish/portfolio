@@ -282,9 +282,9 @@ export default function NetIXCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              This project marked a turning point in my career: the first time I had
-              full ownership of an enterprise SaaS product from research through to
-              system-level design.
+              This project marked a genuine turning point for me: the first time I had
+              full ownership of an enterprise SaaS product, from research through to
+              system-level design, and nobody else to hand the hard decisions to.
             </p>
             <p>
               Collaborating closely with Cegedim in Paris, including working on-site in
