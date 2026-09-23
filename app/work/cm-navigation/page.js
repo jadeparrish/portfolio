@@ -108,9 +108,9 @@ export default function NavigationCaseStudy() {
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
               In 2025, SoPost rebuilt Campaign Manager from the ground up, and it became
-              clear the navigation needed a complete rethink. The old structure had grown
-              organically, and features like reporting, stock management and fulfilment
-              each lived in their own silo.
+              clear pretty quickly that the navigation needed a complete rethink, not a
+              patch. The old structure had grown organically, and features like reporting,
+              stock management and fulfilment had each ended up in their own silo.
             </p>
             <p>
               The result was inconsistent hierarchies, confusing terminology, and
@@ -234,9 +234,10 @@ export default function NavigationCaseStudy() {
               The framework now underpins the whole Campaign Manager ecosystem, connecting{' '}
               <InlineLink href="/work/reporting">Reporting</InlineLink>,{' '}
               <InlineLink href="/work/stock">stock and fulfilment</InlineLink>,
-              Integrations and future modules through one consistent, scalable structure.
-              It became the foundation of SoPost&rsquo;s new platform, serving as both a
-              design pattern and a product architecture.
+              Integrations and whatever comes next, through one consistent, scalable
+              structure. That&rsquo;s the part I find most satisfying about this kind of
+              work: not the new screens, but the fact that the next hundred features now
+              have somewhere sensible to live.
             </p>
           </div>
         </section>
