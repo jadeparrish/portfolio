@@ -84,7 +84,7 @@ export default function UndocumentedArticle() {
               <InlineLink href="/work/netix">NetIX&rsquo;s workflows</InlineLink> before
               its rebuild, and again auditing{' '}
               <InlineLink href="/work/stock">stock and reporting data</InlineLink>{' '}
-              at SoPost.
+              at another company.
             </p>
             <p>
               None of this is a new observation. Technical debt and legibility have been
