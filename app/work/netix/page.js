@@ -91,10 +91,10 @@ export default function NetIXCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              When I joined NetEDI, their internal platform NetIX was critical to
-              day-to-day operations but had outgrown its foundations. Built in Microsoft
-              Silverlight, it was outdated, visually inconsistent, and difficult to
-              navigate.
+              When I joined NetEDI, I inherited NetIX: a platform the whole business
+              depended on every day, that had very much outgrown what it was built on.
+              It ran in Microsoft Silverlight, and it was outdated, visually inconsistent,
+              and hard to find your way around.
             </p>
             <p>
               As the sole designer, I was responsible for bringing clarity, structure and
