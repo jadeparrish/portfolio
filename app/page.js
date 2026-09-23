@@ -52,7 +52,7 @@ const thoughts = [
   {
     icon: Wrench,
     title: 'Nobody wants the new feature. They want the old one to work.',
-    readTime: '2 min read',
+    readTime: '6 min read',
     href: '/thinking/legacy',
   },
 ];
@@ -281,24 +281,30 @@ export default function PortfolioHomepage() {
                 <p>
                   Over 15 years I&rsquo;ve moved from graphic design, through web, into
                   senior product design, picking up service design and systems thinking
-                  along the way. I use all of it to understand how complex services really
-                  work, then redesign them around the people who use and deliver them.
+                  along the way. If there&rsquo;s a thread through all of it, it&rsquo;s
+                  that I can&rsquo;t leave a complex process alone. I have to understand
+                  why it&rsquo;s confusing, and then I want to fix it.
                 </p>
                 <p>
-                  My work often spans teams, touchpoints and organisational boundaries. I
-                  look beyond individual screens to understand the wider system: where
-                  things break down, where complexity gets passed on to people, and where
-                  design can make things work better.
+                  My work usually ends up spanning teams, touchpoints and organisational
+                  boundaries, because that&rsquo;s where things actually break. I look past
+                  the screen to the wider system: where a handoff gets lost, where
+                  complexity gets quietly dumped on a person instead of being designed away,
+                  and where a bit of structure would make everyone&rsquo;s day easier.
                 </p>
                 <p>
-                  This isn&rsquo;t abstract for me. As a parent to two children with SEND,
-                  I&rsquo;ve seen first-hand how disconnected systems make already hard
-                  situations harder, and how much difference joined-up design can make.
-                  It&rsquo;s part of why this work matters to me.
+                  None of this is abstract to me. I&rsquo;m a parent to two children with
+                  SEND, and I know first-hand what that means in practice: because the
+                  systems around you don&rsquo;t talk to each other, the parent or
+                  guardian, the responsible person, ends up being the project manager,
+                  chasing every service and holding the whole picture together, whether
+                  anyone asked you to or not. I bring that same instinct to my work: build
+                  the joined-up system, so nobody has to become the project manager just to
+                  get through their day.
                 </p>
                 <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
-                  &ldquo;I care about designing systems that improve people&rsquo;s everyday
-                  lives.&rdquo;
+                  &ldquo;I just want the systems people depend on to actually work for
+                  them, not against them.&rdquo;
                 </blockquote>
               </div>
 
