@@ -94,10 +94,11 @@ export default function StockCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              This work started with the Warehouse Management System (WMS) I designed in
-              2024, which replaced shared spreadsheets and email chains between SoPost and
-              its fulfilment partners with one role-based system. Building it uncovered
-              discrepancies in the data behind stock and fulfilment.
+              This one started somewhere fairly unglamorous: the Warehouse Management
+              System (WMS) I designed in 2024, replacing shared spreadsheets and email
+              chains between SoPost and its fulfilment partners with one role-based system.
+              Building it turned up something I wasn&rsquo;t expecting, real discrepancies
+              in the data behind stock and fulfilment.
             </p>
             <p>
               I then audited Mission Control and Campaign Manager, and the message became
@@ -204,12 +205,12 @@ export default function StockCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              This project turned stock and fulfilment from a hidden process into a
-              transparent, data-driven one. Early feedback from the Fulfilment team
-              confirmed the impact: real-time visibility and automation saved hours of
-              manual updates, reduced the risk of human error, and prevented issues that
-              could damage brand relationships when opt-in or dispatch data wasn&rsquo;t
-              downloaded in time.
+              This project turned stock and fulfilment from a hidden, spreadsheet-shaped
+              process into something transparent and data-driven. The Fulfilment team told
+              us early on that it was working: real-time visibility and automation saved
+              hours of manual updates, cut the room for human error, and headed off issues
+              that could have damaged brand relationships when opt-in or dispatch data
+              wasn&rsquo;t downloaded in time.
             </p>
             <p>
               The WMS gave partners and internal teams a shared operational view, and the
