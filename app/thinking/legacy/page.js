@@ -104,7 +104,7 @@ export default function LegacyArticle() {
                 service ends up held together by workarounds nobody remembers agreeing to.
               </p>
               <p>
-                I&rsquo;ve seen the third one play out in a very literal way. Design started
+                I&rsquo;ve seen the third one play out in a literal way. Design started
                 working in Shape Up cycles, without much training in how the method was
                 meant to run. Engineering, reasonably, saw no reason to give up a rhythm
                 that was already working for them and stayed in sprints. Neither choice was
@@ -164,7 +164,7 @@ export default function LegacyArticle() {
             <Heading>Why the invisible work rarely gets rewarded</Heading>
             <div className="space-y-4">
               <p>
-                Here&rsquo;s the part I don&rsquo;t hear said out loud very often: even
+                Here&rsquo;s the part I rarely hear said out loud: even
                 people who know the right call is to stabilise something rather than ship
                 the next new thing are individually pulled toward the visible option,
                 because that&rsquo;s what gets noticed, reviewed and promoted.
@@ -203,7 +203,7 @@ export default function LegacyArticle() {
               <p>
                 A lot of design attention stops at the interface: does this flow make
                 sense, is this state clear, is this accessible. Those questions matter, but
-                on their own they miss where a lot of the real risk actually sits, which is
+                on their own they miss where a lot of the real risk sits, which is
                 in the operational layer underneath. How data moves between systems, who
                 gets affected when two tools disagree, what breaks quietly weeks before it
                 breaks loudly enough for anyone to notice.
@@ -283,7 +283,7 @@ export default function LegacyArticle() {
             <p>
               None of the people in any of this are the problem: leadership under real
               pressure to show growth, managers trying to make a mark quickly in a new
-              role, engineers protecting a rhythm that genuinely works, designers doing
+              role, engineers protecting a rhythm that works, designers doing
               their best with what they&rsquo;ve been given. The gap is usually that nobody
               owns the whole picture end to end. That&rsquo;s the gap I like to stand in.
             </p>
