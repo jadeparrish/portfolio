@@ -21,12 +21,12 @@ import {
 const whatIDo = [
   {
     icon: Search,
-    title: 'Start with what\u2019s real',
-    description: 'Auditing how a service actually works today, including the workarounds and handoffs, before designing anything new.',
+    title: 'Start with what exists',
+    description: 'Auditing how a service actually works, including the workarounds and handoffs, before jumping into sketching.',
   },
   {
     icon: ArrowRightLeft,
-    title: 'Work across the boundary',
+    title: 'Work across the gap',
     description: 'Sitting between teams, tools and departments to fix the handoff, not just the screen.',
   },
   {
@@ -287,23 +287,23 @@ export default function PortfolioHomepage() {
                 </p>
                 <p>
                   My work usually ends up spanning teams, touchpoints and organisational
-                  boundaries, because that&rsquo;s where things actually break. I look past
+                  boundaries, because that&rsquo;s where things break. I look past
                   the screen to the wider system: where a handoff gets lost, where
-                  complexity gets quietly dumped on a person instead of being designed away,
+                  complexity gets quietly handed to a person instead of being designed away,
                   and where a bit of structure would make everyone&rsquo;s day easier.
                 </p>
                 <p>
                   None of this is abstract to me. I&rsquo;m a parent to two children with
                   SEND, and I know first-hand what that means in practice: because the
-                  systems around you don&rsquo;t talk to each other, the parent or
-                  guardian, the responsible person, ends up being the project manager,
+                  systems around you don&rsquo;t talk to each other, the person with
+                  parental responsibility ends up being the project manager,
                   chasing every service and holding the whole picture together, whether
                   anyone asked you to or not. I bring that same instinct to my work: build
                   the joined-up system, so nobody has to become the project manager just to
                   get through their day.
                 </p>
                 <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
-                  &ldquo;I just want the systems people depend on to actually work for
+                  &ldquo;I want the systems people depend on to actually work for
                   them, not against them.&rdquo;
                 </blockquote>
               </div>
