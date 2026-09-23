@@ -109,7 +109,7 @@ export default function IntegrationsCaseStudy() {
             <p>
               As part of the new Campaign Manager redesign, I led the redefinition of
               SoPost&rsquo;s integration setup, an essential part of campaign configuration
-              that had never been consistent.
+              that, if I&rsquo;m honest, had never once been consistent.
             </p>
             <p>
               Integrations let SoPost sync data with fulfilment partners, CRMs and ad
@@ -221,11 +221,11 @@ export default function IntegrationsCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              This work turned a technical bottleneck into a guided, scalable system that
-              matches modern SaaS expectations. By defining reusable patterns, improving
-              feedback loops and aligning language across integration types, it made
-              complex configuration approachable for everyone while keeping the technical
-              precision each system needs.
+              This work turned a real technical bottleneck into a guided, scalable system
+              that matches what people expect from modern SaaS tools. By defining reusable
+              patterns, improving feedback loops and aligning language across integration
+              types, it made complex configuration approachable for everyone, without
+              losing the technical precision each system actually needs.
             </p>
             <p>
               The model is now the blueprint for integrations in Campaign Manager, so
