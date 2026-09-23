@@ -108,8 +108,9 @@ export default function NotificationsCaseStudy() {
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
               Across 2024 and 2025, I partnered with Engineering and Customer Success to
-              define a scalable notification system that could support several use cases
-              across SoPost, beginning with stock alerts.
+              define a scalable notification system, one that could earn its place across
+              several parts of SoPost rather than just solving today&rsquo;s problem. It
+              started with stock alerts.
             </p>
             <p>
               The goal was to give CSMs a proactive way to monitor campaign stock levels
@@ -231,10 +232,10 @@ export default function NotificationsCaseStudy() {
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
               This work created the foundation for SoPost&rsquo;s first unified, scalable
-              notification framework. Early feedback from Customer Success confirmed the
-              impact: real-time notifications saved hours of manual checking, reduced the
-              risk of human error, and helped prevent brand relationship issues caused by
-              missed data downloads.
+              notification framework. Customer Success told us early on it was working:
+              real-time notifications saved hours of manual checking, cut the room for
+              human error, and headed off brand relationship issues caused by missed data
+              downloads.
             </p>
             <p>
               The framework reduces operational risk, saves time, and gives teams a shared
