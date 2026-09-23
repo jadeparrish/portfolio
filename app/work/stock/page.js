@@ -94,7 +94,7 @@ export default function StockCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
             <p>
-              This one started somewhere fairly unglamorous: the Warehouse Management
+              This one started somewhere unglamorous: the Warehouse Management
               System (WMS) I designed in 2024, replacing shared spreadsheets and email
               chains between SoPost and its fulfilment partners with one role-based system.
               Building it turned up something I wasn&rsquo;t expecting, real discrepancies
