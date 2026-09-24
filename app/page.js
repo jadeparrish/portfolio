@@ -113,7 +113,7 @@ const caseStudies = [
     title: 'Making a legacy platform simple, accessible and built to scale',
     tag: 'Enterprise Product & Rebrand',
     description:
-      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40% while resolving WCAG 2.1 AA compliance issues through a cross-border rebrand.',
+      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%, then carried it through a cross-border rebrand while advocating for WCAG 2.1 AA accessibility.',
     cta: 'View case study',
     href: '/work/netix',
     tint: 'bg-[#E9E4DE]',
