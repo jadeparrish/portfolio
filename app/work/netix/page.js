@@ -80,8 +80,8 @@ export default function NetIXCaseStudy() {
               <p className="text-sm font-medium text-[#A47864]">40%+ faster processes</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Standard</p>
-              <p className="text-sm font-medium text-neutral-900">WCAG 2.1 AA</p>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Standards</p>
+              <p className="text-sm font-medium text-neutral-900">EDI, PEPPOL, WCAG 2.1 AA</p>
             </div>
           </div>
         </section>
@@ -143,6 +143,16 @@ export default function NetIXCaseStudy() {
                 setup and error resolution. I interviewed support and engineering teams
                 to understand friction points and identify which workarounds had become
                 &ldquo;standard practice.&rdquo;
+              </p>
+              <p className="text-neutral-700 leading-relaxed mb-4">
+                That meant getting enough grasp of the technical standards underneath,
+                including EDI and PEPPOL, the e-procurement standard behind public sector
+                buying. Most of that work happened out of sight: for NHS Supply Chain in
+                particular, the complexity sat in what the system was doing behind the
+                scenes rather than anything a person would see. I needed to understand it
+                well enough to design one service that worked for everyone using it,
+                rather than something that only made sense if you already knew how the
+                plumbing worked.
               </p>
               <p className="text-neutral-700 leading-relaxed mb-4">
                 From there, I designed new structures for:
