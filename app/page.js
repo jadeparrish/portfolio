@@ -52,7 +52,7 @@ const thoughts = [
   {
     icon: Wrench,
     title: 'Nobody wants the new feature. They just want the old one to work.',
-    readTime: '6 min read',
+    readTime: '7 min read',
     href: '/thinking/legacy',
   },
 ];
