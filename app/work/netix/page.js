@@ -4,7 +4,7 @@ import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'NetIX Redesign & Rebrand: Jade Parrish',
+  title: 'Making a legacy platform simple, accessible and built to scale: Jade Parrish',
   description: 'Transforming a legacy EDI platform into a scalable, accessible SaaS product.',
 };
 
