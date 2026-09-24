@@ -4,7 +4,7 @@ import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'Reporting Area Redesign: Jade Parrish',
+  title: 'Turning disconnected data into clearer decisions: Jade Parrish',
   description: 'Consolidating fragmented insights into a single reporting suite for brands and internal teams.',
 };
 
