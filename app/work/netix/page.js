@@ -234,7 +234,7 @@ export default function NetIXCaseStudy() {
               <ul className="space-y-2.5 text-neutral-700 text-sm">
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Redesigning a product that had just launched</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Raising WCAG 2.1 AA compliance concerns around the parent company&rsquo;s colour palette</li>
+                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Coordinating implementation between UK and French engineering teams</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
               </ul>
@@ -246,15 +246,23 @@ export default function NetIXCaseStudy() {
                 <p>
                   I reviewed Cegedim&rsquo;s brand library, compared colour and
                   typography systems, and ran accessibility testing across all proposed
-                  palettes. Where contrast ratios failed, I documented issues and
-                  presented compliant alternatives to both design and engineering teams.
+                  palettes. Several of the mid-range colours failed WCAG 2.1 AA contrast
+                  ratios, so I documented the specific values, tested alternatives, and
+                  raised it in writing with both NetEDI and Cegedim before anything was
+                  implemented.
                 </p>
                 <p>
-                  To manage scope, I standardised UI components and layouts to form the
-                  foundation of a shared design system, mapping tokens between Figma and
-                  CSS. I planned updates in Jira, sketched rebranded dashboards, and
-                  validated designs through prototypes incorporating accessibility
-                  feedback before any implementation began.
+                  The decision was to proceed with the parent company&rsquo;s palette. That
+                  left me with a choice about what to do with the concern, and I took the
+                  pragmatic route: if the brand colours were fixed, I could still control
+                  how consistently everything else was built. I standardised UI components
+                  and layouts to form the foundation of a shared design system, mapping
+                  tokens between Figma and CSS, so that contrast decisions lived in one
+                  place and could be corrected later without rebuilding the interface.
+                </p>
+                <p>
+                  I planned updates in Jira, sketched rebranded dashboards, and validated
+                  designs through prototypes before any implementation began.
                 </p>
                 <p>
                   Collaboration with Cegedim&rsquo;s product and engineering teams in
@@ -273,13 +281,12 @@ export default function NetIXCaseStudy() {
             <div>
               <SubLabel>Outcome</SubLabel>
               <p className="text-neutral-700 leading-relaxed mb-4">
-                The rebrand delivered a unified, accessible interface that preserved
-                NetIX&rsquo;s usability while aligning it with Cegedim&rsquo;s broader
-                SaaS suite.
+                The rebrand delivered a unified interface that preserved NetIX&rsquo;s
+                usability while aligning it with Cegedim&rsquo;s broader SaaS suite.
               </p>
               <ul className="space-y-2.5 text-neutral-700 text-sm">
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Established WCAG-compliant colour tokens and typography scales</li>
+                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Improved user trust and engagement post-acquisition</li>
                 <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Created the groundwork for a scalable design system across multiple Cegedim products</li>
               </ul>
@@ -302,8 +309,8 @@ export default function NetIXCaseStudy() {
               product teams align brand, accessibility and technical delivery.
             </p>
             <p>
-              NetIX evolved from a legacy desktop app into a scalable, compliant
-              platform that customers described as faster, smarter and easier to use.
+              NetIX evolved from a legacy desktop app into a scalable platform that
+              customers described as faster, smarter and easier to use.
               The work established a design and technical foundation for future
               integrations, letting the company expand partner connectivity without
               re-engineering setup logic each time. It also strengthened my ability to
