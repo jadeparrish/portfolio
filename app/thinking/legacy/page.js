@@ -54,7 +54,7 @@ export default function LegacyArticle() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-4">
-            Product Strategy &middot; 6 min read
+            Product Strategy &middot; 7 min read
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Nobody wants the new feature. They just want the old one to work.
