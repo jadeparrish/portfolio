@@ -131,17 +131,18 @@ export default function ShadcnArticle() {
             <Heading>What traditional systems cost</Heading>
             <div className="space-y-4">
               <p>
-                Traditional design systems work best in large organisations, with many
-                designers and engineers across many products. Shared tokens, locked-down
-                components and formal contribution models create consistency at scale.
-                That brings reliability and polish, and it also brings friction. Every
-                update becomes a governance decision, and the gap between design intent
-                and what actually gets built often widens.
+                Traditional design systems get framed as the grown-up option: shared
+                tokens, locked-down components, a formal contribution model. That does
+                create consistency, and there&rsquo;s a point where consistency is worth
+                paying for.
               </p>
               <p>
-                In a smaller company that overhead can outweigh the benefit. With one or
-                two designers and a handful of engineers, design ends up spending more time
-                maintaining the process than improving the experience.
+                I&rsquo;m less sure size is the deciding factor, though. A central system
+                can become its own bottleneck at any scale, where every update turns into a
+                governance decision and the gap between design intent and what gets built
+                quietly widens. What really decides it is how much variation between
+                products you can live with, and how much time you&rsquo;re willing to spend
+                maintaining the process rather than improving the experience.
               </p>
               <p>
                 The friction isn&rsquo;t always the system itself. I&rsquo;ve worked on
