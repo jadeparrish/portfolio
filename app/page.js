@@ -181,9 +181,9 @@ const whoIWorkWith = [
 
 function SectionLabel({ children }) {
   return (
-    <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-10 lg:mb-12">
+    <h2 className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-10 lg:mb-12">
       {children}
-    </p>
+    </h2>
   );
 }
 
@@ -201,10 +201,10 @@ export default function PortfolioHomepage() {
           </p>
         </div>
         <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 lg:gap-x-10 text-xs tracking-[0.15em] uppercase text-neutral-600">
-          <a href="#work" className="hover:text-[#A47864] transition-colors">Work</a>
-          <a href="#thinking" className="hover:text-[#A47864] transition-colors">Thinking</a>
-          <a href="#about" className="hover:text-[#A47864] transition-colors">About</a>
-          <a href="#contact" className="hover:text-[#A47864] transition-colors">Contact</a>
+          <a href="#work" className="hover:text-[#8D6553] transition-colors">Work</a>
+          <a href="#thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
+          <a href="#about" className="hover:text-[#8D6553] transition-colors">About</a>
+          <a href="#contact" className="hover:text-[#8D6553] transition-colors">Contact</a>
         </nav>
       </header>
 
@@ -214,7 +214,7 @@ export default function PortfolioHomepage() {
           <div className="md:col-span-6 space-y-8">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               Better systems <br />
-              create better <span className="italic text-[#A47864]">lives</span>.
+              create better <span className="italic text-[#A47864]">lives.</span>
             </h2>
             <div className="space-y-5 text-neutral-600 text-base sm:text-lg leading-relaxed max-w-lg font-normal">
               <p>Every day, people rely on services they didn&rsquo;t choose.</p>
@@ -237,7 +237,7 @@ export default function PortfolioHomepage() {
             <div className="pt-2">
               <a
                 href="#work"
-                className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#A47864] hover:translate-x-0.5 transition-all"
+                className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] hover:translate-x-0.5 transition-all"
               >
                 View selected work <ArrowDownRight className="w-4 h-4 text-[#A47864]" />
               </a>
@@ -248,10 +248,10 @@ export default function PortfolioHomepage() {
           <div className="md:col-span-6">
             <div className="aspect-[4/3] w-full max-h-[320px] md:max-h-none rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
               <ImageIcon className="w-6 h-6 text-neutral-300" strokeWidth={1.5} />
-              <p className="text-xs uppercase tracking-[0.15em] text-neutral-400 font-medium">
+              <p className="text-xs uppercase tracking-[0.15em] text-neutral-600 font-medium">
                 Hero illustration: coming soon
               </p>
-              <p className="text-xs text-neutral-400 max-w-[220px]">
+              <p className="text-xs text-neutral-600 max-w-[220px]">
                 Hand-drawn systems ecosystem map
               </p>
             </div>
@@ -273,7 +273,7 @@ export default function PortfolioHomepage() {
 
             <div className="md:col-span-8 space-y-8">
               <div>
-                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   About
                 </p>
                 <h3 className="text-2xl sm:text-3xl font-serif text-neutral-900 leading-snug">
@@ -313,7 +313,7 @@ export default function PortfolioHomepage() {
               </div>
 
               <div className="pt-8 border-t border-neutral-200/80">
-                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-3">
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   Capabilities
                 </p>
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
@@ -340,7 +340,7 @@ export default function PortfolioHomepage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
             {whatIDo.map((item) => (
               <div key={item.title} className="space-y-4">
-                <item.icon className="w-5 h-5 text-neutral-400" strokeWidth={1.5} />
+                <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
                 <h3 className="font-serif text-xl font-normal text-neutral-900">
                   {item.title}
                 </h3>
@@ -365,8 +365,8 @@ export default function PortfolioHomepage() {
                   <div
                     className={`aspect-[4/3] max-h-[240px] md:max-h-none rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
                   >
-                    <span className="font-serif text-2xl text-neutral-400">{item.num}</span>
-                    <span className="text-[9px] uppercase tracking-[0.15em] text-neutral-400">
+                    <span className="font-serif text-2xl text-neutral-500">{item.num}</span>
+                    <span className="text-[9px] uppercase tracking-[0.15em] text-neutral-600">
                       Visual coming soon
                     </span>
                   </div>
@@ -374,7 +374,7 @@ export default function PortfolioHomepage() {
 
                 <div className="md:col-span-1 lg:col-span-9 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
                   <div className="space-y-2 lg:max-w-lg">
-                    <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-medium">
+                    <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium">
                       {item.tag}
                     </p>
                     <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug">
@@ -389,12 +389,12 @@ export default function PortfolioHomepage() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#A47864] group-hover:translate-x-1 transition-all"
+                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#8D6553] group-hover:translate-x-1 transition-all"
                       >
-                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#A47864] transition-colors" />
+                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#8D6553] transition-colors" />
                       </a>
                     ) : (
-                      <span className="inline-flex items-center gap-1.5 text-xs text-neutral-400 font-medium tracking-wider uppercase">
+                      <span className="inline-flex items-center gap-1.5 text-xs text-neutral-600 font-medium tracking-wider uppercase">
                         {item.cta}
                       </span>
                     )}
@@ -406,14 +406,14 @@ export default function PortfolioHomepage() {
 
           {/* More work: native details element, no client-side code needed */}
           <details className="group mt-12 border-t border-neutral-200/80">
-            <summary className="flex items-center justify-between cursor-pointer list-none py-6 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#A47864] transition-colors [&::-webkit-details-marker]:hidden">
+            <summary className="flex items-center justify-between cursor-pointer list-none py-6 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#8D6553] transition-colors [&::-webkit-details-marker]:hidden">
               <span>More work ({moreWork.length})</span>
-              <ChevronDown className="w-4 h-4 text-neutral-400 transition-transform group-open:rotate-180" />
+              <ChevronDown className="w-4 h-4 text-neutral-600 transition-transform group-open:rotate-180" />
             </summary>
             <div className="divide-y divide-neutral-200/60 border-t border-neutral-200/60">
               {moreWork.map((item) => (
                 <div key={item.title} className="py-8 grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-8">
-                  <p className="lg:col-span-3 text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-medium lg:pt-2">
+                  <p className="lg:col-span-3 text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium lg:pt-2">
                     {item.tag}
                   </p>
                   <div className="lg:col-span-7 space-y-2">
@@ -424,12 +424,12 @@ export default function PortfolioHomepage() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#A47864] transition-colors"
+                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#8D6553] transition-colors"
                       >
-                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-400" />
+                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-600" />
                       </a>
                     ) : (
-                      <span className="text-xs text-neutral-400 font-medium tracking-wider uppercase">
+                      <span className="text-xs text-neutral-600 font-medium tracking-wider uppercase">
                         {item.cta}
                       </span>
                     )}
@@ -446,7 +446,7 @@ export default function PortfolioHomepage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
             {whoIWorkWith.map((item) => (
               <div key={item.title} className="space-y-3">
-                <item.icon className="w-5 h-5 text-neutral-400" strokeWidth={1.5} />
+                <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
                 <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
                 <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
               </div>
@@ -465,15 +465,15 @@ export default function PortfolioHomepage() {
                     className={`w-5 h-5 ${article.href ? 'text-[#A47864]' : 'text-neutral-300'}`}
                     strokeWidth={1.5}
                   />
-                  <h4 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-300">
+                  <h3 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-500">
                     {article.title}
-                  </h4>
+                  </h3>
                   {article.description && (
                     <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
                       {article.description}
                     </p>
                   )}
-                  <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
+                  <p className="text-[11px] font-mono text-neutral-600">{article.readTime}</p>
                 </>
               );
               return article.href ? (
@@ -495,7 +495,7 @@ export default function PortfolioHomepage() {
 
         {/* Contact */}
         <section id="contact" className="py-24 lg:py-32 text-center space-y-8">
-          <div className="inline-block px-4 py-1.5 bg-[#A47864]/10 border border-[#A47864]/30 text-[#A47864] rounded-full text-xs font-mono tracking-wide">
+          <div className="inline-block px-4 py-1.5 bg-[#A47864]/10 border border-[#A47864]/30 text-[#8D6553] rounded-full text-xs font-mono tracking-wide">
             Open to Part-Time Roles &amp; Fractional Contracts (2&ndash;3 days/week)
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 tracking-tight">
@@ -504,7 +504,7 @@ export default function PortfolioHomepage() {
           <div className="pt-2">
             <a
               href="mailto:hello@jadeparrish.me"
-              className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
+              className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] transition-colors"
             >
               hello@jadeparrish.me &rarr;
             </a>
