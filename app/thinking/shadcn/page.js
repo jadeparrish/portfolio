@@ -111,10 +111,11 @@ export default function ShadcnArticle() {
                 collection of pretty buttons.
               </p>
               <p>
-                There&rsquo;s a second reason design belongs in this. Explaining how
-                something works is a different skill from building it, and it tends to sit
-                with designers. Someone has to turn the decisions living in the codebase
-                into a story the rest of the team can follow. That&rsquo;s true of{' '}
+                There&rsquo;s a second reason design belongs in this. How something works
+                is a design question, not only an engineering one, and it should be treated
+                that way every time. Someone has to turn the decisions living in the
+                codebase into a story the rest of the team can follow. That&rsquo;s true
+                of{' '}
                 <InlineLink href="/thinking/undocumented">any system</InlineLink>, not
                 just this one.
               </p>
@@ -141,6 +142,15 @@ export default function ShadcnArticle() {
                 In a smaller company that overhead can outweigh the benefit. With one or
                 two designers and a handful of engineers, design ends up spending more time
                 maintaining the process than improving the experience.
+              </p>
+              <p>
+                The friction isn&rsquo;t always the system itself. I&rsquo;ve worked on
+                teams where design input was welcome in principle but arrived too late to
+                change much in practice, and no amount of tooling fixes that on its own.
+                What this approach did was make the shared ground literal: the same
+                conventions, the same tokens, the same source. It&rsquo;s much harder to
+                keep design at arm&rsquo;s length when you&rsquo;re both editing the same
+                thing.
               </p>
             </div>
           </div>
