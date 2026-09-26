@@ -143,7 +143,7 @@ export default function LegacyArticle() {
           </div>
 
           <div>
-            <Heading>The cost is a leak, not a bill</Heading>
+            <Heading>The cost never arrives all at once</Heading>
             <div className="space-y-4">
               <p>
                 Most conversations about this treat the cost as a series of one-off
@@ -180,7 +180,7 @@ export default function LegacyArticle() {
                 shouldn&rsquo;t.
               </p>
               <p>
-                I felt this directly at one company. For a long time, saying the reporting
+                I&rsquo;ve felt this before. For a long time, saying the reporting
                 numbers didn&rsquo;t line up wasn&rsquo;t enough on its own, and that&rsquo;s
                 a fair position for anyone to hold: a general worry is a hard thing to act
                 on without more to point to. What actually changed things was building the
