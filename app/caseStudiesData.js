@@ -1,11 +1,6 @@
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ArrowUp } from 'lucide-react';
 
-/* Keyboard focus. Every link in this file uses it, so someone tabbing
-   through the site always sees where they are. */
-const focusRing =
-  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A47864] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F9F8F6] rounded-sm';
-
 export const caseStudiesList = [
   {
     num: '01',
@@ -120,7 +115,7 @@ export function CaseStudyNav({ currentSlug }) {
     <div className="grid grid-cols-2 gap-6 py-12">
       <div>
         {prev && (
-          <Link href={`/work/${prev.slug}`} className={`group block ${focusRing}`}>
+          <Link href={`/work/${prev.slug}`} className="group block">
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2 flex items-center gap-1.5">
               <ArrowLeft className="w-3 h-3" /> Previous
             </p>
@@ -132,7 +127,7 @@ export function CaseStudyNav({ currentSlug }) {
       </div>
       <div className="text-right">
         {next && (
-          <Link href={`/work/${next.slug}`} className={`group block ${focusRing}`}>
+          <Link href={`/work/${next.slug}`} className="group block">
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2 flex items-center justify-end gap-1.5">
               Next <ArrowRight className="w-3 h-3" />
             </p>
@@ -158,7 +153,7 @@ function ContactCTA() {
         <div>
           <a
             href="mailto:hello@jadeparrish.me"
-            className={`text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors ${focusRing}`}
+            className="text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
           >
             hello@jadeparrish.me &rarr;
           </a>
@@ -174,7 +169,7 @@ function ContactCTA() {
    pair reads as a balanced spread rather than a stacked list. */
 function ArticleNavCard({ article }) {
   return (
-    <Link href={`/thinking/${article.slug}`} className={`group block ${focusRing}`}>
+    <Link href={`/thinking/${article.slug}`} className="group block">
       <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2">
         {article.kicker} &middot; {article.readTime}
       </p>
@@ -218,7 +213,7 @@ export function ArticleFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/#thinking"
-          className={`inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors ${focusRing}`}
+          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
         </Link>
@@ -238,7 +233,7 @@ export function CaseStudyFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/#work"
-          className={`inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors ${focusRing}`}
+          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
         </Link>
@@ -265,7 +260,7 @@ export function ArticlePage({ slug, children }) {
       <header className="max-w-2xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
         <Link
           href="/#thinking"
-          className={`inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#A47864] transition-colors ${focusRing}`}
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#A47864] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
         </Link>
@@ -348,7 +343,7 @@ export function ArticleLink({ href, children }) {
   return (
     <Link
       href={href}
-      className={`underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors ${focusRing}`}
+      className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
     >
       {children}
     </Link>
@@ -371,13 +366,13 @@ export function SiteFooter({ wide }) {
             href="https://www.linkedin.com/in/jade-parrish/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`hover:text-[#A47864] transition-colors ${focusRing}`}
+            className="hover:text-[#A47864] transition-colors"
           >
             LinkedIn
           </a>
           <a
             href="mailto:hello@jadeparrish.me"
-            className={`hover:text-[#A47864] transition-colors ${focusRing}`}
+            className="hover:text-[#A47864] transition-colors"
           >
             Email
           </a>
@@ -385,7 +380,7 @@ export function SiteFooter({ wide }) {
               anchor element, so this works on every page with no JavaScript. */}
           <a
             href="#top"
-            className={`inline-flex items-center gap-1.5 hover:text-[#A47864] transition-colors ${focusRing}`}
+            className="inline-flex items-center gap-1.5 hover:text-[#A47864] transition-colors"
           >
             <ArrowUp className="w-3 h-3" /> Top
           </a>
