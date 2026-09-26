@@ -216,7 +216,7 @@ export default function PortfolioHomepage() {
               Better systems <br />
               create better <span className="italic text-[#A47864]">lives.</span>
             </h2>
-            <div className="space-y-5 text-neutral-600 text-base sm:text-lg leading-relaxed max-w-lg font-normal">
+            <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-lg font-normal">
               <p>Every day, people rely on services they didn&rsquo;t choose.</p>
               <p>
                 I help organisations redesign services, products and processes so they
@@ -281,7 +281,7 @@ export default function PortfolioHomepage() {
                 </h3>
               </div>
 
-              <div className="space-y-5 text-neutral-600 text-base leading-relaxed max-w-2xl font-normal">
+              <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-2xl font-normal">
                 <p>
                   Over 15 years I&rsquo;ve moved from graphic design, through web, into
                   senior product design, picking up service design and systems thinking
@@ -366,7 +366,7 @@ export default function PortfolioHomepage() {
                     className={`aspect-[4/3] max-h-[240px] md:max-h-none rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
                   >
                     <span className="font-serif text-2xl text-neutral-500">{item.num}</span>
-                    <span className="text-[9px] uppercase tracking-[0.15em] text-neutral-600">
+                    <span className="text-[10px] uppercase tracking-[0.15em] text-neutral-600">
                       Visual coming soon
                     </span>
                   </div>
