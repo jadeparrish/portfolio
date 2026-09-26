@@ -18,10 +18,10 @@ function SectionLabel({ children }) {
 
 function Bullets({ items }) {
   return (
-    <ul className="space-y-2.5 text-neutral-700 text-sm">
+    <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span className="text-[#A47864]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#A47864]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -62,7 +62,7 @@ export default function ConsentCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Turning a compliance risk into a simple first step.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Standardising how and when consent is captured, with one pattern that
             works globally.
           </p>
@@ -94,7 +94,7 @@ export default function ConsentCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               After L&rsquo;Oréal US raised concerns about data being stored before people
               had agreed to the Terms and Conditions, I led a cross-functional review of how
@@ -113,13 +113,13 @@ export default function ConsentCaseStudy() {
         {/* The Problem */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>The Problem</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             In the existing flow, responses could be saved before people gave consent. For
             brands operating under strict data regulations, that was a compliance risk:
             personal data could be processed by third parties before the Terms were
             accepted.
           </p>
-          <p className="text-neutral-700 leading-relaxed">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             We needed to move consent earlier in the flow without adding friction or
             harming completion rates.
           </p>
@@ -128,7 +128,7 @@ export default function ConsentCaseStudy() {
         {/* Implications */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>The Trade-Off</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             Moving consent upfront increases legal confidence, but it often causes a small
             drop in completions. To balance the two, I simplified the step, cut the copy,
             and made the nickname field optional or pre-filled, so the legal step felt
@@ -139,7 +139,7 @@ export default function ConsentCaseStudy() {
         {/* My Role */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>My Role</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I led the audit and redesign end to end. That included:
           </p>
           <Bullets
@@ -161,7 +161,7 @@ export default function ConsentCaseStudy() {
         {/* Process */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Process</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             With the Product Manager, I analysed historic performance data for the
             &ldquo;welcome screen&rdquo; to understand its effect on conversion, then
             redefined it as the default consent pattern for every feedback journey. The
@@ -175,7 +175,7 @@ export default function ConsentCaseStudy() {
               'Includes variants for both standard and gifting journeys',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             That gives SoPost one reusable consent model across brands, improving
             compliance and consistency while keeping the effort for the person answering
             as low as possible.
@@ -187,7 +187,7 @@ export default function ConsentCaseStudy() {
         {/* Status / Next Steps */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Rollout and Measures</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The new journeys were designed to roll out first to selected brand partners.
             After launch, the plan was to track:
           </p>
@@ -199,7 +199,7 @@ export default function ConsentCaseStudy() {
               'Support impact and qualitative feedback',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             Those results would inform further optimisation of the copy and layout if
             completion rates dipped.
           </p>
@@ -208,7 +208,7 @@ export default function ConsentCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This was a small piece of work on paper, and one of the more important ones
               I&rsquo;ve done. It set out one way for SoPost to handle consent globally,
