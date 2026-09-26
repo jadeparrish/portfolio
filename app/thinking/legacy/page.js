@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function LegacyArticle() {
   return (
-    <ArticlePage>
+    <ArticlePage slug="legacy">
       <ArticleTitle
         kicker={<>Product Strategy &middot; 6 min read</>}
         title={<>Nobody wants the new feature. They just want the old one to work.</>}
