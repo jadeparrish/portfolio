@@ -14,6 +14,7 @@ const tailwindConfigScript = `
       extend: {
         fontFamily: {
           sans: ['Instrument Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          mono: ['IBM Plex Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
           serif: ['Bricolage Grotesque', 'Georgia', 'serif'],
           display: ['Bricolage Grotesque', 'Georgia', 'serif'],
         },
@@ -118,6 +119,10 @@ export default function RootLayout({ children }) {
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
         <script src="https://cdn.tailwindcss.com"></script>
