@@ -154,6 +154,15 @@ export default function UndocumentedArticle() {
                   'Maintenance becomes routine: people spend less time working out how something functions, and more time making it better',
                 ]}
               />
+              <p>
+                That last one matters more than it sounds. A team that understands its own
+                system spends its time improving it rather than working around it, which
+                is the same reason{' '}
+                <InlineLink href="/thinking/legacy">
+                  fixing the foundations
+                </InlineLink>{' '}
+                tends to pay for itself.
+              </p>
             </div>
           </div>
 
