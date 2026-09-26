@@ -59,7 +59,7 @@ export default function StockCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Bringing stock and fulfilment data into one clear view.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Untangling shared stock pools into a consistent view across the WMS and
             Campaign Manager reporting.
           </p>
@@ -92,7 +92,7 @@ export default function StockCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This one started somewhere unglamorous: the Warehouse Management
               System (WMS) I designed in 2024, replacing shared spreadsheets and email
@@ -134,7 +134,7 @@ export default function StockCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 While the WMS improved operational tracking, Campaign Manager still lacked
                 a clear, consistent view of stock health. Because campaign structures
                 differed across brands, it was hard to see which products, activities or
@@ -144,7 +144,7 @@ export default function StockCaseStudy() {
 
             <div>
               <SubLabel>Design Approach</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 I collaborated with Product, Commercial and Engineering to define how stock
                 data flowed between systems and how it should be presented. The goal was
                 visual consistency and fast diagnosis of fulfilment status across both the
@@ -154,13 +154,13 @@ export default function StockCaseStudy() {
 
             <div>
               <SubLabel>Exploration</SubLabel>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Analysed fulfilment-flow diagrams to understand dependencies</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Created dashboard sketches and interactive prototypes</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Tested structural models by product, activity and partition to define how stock should appear across different campaign configurations</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Explored nested and shared-partition views to show how products, activities and markets interconnect</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Iterated on colour, hierarchy and terminology so bundles, single products and regional stock pools stayed clear</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Designed SLA and distribution-status dashboards to highlight delays and required actions</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Analysed fulfilment-flow diagrams to understand dependencies</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Created dashboard sketches and interactive prototypes</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tested structural models by product, activity and partition to define how stock should appear across different campaign configurations</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Explored nested and shared-partition views to show how products, activities and markets interconnect</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Iterated on colour, hierarchy and terminology so bundles, single products and regional stock pools stayed clear</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Designed SLA and distribution-status dashboards to highlight delays and required actions</li>
               </ul>
 
               <ImagePlaceholder tint="bg-[#DDE3E6]" caption="Stock and SLA dashboard explorations" />
@@ -168,21 +168,21 @@ export default function StockCaseStudy() {
 
             <div>
               <SubLabel>Outcome</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 The final designs introduced:
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Unified filtering by product, activity and partition</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Clear indicators showing used versus total stock</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Shared-partition signposting to prevent confusion</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Action states for low stock or SLA breaches</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Distribution-overview cards for export and dispatch performance, with &ldquo;Action required&rdquo; prompts</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Unified filtering by product, activity and partition</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Clear indicators showing used versus total stock</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Shared-partition signposting to prevent confusion</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Action states for low stock or SLA breaches</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Distribution-overview cards for export and dispatch performance, with &ldquo;Action required&rdquo; prompts</li>
               </ul>
             </div>
 
             <div>
               <SubLabel>Status</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 The designs were validated internally and rolled out in phases. They
                 informed the next phase of Campaign Manager reporting, bringing the same
                 clarity and hierarchy into brand-facing dashboards. The same stock
@@ -203,7 +203,7 @@ export default function StockCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This project turned stock and fulfilment from a hidden, spreadsheet-shaped
               process into something transparent and data-driven. The Fulfilment team told
