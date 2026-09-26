@@ -204,8 +204,8 @@ export default function LegacyArticle() {
                 sense, is this state clear, is this accessible. Those questions matter, but
                 on their own they miss where a lot of the real risk sits, which is
                 in the operational layer underneath. How data moves between systems, who
-                gets affected when two tools disagree, what breaks quietly weeks before it
-                breaks loudly enough for anyone to notice.
+                gets affected when two tools disagree, what goes wrong quietly, weeks
+                before anyone notices.
               </p>
               <p>
                 That&rsquo;s the layer I keep finding myself drawn into. Mismatched refresh
