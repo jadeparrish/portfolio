@@ -40,7 +40,7 @@ const thoughts = [
   {
     icon: Layers,
     title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
-    description: 'Designers worried it made their role smaller. It did the opposite.',
+    description: 'The worry is that it makes design less essential. It does the opposite.',
     readTime: '3 min read',
     href: '/thinking/shadcn',
   },
