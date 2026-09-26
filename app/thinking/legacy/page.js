@@ -107,10 +107,9 @@ export default function LegacyArticle() {
               <p>
                 I&rsquo;ve seen this kind of misalignment play out a few times, and once in
                 a very real way. Design started
-                working in Shape Up cycles. Engineering, reasonably, saw no reason to
-                give up a rhythm
-                that was already working for them and stayed in sprints. Neither choice was
-                wrong on its own, but the result was two different definitions of
+                working in Shape Up cycles. Engineering stayed in sprints, and there was
+                never a point where both sides tried the same way of working at once.
+                Neither choice was wrong on its own, but the result was two definitions of
                 &ldquo;done,&rdquo; running on the same product at the same time. Without an
                 agreement between the two sides, it didn&rsquo;t bring design and
                 engineering closer. It added another seam between two teams that already
