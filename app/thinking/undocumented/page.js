@@ -5,7 +5,7 @@ import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: "Most \"complex\" systems are just undocumented ones: Jade Parrish",
-  description: 'A service designer on why complexity gets mistaken for expertise, and why the real craft is simplifying and telling a clear story.',
+  description: 'A Service Designer on why complexity gets mistaken for expertise, and why the real craft is simplifying and telling a clear story.',
 };
 
 function Heading({ children }) {
