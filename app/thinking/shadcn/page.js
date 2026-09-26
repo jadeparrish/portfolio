@@ -5,8 +5,19 @@ import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: "The hard part of adopting ShadCN wasn't technical: Jade Parrish",
-  description: 'A senior product designer on running a ShadCN rollout, and why aligning design and code from day one saves real time.',
+  description: 'A senior product designer on co-leading a ShadCN rollout, and why aligning design and code from day one saves real time.',
 };
+
+function InlineLink({ href, children }) {
+  return (
+    <Link
+      href={href}
+      className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
+    >
+      {children}
+    </Link>
+  );
+}
 
 function Heading({ children }) {
   return (
@@ -31,13 +42,13 @@ export default function ShadcnArticle() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-4">
-            Design systems &middot; 3 min read
+            Design systems &middot; 4 min read
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             The hard part of adopting ShadCN wasn&rsquo;t technical.
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
-            A senior product designer on running a ShadCN rollout, and what it taught me
+            A senior product designer on co-leading a ShadCN rollout, and what it taught me
             about aligning design and code from day one.
           </p>
         </section>
@@ -69,9 +80,10 @@ export default function ShadcnArticle() {
             <div className="space-y-4">
               <p>
                 Before changing anything in Figma, I audited how the engineers were
-                building and styling their CSS, then aligned those conventions with ShadCN. That mattered more than any component choice. It
-                meant design and code started from the same place. I also wrote the
-                documentation that went with it.
+                building and styling their CSS, then aligned those conventions with
+                ShadCN. That mattered more than any component choice. It meant design and
+                code started from the same place, and gave us a common language. I also
+                wrote the documentation that went with it.
               </p>
               <p>
                 The codebase felt accessible rather than imposed. Developers could work
@@ -87,10 +99,10 @@ export default function ShadcnArticle() {
             <Heading>The hard part was cultural</Heading>
             <div className="space-y-4">
               <p>
-                ShadCN gives designers flexibility, but it can also feel threatening.
-                Because the framework is so developer-friendly, designers sometimes assume
-                it makes their role less essential, that design decisions are being coded
-                in before anyone has validated them visually.
+                ShadCN gives designers flexibility, but it can also feel intimidating.
+                The framework is developer-first, so it&rsquo;s easy to assume you need to
+                read code to have a say, or that design decisions are being made in the
+                codebase before anyone has looked at them properly.
               </p>
               <p>
                 The truth is the opposite. ShadCN increases the need for design
@@ -99,9 +111,17 @@ export default function ShadcnArticle() {
                 collection of pretty buttons.
               </p>
               <p>
-                So the challenge isn&rsquo;t technical adoption. It&rsquo;s buy-in.
+                There&rsquo;s a second reason design belongs in this. Explaining how
+                something works is a different skill from building it, and it tends to sit
+                with designers. Someone has to turn the decisions living in the codebase
+                into a story the rest of the team can follow. That&rsquo;s true of{' '}
+                <InlineLink href="/thinking/undocumented">any system</InlineLink>, not
+                just this one.
+              </p>
+              <p>
+                So the challenge isn&rsquo;t technical adoption. It&rsquo;s confidence.
                 Designers have to see it not as automation, but as a shared foundation
-                where design and code finally speak the same language.
+                they help shape.
               </p>
             </div>
           </div>
