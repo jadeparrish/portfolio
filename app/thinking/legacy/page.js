@@ -5,7 +5,7 @@ import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: "Nobody wants the new feature. They just want the old one to work: Jade Parrish",
-  description: 'A Service Designer on why shipping something new and keeping the old thing reliable are so hard to balance, and what replacing a legacy platform taught me.',
+  description: 'A Service Designer on why shipping something new and keeping the old thing reliable are so hard to balance, what gets in the way, and what actually helps.',
 };
 
 function Heading({ children }) {
@@ -54,15 +54,14 @@ export default function LegacyArticle() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-4">
-            Product Strategy &middot; 6 min read
+            Product Strategy &middot; 5 min read
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Nobody wants the new feature. They just want the old one to work.
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
             Shipping something new and keeping the old thing reliable are hard to
-            balance. Here&rsquo;s what replacing a legacy platform taught me about the
-            middle ground.
+            balance. What gets in the way, and what actually helps.
           </p>
         </section>
 
@@ -95,7 +94,7 @@ export default function LegacyArticle() {
               <Bullets
                 items={[
                   'Leadership pushes for innovation. New features win deals and signal momentum, so pausing to fix the foundations can feel like standing still.',
-                  'The foundations are already too weak to build on cleanly. Every new thing costs more to ship and delivers less than it should, because it\u2019s fighting the platform underneath it.',
+                  'The foundations are already too weak or compromised to build on. Every new thing costs more to ship and delivers less than it should, because it\u2019s fighting the platform underneath it.',
                   'At the same time, pressure to streamline and cut costs squeezes the very investment innovation needs, and management doesn\u2019t always agree on which to prioritise.',
                   'Managers don\u2019t always stay long enough for one direction to stick, and even the ones who do can struggle to manage upwards, so priorities keep shifting either way. That pressure to show impact quickly favours starting something visible over finishing what\u2019s already there, and that adds another layer to the pile.',
                 ]}
@@ -147,17 +146,16 @@ export default function LegacyArticle() {
             <div className="space-y-4">
               <p>
                 Most conversations about this treat the cost as a series of one-off
-                charges: this feature took longer, that bug took a day to trace. That
-                framing makes it easy to justify each individual decision to delay the
-                fix, because no single instance looks large enough to act on.
+                delays: this feature took longer, that bug took a day to trace. That
+                framing makes it easy to put the fix off each time, because no single
+                instance looks big enough to act on.
               </p>
               <p>
-                The more honest comparison is a slow leak behind a wall. Every workaround
-                left in place keeps quietly doing damage to everything built around it,
-                until one day a small, ordinary change needs far more care than it should,
-                and nobody can quite explain why. By the time the damage is visible enough
-                for leadership to notice, it&rsquo;s already cost far more to reach that
-                point than it would have to fix early.
+                What actually happens is that it accumulates. Every workaround left in
+                place makes the next change a little harder, until something small and
+                ordinary takes far more care than it should and nobody can quite explain
+                why. By the time it&rsquo;s obvious enough for leadership to notice, it
+                has already taken more time than fixing it early would have.
               </p>
             </div>
           </div>
@@ -186,8 +184,7 @@ export default function LegacyArticle() {
                 on without more to point to. What actually changed things was building the
                 argument properly, auditing every reporting view and documenting exactly
                 where and why the numbers diverged, then taking that to the CTO as a
-                proposal rather than a concern. &ldquo;This is a mess&rdquo; only became a
-                mandate to fix it once it came with the evidence attached.
+                proposal rather than a concern.
               </p>
               <p>
                 That&rsquo;s where I think design has a specific, under-discussed job to
