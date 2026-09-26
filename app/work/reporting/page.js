@@ -10,9 +10,9 @@ export const metadata = {
 
 function SectionLabel({ children }) {
   return (
-    <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-6">
+    <h2 className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-6">
       {children}
-    </p>
+    </h2>
   );
 }
 
@@ -28,11 +28,11 @@ function SubLabel({ children }) {
 function ImagePlaceholder({ tint, caption }) {
   return (
     <div className={`aspect-[16/9] w-full rounded-sm border border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-400" strokeWidth={1.5} />
+      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
       <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
         Visual coming soon
       </p>
-      <p className="text-xs text-neutral-400">{caption}</p>
+      <p className="text-xs text-neutral-600">{caption}</p>
     </div>
   );
 }
@@ -44,7 +44,7 @@ export default function ReportingCaseStudy() {
       <header className="max-w-3xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
         <Link
           href="/#work"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#A47864] transition-colors"
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
         </Link>
@@ -53,7 +53,7 @@ export default function ReportingCaseStudy() {
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
-          <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-4">
+          <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
             Internal Platform &middot; Design Lead
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
@@ -69,19 +69,19 @@ export default function ReportingCaseStudy() {
         <section className="py-8 border-b border-neutral-200/80">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Role</p>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
               <p className="text-sm font-medium text-neutral-900">Design Lead</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Research</p>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Research</p>
               <p className="text-sm font-medium text-neutral-900">8 stakeholder interviews</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-[#A47864]">50%+ faster reporting</p>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
+              <p className="text-sm font-medium text-[#8D6553]">50%+ faster reporting</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-1.5">Backed by</p>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Backed by</p>
               <p className="text-sm font-medium text-neutral-900">CTO-approved initiative</p>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function ReportingCaseStudy() {
 
         {/* Part 1: Auditing and Aligning the Foundations */}
         <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#A47864] mb-2">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
             Part One
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
@@ -197,7 +197,7 @@ export default function ReportingCaseStudy() {
 
         {/* Part 2: Redesigning the Reporting Experience */}
         <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#A47864] mb-2">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
             Part Two
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
