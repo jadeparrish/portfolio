@@ -5,7 +5,7 @@ import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: "Nobody wants the new feature. They just want the old one to work: Jade Parrish",
-  description: 'A service designer on why shipping something new and keeping the old thing reliable are so hard to balance, and what replacing a legacy platform taught me.',
+  description: 'A Service Designer on why shipping something new and keeping the old thing reliable are so hard to balance, and what replacing a legacy platform taught me.',
 };
 
 function Heading({ children }) {
