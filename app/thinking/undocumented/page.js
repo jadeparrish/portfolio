@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function UndocumentedArticle() {
   return (
-    <ArticlePage>
+    <ArticlePage slug="undocumented">
       <ArticleTitle
         kicker={<>Systems Thinking &middot; 2 min read</>}
         title={<>Most &ldquo;complex&rdquo; systems are just undocumented ones.</>}
