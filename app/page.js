@@ -40,18 +40,21 @@ const thoughts = [
   {
     icon: Layers,
     title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
+    description: 'Designers worried it made their role smaller. It did the opposite.',
     readTime: '3 min read',
     href: '/thinking/shadcn',
   },
   {
     icon: FileText,
     title: 'Most "complex" systems are just undocumented ones.',
+    description: 'Most systems aren\u2019t complex. They\u2019re full of sensible decisions nobody ever wrote down.',
     readTime: '2 min read',
     href: '/thinking/undocumented',
   },
   {
     icon: Wrench,
     title: 'Nobody wants the new feature. They just want the old one to work.',
+    description: 'The four pressures that quietly wear a product down, and how to make the case for fixing the foundations first.',
     readTime: '7 min read',
     href: '/thinking/legacy',
   },
@@ -464,6 +467,11 @@ export default function PortfolioHomepage() {
                   <h4 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-300">
                     {article.title}
                   </h4>
+                  {article.description && (
+                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                      {article.description}
+                    </p>
+                  )}
                   <p className="text-[11px] font-mono text-neutral-400">{article.readTime}</p>
                 </>
               );
