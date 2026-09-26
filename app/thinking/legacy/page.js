@@ -72,8 +72,7 @@ export default function LegacyArticle() {
             <p>
               Almost every growing organisation hits the same wall. Leadership wants to
               ship new capability to keep customers interested and win new business, but
-              the service is standing on foundations that can barely support what&rsquo;s
-              already there.
+              the service is standing on foundations that are already under strain.
             </p>
             <p>
               The natural response is to compromise: build the new thing on top of what&rsquo;s
@@ -108,8 +107,8 @@ export default function LegacyArticle() {
               <p>
                 I&rsquo;ve seen this kind of misalignment play out a few times, and once in
                 a very real way. Design started
-                working in Shape Up cycles, without much training in how the method was
-                meant to run. Engineering, reasonably, saw no reason to give up a rhythm
+                working in Shape Up cycles. Engineering, reasonably, saw no reason to
+                give up a rhythm
                 that was already working for them and stayed in sprints. Neither choice was
                 wrong on its own, but the result was two different definitions of
                 &ldquo;done,&rdquo; running on the same product at the same time. Without an
