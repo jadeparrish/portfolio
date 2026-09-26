@@ -350,10 +350,16 @@ export function ArticleLink({ href, children }) {
   );
 }
 
-export function SiteFooter() {
+/* One footer for the whole site. `wide` matches the homepage's wider
+   layout; everything else uses the narrower column. */
+export function SiteFooter({ wide }) {
   return (
     <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
-      <div className="max-w-3xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div
+        className={`${
+          wide ? 'max-w-7xl lg:px-12' : 'max-w-3xl'
+        } mx-auto px-6 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4`}
+      >
         <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
         <div className="flex gap-8 tracking-wider uppercase text-[11px] items-center">
           <a
