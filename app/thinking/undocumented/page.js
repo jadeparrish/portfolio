@@ -138,7 +138,7 @@ export default function UndocumentedArticle() {
           </div>
 
           <div>
-            <Heading>Services are stories</Heading>
+            <Heading>Systems are stories</Heading>
             <div className="space-y-4">
               <p>
                 A process tells people what to do. Documentation and structure tell people
