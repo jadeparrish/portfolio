@@ -116,10 +116,10 @@ export function CaseStudyNav({ currentSlug }) {
       <div>
         {prev && (
           <Link href={`/work/${prev.slug}`} className="group block">
-            <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2 flex items-center gap-1.5">
-              <ArrowLeft className="w-3 h-3" /> Previous
+            <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2 flex items-center gap-1.5">
+              <ArrowLeft className="w-3 h-3 transition-transform group-hover:-translate-x-1" /> Previous
             </p>
-            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#A47864] transition-colors">
+            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#8D6553] transition-colors">
               {prev.title}
             </p>
           </Link>
@@ -128,10 +128,10 @@ export function CaseStudyNav({ currentSlug }) {
       <div className="text-right">
         {next && (
           <Link href={`/work/${next.slug}`} className="group block">
-            <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2 flex items-center justify-end gap-1.5">
-              Next <ArrowRight className="w-3 h-3" />
+            <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2 flex items-center justify-end gap-1.5">
+              Next <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
             </p>
-            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#A47864] transition-colors">
+            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#8D6553] transition-colors">
               {next.title}
             </p>
           </Link>
@@ -153,9 +153,12 @@ function ContactCTA() {
         <div>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
+            className="group text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] transition-colors"
           >
-            hello@jadeparrish.me &rarr;
+            hello@jadeparrish.me{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1">
+              &rarr;
+            </span>
           </a>
         </div>
       </section>
@@ -170,10 +173,10 @@ function ContactCTA() {
 function ArticleNavCard({ article }) {
   return (
     <Link href={`/thinking/${article.slug}`} className="group block">
-      <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2">
+      <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2">
         {article.kicker} &middot; {article.readTime}
       </p>
-      <p className="text-sm font-serif text-neutral-800 leading-snug group-hover:text-[#A47864] transition-colors">
+      <p className="text-sm font-serif text-neutral-800 leading-snug group-hover:text-[#8D6553] transition-colors">
         {article.title}
       </p>
     </Link>
@@ -191,7 +194,7 @@ export function ArticleNav({ currentSlug }) {
 
   return (
     <div className="py-16">
-      <p className="text-[10px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-10 text-center">
+      <p className="text-[10px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-10 text-center">
         Read next
       </p>
       <div className="grid grid-cols-2 gap-10">
@@ -213,9 +216,9 @@ export function ArticleFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/#thinking"
-          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
+          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
-          <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
+          <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
         </Link>
       </div>
     </>
@@ -233,9 +236,9 @@ export function CaseStudyFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/#work"
-          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
+          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
-          <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
+          <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to selected work
         </Link>
       </div>
     </>
@@ -260,9 +263,9 @@ export function ArticlePage({ slug, children }) {
       <header className="max-w-2xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
         <Link
           href="/#thinking"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#A47864] transition-colors"
+          className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
         >
-          <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
+          <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
         </Link>
       </header>
 
@@ -279,7 +282,7 @@ export function ArticlePage({ slug, children }) {
 export function ArticleTitle({ kicker, title, subtitle, illustration }) {
   return (
     <section className="pb-10 border-b border-neutral-200/80">
-      <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-5">
+      <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-5">
         {kicker}
       </p>
       <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight [text-wrap:balance] text-neutral-900 mb-6">
@@ -343,7 +346,7 @@ export function ArticleLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
+      className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
     >
       {children}
     </Link>
@@ -366,13 +369,13 @@ export function SiteFooter({ wide }) {
             href="https://www.linkedin.com/in/jade-parrish/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#A47864] transition-colors"
+            className="hover:text-[#8D6553] transition-colors"
           >
             LinkedIn
           </a>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="hover:text-[#A47864] transition-colors"
+            className="hover:text-[#8D6553] transition-colors"
           >
             Email
           </a>
@@ -380,7 +383,7 @@ export function SiteFooter({ wide }) {
               anchor element, so this works on every page with no JavaScript. */}
           <a
             href="#top"
-            className="inline-flex items-center gap-1.5 hover:text-[#A47864] transition-colors"
+            className="inline-flex items-center gap-1.5 hover:text-[#8D6553] transition-colors"
           >
             <ArrowUp className="w-3 h-3" /> Top
           </a>
