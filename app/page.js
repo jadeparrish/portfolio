@@ -353,7 +353,7 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* Selected Work */}
-        <section id="work" className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section id="work" className="pt-16 lg:pt-24">
           <SectionLabel>Selected Work</SectionLabel>
           <div className="divide-y divide-neutral-200/70">
             {caseStudies.map((item) => (
