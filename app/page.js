@@ -365,7 +365,7 @@ export default function PortfolioHomepage() {
                   <div
                     className={`aspect-[4/3] max-h-[240px] md:max-h-none rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
                   >
-                    <span className="font-serif text-2xl text-neutral-500">{item.num}</span>
+                    <span className="font-mono text-xl text-neutral-500">{item.num}</span>
                     <span className="text-[10px] uppercase tracking-[0.15em] text-neutral-600">
                       Visual coming soon
                     </span>
