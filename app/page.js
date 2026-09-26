@@ -297,8 +297,8 @@ export default function PortfolioHomepage() {
                   SEND, and I know first-hand what that means in practice: because the
                   systems around you don&rsquo;t talk to each other, the person with
                   parental responsibility ends up being the project manager,
-                  chasing every service and holding the whole picture together, whether
-                  anyone asked you to or not. I bring that same instinct to my work: build
+                  chasing every service and holding the whole picture together. I bring
+                  that same instinct to my work: build
                   the joined-up system, so nobody has to become the project manager just to
                   get through their day.
                 </p>
