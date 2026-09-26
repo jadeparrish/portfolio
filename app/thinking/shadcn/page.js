@@ -164,7 +164,7 @@ export default function ShadcnArticle() {
               waiting on releases or dependency updates. It isn&rsquo;t a design system in
               the formal sense. It&rsquo;s a starting point that grows into what you need,
               rather than something you inherit with a hundred rules you&rsquo;re scared to
-              break. It&rsquo;s pragmatic and it isn&rsquo;t perfect, but it&rsquo;s real.
+              break. It&rsquo;s pragmatic rather than perfect, and it doesn&rsquo;t limit designers or developers.
             </p>
           </div>
 
