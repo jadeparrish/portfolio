@@ -169,7 +169,22 @@ function ContactCTA() {
 }
 
 /* Read next: the pieces that follow this one, wrapping back to the start.
-   Someone who has just finished reading is the warmest reader there is. */
+   Someone who has just finished reading is the warmest reader there is.
+   Laid out like the case study Previous/Next: one left, one right, so the
+   pair reads as a balanced spread rather than a stacked list. */
+function ArticleNavCard({ article }) {
+  return (
+    <Link href={`/thinking/${article.slug}`} className={`group block ${focusRing}`}>
+      <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2">
+        {article.kicker} &middot; {article.readTime}
+      </p>
+      <p className="text-sm font-serif text-neutral-800 leading-snug group-hover:text-[#A47864] transition-colors">
+        {article.title}
+      </p>
+    </Link>
+  );
+}
+
 export function ArticleNav({ currentSlug }) {
   const i = thinkingList.findIndex((a) => a.slug === currentSlug);
   if (i === -1) return null;
@@ -177,26 +192,16 @@ export function ArticleNav({ currentSlug }) {
   const others = [...thinkingList.slice(i + 1), ...thinkingList.slice(0, i)].slice(0, 2);
   if (others.length === 0) return null;
 
+  const [left, right] = others;
+
   return (
-    <div className="py-12">
-      <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-6">
+    <div className="py-16">
+      <p className="text-[10px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-10 text-center">
         Read next
       </p>
-      <div className="grid sm:grid-cols-2 gap-8 sm:gap-6">
-        {others.map((a) => (
-          <Link
-            key={a.slug}
-            href={`/thinking/${a.slug}`}
-            className={`group block ${focusRing}`}
-          >
-            <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2">
-              {a.kicker} &middot; {a.readTime}
-            </p>
-            <p className="font-serif text-lg text-neutral-800 leading-snug [text-wrap:balance] group-hover:text-[#A47864] transition-colors">
-              {a.title}
-            </p>
-          </Link>
-        ))}
+      <div className="grid grid-cols-2 gap-10">
+        <div>{left && <ArticleNavCard article={left} />}</div>
+        <div className="text-right">{right && <ArticleNavCard article={right} />}</div>
       </div>
     </div>
   );
