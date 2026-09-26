@@ -18,10 +18,10 @@ function SectionLabel({ children }) {
 
 function Bullets({ items }) {
   return (
-    <ul className="space-y-2.5 text-neutral-700 text-sm">
+    <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span className="text-[#A47864]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#A47864]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -73,7 +73,7 @@ export default function NavigationCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Giving a siloed platform a navigation that scales.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Designing a scalable information architecture for SoPost&rsquo;s
             next-generation platform.
           </p>
@@ -105,7 +105,7 @@ export default function NavigationCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               In 2025, SoPost rebuilt Campaign Manager from the ground up, and it became
               clear pretty quickly that the navigation needed a complete rethink, not a
@@ -130,7 +130,7 @@ export default function NavigationCaseStudy() {
         {/* Understanding the Problem */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Understanding the Problem</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The legacy navigation had become fragmented and unintuitive.
           </p>
           <Bullets
@@ -140,7 +140,7 @@ export default function NavigationCaseStudy() {
               'A flat hierarchy: every page sat at the same level, which overloaded people and broke their expected mental models',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             The challenge was to rebuild a sense of orientation and flow: where you are,
             what you are doing, and what comes next.
           </p>
@@ -149,7 +149,7 @@ export default function NavigationCaseStudy() {
         {/* Redefining Hierarchy and Flow */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Redefining Hierarchy and Flow</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I mapped the full product architecture and grouped actions by user intent, not
             by department. That revealed a natural three-tier hierarchy:
           </p>
@@ -160,7 +160,7 @@ export default function NavigationCaseStudy() {
               'Reporting level: insights and performance data tied to campaigns',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4 mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4 mb-4">
             From that, I defined a dual-layer navigation model:
           </p>
           <Bullets
@@ -169,7 +169,7 @@ export default function NavigationCaseStudy() {
               'A contextual horizontal bar for task-specific actions within each campaign, such as Orders, Stock, Distribution and Feedback',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             This let people move between strategic and operational contexts without losing
             their place. It followed established SaaS heuristics: progressive disclosure,
             recognition over recall, and clear mental models for depth and hierarchy.
@@ -181,7 +181,7 @@ export default function NavigationCaseStudy() {
         {/* Collaboration and Validation */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Collaboration and Validation</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             Working with my Product Manager and the Engineering leads, I tested early
             prototypes across internal teams and with Customer Success. The feedback
             confirmed:
@@ -193,7 +193,7 @@ export default function NavigationCaseStudy() {
               'Better comprehension of where new modules, including ROI reporting, stock and fulfilment, and Integrations, would sit',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             The new information architecture also left room for future modules without
             structural change, a key sign that it would scale.
           </p>
@@ -202,7 +202,7 @@ export default function NavigationCaseStudy() {
         {/* Outcome */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Outcome</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The redesigned navigation delivered:
           </p>
           <Bullets
@@ -223,7 +223,7 @@ export default function NavigationCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This project turned SoPost&rsquo;s navigation from a collection of
               disconnected routes into a coherent, extensible system. By defining a clear
