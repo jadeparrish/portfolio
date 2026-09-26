@@ -17,6 +17,7 @@ import {
   Heart,
   Image as ImageIcon,
 } from 'lucide-react';
+import { SiteFooter } from './caseStudiesData';
 
 const whatIDo = [
   {
@@ -40,13 +41,13 @@ const thoughts = [
   {
     icon: Layers,
     title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
-    description: 'It looks like something you&rsquo;d need to code to have a say in. You don&rsquo;t.',
+    description: 'It looks like something you’d need to code to have a say in. You don’t.',
     readTime: '4 min read',
     href: '/thinking/shadcn',
   },
   {
     icon: FileText,
-    title: 'Most "complex" systems are just undocumented ones.',
+    title: 'Most “complex” systems are just undocumented ones.',
     description: 'Most systems aren\u2019t complex. They\u2019re full of sensible decisions nobody ever wrote down.',
     readTime: '2 min read',
     href: '/thinking/undocumented',
@@ -511,16 +512,8 @@ export default function PortfolioHomepage() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
-          <div className="flex gap-8 tracking-wider uppercase text-[11px]">
-            <a href="https://www.linkedin.com/in/jade-parrish/" target="_blank" rel="noopener noreferrer" className="hover:text-[#A47864] transition-colors">LinkedIn</a>
-            <a href="mailto:hello@jadeparrish.me" className="hover:text-[#A47864] transition-colors">Email</a>
-          </div>
-        </div>
-      </footer>
+      {/* Footer: shared with every other page, so it can't drift. */}
+      <SiteFooter wide />
     </div>
   );
 }
