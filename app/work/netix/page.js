@@ -97,7 +97,7 @@ export default function NetIXCaseStudy() {
               and hard to find your way around.
             </p>
             <p>
-              As the sole designer, I was responsible for bringing clarity, structure and
+              As the Sole Designer, I was responsible for bringing clarity, structure and
               usability to a deeply technical enterprise product used by clients including
               DPD, Radley, Tangle Teezer and NHS Supply Chain.
             </p>
