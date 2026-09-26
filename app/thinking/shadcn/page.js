@@ -57,17 +57,17 @@ export default function ShadcnArticle() {
         <article className="py-12 border-b border-neutral-200/80 space-y-12 text-neutral-700 text-base leading-relaxed">
           <div className="space-y-4">
             <p>
-              I&rsquo;ve worked with both structured, token-driven design systems and newer,
-              developer-first tools like ShadCN. I&rsquo;ve taken this approach more than
-              once, aligning design and code from day one with senior engineers at two
-              different companies, so this isn&rsquo;t a technical comparison. It&rsquo;s
-              what I&rsquo;ve learned about how teams actually work when they&rsquo;re
-              balancing speed, quality and limited time.
+              I&rsquo;ve worked with both structured, token-driven design systems and
+              newer, developer-first tools. I&rsquo;ve taken the same approach to two
+              different component frameworks at two companies, one of them ShadCN,
+              co-leading each with a senior engineer to align design and code from day
+              one. So this isn&rsquo;t a technical comparison. It&rsquo;s what I&rsquo;ve learned about how teams
+              actually work when they&rsquo;re balancing speed, quality and limited time.
             </p>
             <p>
               None of this is a new tension. Every small team scaling past a handful of
               components eventually asks whether more structure is worth the overhead. What
-              I can offer is what actually happened when I ran it twice.
+              I can offer is what actually happened when I worked through it twice.
             </p>
             <p>
               The clearest win was practical: one shared set of styles between design and
