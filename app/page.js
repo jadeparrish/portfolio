@@ -405,7 +405,7 @@ export default function PortfolioHomepage() {
           </div>
 
           {/* More work: native details element, no client-side code needed */}
-          <details className="group mt-12 border-t border-neutral-200/80">
+          <details className="group mt-12 border-y border-neutral-200/80">
             <summary className="flex items-center justify-between cursor-pointer list-none py-6 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#8D6553] transition-colors [&::-webkit-details-marker]:hidden">
               <span>More work ({moreWork.length})</span>
               <ChevronDown className="w-4 h-4 text-neutral-600 transition-transform group-open:rotate-180" />
