@@ -66,6 +66,44 @@ const globalStyles = `
   @media (prefers-reduced-motion: no-preference) {
     html { scroll-behavior: smooth; }
   }
+
+  /* Entry: the page settles into place once on load, then stays still.
+     The animation is only ever applied inside the no-preference query, so
+     someone with reduced motion set never gets the starting opacity at all. */
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    header,
+    main > * {
+      animation: rise 620ms cubic-bezier(.2, .7, .3, 1) both;
+    }
+    main > *:nth-child(1)   { animation-delay:  40ms; }
+    main > *:nth-child(2)   { animation-delay: 140ms; }
+    main > *:nth-child(3)   { animation-delay: 240ms; }
+    main > *:nth-child(n+4) { animation-delay: 300ms; }
+
+    /* Underlines thicken on hover, so colour isn't the only thing that changes. */
+    a {
+      transition: text-decoration-color .18s ease,
+                  text-decoration-thickness .18s ease,
+                  color .18s ease;
+    }
+  }
+  a       { text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  /* Reduced motion: nothing moves, anywhere, including Tailwind's own
+     transitions and the smooth scroll above. */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 `;
 
 export default function RootLayout({ children }) {
