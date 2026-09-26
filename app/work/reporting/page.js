@@ -59,7 +59,7 @@ export default function ReportingCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Turning disconnected data into clearer decisions.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Consolidating fragmented insights into a single reporting suite for brands
             and internal teams.
           </p>
@@ -90,7 +90,7 @@ export default function ReportingCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               In 2024, I led the redesign of SoPost&rsquo;s Reporting Area. That sounds tidy
               written like that. The honest version is that nobody trusted the numbers
@@ -126,29 +126,29 @@ export default function ReportingCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 Reporting had become fragmented and unreliable.
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Mission Control was overly technical and difficult to navigate</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Campaign Manager split reporting across multiple isolated pages</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Data inconsistencies eroded trust internally and with brands</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Mission Control was overly technical and difficult to navigate</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Campaign Manager split reporting across multiple isolated pages</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Data inconsistencies eroded trust internally and with brands</li>
               </ul>
             </div>
 
             <div>
               <SubLabel>Challenges Identified</SubLabel>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Different refresh rates between systems created data mismatches</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Duplicated charts and conflicting metrics across tools</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> No shared understanding of how datasets connected</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Heavy manual effort to compile brand reports</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Different refresh rates between systems created data mismatches</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Duplicated charts and conflicting metrics across tools</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> No shared understanding of how datasets connected</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Heavy manual effort to compile brand reports</li>
               </ul>
             </div>
 
             <div>
               <SubLabel>Process</SubLabel>
-              <div className="space-y-4 text-neutral-700 leading-relaxed">
+              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <p>
                   The audit started with the people using the data. Commercial team
                   members in different countries kept coming to me with gaps and
@@ -177,17 +177,17 @@ export default function ReportingCaseStudy() {
 
             <div>
               <SubLabel>Research and Testing</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 To validate direction, I interviewed eight people across Product, CSM,
                 Engineering and Operations. Using a Figma-based testing matrix, I mapped
                 their workflows and captured pain points. The findings were consistent:
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm mb-4">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> People were piecing together insights across multiple tools</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Each team defined &ldquo;reporting&rdquo; differently (fulfilment vs engagement vs exports)</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> No one had a full, end-to-end picture of campaign performance</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> People were piecing together insights across multiple tools</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Each team defined &ldquo;reporting&rdquo; differently (fulfilment vs engagement vs exports)</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> No one had a full, end-to-end picture of campaign performance</li>
               </ul>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 This alignment secured executive backing to rebuild reporting around
                 clarity, consistency and trust.
               </p>
@@ -207,7 +207,7 @@ export default function ReportingCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 Campaign Manager&rsquo;s reporting pages (Overview, Orders, Demographics,
                 Feedback and Reviews) existed in isolation. There was no hierarchy,
                 shared data model or visual consistency.
@@ -216,30 +216,30 @@ export default function ReportingCaseStudy() {
 
             <div>
               <SubLabel>Design Approach</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 I defined a single Reporting Hub that could:
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Unify data sources under one structure</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Standardise metrics, terminology and visualisation styles</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Simplify navigation and reduce cognitive load</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Build trust through accuracy and transparency</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Unify data sources under one structure</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Standardise metrics, terminology and visualisation styles</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Simplify navigation and reduce cognitive load</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Build trust through accuracy and transparency</li>
               </ul>
             </div>
 
             <div>
               <SubLabel>Exploration</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 I created a series of prototypes exploring:
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm mb-4">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Present vs future data flow mapping across systems</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Card-based layouts grouping metrics by performance type</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Standardised filters, comparison modes and accessibility patterns</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Error and low-data states for transparency</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Early brand-level roll-ups and ROI-ready structures</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Present vs future data flow mapping across systems</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Card-based layouts grouping metrics by performance type</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Standardised filters, comparison modes and accessibility patterns</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Error and low-data states for transparency</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Early brand-level roll-ups and ROI-ready structures</li>
               </ul>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 Each iteration was reviewed with Product, Commercial and Engineering to
                 ensure the hierarchy reflected how insights were actually used and
                 shared.
@@ -250,7 +250,7 @@ export default function ReportingCaseStudy() {
 
             <div>
               <SubLabel>Impact</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-2">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-2">
                 The new Reporting Area established a single source of truth for
                 campaign performance.
               </p>
@@ -260,7 +260,7 @@ export default function ReportingCaseStudy() {
                 introduced consistent visual language and data standards across every
                 team.
               </p>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 This foundation evolved into SoPost&rsquo;s ROI and Impact Dashboards,
                 Comparison Tables, and the Reporting Hub, forming the backbone of
                 SoPost&rsquo;s modern reporting ecosystem.
@@ -272,7 +272,7 @@ export default function ReportingCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This project rebuilt organisational trust in data and reshaped how SoPost
               understands campaign performance.
