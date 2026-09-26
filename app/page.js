@@ -73,7 +73,7 @@ const caseStudies = [
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
     description:
-      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so our commercial team could demonstrate impact instead of defending it.',
+      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so our commercial team could demonstrate impact to brands instead of defending it.',
     cta: 'View case study',
     href: '/work/commercial-value',
     tint: 'bg-[#E7E2DC]',
