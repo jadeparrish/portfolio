@@ -5,7 +5,7 @@ import { ArticleFooter, SiteFooter } from '../../caseStudiesData';
 
 export const metadata = {
   title: "The hard part of adopting ShadCN wasn't technical: Jade Parrish",
-  description: 'A senior product designer on co-leading a ShadCN rollout, and why aligning design and code from day one saves real time.',
+  description: 'A Senior Product Designer on co-leading a ShadCN rollout, and why aligning design and code from day one saves real time.',
 };
 
 function InlineLink({ href, children }) {
@@ -48,7 +48,7 @@ export default function ShadcnArticle() {
             The hard part of adopting ShadCN wasn&rsquo;t technical.
           </h1>
           <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
-            A senior product designer on co-leading a ShadCN rollout, and what it taught me
+            A Senior Product Designer on co-leading a ShadCN rollout, and what it taught me
             about aligning design and code from day one.
           </p>
         </section>
@@ -60,7 +60,7 @@ export default function ShadcnArticle() {
               I&rsquo;ve worked with both structured, token-driven design systems and
               newer, developer-first tools. I&rsquo;ve taken the same approach to two
               different component frameworks at two companies, one of them ShadCN,
-              co-leading each with a senior engineer to align design and code from day
+              co-leading each with a Senior Engineer to align design and code from day
               one. So this isn&rsquo;t a technical comparison. It&rsquo;s what I&rsquo;ve learned about how teams
               actually work when they&rsquo;re balancing speed, quality and limited time.
             </p>
@@ -188,8 +188,10 @@ export default function ShadcnArticle() {
 
           <div className="space-y-4">
             <p className="font-serif text-2xl text-neutral-900 leading-snug">
-              Traditional systems protect consistency.{' '}
-              <span className="text-[#A47864] italic">ShadCN protects momentum.</span>
+              Traditional systems can end up protecting the status quo.{' '}
+              <span className="text-[#A47864] italic">
+                Used well, ShadCN protects consistency and momentum at the same time.
+              </span>
             </p>
             <p>
               When your team is five people trying to build something that feels bigger,
