@@ -108,7 +108,7 @@ export default function ShadcnArticle() {
                 The truth is the opposite. ShadCN increases the need for design
                 leadership. Someone has to define hierarchy, accessibility, interaction
                 standards and naming conventions. Without that direction, it turns into a
-                collection of pretty buttons.
+                collection of part-styled buttons.
               </p>
               <p>
                 There&rsquo;s a second reason design belongs in this. How something works
