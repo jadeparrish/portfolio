@@ -32,7 +32,7 @@ const whatIDo = [
   {
     icon: Target,
     title: 'Make the case, not just the mockup',
-    description: 'Framing decisions in terms leadership can act on: cost, risk and outcome, not just usability.',
+    description: 'Framing decisions in terms leadership can act on: risk, time and outcome, not just usability.',
   },
 ];
 
