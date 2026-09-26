@@ -141,7 +141,7 @@ const moreWork = [
     tag: 'Product Design',
     title: 'Turning a technical bottleneck into a guided setup',
     description:
-      'Redesigned integration setup into one guided, self-serve flow across seven integrations, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
+      'Turned seven separate integration setups into one guided, self-serve flow, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
     cta: 'View case study',
     href: '/work/integrations',
   },
