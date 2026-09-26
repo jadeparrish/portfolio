@@ -59,7 +59,7 @@ export default function NetIXCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Making a legacy platform simple, accessible and built to scale.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Transforming a legacy EDI platform into a scalable, accessible SaaS product.
           </p>
         </section>
@@ -89,7 +89,7 @@ export default function NetIXCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               When I joined NetEDI, I inherited NetIX: a platform the whole business
               depended on every day, that had very much outgrown what it was built on.
@@ -123,28 +123,28 @@ export default function NetIXCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 The legacy platform was functional but inefficient and difficult to use.
                 It looked and behaved like a system designed for engineers, not for
                 people managing business operations.
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Complex terminology and poor hierarchy</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Minimal validation, feedback or error handling</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Inconsistent layouts and navigation</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> No scalability for tablet or desktop responsiveness</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Complex terminology and poor hierarchy</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Minimal validation, feedback or error handling</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Inconsistent layouts and navigation</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> No scalability for tablet or desktop responsiveness</li>
               </ul>
             </div>
 
             <div>
               <SubLabel>Process</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 I began by mapping every workflow, from document processing to profile
                 setup and error resolution. I interviewed support and engineering teams
                 to understand friction points and identify which workarounds had become
                 &ldquo;standard practice.&rdquo;
               </p>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 That meant getting enough grasp of the technical standards underneath,
                 including EDI and PEPPOL, the e-procurement standard behind public sector
                 buying. Most of that work happened out of sight: for NHS Supply Chain in
@@ -154,16 +154,16 @@ export default function NetIXCaseStudy() {
                 rather than something that only made sense if you already knew how the
                 plumbing worked.
               </p>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 From there, I designed new structures for:
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm mb-4">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Dashboards showing live order and invoice volumes at a glance</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Editor and process screens simplified for data entry and validation</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Document overviews with clear state, buyer and seller visibility</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Reusable tables with filtering and inline actions</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Dashboards showing live order and invoice volumes at a glance</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Editor and process screens simplified for data entry and validation</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Document overviews with clear state, buyer and seller visibility</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Reusable tables with filtering and inline actions</li>
               </ul>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 The redesign prioritised hierarchy, whitespace and error prevention,
                 resulting in a modular system that could scale across devices and screen
                 sizes.
@@ -174,7 +174,7 @@ export default function NetIXCaseStudy() {
 
             <div>
               <SubLabel>Outcome</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-2">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-2">
                 The new NetIX interface replaced Silverlight with a modern, modular
                 design system.
               </p>
@@ -185,20 +185,20 @@ export default function NetIXCaseStudy() {
               </p>
 
               <div className="space-y-4">
-                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-base">
+                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
                   &ldquo;Looks 100 times better and is a lot easier to use.&rdquo;
                   <footer className="mt-1 text-sm not-italic font-sans text-neutral-500">
                     &ndash; Origin Storage
                   </footer>
                 </blockquote>
-                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-base">
+                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
                   &ldquo;A better platform from a technology and compatibility point of
                   view.&rdquo;
                   <footer className="mt-1 text-sm not-italic font-sans text-neutral-500">
                     &ndash; Radley
                   </footer>
                 </blockquote>
-                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-base">
+                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
                   &ldquo;More user-friendly. Looks very good, easy on the eye.&rdquo;
                   <footer className="mt-1 text-sm not-italic font-sans text-neutral-500">
                     &ndash; A J Barbers
@@ -221,7 +221,7 @@ export default function NetIXCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Context</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 In late 2019, NetEDI was acquired by Cegedim Group, a French SaaS
                 provider headquartered in Boulogne-Billancourt, Paris. NetIX became part
                 of Cegedim&rsquo;s wider ecosystem, and I was asked to align the product
@@ -231,18 +231,18 @@ export default function NetIXCaseStudy() {
 
             <div>
               <SubLabel>Challenges</SubLabel>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Redesigning a product that had just launched</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Coordinating implementation between UK and French engineering teams</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Redesigning a product that had just launched</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Coordinating implementation between UK and French engineering teams</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
               </ul>
             </div>
 
             <div>
               <SubLabel>Process</SubLabel>
-              <div className="space-y-4 text-neutral-700 leading-relaxed">
+              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <p>
                   I reviewed Cegedim&rsquo;s brand library, compared colour and
                   typography systems, and ran accessibility testing across all proposed
@@ -280,15 +280,15 @@ export default function NetIXCaseStudy() {
 
             <div>
               <SubLabel>Outcome</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 The rebrand delivered a unified interface that preserved NetIX&rsquo;s
                 usability while aligning it with Cegedim&rsquo;s broader SaaS suite.
               </p>
-              <ul className="space-y-2.5 text-neutral-700 text-sm">
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Improved user trust and engagement post-acquisition</li>
-                <li className="flex gap-3"><span className="text-[#A47864]">&middot;</span> Created the groundwork for a scalable design system across multiple Cegedim products</li>
+              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Improved user trust and engagement post-acquisition</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Created the groundwork for a scalable design system across multiple Cegedim products</li>
               </ul>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function NetIXCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This project marked a genuine turning point for me: the first time I had
               full ownership of an enterprise SaaS product, from research through to
