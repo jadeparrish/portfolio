@@ -18,10 +18,10 @@ function SectionLabel({ children }) {
 
 function Bullets({ items }) {
   return (
-    <ul className="space-y-2.5 text-neutral-700 text-sm">
+    <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span className="text-[#A47864]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#A47864]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -73,7 +73,7 @@ export default function NotificationsCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Designing notifications that scale beyond a single alert.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             A flexible, three-part framework for campaign and stock alerts, built to
             extend across the platform.
           </p>
@@ -105,7 +105,7 @@ export default function NotificationsCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               Across 2024 and 2025, I partnered with Engineering and Customer Success to
               define a scalable notification system, one that could earn its place across
@@ -126,7 +126,7 @@ export default function NotificationsCaseStudy() {
         {/* The Problem */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>The Problem</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             CSMs were checking stock balances by hand in Campaign Manager, with no
             automated alert when levels ran low. That created three issues:
           </p>
@@ -137,7 +137,7 @@ export default function NotificationsCaseStudy() {
               'Room for human error',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             There was also little context. It was hard to see which campaigns, activities
             or channels were affected, which meant even more investigation.
           </p>
@@ -146,7 +146,7 @@ export default function NotificationsCaseStudy() {
         {/* My Role */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>My Role</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             With my Product Manager, I led the design definition of the system, aligning
             Product, Engineering and CSMs around a shared model for how notifications
             should be structured, triggered and displayed. That included:
@@ -160,7 +160,7 @@ export default function NotificationsCaseStudy() {
               'Connecting notification states to the stock visualisation data, for direct traceability',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             The result was a notification architecture rather than a single feature,
             giving the product a consistent, reusable pattern. It builds directly on the{' '}
             <InlineLink href="/work/stock">stock and fulfilment work</InlineLink>.
@@ -170,12 +170,12 @@ export default function NotificationsCaseStudy() {
         {/* Process */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Process</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I began with quick sketches and low-fidelity prototypes to clarify scope and
             data dependencies, then moved to annotated mid-fidelity designs for
             Engineering hand-off.
           </p>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             Throughout, I tested tone, timing and escalation behaviour with CSMs, to
             balance visibility against cognitive load. Alerts had to be actionable without
             being overwhelming. The questions that guided the work were:
@@ -188,7 +188,7 @@ export default function NotificationsCaseStudy() {
               'Can people customise their preferences?',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             That discovery work shaped how the system handles priority, delivery method and
             user control.
           </p>
@@ -199,7 +199,7 @@ export default function NotificationsCaseStudy() {
         {/* Outcome and Next Steps */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Outcome and Next Steps</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The framework has three parts. The first release, in 2025, focused on stock
             notifications and delivered all three:
           </p>
@@ -210,16 +210,16 @@ export default function NotificationsCaseStudy() {
               'A Notifications area for tracking and review',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             User preferences sit on top, so people can manage the type and frequency of
             what they receive.
           </p>
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             Since that first rollout, the system has grown to include data lifecycle
             notifications for opt-in data, and commenting within the campaign builder.
             That was the first real proof of its flexibility as a platform-wide framework.
           </p>
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             It was engineered to scale, with a clear extension path to approvals, campaign
             status changes and integrations. Success was to be measured through user
             satisfaction, adoption and reduced helpdesk contact.
@@ -229,7 +229,7 @@ export default function NotificationsCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This work created the foundation for SoPost&rsquo;s first unified, scalable
               notification framework. Customer Success told us early on it was working:
