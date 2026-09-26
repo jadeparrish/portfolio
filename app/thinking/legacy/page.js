@@ -129,9 +129,7 @@ export default function LegacyArticle() {
                 to rebuild. But it meant every new feature was also a fight against the
                 legacy code underneath it, and that friction showed up as delays and
                 fragile releases. The funny part is that it only delayed the inevitable.
-                Before I left, we overhauled the whole thing anyway, which is part of what
-                led to the{' '}
-                <InlineLink href="/thinking/shadcn">ShadCN work</InlineLink>.
+                Before I left, we overhauled the whole thing anyway.
               </p>
               <p>
                 On another, at NetEDI, we took the harder route and replaced the legacy
@@ -217,10 +215,8 @@ export default function LegacyArticle() {
               <p>
                 That&rsquo;s the layer I keep finding myself drawn into. Mismatched refresh
                 rates between two systems, in the{' '}
-                <InlineLink href="/work/stock">stock and fulfilment work</InlineLink>, or
-                the{' '}
-                <InlineLink href="/work/reporting">reporting audit</InlineLink>{' '}
-                it led to, were never visible on a screen. They only showed up as
+                <InlineLink href="/work/stock">stock and fulfilment work</InlineLink> and
+                the reporting audit it led to, were never visible on a screen. They only showed up as
                 confusion, in decks that didn&rsquo;t add up and numbers nobody quite
                 trusted. Noticing that, and tracing it back to its source, is as much a
                 part of the job as anything you&rsquo;d see in a Figma file.
