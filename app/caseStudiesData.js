@@ -1,5 +1,10 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUp } from 'lucide-react';
+
+/* Keyboard focus. Every link in this file uses it, so someone tabbing
+   through the site always sees where they are. */
+const focusRing =
+  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A47864] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F9F8F6] rounded-sm';
 
 export const caseStudiesList = [
   {
@@ -67,6 +72,29 @@ export const caseStudiesList = [
   },
 ];
 
+/* The thinking pieces, in the same order as the homepage. Adding a new
+   piece here puts it into every article's "Read next" automatically. */
+export const thinkingList = [
+  {
+    slug: 'shadcn',
+    kicker: 'Design systems',
+    readTime: '4 min read',
+    title: 'The hard part of adopting ShadCN wasn’t technical.',
+  },
+  {
+    slug: 'undocumented',
+    kicker: 'Systems Thinking',
+    readTime: '2 min read',
+    title: 'Most “complex” systems are just undocumented ones.',
+  },
+  {
+    slug: 'legacy',
+    kicker: 'Product Strategy',
+    readTime: '6 min read',
+    title: 'Nobody wants the new feature. They just want the old one to work.',
+  },
+];
+
 export function CaseStudyNav({ currentSlug }) {
   const currentIndex = caseStudiesList.findIndex((cs) => cs.slug === currentSlug);
 
@@ -92,7 +120,7 @@ export function CaseStudyNav({ currentSlug }) {
     <div className="grid grid-cols-2 gap-6 py-12">
       <div>
         {prev && (
-          <Link href={`/work/${prev.slug}`} className="group block">
+          <Link href={`/work/${prev.slug}`} className={`group block ${focusRing}`}>
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2 flex items-center gap-1.5">
               <ArrowLeft className="w-3 h-3" /> Previous
             </p>
@@ -104,7 +132,7 @@ export function CaseStudyNav({ currentSlug }) {
       </div>
       <div className="text-right">
         {next && (
-          <Link href={`/work/${next.slug}`} className="group block">
+          <Link href={`/work/${next.slug}`} className={`group block ${focusRing}`}>
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2 flex items-center justify-end gap-1.5">
               Next <ArrowRight className="w-3 h-3" />
             </p>
@@ -130,7 +158,7 @@ function ContactCTA() {
         <div>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors"
+            className={`text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-300 hover:decoration-[#A47864] transition-colors ${focusRing}`}
           >
             hello@jadeparrish.me &rarr;
           </a>
@@ -140,14 +168,52 @@ function ContactCTA() {
   );
 }
 
-export function ArticleFooter() {
+/* Read next: the pieces that follow this one, wrapping back to the start.
+   Someone who has just finished reading is the warmest reader there is. */
+export function ArticleNav({ currentSlug }) {
+  const i = thinkingList.findIndex((a) => a.slug === currentSlug);
+  if (i === -1) return null;
+
+  const others = [...thinkingList.slice(i + 1), ...thinkingList.slice(0, i)].slice(0, 2);
+  if (others.length === 0) return null;
+
+  return (
+    <div className="py-12">
+      <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-6">
+        Read next
+      </p>
+      <div className="grid sm:grid-cols-2 gap-8 sm:gap-6">
+        {others.map((a) => (
+          <Link
+            key={a.slug}
+            href={`/thinking/${a.slug}`}
+            className={`group block ${focusRing}`}
+          >
+            <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400 mb-2">
+              {a.kicker} &middot; {a.readTime}
+            </p>
+            <p className="font-serif text-lg text-neutral-800 leading-snug [text-wrap:balance] group-hover:text-[#A47864] transition-colors">
+              {a.title}
+            </p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function ArticleFooter({ currentSlug }) {
   return (
     <>
       <ContactCTA />
-      <div className="text-center pt-12">
+
+      {/* Read next */}
+      <ArticleNav currentSlug={currentSlug} />
+
+      <div className="text-center pt-4">
         <Link
           href="/#thinking"
-          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
+          className={`inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors ${focusRing}`}
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
         </Link>
@@ -167,7 +233,7 @@ export function CaseStudyFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/#work"
-          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors"
+          className={`inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#A47864] transition-colors ${focusRing}`}
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
         </Link>
@@ -188,13 +254,13 @@ export function CaseStudyFooter({ currentSlug }) {
    through.
 ------------------------------------------------------------------- */
 
-export function ArticlePage({ children }) {
+export function ArticlePage({ slug, children }) {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
       <header className="max-w-2xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
         <Link
           href="/#thinking"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#A47864] transition-colors"
+          className={`inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#A47864] transition-colors ${focusRing}`}
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
         </Link>
@@ -202,7 +268,7 @@ export function ArticlePage({ children }) {
 
       <main className="max-w-2xl mx-auto px-6 sm:px-8 pb-24">
         {children}
-        <ArticleFooter />
+        <ArticleFooter currentSlug={slug} />
       </main>
 
       <SiteFooter />
@@ -216,10 +282,12 @@ export function ArticleTitle({ kicker, title, subtitle, illustration }) {
       <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-5">
         {kicker}
       </p>
-      <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
+      <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight [text-wrap:balance] text-neutral-900 mb-6">
         {title}
       </h1>
-      <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6]">{subtitle}</p>
+      <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] [text-wrap:pretty]">
+        {subtitle}
+      </p>
       {/* Illustration slot: pass one in and it sits under the standfirst. */}
       {illustration && <div className="mt-10">{illustration}</div>}
     </section>
@@ -228,7 +296,7 @@ export function ArticleTitle({ kicker, title, subtitle, illustration }) {
 
 export function ArticleBody({ children }) {
   return (
-    <article className="py-12 border-b border-neutral-200/80 space-y-14 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+    <article className="py-12 border-b border-neutral-200/80 space-y-14 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
       {children}
     </article>
   );
@@ -240,7 +308,7 @@ export function ArticleBlock({ children }) {
 
 export function ArticleHeading({ children }) {
   return (
-    <h2 className="text-2xl sm:text-[28px] font-serif font-normal text-neutral-900 tracking-tight leading-[1.3] mb-5">
+    <h2 className="text-2xl sm:text-[28px] font-serif font-normal text-neutral-900 tracking-tight leading-[1.3] [text-wrap:balance] mb-5">
       {children}
     </h2>
   );
@@ -261,7 +329,7 @@ export function ArticleBullets({ items }) {
 
 export function PullQuote({ children }) {
   return (
-    <p className="font-serif text-[26px] sm:text-[30px] text-neutral-900 leading-[1.35] py-2">
+    <p className="font-serif text-[26px] sm:text-[30px] text-neutral-900 leading-[1.35] [text-wrap:balance] py-6">
       {children}
     </p>
   );
@@ -275,7 +343,7 @@ export function ArticleLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
+      className={`underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors ${focusRing}`}
     >
       {children}
     </Link>
@@ -287,16 +355,29 @@ export function SiteFooter() {
     <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
       <div className="max-w-3xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
         <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
-        <div className="flex gap-8 tracking-wider uppercase text-[11px]">
+        <div className="flex gap-8 tracking-wider uppercase text-[11px] items-center">
           <a
             href="https://www.linkedin.com/in/jade-parrish/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#A47864] transition-colors"
+            className={`hover:text-[#A47864] transition-colors ${focusRing}`}
           >
             LinkedIn
           </a>
-          <a href="mailto:hello@jadeparrish.me" className="hover:text-[#A47864] transition-colors">Email</a>
+          <a
+            href="mailto:hello@jadeparrish.me"
+            className={`hover:text-[#A47864] transition-colors ${focusRing}`}
+          >
+            Email
+          </a>
+          {/* "#top" scrolls to the top of any document without needing an
+              anchor element, so this works on every page with no JavaScript. */}
+          <a
+            href="#top"
+            className={`inline-flex items-center gap-1.5 hover:text-[#A47864] transition-colors ${focusRing}`}
+          >
+            <ArrowUp className="w-3 h-3" /> Top
+          </a>
         </div>
       </div>
     </footer>
