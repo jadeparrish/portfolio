@@ -18,10 +18,10 @@ function SectionLabel({ children }) {
 
 function Bullets({ items }) {
   return (
-    <ul className="space-y-2.5 text-neutral-700 text-sm">
+    <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span className="text-[#A47864]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#A47864]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -73,7 +73,7 @@ export default function IntegrationsCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Turning a technical bottleneck into a guided setup.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             A guided, self-serve flow that simplifies complex technical connections for
             brands and internal teams.
           </p>
@@ -105,7 +105,7 @@ export default function IntegrationsCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               As part of the new Campaign Manager redesign, I led the redefinition of
               SoPost&rsquo;s integration setup, an essential part of campaign configuration
@@ -129,7 +129,7 @@ export default function IntegrationsCaseStudy() {
         {/* Understanding the Problem */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Understanding the Problem</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The previous integration flow was fragmented, inconsistent and opaque.
           </p>
           <Bullets
@@ -145,17 +145,17 @@ export default function IntegrationsCaseStudy() {
         {/* Process */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Process</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I mapped the whole flow end to end, to see where friction and validation errors
             occurred.
           </p>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             To design a consistent model, I reviewed the technical documentation for seven
             integrations, analysing each system&rsquo;s data and permission requirements.
             That shaped one flow pattern that could scale across different connection
             types, from Meta to Bazaarvoice, with the same logic and visual hierarchy.
           </p>
-          <p className="text-neutral-700 leading-relaxed">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             I worked closely with Commercial, Product and Engineering to balance
             simplicity for the person setting it up against technical accuracy.
           </p>
@@ -164,7 +164,7 @@ export default function IntegrationsCaseStudy() {
         {/* Designing the New Flow */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Designing the New Flow</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The redesign aimed to:
           </p>
           <Bullets
@@ -175,7 +175,7 @@ export default function IntegrationsCaseStudy() {
               'Reduce setup time and dependence on Engineering',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-6 mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-6 mb-4">
             I explored reusable SaaS patterns that would feel familiar and trustworthy:
           </p>
           <Bullets
@@ -187,7 +187,7 @@ export default function IntegrationsCaseStudy() {
               'Multi-select and multi-account handling for complex scenarios',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             Each integration type was mapped to its own data and permission flow, and I
             tested prototypes to confirm people understood them and could recover from
             errors.
@@ -199,7 +199,7 @@ export default function IntegrationsCaseStudy() {
         {/* Outcome */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Outcome</SectionLabel>
-          <p className="text-neutral-700 leading-relaxed mb-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The new flow:
           </p>
           <Bullets
@@ -210,7 +210,7 @@ export default function IntegrationsCaseStudy() {
               'Improves clarity, speed and confidence during connection setup',
             ]}
           />
-          <p className="text-neutral-700 leading-relaxed mt-4">
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             It also gives SoPost a scalable foundation. New partners can be added without
             redesigning the underlying logic or interface.
           </p>
@@ -219,7 +219,7 @@ export default function IntegrationsCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This work turned a real technical bottleneck into a guided, scalable system
               that matches what people expect from modern SaaS tools. By defining reusable
