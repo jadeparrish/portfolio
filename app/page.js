@@ -103,7 +103,7 @@ const caseStudies = [
     title: 'Giving a siloed platform a navigation that scales',
     tag: 'Product Design & Information Architecture',
     description:
-      'Rebuilt a SaaS platform\u2019s navigation from the ground up, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
+      'Rebuilt a SaaS platform\u2019s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
     cta: 'View case study',
     href: '/work/cm-navigation',
     tint: 'bg-[#E4E1E8]',
