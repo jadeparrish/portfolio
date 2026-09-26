@@ -176,6 +176,112 @@ export function CaseStudyFooter({ currentSlug }) {
   );
 }
 
+/* ------------------------------------------------------------------
+   Thinking pieces: shared layout and typography.
+
+   Every style decision for the articles lives here, so the three pages
+   can't drift apart and a change only has to be made once.
+
+   Measure: max-w-2xl (672px) gives roughly 68 characters per line at
+   the body size, which is the comfortable range for long reading.
+   The case study pages stay wider; they're scanned, not read straight
+   through.
+------------------------------------------------------------------- */
+
+export function ArticlePage({ children }) {
+  return (
+    <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
+      <header className="max-w-2xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
+        <Link
+          href="/#thinking"
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#A47864] transition-colors"
+        >
+          <ArrowLeft className="w-3.5 h-3.5" /> Back to thinking
+        </Link>
+      </header>
+
+      <main className="max-w-2xl mx-auto px-6 sm:px-8 pb-24">
+        {children}
+        <ArticleFooter />
+      </main>
+
+      <SiteFooter />
+    </div>
+  );
+}
+
+export function ArticleTitle({ kicker, title, subtitle, illustration }) {
+  return (
+    <section className="pb-10 border-b border-neutral-200/80">
+      <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-400 mb-5">
+        {kicker}
+      </p>
+      <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
+        {title}
+      </h1>
+      <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6]">{subtitle}</p>
+      {/* Illustration slot: pass one in and it sits under the standfirst. */}
+      {illustration && <div className="mt-10">{illustration}</div>}
+    </section>
+  );
+}
+
+export function ArticleBody({ children }) {
+  return (
+    <article className="py-12 border-b border-neutral-200/80 space-y-14 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+      {children}
+    </article>
+  );
+}
+
+export function ArticleBlock({ children }) {
+  return <div className="space-y-5">{children}</div>;
+}
+
+export function ArticleHeading({ children }) {
+  return (
+    <h2 className="text-2xl sm:text-[28px] font-serif font-normal text-neutral-900 tracking-tight leading-[1.3] mb-5">
+      {children}
+    </h2>
+  );
+}
+
+export function ArticleBullets({ items }) {
+  return (
+    <ul className="space-y-4">
+      {items.map((item) => (
+        <li key={item} className="flex gap-3">
+          <span aria-hidden="true" className="text-[#A47864]">&middot;</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function PullQuote({ children }) {
+  return (
+    <p className="font-serif text-[26px] sm:text-[30px] text-neutral-900 leading-[1.35] py-2">
+      {children}
+    </p>
+  );
+}
+
+export function Accent({ children }) {
+  return <span className="text-[#A47864] italic">{children}</span>;
+}
+
+export function ArticleLink({ href, children }) {
+  return (
+    <Link
+      href={href}
+      className="underline underline-offset-4 decoration-neutral-300 hover:decoration-[#A47864] hover:text-[#A47864] transition-colors"
+    >
+      {children}
+    </Link>
+  );
+}
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
