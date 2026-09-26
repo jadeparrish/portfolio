@@ -27,10 +27,10 @@ function SubLabel({ children }) {
 
 function Bullets({ items }) {
   return (
-    <ul className="space-y-2.5 text-neutral-700 text-sm">
+    <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span className="text-[#A47864]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#A47864]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -71,7 +71,7 @@ export default function CommercialValueCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Helping commercial teams see the value they create.
           </h1>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl">
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             A shared framework for showing long-term value, and a faster, more
             consistent way to compare campaign results.
           </p>
@@ -102,7 +102,7 @@ export default function CommercialValueCaseStudy() {
         {/* Setting the Scene */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               Once reporting had a real foundation (that&rsquo;s the{' '}
               <Link
@@ -145,7 +145,7 @@ export default function CommercialValueCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 SoPost wanted to move beyond campaign-level metrics. Existing reporting
                 focused on delivery and short-term results, which were useful but
                 incomplete. It didn&rsquo;t show what happens after the first purchase, or
@@ -162,7 +162,7 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>A model with two pillars</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 Working from a methodology developed by our Head of Product, I defined the
                 product interpretation of the model and designed the first interactive
                 version. It rests on two complementary pillars of value:
@@ -173,7 +173,7 @@ export default function CommercialValueCaseStudy() {
                   'Purchase intent and trust uplift (measured)',
                 ]}
               />
-              <p className="text-neutral-700 leading-relaxed mt-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
                 Each is benchmarked, shown with confidence ranges, and positioned as an
                 early indicator of lifetime value.
               </p>
@@ -183,7 +183,7 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>Building the pilot</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 I designed the pilot in Looker and tested it with the Commercial team.
                 Looker let us:
               </p>
@@ -195,7 +195,7 @@ export default function CommercialValueCaseStudy() {
                   'Reuse existing data models for future integration into Campaign Manager reporting',
                 ]}
               />
-              <p className="text-neutral-700 leading-relaxed mt-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
                 That took us from concept to a validated prototype in weeks, with real user
                 feedback captured before any engineering investment.
               </p>
@@ -212,7 +212,7 @@ export default function CommercialValueCaseStudy() {
                   'Quality gates: thresholds, exclusions and shared definitions',
                 ]}
               />
-              <p className="text-neutral-700 leading-relaxed mt-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
                 The pilot wasn&rsquo;t about dashboards for their own sake. It tested
                 whether the methodology could be understood, trusted and scaled.
               </p>
@@ -220,7 +220,7 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>Testing and validation</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 The dashboard went live with the CSM and Commercial teams, where we
                 validated:
               </p>
@@ -235,7 +235,7 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>Impact</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-2">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-2">
                 Incremental revenue and trust uplift became early, defensible indicators:
                 a bridge between immediate results and sustained growth.
               </p>
@@ -263,7 +263,7 @@ export default function CommercialValueCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 Comparison reporting, the large summary and benchmark tables, lived across
                 Looker dashboards, slides and ad-hoc exports. That fragmentation made it
                 hard to spot performance patterns across campaigns or markets, and
@@ -274,7 +274,7 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>Why it mattered</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 The Commercial team asked for this. They and the CSMs were rebuilding the
                 same story for every campaign, and needed a quick, standard way to answer
                 questions that kept coming up:
@@ -290,14 +290,14 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>Design approach</SubLabel>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 I defined the structure and logic for a comparison view that could sit
                 directly inside Campaign Manager, removing the need to export data or, for
                 some brands, to maintain external decks. It supports flexible comparison
                 across brands, territories and campaign types, using shared indicators
                 such as opt-in rate, response rate, recommendation and purchase intent.
               </p>
-              <p className="text-neutral-700 leading-relaxed mb-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 Every table follows one visual pattern that prioritises speed, legibility
                 and clarity. Lightweight filters sit directly above the table, so people
                 can explore without visual clutter:
@@ -310,7 +310,7 @@ export default function CommercialValueCaseStudy() {
                   'Date range, to track performance over time',
                 ]}
               />
-              <p className="text-neutral-700 leading-relaxed mt-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
                 I designed these in high fidelity in Figma and reviewed them internally to
                 shape hierarchy, grouping logic and interaction patterns.
               </p>
@@ -328,7 +328,7 @@ export default function CommercialValueCaseStudy() {
                   'Coty UK: brand-level campaign summaries',
                 ]}
               />
-              <p className="text-neutral-700 leading-relaxed mt-4">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
                 The focus was a scalable component, not a one-off visualisation. By
                 aligning layout, filters and terminology early, the design showed how one
                 consistent pattern could unify several data views, and cut the friction
@@ -338,7 +338,7 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>Expected impact</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 The framework was designed to cut the time spent on comparison reporting
                 sharply, by taking most of the manual work out of it. Tables that
                 Commercial teams built by hand,
@@ -351,7 +351,7 @@ export default function CommercialValueCaseStudy() {
 
             <div>
               <SubLabel>Status</SubLabel>
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 The designs were complete and reviewed internally, with a clear path
                 defined for building the framework into Campaign Manager. The next steps
                 were to refine naming, grouping and thresholds based on internal feedback,
@@ -364,7 +364,7 @@ export default function CommercialValueCaseStudy() {
         {/* Reflection */}
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
+          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               Together, these gave commercial teams two things they&rsquo;d been missing: a
               credible way to show value over time, and a fast way to compare results
