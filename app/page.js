@@ -377,7 +377,7 @@ export default function PortfolioHomepage() {
                     <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium">
                       {item.tag}
                     </p>
-                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug">
+                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553]">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -465,7 +465,7 @@ export default function PortfolioHomepage() {
                     className={`w-5 h-5 ${article.href ? 'text-[#A47864]' : 'text-neutral-300'}`}
                     strokeWidth={1.5}
                   />
-                  <h3 className="font-serif text-lg text-neutral-900 leading-snug group-hover:underline underline-offset-4 decoration-neutral-500">
+                  <h3 className="font-serif text-lg text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-neutral-500">
                     {article.title}
                   </h3>
                   {article.description && (
@@ -480,7 +480,7 @@ export default function PortfolioHomepage() {
                 <a
                   key={article.title}
                   href={article.href}
-                  className="group block border-t border-neutral-200/60 pt-5 space-y-3"
+                  className="group block border-t border-neutral-200/60 hover:border-[#A47864]/50 transition-colors pt-5 space-y-3"
                 >
                   {inner}
                 </a>
