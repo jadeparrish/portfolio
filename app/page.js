@@ -63,7 +63,7 @@ const caseStudies = [
     title: 'Making SEND journeys easier for families to navigate',
     tag: 'Service Design',
     description:
-      'A self-initiated project exploring how families and professionals experience SEND services across organisational boundaries, and where joined-up design could reduce friction.',
+      'A self-initiated project exploring how families and professionals experience SEND services across organisations, and where joined-up design could reduce friction.',
     cta: 'Coming soon',
     href: null,
     tint: 'bg-[#EDEAE4]',
