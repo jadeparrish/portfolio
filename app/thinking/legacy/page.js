@@ -196,7 +196,7 @@ export default function LegacyArticle() {
               <p>
                 That&rsquo;s where I think design has a specific, under-discussed job to
                 do: turning an invisible risk into something leadership can actually act
-                on, in terms of cost, risk and outcome, rather than leaving it as a
+                on, in terms of risk, time and outcome, rather than leaving it as a
                 technical concern that never makes it into the room where the decision
                 gets made.
               </p>
@@ -279,7 +279,7 @@ export default function LegacyArticle() {
                 items={[
                   'Replace, don\u2019t layer: when a part of a system has hit its limit, replace that part properly rather than wrapping it in another workaround',
                   'Pick good enough over perfect: the aim isn\u2019t the ideal architecture, it\u2019s a solid pattern the team can actually ship',
-                  'Frame it in terms leadership can act on: cost, risk and outcome, not just tidiness',
+                  'Frame it in terms leadership can act on: risk, time and outcome, not just tidiness',
                 ]}
               />
             </div>
