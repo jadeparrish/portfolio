@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function ShadcnArticle() {
   return (
-    <ArticlePage>
+    <ArticlePage slug="shadcn">
       <ArticleTitle
         kicker={<>Design systems &middot; 4 min read</>}
         title={<>The hard part of adopting ShadCN wasn&rsquo;t technical.</>}
