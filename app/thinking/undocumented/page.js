@@ -88,13 +88,13 @@ export default function UndocumentedArticle() {
             </p>
             <p>
               None of this is a new observation. Technical debt and legibility have been
-              written about for years. What I can add is that it holds up every single
-              time I&rsquo;ve gone looking for it.
+              written about for years. What I can add is that it&rsquo;s been true every
+              time I&rsquo;ve looked.
             </p>
           </div>
 
           <div>
-            <Heading>The trap of adding without joining up</Heading>
+            <Heading>The trap of adding without mapping</Heading>
             <div className="space-y-4">
               <p>
                 It&rsquo;s easy to make a service more complicated. Anyone can add another
