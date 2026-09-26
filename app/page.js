@@ -55,7 +55,7 @@ const thoughts = [
     icon: Wrench,
     title: 'Nobody wants the new feature. They just want the old one to work.',
     description: 'The four pressures that quietly wear a product down, and how to make the case for fixing the foundations first.',
-    readTime: '5 min read',
+    readTime: '6 min read',
     href: '/thinking/legacy',
   },
 ];
