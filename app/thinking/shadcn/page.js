@@ -19,7 +19,7 @@ export default function ShadcnArticle() {
   return (
     <ArticlePage slug="shadcn">
       <ArticleTitle
-        kicker={<>Design Systems &middot; 4 min read</>}
+        kicker={<>Design Systems &middot; 3 min read</>}
         title={<>The hard part of adopting ShadCN wasn&rsquo;t technical.</>}
         subtitle={
           <>
@@ -40,7 +40,7 @@ export default function ShadcnArticle() {
             That turned out to matter more than any decision I made about components.
             Design and code started from the same place, which gave us a common language
             before there was anything to argue about. I wrote the documentation that went
-            with it, so the conventions were somebody&rsquo;s job rather than folklore.
+            with it.
           </p>
           <p>
             I have now done this twice, at two companies, with two different component
@@ -56,11 +56,6 @@ export default function ShadcnArticle() {
             components had already drifted from both. After, it meant changing one shared
             source and watching it propagate. One change rather than a dozen, every time.
           </p>
-          <p>
-            That is the whole argument for doing it, and it is worth being unromantic
-            about. The reason I would do it again is not that it felt collaborative. It is
-            that it removed a recurring tax nobody had ever costed.
-          </p>
         </ArticleBlock>
 
         <div>
@@ -70,15 +65,14 @@ export default function ShadcnArticle() {
               ShadCN is developer-first, and it is copy-and-own, so the components live in
               your codebase rather than behind a package you upgrade. For engineers that
               is obviously good. For designers it can feel like the decisions are being
-              made somewhere you are not, by people reading a language you might not read,
-              and that is where the resistance actually comes from. Not from the
-              technology. From wondering whether you still have a say.
+              made somewhere you are not, by people reading a language you might not
+              read. That is where the resistance comes from, and it is a question of
+              confidence.
             </p>
             <p>
-              You do, and more of one than before. A framework that ships with sensible
-              defaults still needs somebody to decide hierarchy, accessibility,
-              interaction standards and naming. Nobody else in the room is going to do
-              that.
+              Designers have more say in this setup, not less. A framework that ships with
+              sensible defaults still needs somebody to decide hierarchy, accessibility,
+              interaction standards and naming.
             </p>
             <PullQuote>
               Without that, it turns into a collection of part-styled buttons.
