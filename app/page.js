@@ -17,7 +17,7 @@ import {
   Heart,
   Image as ImageIcon,
 } from 'lucide-react';
-import { SiteFooter } from './caseStudiesData';
+import { caseStudiesList, thinkingList, SiteFooter } from './caseStudiesData';
 
 const whatIDo = [
   {
@@ -37,119 +37,11 @@ const whatIDo = [
   },
 ];
 
-const thoughts = [
-  {
-    icon: Layers,
-    title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
-    description: 'It looks like something you’d need to code to have a say in. You don’t.',
-    readTime: '4 min read',
-    href: '/thinking/shadcn',
-  },
-  {
-    icon: FileText,
-    title: 'Most “complex” systems are just undocumented ones.',
-    description: 'Most systems aren\u2019t complex. They\u2019re full of sensible decisions nobody ever wrote down.',
-    readTime: '2 min read',
-    href: '/thinking/undocumented',
-  },
-  {
-    icon: Wrench,
-    title: 'Nobody wants the new feature. They just want the old one to work.',
-    description: 'The four pressures that quietly wear a product down, and how to make the case for fixing the foundations first.',
-    readTime: '6 min read',
-    href: '/thinking/legacy',
-  },
-];
+const thoughts = thinkingList.map((a) => ({ ...a, href: `/thinking/${a.slug}` }));
 
-const caseStudies = [
-  {
-    num: '01',
-    title: 'Making SEND journeys easier for families to navigate',
-    tag: 'Service Design',
-    description:
-      'A self-initiated project exploring how families and professionals experience SEND services across organisations, and where joined-up design could reduce friction.',
-    cta: 'Coming soon',
-    href: null,
-    tint: 'bg-[#EDEAE4]',
-  },
-  {
-    num: '02',
-    title: 'Helping commercial teams see the value they create',
-    tag: 'Commercial Product',
-    description:
-      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so our Commercial Team could demonstrate impact to brands instead of defending it.',
-    cta: 'View case study',
-    href: '/work/commercial-value',
-    tint: 'bg-[#E7E2DC]',
-  },
-  {
-    num: '03',
-    title: 'Bringing stock and fulfilment data into one clear view',
-    tag: 'Operations & Service Design',
-    description:
-      'Untangled shared stock pools into a consistent view of stock health and fulfilment status, carrying the same clarity into Campaign Manager reporting.',
-    cta: 'View case study',
-    href: '/work/stock',
-    tint: 'bg-[#E3E6E1]',
-  },
-  {
-    num: '04',
-    title: 'Turning disconnected data into clearer decisions',
-    tag: 'Data & Service Design',
-    description:
-      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
-    cta: 'View case study',
-    href: '/work/reporting',
-    tint: 'bg-[#DDE3E6]',
-  },
-  {
-    num: '05',
-    title: 'Giving a siloed platform a navigation that scales',
-    tag: 'Information Architecture',
-    description:
-      'Rebuilt a SaaS platform\u2019s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
-    cta: 'View case study',
-    href: '/work/cm-navigation',
-    tint: 'bg-[#E4E1E8]',
-  },
-  {
-    num: '06',
-    title: 'Making a legacy platform simple, accessible and built to scale',
-    tag: 'Enterprise Product & Rebrand',
-    description:
-      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%, then carried it through a rebrand across UK and French teams while advocating for WCAG 2.1 AA accessibility.',
-    cta: 'View case study',
-    href: '/work/netix',
-    tint: 'bg-[#E9E4DE]',
-  },
-];
+const caseStudies = caseStudiesList.filter((item) => item.featured);
 
-const moreWork = [
-  {
-    tag: 'Compliance & Service Design',
-    title: 'Turning a compliance risk into a simple first step',
-    description:
-      'Led a cross-functional review of how feedback journeys captured consent, then designed one global pattern that protects users and brands without adding friction.',
-    cta: 'View case study',
-    href: '/work/consent',
-  },
-  {
-    tag: 'Systems Design',
-    title: 'Designing notifications that scale beyond a single alert',
-    description:
-      'Defined a notification framework that began with low-stock alerts for CSMs and now extends across data lifecycle and comments, saving hours of manual checking.',
-    cta: 'View case study',
-    href: '/work/notifications',
-  },
-  {
-    tag: 'Integrations & Service Design',
-    title: 'Turning a technical bottleneck into a guided setup',
-    description:
-      'Turned seven separate integration setups into one guided, self-serve flow, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
-    cta: 'View case study',
-    href: '/work/integrations',
-  },
-];
+const moreWork = caseStudiesList.filter((item) => !item.featured);
 
 const whoIWorkWith = [
   {
@@ -201,8 +93,8 @@ export default function PortfolioHomepage() {
           </p>
         </div>
         <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 lg:gap-x-10 text-xs tracking-[0.15em] uppercase text-neutral-600">
-          <a href="#work" className="hover:text-[#8D6553] transition-colors">Work</a>
-          <a href="#thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
+          <a href="/work" className="hover:text-[#8D6553] transition-colors">Work</a>
+          <a href="/thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
           <a href="#about" className="hover:text-[#8D6553] transition-colors">About</a>
           <a href="#contact" className="hover:text-[#8D6553] transition-colors">Contact</a>
         </nav>
