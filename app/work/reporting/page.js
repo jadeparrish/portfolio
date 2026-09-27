@@ -54,14 +54,14 @@ export default function ReportingCaseStudy() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Internal Platform &middot; Senior Product Designer
+            Data &amp; Service Design &middot; Senior Product Designer
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Turning disconnected data into clearer decisions.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
-            Consolidating fragmented insights into a single reporting suite for brands
-            and internal teams.
+            Bringing reporting scattered across five tools into one place that brands
+            and internal teams could both trust.
           </p>
         </section>
 
@@ -178,7 +178,7 @@ export default function ReportingCaseStudy() {
             <div>
               <SubLabel>Research and Testing</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                To validate direction, I interviewed eight people across Product, CSM,
+                To validate direction, I interviewed eight people across Product, Commercial,
                 Engineering and Operations. Using a Figma-based testing matrix, I mapped
                 their workflows and captured pain points. The findings were consistent:
               </p>
@@ -188,8 +188,7 @@ export default function ReportingCaseStudy() {
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> No one had a full, end-to-end picture of campaign performance</li>
               </ul>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                This alignment secured executive backing to rebuild reporting around
-                clarity, consistency and trust.
+                That was enough to get the rebuild properly backed.
               </p>
             </div>
           </div>
@@ -222,8 +221,8 @@ export default function ReportingCaseStudy() {
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Unify data sources under one structure</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Standardise metrics, terminology and visualisation styles</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Simplify navigation and reduce cognitive load</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Build trust through accuracy and transparency</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Simplify navigation, so people could find things without being told where they were</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Show where a number came from, so people could check it rather than take it on faith</li>
               </ul>
             </div>
 
@@ -233,11 +232,11 @@ export default function ReportingCaseStudy() {
                 I created a series of prototypes exploring:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Present vs future data flow mapping across systems</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Mapped how data moved between systems as it was, and as it needed to be</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Card-based layouts grouping metrics by performance type</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Standardised filters, comparison modes and accessibility patterns</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Error and low-data states for transparency</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Early brand-level roll-ups and ROI-ready structures</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Error and low-data states, so a gap looked like a gap rather than a zero</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Early versions of the brand-level summaries, and the structures the ROI work would later need</li>
               </ul>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 Each iteration was reviewed with Product, Commercial and Engineering to
@@ -274,13 +273,10 @@ export default function ReportingCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This project rebuilt organisational trust in data and reshaped how SoPost
-              understands campaign performance.
-            </p>
-            <p>
-              By unifying fragmented tools, aligning Engineering and the Commercial Team, and
-              defining clear visual standards, reporting shifted from a manual task to a
-              strategic, insight-led system.
+              The biggest change wasn&rsquo;t the dashboards. It was that people trusted
+              the numbers again. The tools were joined up, Engineering and the Commercial
+              Team were working from the same definitions, and reporting stopped being
+              something you rebuilt by hand every time.
             </p>
             <p>
               It became the foundation for everything that followed. The stock work, the
