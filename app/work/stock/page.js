@@ -60,8 +60,8 @@ export default function StockCaseStudy() {
             Bringing stock and fulfilment data into one clear view.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
-            Untangling shared stock pools into a consistent view across the WMS and
-            Campaign Manager reporting.
+            Untangling shared stock pools into one consistent view, across the
+            Warehouse Management System and Campaign Manager reporting.
           </p>
         </section>
 
@@ -78,11 +78,10 @@ export default function StockCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Focus</p>
-              <p className="text-sm font-medium text-neutral-900">Stock and SLA visibility</p>
+              <p className="text-sm font-medium text-neutral-900">Shared stock across brands and campaigns</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              {/* TODO: replace with a real metric (e.g. time saved, fewer manual checks) */}
               {/* TODO: swap in a real figure once you have one (e.g. hours saved, fewer manual checks) */}
               <p className="text-sm font-medium text-neutral-900">Real-time stock and SLA visibility</p>
             </div>
@@ -94,11 +93,14 @@ export default function StockCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This one started somewhere unglamorous: the Warehouse Management
-              System (WMS) I designed in 2024, replacing shared spreadsheets and email
-              chains between SoPost and its fulfilment partners with one role-based system.
-              Building it turned up something I wasn&rsquo;t expecting, real discrepancies
-              in the data behind stock and fulfilment.
+              This one started somewhere unglamorous, and it wasn&rsquo;t on
+              anyone&rsquo;s roadmap. I could see what the spreadsheets and email chains
+              between SoPost and its fulfilment partners were costing us, so I took it to
+              our CFO and we built the Warehouse Management System (WMS) together in 2024,
+              replacing all of it with one role-based system. He knew the operation inside
+              out, so everything ran past him, and our Fulfilment Lead used it constantly
+              with the warehouses. Building it turned up something I wasn&rsquo;t
+              expecting, real discrepancies in the data behind stock and fulfilment.
             </p>
             <p>
               I then audited Mission Control and Campaign Manager, and the message became
@@ -135,10 +137,12 @@ export default function StockCaseStudy() {
             <div>
               <SubLabel>Problem</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                While the WMS improved operational tracking, Campaign Manager still lacked
-                a clear, consistent view of stock health. Because campaign structures
-                differed across brands, it was hard to see which products, activities or
-                fulfilment tasks shared the same stock pools.
+                While the WMS improved operational tracking, Campaign Manager still
+                lacked a clear, consistent view of stock health. Stock was split into
+                partitions: separate amounts set aside for a particular campaign, brand or
+                product. How those splits were set up varied from brand to brand, so it was
+                genuinely hard to see which products, activities or fulfilment tasks were
+                drawing on the same stock.
               </p>
             </div>
 
@@ -155,12 +159,12 @@ export default function StockCaseStudy() {
             <div>
               <SubLabel>Exploration</SubLabel>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Analysed fulfilment-flow diagrams to understand dependencies</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Worked through the fulfilment flow diagrams to see what depended on what</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Created dashboard sketches and interactive prototypes</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tested structural models by product, activity and partition to define how stock should appear across different campaign configurations</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Explored nested and shared-partition views to show how products, activities and markets interconnect</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Iterated on colour, hierarchy and terminology so bundles, single products and regional stock pools stayed clear</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Designed SLA and distribution-status dashboards to highlight delays and required actions</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tested different ways of grouping stock, by product, by activity and by partition, looking for one that held up however a campaign had been set up</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tried nested and shared views, so you could see at a glance when several products or markets were drawing on the same stock</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Worked on colour, hierarchy and wording until bundles, single products and regional stock read as clearly different things</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Designed dashboards for delivery times and dispatch status, so delays and anything needing attention surfaced on their own</li>
               </ul>
 
               <ImagePlaceholder tint="bg-[#DDE3E6]" caption="Stock and SLA dashboard explorations" />
@@ -172,11 +176,11 @@ export default function StockCaseStudy() {
                 The final designs introduced:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Unified filtering by product, activity and partition</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> One set of filters, by product, activity and partition</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Clear indicators showing used versus total stock</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Shared-partition signposting to prevent confusion</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Action states for low stock or SLA breaches</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Distribution-overview cards for export and dispatch performance, with &ldquo;Action required&rdquo; prompts</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Clear signposting wherever stock was shared, so nobody counted it twice</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Visible states for low stock or a missed delivery window</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Overview cards for how exports and dispatches were performing, flagging anything that needed action</li>
               </ul>
             </div>
 
@@ -213,16 +217,16 @@ export default function StockCaseStudy() {
               wasn&rsquo;t downloaded in time.
             </p>
             <p>
-              The WMS gave partners and internal teams a shared operational view, and the
-              new stock and fulfilment visuals extended that clarity into reporting.
-              Together they formed a foundational service layer for smarter, faster and
-              more reliable campaign delivery, and set a precedent for how SoPost
-              approaches cross-system design.
+              The WMS gave partners and internal teams the same view of what was
+              happening. The stock and fulfilment work carried that into reporting.
+              Between them, campaigns went out faster and with fewer surprises, and it set
+              a pattern for how SoPost designs across systems rather than one screen at a
+              time.
             </p>
             <p>
-              It also directly influenced the notification system that followed, which
-              built on the same principles of visibility, automation and proactive
-              communication to reduce operational risk across the wider platform.
+              It also fed directly into the notification system that came next, which
+              took the same idea further: if the system can already see a problem coming,
+              it should say so, rather than waiting for someone to go and look.
             </p>
           </div>
         </section>
