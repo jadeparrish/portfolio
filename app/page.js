@@ -36,7 +36,12 @@ const whatIDo = [
   },
 ];
 
-const thoughts = thinkingList.map((a) => ({ ...a, href: `/thinking/${a.slug}` }));
+/* No href for a piece that isn't written yet: the card below already
+   renders those as plain, dimmed and unclickable. */
+const thoughts = thinkingList.map((a) => ({
+  ...a,
+  href: a.hasPage ? `/thinking/${a.slug}` : null,
+}));
 
 /* The homepage shows three. Everything else lives on /work, so the two
    don't have to be kept in step by hand. */
