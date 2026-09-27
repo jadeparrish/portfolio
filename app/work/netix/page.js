@@ -298,9 +298,8 @@ export default function NetIXCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This project marked a genuine turning point for me: the first time I had
-              full ownership of an enterprise SaaS product, from research through to
-              system-level design, and nobody else to hand the hard decisions to.
+              I had full ownership of this one, from research through to system-level
+              design, with nobody else to hand the hard decisions to.
             </p>
             <p>
               Collaborating closely with Cegedim in Paris, including working on-site in
