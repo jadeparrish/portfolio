@@ -69,19 +69,19 @@ export default function NetIXCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Sole Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Sole Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Clients</p>
-              <p className="text-sm font-medium text-neutral-900">DPD, Radley, NHS Supply Chain +1</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">DPD, Radley, NHS Supply Chain +1</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-[#8D6553]">40%+ faster processes</p>
+              <p className="text-sm font-medium text-[#8D6553] [text-wrap:balance]">40%+ faster processes</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Standards</p>
-              <p className="text-sm font-medium text-neutral-900">EDI, PEPPOL, WCAG 2.1 AA</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">EDI, PEPPOL, WCAG 2.1 AA</p>
             </div>
           </div>
         </section>
