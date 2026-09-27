@@ -5,7 +5,6 @@ import {
   ArticleBody,
   ArticleBlock,
   ArticleHeading,
-  ArticleBullets,
   PullQuote,
   Accent,
   ArticleLink,
@@ -13,7 +12,8 @@ import {
 
 export const metadata = {
   title: "Nobody wants the new feature. They just want the old one to work: Jade Parrish",
-  description: 'Why shipping something new and keeping the old thing reliable are so hard to balance, what gets in the way, and what actually helps.',
+  description:
+    'Building new capability on foundations that are already failing delays the rebuild rather than avoiding it. What I have seen on both sides of that choice.',
 };
 
 export default function LegacyArticle() {
@@ -24,8 +24,9 @@ export default function LegacyArticle() {
         title={<>Nobody wants the new feature. They just want the old one to work.</>}
         subtitle={
           <>
-            Shipping something new and keeping the old thing reliable are hard to
-            balance. What gets in the way, and what actually helps.
+            Building new capability on foundations that are already failing delays the
+            rebuild rather than avoiding it. What I have seen on both sides of that
+            choice.
           </>
         }
       />
@@ -33,243 +34,178 @@ export default function LegacyArticle() {
       <ArticleBody>
         <ArticleBlock>
           <p>
-            Almost every growing organisation hits the same wall. Leadership wants to
-            ship new capability to keep customers interested and win new business, but
-            the service is standing on foundations that are already under strain.
+            On one product I worked on, the decision was to keep shipping new features
+            directly on top of a system everybody already knew was struggling. The
+            thinking was reasonable enough: keep moving, don&rsquo;t stop to rebuild.
+            What it meant in practice was that every new feature was also a fight with
+            the code underneath it, and that fight showed up as slipped dates and
+            fragile releases.
           </p>
           <p>
-            The natural response is to compromise: build the new thing on top of
-            what&rsquo;s already fragile, whilst trying to improve the foundations too.
-            In my experience that rarely works. You spend your time patching edge cases,
-            delivery slows everywhere, and the experience gets worse at both ends, the
-            old and the new.
+            Before I left, we overhauled the whole thing anyway.
           </p>
           <p>
-            This tension isn&rsquo;t unique to any one company, and plenty of people have
-            argued both sides of it. What I can offer is what actually happened when I
-            sat on each side of that choice.
+            That is the part worth sitting with. The rebuild was never avoided. It was
+            postponed, at the cost of everything we shipped badly in the meantime.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            At NetEDI we took the other route and{' '}
+            <ArticleLink href="/work/netix">replaced the legacy platform outright</ArticleLink>{' '}
+            rather than layering onto it. Once the team was working on one clean
+            foundation, feedback came back faster, the core platform improved without
+            anybody maintaining two competing versions of it, and new features actually
+            shipped quicker, because they were no longer fighting old code to get out of
+            the door.
+          </p>
+          <p>
+            I have now sat on both sides of that decision, which is the only reason I
+            have anything to add to a debate people have been having for decades.
           </p>
         </ArticleBlock>
 
         <div>
-          <ArticleHeading>Four pressures at once</ArticleHeading>
+          <ArticleHeading>Why organisations keep choosing to patch</ArticleHeading>
           <ArticleBlock>
             <p>
-              In practice, it&rsquo;s rarely just two sides. It&rsquo;s usually four
-              pressures at once:
-            </p>
-            <ArticleBullets
-              items={[
-                'Leadership pushes for innovation. New features win deals and signal momentum, so pausing to fix the foundations can feel like standing still.',
-                'The foundations are already too compromised to build on. Every new thing costs more to ship and delivers less than it should, because it’s fighting the platform underneath it.',
-                'At the same time, pressure to streamline and cut costs squeezes the very investment innovation needs, and management doesn’t always agree on which to prioritise.',
-                'Managers don’t always stay long enough for one direction to stick, and even the ones who do can struggle to manage upwards, so priorities keep shifting either way. That pressure to show impact quickly favours starting something visible over finishing what’s already there, and that adds another layer to the pile.',
-              ]}
-            />
-            <p>
-              Any one of these on its own is manageable. Together, they&rsquo;re how a
-              service ends up held together by workarounds nobody remembers agreeing to.
+              It is easy to frame this as two options and a wrong answer. In practice it
+              is rarely two of anything. Leadership is under real pressure to ship new
+              capability, because new features win deals and signal momentum, and pausing
+              to repair the foundations looks from the outside like standing still. At
+              the same time the foundations are already compromised enough that every new
+              thing costs more and delivers less than it should. Then there is pressure
+              to cut costs, which squeezes exactly the investment the new work depends on.
             </p>
             <p>
-              I&rsquo;ve seen this kind of misalignment play out a few times, and once in
-              a very real way. Design started working in Shape Up cycles. Engineering
-              stayed in sprints, and there was never a point where both sides tried the
-              same way of working at once. Neither choice was wrong on its own, but the
-              result was two definitions of &ldquo;done,&rdquo; running on the same
-              product at the same time. Without an agreement between the two sides, it
-              didn&rsquo;t bring design and engineering closer. It added another seam
-              between two teams that already needed to be closer, not further apart.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>Patching versus replacing</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              On one product I worked on, the plan was to keep innovating directly on top
-              of an old system. The intent was reasonable: keep moving without stopping
-              to rebuild. But it meant every new feature was also a fight against the
-              legacy code underneath it, and that friction showed up as delays and
-              fragile releases. The funny part is that it only delayed the inevitable.
-              Before I left, we overhauled the whole thing anyway.
+              And managers often don&rsquo;t stay long enough for one direction to stick.
+              Even the ones who do can struggle to manage upwards, so priorities shift
+              either way. The pressure to show impact quickly favours starting something
+              visible over finishing something that already exists, and that adds another
+              layer to the pile.
             </p>
             <p>
-              On another, at NetEDI, we took the harder route and replaced the legacy
-              platform outright, rather than layering new features on top of it. That
-              work is the{' '}
-              <ArticleLink href="/work/netix">NetIX Redesign and Rebrand</ArticleLink>{' '}
-              case study. Once the team was on a single, clean foundation, feedback came
-              back faster, the core platform improved without maintaining two competing
-              systems, and new features actually shipped quicker, because they
-              weren&rsquo;t fighting old code to get there.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>The cost never arrives all at once</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              Most conversations about this treat the cost as a series of one-off
-              delays: this feature took longer, that bug took a day to trace. That
-              framing makes it easy to put the fix off each time, because no single
-              instance looks big enough to act on.
+              Any one of those on its own is manageable. Together they are how a service
+              ends up held together by workarounds that nobody remembers agreeing to.
             </p>
             <p>
-              What actually happens is that it accumulates. Every workaround left in
-              place makes the next change a little harder, until something small and
-              ordinary takes far more care than it should and nobody can quite explain
-              why. By the time it&rsquo;s obvious enough for leadership to notice, it
-              has already taken more time than fixing it early would have.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>Why the invisible work rarely gets rewarded</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              There&rsquo;s a part of this that doesn&rsquo;t get said much. Even people
-              who know the right call is to stabilise something rather than ship the next
-              new thing are pulled toward the visible option, because that&rsquo;s what
-              gets noticed, reviewed and promoted.
-            </p>
-            <p>
-              Preventing a problem well means, from the outside, that nothing happened.
-              Shipping something new is a story anyone can tell in a meeting.
-              That&rsquo;s not a character problem in any one person, it&rsquo;s an
-              incentive problem across the whole organisation, and it&rsquo;s a big part
-              of why foundations keep losing to features even when everyone privately
-              agrees they shouldn&rsquo;t.
-            </p>
-            <p>
-              I&rsquo;ve felt this before. For a long time, saying the reporting numbers
-              didn&rsquo;t line up wasn&rsquo;t enough on its own, and that&rsquo;s a
-              fair position for anyone to hold: a general worry is a hard thing to act on
-              without more to point to. What actually changed things was building the
-              argument properly: auditing every reporting view, documenting exactly where
-              and why the numbers diverged, and gathering what customers and our own
-              Commercial Team had been telling me alongside it. Then taking all of that
-              to the CTO as a proposal rather than a concern.
-            </p>
-            <p>
-              That&rsquo;s where I think design has a specific, under-discussed job to
-              do: turning an invisible risk into something leadership can actually act
-              on, in terms of risk, time and outcome, rather than leaving it as a
-              technical concern that never makes it into the room where the decision
-              gets made.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>Most of the risk lives below the screen</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              A lot of design attention stops at the interface: does this flow make
-              sense, is this state clear, is this accessible. Those questions matter, but
-              on their own they miss where a lot of the real risk sits, which is in the
-              operational layer underneath. How data moves between systems, who gets
-              affected when two tools disagree, what goes wrong quietly, weeks before
-              anyone notices.
-            </p>
-            <p>
-              That&rsquo;s the layer I keep finding myself drawn into. Mismatched refresh
-              rates between two systems, in the{' '}
-              <ArticleLink href="/work/stock">stock and fulfilment work</ArticleLink> and
-              the reporting audit it led to, were never visible on a screen. They only
-              showed up as confusion, in decks that didn&rsquo;t add up and numbers
-              nobody quite trusted. I&rsquo;ve also found a commercial team working
-              directly in a developer tool, because it was the only place the numbers
-              they needed lived. Nothing about that tool was built for them, and it
-              carried real risk every time they opened it. Noticing things like that, and
-              tracing them back to the source, is as much a part of the job as anything
-              you&rsquo;d see in a Figma file.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>The hidden cost of &ldquo;no downtime&rdquo;</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              Refusing to invest in the foundations because there&rsquo;s no time is a
-              false economy. Build on something brittle for long enough, and:
-            </p>
-            <ArticleBullets
-              items={[
-                'Delivery slows down: what should take two weeks takes two months, because the team is fighting old constraints',
-                'Quality slips at both ends: new things don’t work as well as they could, and old things break in ways nobody expects',
-                'Trust erodes: people don’t care about the roadmap if the tool they use every day feels unreliable',
-              ]}
-            />
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>This is a service risk, not just a delivery one</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              Most of this gets measured in delivery terms: velocity, cost, how many
-              sprints something took. That framing keeps the conversation inside
-              engineering and product, where it&rsquo;s easiest to argue against, because
-              the numbers can always be explained away by a busy quarter.
-            </p>
-            <p>
-              Widen the frame and the same problem looks different. It&rsquo;s the
-              support team fielding the same workaround-shaped ticket every week, because
-              nobody ever fixed the thing underneath it. It&rsquo;s the one person the
-              whole team quietly depends on to explain how a process actually works, and
-              the risk that creates the day they&rsquo;re on leave, or leave for good.
-              It&rsquo;s the trust a brand or a customer loses long before anyone in a
-              delivery meeting notices a metric move. None of that shows up on a roadmap,
-              but all of it is the service, not a side effect of it.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>Finding the pragmatic middle ground</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              Leadership will rarely grant six months to rewrite everything, and usually
-              they shouldn&rsquo;t. The answer is in how the foundational work gets
-              framed and structured:
-            </p>
-            <ArticleBullets
-              items={[
-                'Replace, don’t layer: when a part of a system has hit its limit, replace that part properly rather than wrapping it in another workaround',
-                'Agree the rules of the tech stack: which patterns the team builds with, what gets replaced and what stays, so the same decision isn’t reopened on every ticket',
-                'Pick good enough over perfect: the aim isn’t the ideal architecture, it’s a solid pattern the team can actually ship',
-                'Frame it in terms leadership can act on: risk, time and outcome, not just tidiness',
-              ]}
-            />
-            <p>
-              This does work in practice. At one company, before I left, engineering had
-              started scheduling foundation work into every week: a small, steady amount
-              rather than one big pause. That&rsquo;s the version that tends to survive
-              contact with a roadmap.
+              I watched a version of this play out very literally. Design started working
+              in Shape Up cycles. Engineering stayed in sprints. There was never a point
+              where both sides tried the same way of working at the same time. Neither
+              choice was wrong on its own, but the result was two definitions of
+              &ldquo;done&rdquo; running on one product, and it added another seam between
+              two teams who needed to be closer, not further apart.
             </p>
           </ArticleBlock>
         </div>
 
         <ArticleBlock>
           <p>
-            None of the people in any of this are the problem: leadership under real
-            pressure to show growth, managers trying to make a mark quickly in a new
-            role, engineers protecting a rhythm that works, designers doing their best
-            with what they&rsquo;ve been given. The gap is usually that nobody owns the
-            whole picture end to end. That&rsquo;s the gap I like to stand in.
+            The cost of all this never arrives in one piece, which is most of why it goes
+            unaddressed. It shows up as this feature taking longer, that bug taking a day
+            to trace. Each instance is small enough to absorb, so it gets absorbed, and
+            then every workaround left in place makes the next change slightly harder,
+            until something perfectly ordinary takes far more care than it should and
+            nobody can quite say why. By the time it is obvious enough for leadership to
+            notice, it has already cost more than fixing it early would have.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            There is a part of this that goes unsaid. Even people who know the right call
+            is to stabilise something rather than ship the next new thing are pulled
+            towards the visible option, because the visible option is what gets noticed,
+            reviewed and promoted.
           </p>
           <PullQuote>
-            If you want a service that feels new, you can&rsquo;t build it on{' '}
-            <Accent>legacy foundations.</Accent>
+            Preventing a problem well means that, from the outside,{' '}
+            <Accent>nothing happened.</Accent>
           </PullQuote>
           <p>
-            The real work of design and product strategy isn&rsquo;t only deciding what
-            to build next. It&rsquo;s making the case for fixing what&rsquo;s already
-            there, first.
+            Shipping something new is a story anybody can tell in a meeting. That
+            isn&rsquo;t a character flaw in any individual. It is an incentive problem
+            across a whole organisation, and it is a large part of why foundations keep
+            losing to features even where everyone privately agrees they shouldn&rsquo;t.
+          </p>
+        </ArticleBlock>
+
+        <div>
+          <ArticleHeading>Turning a concern into a proposal</ArticleHeading>
+          <ArticleBlock>
+            <p>
+              I have been on the losing end of this. For a long time, saying that the
+              reporting numbers didn&rsquo;t line up wasn&rsquo;t enough on its own, and
+              that is a fair position for anybody to hold. A general worry is a hard thing
+              to act on.
+            </p>
+            <p>
+              What changed it was building the argument properly. I audited every
+              reporting view, documented exactly where and why the numbers diverged, and
+              gathered what customers and our own Commercial Team had been telling me
+              alongside it. Then I took the whole thing to the CTO as a proposal rather
+              than a concern. That became the{' '}
+              <ArticleLink href="/work/reporting">reporting work</ArticleLink>.
+            </p>
+            <p>
+              That is the specific job I think design has here and rarely claims: turning
+              an invisible risk into something leadership can act on, in terms of risk,
+              time and outcome, instead of leaving it as a technical worry that never
+              reaches the room where the decision gets made.
+            </p>
+          </ArticleBlock>
+        </div>
+
+        <ArticleBlock>
+          <p>
+            Most of the risk also sits below the screen, which is the other reason it goes
+            unseen. Design attention tends to stop at the interface: does this flow make
+            sense, is this state clear, is this accessible. Those questions matter, and
+            they miss the operational layer underneath, where data moves between systems
+            and things go wrong quietly, weeks before anybody notices.
+          </p>
+          <p>
+            Mismatched refresh rates between two systems, which I found in the{' '}
+            <ArticleLink href="/work/stock">stock and fulfilment work</ArticleLink>, were
+            never visible on any screen. They showed up as decks that didn&rsquo;t add up
+            and numbers nobody quite trusted. I have also found a commercial team working
+            directly inside a developer tool, because it was the only place the figures
+            they needed actually lived. Nothing about that tool was built for them, and
+            it carried real risk every time they opened it.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            None of which means leadership should grant six months to rewrite everything.
+            They rarely will, and usually they shouldn&rsquo;t. What works is smaller than
+            that. When a part of a system has hit its limit, replace that part properly
+            instead of wrapping it in another workaround. Agree which patterns the team
+            builds with, and what gets replaced, so the same argument isn&rsquo;t reopened
+            on every ticket. Aim for a solid pattern the team can actually ship rather
+            than the ideal architecture. And frame all of it in terms leadership can act
+            on.
+          </p>
+          <p>
+            It does work. At one company, before I left, Engineering had started
+            scheduling foundation work into every week: a small steady amount rather than
+            one big pause. That is the version that survives contact with a roadmap.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            Nobody in any of this is the villain. Leadership is under real pressure to
+            show growth, managers are trying to make a mark quickly in a new role,
+            engineers are protecting a rhythm that works, designers are doing their best
+            with what they have been handed. The gap is that nobody owns the whole picture
+            end to end.
+          </p>
+          <p>
+            That gap is where I like to stand, and the work there is less about deciding
+            what to build next than about making the case for fixing what is already
+            there.
           </p>
         </ArticleBlock>
       </ArticleBody>
