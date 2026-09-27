@@ -166,16 +166,17 @@ export default function NavigationCaseStudy() {
           <Bullets
             items={[
               'A persistent sidebar for global navigation and orientation',
-              'A contextual horizontal bar for task-specific actions within each campaign, such as Campaign settings, Branding, Products and Journeys',
+              'A contextual horizontal bar for the task in hand, which changes with the level you are working at',
             ]}
           />
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             What appears in that bar depends on where you are. Setting a campaign up
-            surfaces the steps for setup; once it&rsquo;s live, reporting and results take
-            their place. That&rsquo;s progressive disclosure applied to navigation: you
-            see what&rsquo;s relevant to what you&rsquo;re doing, not everything the
-            platform can do. It let people move between strategic and operational contexts
-            without losing their place.
+            gives you Campaign settings, Branding, Products and Journeys. Move into
+            reporting for the same campaign and it becomes Orders, Stock, Distribution,
+            Feedback and the rest. That&rsquo;s progressive disclosure applied to
+            navigation: you see what&rsquo;s relevant to what you&rsquo;re doing, not
+            everything the platform can do. It let people move between strategic and
+            operational contexts without losing their place.
           </p>
 
           <ImagePlaceholder tint="bg-[#E9E4DE]" caption="Three-tier hierarchy and dual-layer navigation model" />
@@ -185,7 +186,7 @@ export default function NavigationCaseStudy() {
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Collaboration and Validation</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-            Working with my Product Manager and the Engineering leads, I tested early
+            Working with our Product Director and the Engineering leads, I tested early
             prototypes across internal teams and with Customer Success. The feedback
             confirmed:
           </p>
