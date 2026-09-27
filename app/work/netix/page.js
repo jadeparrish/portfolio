@@ -151,8 +151,8 @@ export default function NetIXCaseStudy() {
                 particular, the complexity sat in what the system was doing behind the
                 scenes rather than anything a person would see. I needed to understand it
                 well enough to design one service that worked for everyone using it,
-                rather than something that only made sense if you already knew how the
-                plumbing worked.
+                rather than something that only made sense if you already knew how it
+                worked.
               </p>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
                 From there, I designed new structures for:
@@ -222,8 +222,8 @@ export default function NetIXCaseStudy() {
             <div>
               <SubLabel>Context</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                In late 2019, NetEDI was acquired by Cegedim Group, a French SaaS
-                provider headquartered in Boulogne-Billancourt, Paris. NetIX became part
+                In late 2019, NetEDI was acquired by Cegedim Group, a SaaS
+                provider based in France. NetIX became part
                 of Cegedim&rsquo;s wider ecosystem, and I was asked to align the product
                 with their Sy platform branding.
               </p>
@@ -235,7 +235,7 @@ export default function NetIXCaseStudy() {
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Redesigning a product that had just launched</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Coordinating implementation between UK and French engineering teams</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Coordinating implementation between engineering teams in the UK, France and Egypt</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
               </ul>
             </div>
