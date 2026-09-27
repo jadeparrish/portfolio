@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, ArrowUp } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench } from 'lucide-react';
 
 export const caseStudiesList = [
   {
@@ -7,63 +7,117 @@ export const caseStudiesList = [
     slug: 'send',
     title: 'Making SEND journeys easier for families to navigate',
     tag: 'Service Design',
+    description:
+      'A self-initiated project exploring how families and professionals experience SEND services across organisations, and where joined-up design could reduce friction.',
+    cta: 'Coming soon',
+    href: null,
+    tint: 'bg-[#EDEAE4]',
     hasPage: false,
+    featured: true,
   },
   {
     num: '02',
     slug: 'commercial-value',
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
+    description:
+      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so our Commercial Team could demonstrate impact to brands instead of defending it.',
+    cta: 'View case study',
+    href: '/work/commercial-value',
+    tint: 'bg-[#E7E2DC]',
     hasPage: true,
+    featured: true,
   },
   {
     num: '03',
     slug: 'stock',
     title: 'Bringing stock and fulfilment data into one clear view',
     tag: 'Operations & Service Design',
+    description:
+      'Untangled shared stock pools into a consistent view of stock health and fulfilment status, carrying the same clarity into Campaign Manager reporting.',
+    cta: 'View case study',
+    href: '/work/stock',
+    tint: 'bg-[#E3E6E1]',
     hasPage: true,
+    featured: true,
   },
   {
     num: '04',
     slug: 'reporting',
     title: 'Turning disconnected data into clearer decisions',
-    tag: 'Internal Platform',
+    tag: 'Data & Service Design',
+    description:
+      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
+    cta: 'View case study',
+    href: '/work/reporting',
+    tint: 'bg-[#DDE3E6]',
     hasPage: true,
+    featured: true,
   },
   {
     num: '05',
     slug: 'cm-navigation',
     title: 'Giving a siloed platform a navigation that scales',
-    tag: 'Product Design & Information Architecture',
+    tag: 'Information Architecture',
+    description:
+      'Rebuilt a SaaS platform\u2019s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
+    cta: 'View case study',
+    href: '/work/cm-navigation',
+    tint: 'bg-[#E4E1E8]',
     hasPage: true,
+    featured: true,
   },
   {
     num: '06',
     slug: 'netix',
     title: 'Making a legacy platform simple, accessible and built to scale',
     tag: 'Enterprise Product & Rebrand',
+    description:
+      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%, then carried it through a rebrand across UK and French teams while advocating for WCAG 2.1 AA accessibility.',
+    cta: 'View case study',
+    href: '/work/netix',
+    tint: 'bg-[#E9E4DE]',
     hasPage: true,
+    featured: true,
   },
   {
     num: '07',
     slug: 'consent',
     title: 'Turning a compliance risk into a simple first step',
     tag: 'Compliance & Service Design',
+    description:
+      'Led a cross-functional review of how feedback journeys captured consent, then designed one global pattern that protects users and brands without adding friction.',
+    cta: 'View case study',
+    href: '/work/consent',
+    tint: 'bg-[#E6E2E9]',
     hasPage: true,
+    featured: false,
   },
   {
     num: '08',
     slug: 'notifications',
     title: 'Designing notifications that scale beyond a single alert',
-    tag: 'Product Design & Systems',
+    tag: 'Systems Design',
+    description:
+      'Defined a notification framework that began with low-stock alerts for CSMs and now extends across data lifecycle and comments, saving hours of manual checking.',
+    cta: 'View case study',
+    href: '/work/notifications',
+    tint: 'bg-[#E2E6E4]',
     hasPage: true,
+    featured: false,
   },
   {
     num: '09',
     slug: 'integrations',
     title: 'Turning a technical bottleneck into a guided setup',
-    tag: 'Product Design',
+    tag: 'Integrations & Service Design',
+    description:
+      'Turned seven separate integration setups into one guided, self-serve flow, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
+    cta: 'View case study',
+    href: '/work/integrations',
+    tint: 'bg-[#E8E4DF]',
     hasPage: true,
+    featured: false,
   },
 ];
 
@@ -72,21 +126,30 @@ export const caseStudiesList = [
 export const thinkingList = [
   {
     slug: 'shadcn',
+    icon: Layers,
     kicker: 'Design systems',
     readTime: '4 min read',
-    title: 'The hard part of adopting ShadCN wasn’t technical.',
+    title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
+    description:
+      'It looks like something you\u2019d need to code to have a say in. You don\u2019t.',
   },
   {
     slug: 'undocumented',
+    icon: FileText,
     kicker: 'Systems Thinking',
     readTime: '2 min read',
-    title: 'Most “complex” systems are just undocumented ones.',
+    title: 'Most \u201Ccomplex\u201D systems are just undocumented ones.',
+    description:
+      'Most systems aren\u2019t complex. They\u2019re full of sensible decisions nobody ever wrote down.',
   },
   {
     slug: 'legacy',
+    icon: Wrench,
     kicker: 'Product Strategy',
     readTime: '6 min read',
     title: 'Nobody wants the new feature. They just want the old one to work.',
+    description:
+      'The four pressures that quietly wear a product down, and how to make the case for fixing the foundations first.',
   },
 ];
 
@@ -215,10 +278,27 @@ export function ArticleFooter({ currentSlug }) {
 
       <div className="text-center pt-4">
         <Link
-          href="/#thinking"
+          href="/thinking"
           className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
+        </Link>
+      </div>
+    </>
+  );
+}
+
+/* Footer for the index pages: the contact CTA and a way back home. */
+export function IndexFooter() {
+  return (
+    <>
+      <ContactCTA />
+      <div className="text-center pt-4">
+        <Link
+          href="/"
+          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
+        >
+          <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to home
         </Link>
       </div>
     </>
@@ -235,7 +315,7 @@ export function CaseStudyFooter({ currentSlug }) {
 
       <div className="text-center pt-4">
         <Link
-          href="/#work"
+          href="/work"
           className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to selected work
@@ -262,7 +342,7 @@ export function ArticlePage({ slug, children }) {
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
       <header className="max-w-2xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
         <Link
-          href="/#thinking"
+          href="/thinking"
           className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
