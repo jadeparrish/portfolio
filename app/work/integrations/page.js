@@ -109,7 +109,7 @@ export default function IntegrationsCaseStudy() {
             <p>
               In 2025, as part of the new Campaign Manager redesign, I led the redefinition of
               SoPost&rsquo;s integration setup, an essential part of campaign configuration
-              that had never once been consistent.
+              that had never been consistent.
             </p>
             <p>
               Integrations let SoPost sync data with fulfilment partners, CRMs and ad
