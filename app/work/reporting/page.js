@@ -130,7 +130,7 @@ export default function ReportingCaseStudy() {
                 Reporting had become fragmented and unreliable.
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Mission Control was overly technical and difficult to navigate</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Mission Control was built for engineers, but Commercial were relying on it too</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Campaign Manager split reporting across multiple isolated pages</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Data inconsistencies eroded trust internally and with brands</li>
               </ul>
@@ -168,9 +168,12 @@ export default function ReportingCaseStudy() {
                   inconsistencies created risk.
                 </p>
                 <p>
-                  The audit made it clear that Mission Control needed to be dismantled.
-                  I presented my findings and proposal to the CTO, positioning reporting
-                  as a strategic product initiative, not a maintenance task.
+                  The audit didn&rsquo;t say Mission Control had to go. Engineers found
+                  it useful, and it was built for them. The problem was that Commercial
+                  had been given access to a developer tool, and were pulling numbers out
+                  of it for brands. My proposal to the CTO was to keep Mission Control for
+                  engineering, build Commercial reporting of their own, and treat that as
+                  product work rather than maintenance.
                 </p>
               </div>
             </div>
