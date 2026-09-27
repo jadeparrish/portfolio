@@ -82,19 +82,19 @@ export default function CommercialValueCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Product, Commercial</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Product, Commercial</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Built in</p>
-              <p className="text-sm font-medium text-neutral-900">Looker and Figma</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Looker and Figma</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-neutral-900">Piloted live with the Commercial Team</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Piloted live with the Commercial Team</p>
             </div>
           </div>
         </section>
