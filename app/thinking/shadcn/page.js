@@ -13,7 +13,7 @@ import {
 
 export const metadata = {
   title: "The hard part of adopting ShadCN wasn't technical: Jade Parrish",
-  description: 'A Senior Product Designer on co-leading a ShadCN rollout, and why aligning design and code from day one saves real time.',
+  description: 'What co-leading a ShadCN rollout taught me about aligning design and code from day one, and why the hard part was never the technology.',
 };
 
 export default function ShadcnArticle() {
@@ -24,8 +24,8 @@ export default function ShadcnArticle() {
         title={<>The hard part of adopting ShadCN wasn&rsquo;t technical.</>}
         subtitle={
           <>
-            A Senior Product Designer on co-leading a ShadCN rollout, and what it taught
-            me about aligning design and code from day one.
+            What co-leading a ShadCN rollout taught me about aligning design and code
+            from day one, and why the hard part was never the technology.
           </>
         }
       />
