@@ -64,11 +64,11 @@ export default function WorkIndex() {
             Selected work
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight [text-wrap:balance] text-neutral-900 mb-6">
-            Nine pieces of work, and what each one actually changed.
+            The work, and what each one actually changed.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] [text-wrap:pretty]">
-            Mostly the parts people never see: how data moves, where a process breaks,
-            and who gets stuck when two systems disagree.
+            Mostly the parts people don&rsquo;t see: how data moves, where a process
+            breaks, and who gets stuck when two systems disagree.
           </p>
         </section>
 
