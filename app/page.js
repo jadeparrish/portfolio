@@ -95,7 +95,7 @@ const caseStudies = [
   {
     num: '04',
     title: 'Turning disconnected data into clearer decisions',
-    tag: 'Internal Platform',
+    tag: 'Data & Service Design',
     description:
       'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
     cta: 'View case study',
@@ -105,7 +105,7 @@ const caseStudies = [
   {
     num: '05',
     title: 'Giving a siloed platform a navigation that scales',
-    tag: 'Product Design & Information Architecture',
+    tag: 'Information Architecture',
     description:
       'Rebuilt a SaaS platform\u2019s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
     cta: 'View case study',
@@ -134,7 +134,7 @@ const moreWork = [
     href: '/work/consent',
   },
   {
-    tag: 'Product Design & Systems',
+    tag: 'Systems Design',
     title: 'Designing notifications that scale beyond a single alert',
     description:
       'Defined a notification framework that began with low-stock alerts for CSMs and now extends across data lifecycle and comments, saving hours of manual checking.',
@@ -142,7 +142,7 @@ const moreWork = [
     href: '/work/notifications',
   },
   {
-    tag: 'Product Design',
+    tag: 'Integrations & Service Design',
     title: 'Turning a technical bottleneck into a guided setup',
     description:
       'Turned seven separate integration setups into one guided, self-serve flow, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
