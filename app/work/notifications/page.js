@@ -68,7 +68,7 @@ export default function NotificationsCaseStudy() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Product Design &amp; Systems &middot; Senior Product Designer
+            Systems Design &middot; Senior Product Designer
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Designing notifications that scale beyond a single alert.
@@ -84,20 +84,20 @@ export default function NotificationsCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Product, Engineering, Customer Success</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Product, Engineering, Customer Success</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Started with</p>
-              <p className="text-sm font-medium text-neutral-900">Stock alerts</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Stock alerts</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
               {/* TODO: swap in a real figure if you can get one (e.g. hours saved per week, fewer missed downloads) */}
-              <p className="text-sm font-medium text-neutral-900">Hours of manual checking saved</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Hours of manual checking saved</p>
             </div>
           </div>
         </section>
