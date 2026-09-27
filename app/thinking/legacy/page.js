@@ -13,7 +13,7 @@ import {
 
 export const metadata = {
   title: "Nobody wants the new feature. They just want the old one to work: Jade Parrish",
-  description: 'A Service Designer on why shipping something new and keeping the old thing reliable are so hard to balance, what gets in the way, and what actually helps.',
+  description: 'Why shipping something new and keeping the old thing reliable are so hard to balance, what gets in the way, and what actually helps.',
 };
 
 export default function LegacyArticle() {
