@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Network } from 'lucide-react';
 
 export const caseStudiesList = [
   {
@@ -122,7 +122,9 @@ export const caseStudiesList = [
 ];
 
 /* The thinking pieces, in the same order as the homepage. Adding a new
-   piece here puts it into every article's "Read next" automatically. */
+   piece here puts it into every article's "Read next" automatically.
+   hasPage: false renders it as Coming soon and keeps it out of Read next,
+   so nothing ever links to a page that isn't there. */
 export const thinkingList = [
   {
     slug: 'shadcn',
@@ -132,6 +134,7 @@ export const thinkingList = [
     title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
     description:
       'It looks like something you\u2019d need to code to have a say in. You don\u2019t.',
+    hasPage: true,
   },
   {
     slug: 'undocumented',
@@ -141,6 +144,7 @@ export const thinkingList = [
     title: 'Most \u201Ccomplex\u201D systems are just undocumented ones.',
     description:
       'Most systems aren\u2019t complex. They\u2019re full of sensible decisions nobody ever wrote down.',
+    hasPage: true,
   },
   {
     slug: 'legacy',
@@ -150,6 +154,17 @@ export const thinkingList = [
     title: 'Nobody wants the new feature. They just want the old one to work.',
     description:
       'The four pressures that quietly wear a product down, and how to make the case for fixing the foundations first.',
+    hasPage: true,
+  },
+  {
+    slug: 'project-manager',
+    icon: Network,
+    kicker: 'Service Design',
+    readTime: 'Coming soon',
+    title: 'Somebody always ends up being the project manager.',
+    description:
+      'Every service assumes someone is holding the whole picture together. Usually it\u2019s the person the service is for.',
+    hasPage: false,
   },
 ];
 
@@ -247,10 +262,12 @@ function ArticleNavCard({ article }) {
 }
 
 export function ArticleNav({ currentSlug }) {
-  const i = thinkingList.findIndex((a) => a.slug === currentSlug);
+  /* Only pieces that exist, so Read next can never point at a 404. */
+  const published = thinkingList.filter((a) => a.hasPage);
+  const i = published.findIndex((a) => a.slug === currentSlug);
   if (i === -1) return null;
 
-  const others = [...thinkingList.slice(i + 1), ...thinkingList.slice(0, i)].slice(0, 2);
+  const others = [...published.slice(i + 1), ...published.slice(0, i)].slice(0, 2);
   if (others.length === 0) return null;
 
   const [left, right] = others;
