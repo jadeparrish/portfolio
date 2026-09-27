@@ -43,15 +43,6 @@ function ImagePlaceholder({ tint, caption }) {
 export default function ConsentCaseStudy() {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
-      {/* Top Navigation */}
-      <header className="max-w-3xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
-        <Link
-          href="/work"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
-        >
-          <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
-        </Link>
-      </header>
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
@@ -81,7 +72,7 @@ export default function ConsentCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Started with</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Data compliance concerns from L&rsquo;Oréal US</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Data compliance concerns from a global client</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
@@ -96,7 +87,7 @@ export default function ConsentCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              In 2025, after L&rsquo;Oréal US raised concerns about data being stored before people
+              In 2025, after a global client raised concerns about data being stored before people
               had agreed to the Terms and Conditions, I led a cross-functional review of how
               consent was captured across SoPost&rsquo;s feedback journeys.
             </p>
