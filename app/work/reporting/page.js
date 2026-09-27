@@ -262,9 +262,9 @@ export default function ReportingCaseStudy() {
                 team.
               </p>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                This foundation evolved into SoPost&rsquo;s ROI and Impact Dashboards,
-                Comparison Tables, and the Reporting Hub, forming the backbone of
-                SoPost&rsquo;s modern reporting ecosystem.
+                The work carried on well past 2024. That foundation became SoPost&rsquo;s
+                ROI and Impact Dashboards, Comparison Tables and the Reporting Hub,
+                which I picked up with our Product Manager the following year.
               </p>
             </div>
           </div>
