@@ -188,7 +188,8 @@ export default function StockCaseStudy() {
             <div>
               <SubLabel>Status</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                The designs were validated internally and rolled out in phases. They
+                Our Fulfilment Lead tested the designs with her counterpart at our biggest
+                warehouse, and they rolled out in phases. They
                 informed the next phase of Campaign Manager reporting, bringing the same
                 clarity and hierarchy into brand-facing dashboards. The same stock
                 visibility also led into a{' '}
