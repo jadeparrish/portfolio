@@ -227,7 +227,7 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* Selected Work */}
-        <section id="work" className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section id="work" className="pt-16 lg:pt-24">
           <SectionLabel>Selected Work</SectionLabel>
           <div className="divide-y divide-neutral-200/70">
             {caseStudies.map((item) => (
@@ -278,7 +278,9 @@ export default function PortfolioHomepage() {
             ))}
           </div>
 
-          <div className="mt-12 pt-10 border-t border-neutral-200/80">
+          {/* Sits in a band between two rules, 24px either side of the link,
+              the same rhythm the More work summary had. */}
+          <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/work"
               className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
@@ -304,7 +306,7 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* What I'm Noticing */}
-        <section id="thinking" className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section id="thinking" className="pt-16 lg:pt-24">
           <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
             {thoughts.map((article) => {
@@ -341,7 +343,7 @@ export default function PortfolioHomepage() {
             })}
           </div>
 
-          <div className="mt-12 pt-10 border-t border-neutral-200/80">
+          <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/thinking"
               className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
