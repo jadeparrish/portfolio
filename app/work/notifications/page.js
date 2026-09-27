@@ -81,7 +81,7 @@ export default function NotificationsCaseStudy() {
 
         {/* At a Glance */}
         <section className="py-8 border-b border-neutral-200/80">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
               <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
@@ -147,7 +147,7 @@ export default function NotificationsCaseStudy() {
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>My Role</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-            With my Product Manager, I led the design definition of the system, aligning
+            With our Product Manager, I led the design definition of the system, aligning
             Product, Engineering and CSMs around a shared model for how notifications
             should be structured, triggered and displayed. That included:
           </p>
