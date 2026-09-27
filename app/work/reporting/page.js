@@ -158,9 +158,10 @@ export default function ReportingCaseStudy() {
                 </p>
                 <p>
                   I audited every existing reporting view across Campaign Manager and
-                  Mission Control, documenting duplication and logic gaps. The picture
-                  became much clearer: the discrepancies ran deep, and there was no single,
-                  central reporting hub.
+                  Mission Control, documenting duplication and logic gaps. Our Product
+                  Manager helped me understand how some of the data was actually put
+                  together. The picture became much clearer: the discrepancies ran deep,
+                  and there was no single, central reporting hub.
                 </p>
                 <p>
                   In parallel, I worked with the Commercial Team to review the reports
