@@ -127,7 +127,7 @@ export const thinkingList = [
   {
     slug: 'shadcn',
     icon: Layers,
-    kicker: 'Design systems',
+    kicker: 'Design Systems',
     readTime: '4 min read',
     title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
     description:
