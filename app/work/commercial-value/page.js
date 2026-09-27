@@ -300,8 +300,8 @@ export default function CommercialValueCaseStudy() {
             <div>
               <SubLabel>Design approach</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                I defined the structure and logic for a comparison view that could sit
-                directly inside Campaign Manager, removing the need to export data or, for
+                Working with our Product Manager, I defined the structure and logic
+                for a comparison view that could sit directly inside Campaign Manager, removing the need to export data or, for
                 some brands, to maintain external decks. It supports flexible comparison
                 across brands, territories and campaign types, using shared indicators
                 such as opt-in rate, response rate, recommendation and purchase intent.
