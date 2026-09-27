@@ -321,15 +321,34 @@ export default function PortfolioHomepage() {
                     className={`w-5 h-5 ${article.href ? 'text-[#A47864]' : 'text-neutral-300'}`}
                     strokeWidth={1.5}
                   />
-                  <h3 className="font-serif text-lg text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-neutral-500">
+                  {/* A piece that isn't written yet sits back. #6E6E6E is
+                      4.8:1 on paper, so it reads as greyed out and still
+                      clears AA for small text. neutral-500 misses at 4.47. */}
+                  <h3
+                    className={`font-serif text-lg leading-snug ${
+                      article.href
+                        ? 'text-neutral-900 transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-neutral-500'
+                        : 'text-[#6E6E6E]'
+                    }`}
+                  >
                     {article.title}
                   </h3>
                   {article.description && (
-                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                    <p
+                      className={`text-xs sm:text-sm leading-relaxed ${
+                        article.href ? 'text-neutral-600' : 'text-[#6E6E6E]'
+                      }`}
+                    >
                       {article.description}
                     </p>
                   )}
-                  <p className="text-[11px] font-mono text-neutral-600">{article.readTime}</p>
+                  <p
+                    className={`text-[11px] font-mono ${
+                      article.href ? 'text-neutral-600' : 'text-[#6E6E6E]'
+                    }`}
+                  >
+                    {article.readTime}
+                  </p>
                 </>
               );
               return article.href ? (
