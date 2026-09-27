@@ -43,7 +43,7 @@ export default function NetIXCaseStudy() {
       {/* Top Navigation */}
       <header className="max-w-3xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
         <Link
-          href="/#work"
+          href="/work"
           className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
