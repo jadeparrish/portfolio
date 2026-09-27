@@ -150,7 +150,7 @@ export default function LegacyArticle() {
               without more to point to. What actually changed things was building the
               argument properly: auditing every reporting view, documenting exactly where
               and why the numbers diverged, and gathering what customers and our own
-              commercial team had been telling me alongside it. Then taking all of that
+              Commercial Team had been telling me alongside it. Then taking all of that
               to the CTO as a proposal rather than a concern.
             </p>
             <p>
