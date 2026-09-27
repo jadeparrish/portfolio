@@ -73,20 +73,20 @@ export default function ConsentCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Product, Legal, Engineering</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Product, Legal, Engineering</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Started with</p>
-              <p className="text-sm font-medium text-neutral-900">Data compliance concerns from L&rsquo;Oréal US</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Data compliance concerns from L&rsquo;Oréal US</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
               {/* TODO: add a real figure if you can get one (e.g. step-one drop-off, completion rate) */}
-              <p className="text-sm font-medium text-neutral-900">One reusable consent pattern for every journey</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">One reusable consent pattern for every journey</p>
             </div>
           </div>
         </section>
