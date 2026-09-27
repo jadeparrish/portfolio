@@ -184,8 +184,9 @@ export default function CommercialValueCaseStudy() {
             <div>
               <SubLabel>Building the pilot</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                I designed the pilot in Looker and tested it with the Commercial Team.
-                Looker let us:
+                Our Product Manager helped me understand how some of the underlying
+                data was put together. I designed the pilot in Looker and tested it with
+                the Commercial Team. Looker let us:
               </p>
               <Bullets
                 items={[
