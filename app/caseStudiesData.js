@@ -73,7 +73,7 @@ export const caseStudiesList = [
     title: 'Making a legacy platform simple, accessible and built to scale',
     tag: 'Enterprise Product & Rebrand',
     description:
-      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%, then carried it through a rebrand across UK and French teams while advocating for WCAG 2.1 AA accessibility.',
+      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%. Carried it through a rebrand across UK and French teams, then white-labelled it for La-Z-Boy and an IKEA bid, while advocating for WCAG 2.1 AA accessibility.',
     cta: 'View case study',
     href: '/work/netix',
     tint: 'bg-[#E9E4DE]',
