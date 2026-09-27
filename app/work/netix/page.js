@@ -268,7 +268,7 @@ export default function NetIXCaseStudy() {
                   Collaboration with Cegedim&rsquo;s product and engineering teams in
                   Paris was critical. I travelled to Boulogne-Billancourt to work
                   on-site with stakeholders and developers, reviewing accessibility
-                  adjustments, aligning with the French marketing team, and presenting
+                  adjustments, aligning with the French Marketing Team, and presenting
                   progress to executive sponsors. This face-to-face collaboration
                   accelerated decision-making and ensured design quality held up across
                   both product ecosystems.
