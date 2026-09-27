@@ -60,7 +60,7 @@ export const caseStudiesList = [
     title: 'Giving a siloed platform a navigation that scales',
     tag: 'Information Architecture',
     description:
-      'Rebuilt a SaaS platform\u2019s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
+      'Rebuilt a SaaS platform’s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
     cta: 'View case study',
     href: '/work/cm-navigation',
     tint: 'bg-[#E4E1E8]',
@@ -131,9 +131,9 @@ export const thinkingList = [
     icon: Layers,
     kicker: 'Design Systems',
     readTime: '4 min read',
-    title: 'The hard part of adopting ShadCN wasn\u2019t technical.',
+    title: 'The hard part of adopting ShadCN wasn’t technical.',
     description:
-      'It looks like something you\u2019d need to code to have a say in. You don\u2019t.',
+      'It looks like something you’d need to code to have a say in. You don’t.',
     hasPage: true,
   },
   {
@@ -141,9 +141,9 @@ export const thinkingList = [
     icon: FileText,
     kicker: 'Systems Thinking',
     readTime: '2 min read',
-    title: 'Most \u201Ccomplex\u201D systems are just undocumented ones.',
+    title: 'Most “complex” systems are just undocumented ones.',
     description:
-      'Most systems aren\u2019t complex. They\u2019re full of sensible decisions nobody ever wrote down.',
+      'Most systems aren’t complex. They’re full of sensible decisions nobody ever wrote down.',
     hasPage: true,
   },
   {
@@ -161,9 +161,9 @@ export const thinkingList = [
     icon: Sparkles,
     kicker: 'Design & AI',
     readTime: 'Coming soon',
-    title: 'The screen got cheap. The service didn\u2019t.',
+    title: 'The prototype was never the expensive part.',
     description:
-      'Building the first version is close to free now. Working out which version is worth building isn\\u2019t.',
+      'A working screen is the cheap bit now. Knowing which screen to build still takes the same research it always did.',
     hasPage: false,
   },
 ];
