@@ -13,7 +13,7 @@ import {
 
 export const metadata = {
   title: "Most \"complex\" systems are just undocumented ones: Jade Parrish",
-  description: 'A Service Designer on why complexity gets mistaken for expertise, and why the real craft is simplifying and telling a clear story.',
+  description: 'Why complexity gets mistaken for expertise, and why the real craft is simplifying a service and telling a clear story about how it works.',
 };
 
 export default function UndocumentedArticle() {
