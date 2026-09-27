@@ -68,7 +68,7 @@ export default function NavigationCaseStudy() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Product Design &amp; Information Architecture &middot; Senior Product Designer
+            Information Architecture &middot; Senior Product Designer
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Giving a siloed platform a navigation that scales.
@@ -84,20 +84,20 @@ export default function NavigationCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Product, Engineering</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Product, Engineering</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Validated with</p>
-              <p className="text-sm font-medium text-neutral-900">Internal teams and Customer Success</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Internal teams and Customer Success</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
               {/* TODO: swap in a real figure if you can get one (e.g. task time, fewer support questions) */}
-              <p className="text-sm font-medium text-neutral-900">A structure that scales without restructuring</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">A structure that scales without restructuring</p>
             </div>
           </div>
         </section>
