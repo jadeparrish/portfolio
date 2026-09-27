@@ -96,7 +96,7 @@ export default function ConsentCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              After L&rsquo;Oréal US raised concerns about data being stored before people
+              In 2025, after L&rsquo;Oréal US raised concerns about data being stored before people
               had agreed to the Terms and Conditions, I led a cross-functional review of how
               consent was captured across SoPost&rsquo;s feedback journeys.
             </p>
@@ -147,7 +147,7 @@ export default function ConsentCaseStudy() {
               'Mapping where and when data was written or saved across systems',
               'Working with Engineering to document save events and dependencies',
               'Prototyping a new welcome and consent step for both standard and gifting journeys',
-              'Partnering with Legal to rewrite the consent copy for clarity and brevity',
+              'Partnering with Legal to rewrite the consent copy so it was shorter and easier to understand',
               'Reducing interaction friction through layout, focus order and auto-generation logic',
             ]}
           />
@@ -162,7 +162,7 @@ export default function ConsentCaseStudy() {
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Process</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-            With the Product Manager, I analysed historic performance data for the
+            With our Product Manager, I analysed historic performance data for the
             &ldquo;welcome screen&rdquo; to understand its effect on conversion, then
             redefined it as the default consent pattern for every feedback journey. The
             new design:
