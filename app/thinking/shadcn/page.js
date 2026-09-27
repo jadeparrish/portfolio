@@ -20,7 +20,7 @@ export default function ShadcnArticle() {
   return (
     <ArticlePage slug="shadcn">
       <ArticleTitle
-        kicker={<>Design systems &middot; 4 min read</>}
+        kicker={<>Design Systems &middot; 4 min read</>}
         title={<>The hard part of adopting ShadCN wasn&rsquo;t technical.</>}
         subtitle={
           <>
