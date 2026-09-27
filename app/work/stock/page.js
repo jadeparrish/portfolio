@@ -97,7 +97,7 @@ export default function StockCaseStudy() {
               anyone&rsquo;s roadmap. I could see what the spreadsheets and email chains
               between SoPost and its fulfilment partners were costing us, so I put the
               case for a Warehouse Management System to our CFO, our CTO and my manager,
-              and got the go-ahead. Three of us built it in 2024: our CFO, who knew the
+              and got the go-ahead. The three of us built it in 2024: our CFO, who knew the
               operation inside out, our Fulfilment Lead, who worked with the warehouses
               day to day, and me. The WMS replaced all of that with one role-based system.
               Building it turned up something I wasn&rsquo;t expecting, real discrepancies
@@ -160,9 +160,9 @@ export default function StockCaseStudy() {
             <div>
               <SubLabel>Exploration</SubLabel>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Worked through the fulfilment flow diagrams to see what depended on what</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Worked through the fulfilment flow diagrams to see what depended on what, who depended on it, and what was responsible for what</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Created dashboard sketches and interactive prototypes</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tested different ways of grouping stock, by product, by activity and by partition, looking for one that held up however a campaign had been set up</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tested different ways of grouping stock, by product, by activity and by partition, looking for one that made sense however a campaign had been set up</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tried nested and shared views, so you could see at a glance when several products or markets were drawing on the same stock</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Worked on colour, hierarchy and wording until bundles, single products and regional stock read as clearly different things</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Designed dashboards for delivery times and dispatch status, so delays and anything needing attention surfaced on their own</li>
