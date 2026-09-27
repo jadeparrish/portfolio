@@ -54,15 +54,6 @@ function ImagePlaceholder({ tint, caption }) {
 export default function IntegrationsCaseStudy() {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
-      {/* Top Navigation */}
-      <header className="max-w-3xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
-        <Link
-          href="/work"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
-        >
-          <ArrowLeft className="w-3.5 h-3.5" /> Back to selected work
-        </Link>
-      </header>
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
