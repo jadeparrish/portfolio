@@ -163,7 +163,7 @@ export const thinkingList = [
     readTime: 'Coming soon',
     title: 'The screen got cheap. The service didn\u2019t.',
     description:
-      'What AI app builders actually change for tech teams, and where design value moves when a working interface costs almost nothing.',
+      'Building the first version is close to free now. Working out which version is worth building isn\\u2019t.',
     hasPage: false,
   },
 ];
