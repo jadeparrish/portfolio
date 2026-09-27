@@ -4,7 +4,6 @@ import {
   ArrowDownRight,
   ArrowRight,
   ArrowRightLeft,
-  ChevronDown,
   Search,
   Target,
   Users,
@@ -39,9 +38,9 @@ const whatIDo = [
 
 const thoughts = thinkingList.map((a) => ({ ...a, href: `/thinking/${a.slug}` }));
 
+/* The homepage shows three. Everything else lives on /work, so the two
+   don't have to be kept in step by hand. */
 const caseStudies = caseStudiesList.filter((item) => item.featured);
-
-const moreWork = caseStudiesList.filter((item) => !item.featured);
 
 const whoIWorkWith = [
   {
@@ -228,7 +227,7 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* Selected Work */}
-        <section id="work" className="pt-16 lg:pt-24">
+        <section id="work" className="py-16 lg:py-24 border-b border-neutral-200/80">
           <SectionLabel>Selected Work</SectionLabel>
           <div className="divide-y divide-neutral-200/70">
             {caseStudies.map((item) => (
@@ -279,40 +278,15 @@ export default function PortfolioHomepage() {
             ))}
           </div>
 
-          {/* More work: native details element, no client-side code needed */}
-          <details className="group mt-12 border-y border-neutral-200/80">
-            <summary className="flex items-center justify-between cursor-pointer list-none py-6 text-xs uppercase tracking-[0.15em] font-medium text-neutral-800 hover:text-[#8D6553] transition-colors [&::-webkit-details-marker]:hidden">
-              <span>More work ({moreWork.length})</span>
-              <ChevronDown className="w-4 h-4 text-neutral-600 transition-transform group-open:rotate-180" />
-            </summary>
-            <div className="divide-y divide-neutral-200/60 border-t border-neutral-200/60">
-              {moreWork.map((item) => (
-                <div key={item.title} className="py-8 grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-8">
-                  <p className="lg:col-span-3 text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium lg:pt-2">
-                    {item.tag}
-                  </p>
-                  <div className="lg:col-span-7 space-y-2">
-                    <h3 className="font-serif text-xl text-neutral-900 leading-snug">{item.title}</h3>
-                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">{item.description}</p>
-                  </div>
-                  <div className="lg:col-span-2 lg:text-right lg:pt-1">
-                    {item.href ? (
-                      <a
-                        href={item.href}
-                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#8D6553] transition-colors"
-                      >
-                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-600" />
-                      </a>
-                    ) : (
-                      <span className="text-xs text-neutral-600 font-medium tracking-wider uppercase">
-                        {item.cta}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </details>
+          <div className="mt-12 pt-10 border-t border-neutral-200/80">
+            <a
+              href="/work"
+              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+            >
+              See all work ({caseStudiesList.length})
+              <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
+            </a>
+          </div>
         </section>
 
         {/* Where I Can Help */}
@@ -365,6 +339,16 @@ export default function PortfolioHomepage() {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mt-12 pt-10 border-t border-neutral-200/80">
+            <a
+              href="/thinking"
+              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+            >
+              All thinking
+              <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
+            </a>
           </div>
         </section>
 
