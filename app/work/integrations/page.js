@@ -81,7 +81,7 @@ export default function IntegrationsCaseStudy() {
 
         {/* At a Glance */}
         <section className="py-8 border-b border-neutral-200/80">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
               <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
