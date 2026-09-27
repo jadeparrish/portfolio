@@ -150,7 +150,7 @@ export default function ReportingCaseStudy() {
               <SubLabel>Process</SubLabel>
               <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <p>
-                  The audit started with the people using the data. Commercial team
+                  The audit started with the people using the data. Commercial Team
                   members in different countries kept coming to me with gaps and
                   differences in their numbers, which made their decks hard to understand
                   and talk through. Building the WMS had already uncovered discrepancies
@@ -163,7 +163,7 @@ export default function ReportingCaseStudy() {
                   central reporting hub.
                 </p>
                 <p>
-                  In parallel, I worked with the Commercial team to review the reports
+                  In parallel, I worked with the Commercial Team to review the reports
                   they shared with brands, pinpointing where manual edits and visual
                   inconsistencies created risk.
                 </p>
@@ -278,7 +278,7 @@ export default function ReportingCaseStudy() {
               understands campaign performance.
             </p>
             <p>
-              By unifying fragmented tools, aligning technical and commercial teams, and
+              By unifying fragmented tools, aligning Engineering and the Commercial Team, and
               defining clear visual standards, reporting shifted from a manual task to a
               strategic, insight-led system.
             </p>
