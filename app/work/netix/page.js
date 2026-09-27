@@ -265,9 +265,9 @@ export default function NetIXCaseStudy() {
                   designs through prototypes before any implementation began.
                 </p>
                 <p>
-                  Collaboration with Cegedim&rsquo;s product and engineering teams in
-                  Paris was critical. I travelled to Boulogne-Billancourt to work
-                  on-site with stakeholders and developers, reviewing accessibility
+                  Collaboration with Cegedim&rsquo;s product and engineering teams was
+                  critical. I travelled to France to work on-site with stakeholders and
+                  developers, reviewing accessibility
                   adjustments, aligning with the French Marketing Team, and presenting
                   progress to executive sponsors. This face-to-face collaboration
                   accelerated decision-making and ensured design quality held up across
@@ -302,9 +302,9 @@ export default function NetIXCaseStudy() {
               design, with nobody else to hand the hard decisions to.
             </p>
             <p>
-              Collaborating closely with Cegedim in Paris, including working on-site in
-              Boulogne-Billancourt, gave me first-hand experience of how international
-              product teams align brand, accessibility and technical delivery.
+              Working on-site with Cegedim in France gave me first-hand experience of
+              how international product teams align brand, accessibility and technical
+              delivery.
             </p>
             <p>
               NetIX evolved from a legacy desktop app into a scalable platform that
