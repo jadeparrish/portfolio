@@ -70,19 +70,19 @@ export default function ReportingCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Research</p>
-              <p className="text-sm font-medium text-neutral-900">8 stakeholder interviews</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">8 stakeholder interviews</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-[#8D6553]">50%+ faster reporting</p>
+              <p className="text-sm font-medium text-[#8D6553] [text-wrap:balance]">50%+ faster reporting</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Backed by</p>
-              <p className="text-sm font-medium text-neutral-900">CTO-approved initiative</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">CTO-approved initiative</p>
             </div>
           </div>
         </section>
@@ -92,9 +92,9 @@ export default function ReportingCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              In 2024, I led the redesign of SoPost&rsquo;s Reporting Area. That sounds tidy
-              written like that. The honest version is that nobody trusted the numbers
-              anymore, and I got to be the person who fixed it.
+              In 2024, I led the redesign of SoPost&rsquo;s Reporting Area. The honest
+              version is that nobody trusted the numbers anymore, and I got to be the
+              person who went and found out why.
             </p>
             <p>
               Before this work, results were scattered across Campaign Manager,
@@ -105,9 +105,9 @@ export default function ReportingCaseStudy() {
               low.
             </p>
             <p>
-              The goal was to bring all reporting into one reliable suite, giving every
-              team, from Commercial to Operations, a shared and trustworthy view of
-              performance and value.
+              The goal was to bring all reporting into one reliable suite, so every team
+              from Commercial to Operations, and the brands we worked with, had the same
+              trustworthy view of performance and value.
             </p>
           </div>
 
