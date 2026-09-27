@@ -288,7 +288,6 @@ export default function NetIXCaseStudy() {
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Improved user trust and engagement post-acquisition</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Created the groundwork for a scalable design system across multiple Cegedim products</li>
               </ul>
             </div>
           </div>
