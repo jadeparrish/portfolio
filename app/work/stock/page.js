@@ -206,7 +206,7 @@ export default function StockCaseStudy() {
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               This project turned stock and fulfilment from a hidden, spreadsheet-shaped
-              process into something transparent and data-driven. The Fulfilment team told
+              process into something transparent and data-driven. The Fulfilment Team told
               us early on that it was working: real-time visibility and automation saved
               hours of manual updates, cut the room for human error, and headed off issues
               that could have damaged brand relationships when opt-in or dispatch data
