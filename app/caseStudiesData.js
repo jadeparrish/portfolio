@@ -13,7 +13,7 @@ export const caseStudiesList = [
     href: null,
     tint: 'bg-[#EDEAE4]',
     hasPage: false,
-    featured: true,
+    featured: false,
   },
   {
     num: '02',
@@ -26,7 +26,7 @@ export const caseStudiesList = [
     href: '/work/commercial-value',
     tint: 'bg-[#E7E2DC]',
     hasPage: true,
-    featured: true,
+    featured: false,
   },
   {
     num: '03',
@@ -65,7 +65,7 @@ export const caseStudiesList = [
     href: '/work/cm-navigation',
     tint: 'bg-[#E4E1E8]',
     hasPage: true,
-    featured: true,
+    featured: false,
   },
   {
     num: '06',
