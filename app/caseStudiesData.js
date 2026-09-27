@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Network } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Sparkles } from 'lucide-react';
 
 export const caseStudiesList = [
   {
@@ -157,13 +157,13 @@ export const thinkingList = [
     hasPage: true,
   },
   {
-    slug: 'project-manager',
-    icon: Network,
-    kicker: 'Service Design',
+    slug: 'cheap-screens',
+    icon: Sparkles,
+    kicker: 'Design & AI',
     readTime: 'Coming soon',
-    title: 'Somebody always ends up being the project manager.',
+    title: 'The screen got cheap. The service didn\u2019t.',
     description:
-      'Every service assumes someone is holding the whole picture together. Usually it\u2019s the person the service is for.',
+      'What AI app builders actually change for tech teams, and where design value moves when a working interface costs almost nothing.',
     hasPage: false,
   },
 ];
