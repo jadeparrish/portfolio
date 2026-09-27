@@ -1,147 +1,74 @@
 import React from 'react';
-import {
-  ArticlePage,
-  ArticleTitle,
-  ArticleBody,
-  ArticleBlock,
-  ArticleHeading,
-  ArticleBullets,
-  PullQuote,
-  Accent,
-  ArticleLink,
-} from '../../caseStudiesData';
+import Link from 'next/link';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { thinkingList, IndexFooter, SiteFooter } from '../caseStudiesData';
 
 export const metadata = {
-  title: "Most \"complex\" systems are just undocumented ones: Jade Parrish",
-  description: 'Why complexity gets mistaken for expertise, and why the real craft is simplifying a service and telling a clear story about how it works.',
+  title: 'Thinking: Jade Parrish',
+  description:
+    'Writing on design systems, why complexity is usually just missing documentation, and why fixing the foundations tends to pay for itself.',
 };
 
-export default function UndocumentedArticle() {
+export default function ThinkingIndex() {
   return (
-    <ArticlePage slug="undocumented">
-      <ArticleTitle
-        kicker={<>Systems Thinking &middot; 2 min read</>}
-        title={<>Most &ldquo;complex&rdquo; systems are just undocumented ones.</>}
-        subtitle={
-          <>
-            Why complexity gets mistaken for expertise, and why the real craft is
-            simplifying a service and telling a clear story about how it works.
-          </>
-        }
-      />
+    <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
+      <header className="max-w-2xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
+        <Link
+          href="/"
+          className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
+        >
+          <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to home
+        </Link>
+      </header>
 
-      <ArticleBody>
-        <ArticleBlock>
-          <p>
-            Ask almost any team how their service actually works, and they&rsquo;ll
-            describe a maze: exceptions, workarounds, and a process map that only makes
-            sense to the person walking you through it. There&rsquo;s a quiet temptation
-            to read that maze as sophistication, to treat a service as complex because
-            it&rsquo;s hard to explain.
+      <main className="max-w-2xl mx-auto px-6 sm:px-8 pb-24">
+        <section className="pb-10 border-b border-neutral-200/80">
+          <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-5">
+            Thinking
           </p>
-          <p>
-            In my experience auditing services and internal tools, that&rsquo;s rarely
-            true. What looks like complexity is usually a series of reasonable decisions,
-            made under pressure, that were never written down or joined up. The
-            workarounds became &ldquo;standard practice&rdquo; long before anyone
-            stepped back to ask why, which is exactly what I found mapping{' '}
-            <ArticleLink href="/work/netix">NetIX&rsquo;s workflows</ArticleLink> before
-            its rebuild, and again auditing{' '}
-            <ArticleLink href="/work/stock">stock and reporting data</ArticleLink>{' '}
-            at another company.
+          <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight [text-wrap:balance] text-neutral-900 mb-6">
+            Things I keep running into, written down.
+          </h1>
+          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] [text-wrap:pretty]">
+            Mostly about systems: why they get tangled, why the tangle is usually
+            undocumented rather than complex, and what it costs to leave it alone.
           </p>
-          <p>
-            None of this is a new observation. Technical debt and legibility have been
-            written about for years. What I can add is that it&rsquo;s been true every
-            time I&rsquo;ve looked.
-          </p>
-        </ArticleBlock>
+        </section>
 
-        <div>
-          <ArticleHeading>The trap of adding without mapping</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              It&rsquo;s easy to make a service more complicated. Anyone can add another
-              exception, another spreadsheet, another handoff to solve a problem in front
-              of them today. When teams are under pressure, these additions pile up
-              without anyone owning the whole picture.
-            </p>
-            <p>The result isn&rsquo;t true complexity. It&rsquo;s just noise:</p>
-            <ArticleBullets
-              items={[
-                'Simple rules get buried under exceptions built for one-off cases',
-                'The reasoning behind a decision lives only in one person’s head',
-                'Every change feels risky, because no one can see how the parts connect',
-              ]}
-            />
-            <p>
-              Making something intricate takes very little effort. Making it
-              understandable takes real skill.
-            </p>
-          </ArticleBlock>
+        <div className="py-12 border-b border-neutral-200/80 divide-y divide-neutral-200/70">
+          {thinkingList.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/thinking/${article.slug}`}
+              className="group flex gap-5 py-10 first:pt-0"
+            >
+              <article.icon
+                className="w-5 h-5 shrink-0 mt-1 text-[#A47864]"
+                strokeWidth={1.5}
+              />
+              <div className="flex-1">
+                <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium mb-2">
+                  {article.kicker} &middot; {article.readTime}
+                </p>
+                <h2 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug tracking-tight [text-wrap:balance] transition-colors group-hover:text-[#8D6553]">
+                  {article.title}
+                </h2>
+                <p className="mt-3 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
+                  {article.description}
+                </p>
+                <p className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-neutral-900">
+                  Read it
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                </p>
+              </div>
+            </Link>
+          ))}
         </div>
 
-        <div>
-          <ArticleHeading>Cleverness is simplification</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              The best designers and engineers I&rsquo;ve worked with aren&rsquo;t the
-              ones who produce the most intricate solution. They&rsquo;re the ones who
-              can take a tangle of edge cases, distil it to its core logic, and explain
-              it to a room of stakeholders in five minutes.
-            </p>
-            <p>Cleverness looks like:</p>
-            <ArticleBullets
-              items={[
-                'Choosing the shared, boring pattern over the bespoke one, because it lowers the load on everyone else',
-                'Turning a process only one person understands into a map anyone on the team can follow',
-                'Accepting that if you can’t sketch how a service works on a napkin, you probably don’t understand it yet',
-              ]}
-            />
-          </ArticleBlock>
-        </div>
+        <IndexFooter />
+      </main>
 
-        <div>
-          <ArticleHeading>Systems are stories</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              A process tells people what to do. Documentation and structure tell people
-              why it matters. When a service has no clear story, every new person joining
-              has to become a detective, piecing it together from old tickets,
-              half-remembered decisions and whoever happens to still be around.
-            </p>
-            <p>Treat documentation and structure as storytelling, and things change:</p>
-            <ArticleBullets
-              items={[
-                'Intent becomes obvious: someone new can follow a request end to end without a guided tour',
-                'Boundaries become clear: teams know exactly where a new piece of work belongs',
-                'Maintenance becomes routine: people spend less time working out how something functions, and more time making it better',
-              ]}
-            />
-            <p>
-              That last one matters more than it sounds. A team that understands its own
-              system spends its time improving it rather than working around it, which
-              is the same reason{' '}
-              <ArticleLink href="/thinking/legacy">
-                fixing the foundations
-              </ArticleLink>{' '}
-              tends to pay for itself.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <ArticleBlock>
-          <PullQuote>
-            Complexity is easy. <Accent>Clarity takes discipline.</Accent>
-          </PullQuote>
-          <p>
-            Give a team shared structure, and encourage them to tell the story of how
-            their service actually works, and the &ldquo;complex&rdquo; system tends to
-            disappear. What&rsquo;s left is something clear and reliable, and the real
-            cleverness of the people who made it that way.
-          </p>
-        </ArticleBlock>
-      </ArticleBody>
-    </ArticlePage>
+      <SiteFooter />
+    </div>
   );
 }
