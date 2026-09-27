@@ -86,7 +86,7 @@ export default function CommercialValueCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Product, Commercial, CSMs</p>
+              <p className="text-sm font-medium text-neutral-900">Product, Commercial</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Built in</p>
@@ -94,7 +94,7 @@ export default function CommercialValueCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-neutral-900">Piloted live with CSM and Commercial teams</p>
+              <p className="text-sm font-medium text-neutral-900">Piloted live with the Commercial Team</p>
             </div>
           </div>
         </section>
@@ -121,7 +121,7 @@ export default function CommercialValueCaseStudy() {
               performed side by side.
             </p>
             <p>
-              Both came from the same problem: commercial teams and CSMs had the data, but
+              Both came from the same problem: the Commercial Team had the data, but
               not a clear, consistent way to turn it into a story.
             </p>
           </div>
@@ -154,8 +154,8 @@ export default function CommercialValueCaseStudy() {
               <Bullets
                 items={[
                   'Brands judged campaigns on immediate results, without seeing how they build future demand',
-                  'CSMs lacked a clear, consistent story for uplift',
-                  'Commercial teams were spending time defending value instead of demonstrating it',
+                  'The Commercial Team lacked a clear, consistent story for uplift',
+                  'They were spending time defending value instead of demonstrating it',
                 ]}
               />
             </div>
@@ -184,14 +184,14 @@ export default function CommercialValueCaseStudy() {
             <div>
               <SubLabel>Building the pilot</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                I designed the pilot in Looker and tested it with the Commercial team.
+                I designed the pilot in Looker and tested it with the Commercial Team.
                 Looker let us:
               </p>
               <Bullets
                 items={[
                   'Prototype live with production data',
                   'Iterate quickly as the calculations evolved',
-                  'Test real interactions and filters with CSMs and Commercial teams',
+                  'Test real interactions and filters with the Commercial Team',
                   'Reuse existing data models for future integration into Campaign Manager reporting',
                 ]}
               />
@@ -202,26 +202,34 @@ export default function CommercialValueCaseStudy() {
             </div>
 
             <div>
-              <SubLabel>Pilot scope</SubLabel>
+              <SubLabel>What the pilot measured</SubLabel>
               <Bullets
                 items={[
-                  'Incremental revenue: attribution against a control, at campaign and aggregate level',
-                  'Purchase intent and trust uplift: benchmarks, confidence ranges and a clear visual hierarchy',
-                  'Context: category and network baselines for faster interpretation',
-                  'Storytelling: roll-ups, drill-downs and exportable summaries',
-                  'Quality gates: thresholds, exclusions and shared definitions',
+                  'Revenue the campaign actually caused, compared against a control group, for one campaign or across all of them',
+                  'Whether people came away more likely to buy, and more trusting of the brand, with a range showing how confident we were in each number',
+                  'What normal looked like for that product category and across the network, so a number meant something on sight',
+                ]}
+              />
+            </div>
+
+            <div>
+              <SubLabel>What made it usable</SubLabel>
+              <Bullets
+                items={[
+                  'A summary to open with, the detail underneath, and something the team could export straight into a deck',
+                  'Agreed rules on what counted, what was excluded, and what each term meant',
                 ]}
               />
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
                 The pilot wasn&rsquo;t about dashboards for their own sake. It tested
-                whether the methodology could be understood, trusted and scaled.
+                whether the approach could be understood, trusted and scaled.
               </p>
             </div>
 
             <div>
               <SubLabel>Testing and validation</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                The dashboard went live with the CSM and Commercial teams, where we
+                The dashboard went live with the Commercial Team, where we
                 validated:
               </p>
               <Bullets
@@ -267,7 +275,7 @@ export default function CommercialValueCaseStudy() {
                 Comparison reporting, the large summary and benchmark tables, lived across
                 Looker dashboards, slides and ad-hoc exports. That fragmentation made it
                 hard to spot performance patterns across campaigns or markets, and
-                Commercial teams had to build these tables by hand, collating data from
+                The Commercial Team had to build these tables by hand, collating data from
                 each source.
               </p>
             </div>
@@ -275,7 +283,7 @@ export default function CommercialValueCaseStudy() {
             <div>
               <SubLabel>Why it mattered</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                The Commercial team asked for this. They and the CSMs were rebuilding the
+                The Commercial Team asked for this. They were rebuilding the
                 same story for every campaign, and needed a quick, standard way to answer
                 questions that kept coming up:
               </p>
@@ -340,8 +348,8 @@ export default function CommercialValueCaseStudy() {
               <SubLabel>Expected impact</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 The framework was designed to cut the time spent on comparison reporting
-                sharply, by taking most of the manual work out of it. Tables that
-                Commercial teams built by hand,
+                sharply, by taking most of the manual work out of it. Tables the
+                Commercial Team built by hand,
                 collating data from Looker, slides and exports, would come from one view in
                 one consistent format, and the same question could be answered for every
                 campaign without rebuilding the story each time.
@@ -366,7 +374,7 @@ export default function CommercialValueCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              Together, these gave commercial teams two things they&rsquo;d been missing: a
+              Together, these gave the Commercial Team two things they&rsquo;d been missing: a
               credible way to show value over time, and a fast way to compare results
               without rebuilding the same table from scratch every time. One answers
               &ldquo;what did this create?&rdquo;, the other &ldquo;how does it
