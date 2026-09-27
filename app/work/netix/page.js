@@ -54,7 +54,7 @@ export default function NetIXCaseStudy() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Enterprise Product &amp; Rebrand &middot; Sole Designer
+            Enterprise Product &amp; Rebrand &middot; Sole Product Designer
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Making a legacy platform simple, accessible and built to scale.
@@ -69,7 +69,7 @@ export default function NetIXCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Sole Designer</p>
+              <p className="text-sm font-medium text-neutral-900">Sole Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Clients</p>
@@ -97,7 +97,7 @@ export default function NetIXCaseStudy() {
               and hard to find your way around.
             </p>
             <p>
-              As the Sole Designer, I was responsible for bringing clarity, structure and
+              As the Sole Product Designer, I was responsible for bringing clarity, structure and
               usability to a deeply technical enterprise product used by clients including
               DPD, Radley, Tangle Teezer and NHS Supply Chain.
             </p>
