@@ -54,7 +54,7 @@ export default function StockCaseStudy() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Operations &amp; Service Design &middot; Design Lead
+            Operations &amp; Service Design &middot; Senior Product Designer
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Bringing stock and fulfilment data into one clear view.
@@ -70,11 +70,11 @@ export default function StockCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Design Lead</p>
+              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Product, Commercial, Engineering</p>
+              <p className="text-sm font-medium text-neutral-900">Product, Commercial, Engineering, Fulfilment</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Focus</p>
@@ -95,12 +95,13 @@ export default function StockCaseStudy() {
             <p>
               This one started somewhere unglamorous, and it wasn&rsquo;t on
               anyone&rsquo;s roadmap. I could see what the spreadsheets and email chains
-              between SoPost and its fulfilment partners were costing us, so I took it to
-              our CFO and we built the Warehouse Management System (WMS) together in 2024,
-              replacing all of it with one role-based system. He knew the operation inside
-              out, so everything ran past him, and our Fulfilment Lead used it constantly
-              with the warehouses. Building it turned up something I wasn&rsquo;t
-              expecting, real discrepancies in the data behind stock and fulfilment.
+              between SoPost and its fulfilment partners were costing us, so I put the
+              case to our CFO, our CTO and my manager, and got the go-ahead. The CFO knew
+              the operation inside out, so everything ran past him, and we built the
+              Warehouse Management System (WMS) together in 2024, replacing all of it with
+              one role-based system. Our Fulfilment Lead used it constantly with the
+              warehouses. Building it turned up something I wasn&rsquo;t expecting, real
+              discrepancies in the data behind stock and fulfilment.
             </p>
             <p>
               I then audited Mission Control and Campaign Manager, and the message became
