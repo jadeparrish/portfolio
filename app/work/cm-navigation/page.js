@@ -166,13 +166,16 @@ export default function NavigationCaseStudy() {
           <Bullets
             items={[
               'A persistent sidebar for global navigation and orientation',
-              'A contextual horizontal bar for task-specific actions within each campaign, such as Orders, Stock, Distribution and Feedback',
+              'A contextual horizontal bar for task-specific actions within each campaign, such as Campaign settings, Branding, Products and Journeys',
             ]}
           />
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
-            This let people move between strategic and operational contexts without losing
-            their place. It followed established SaaS heuristics: progressive disclosure,
-            recognition over recall, and clear mental models for depth and hierarchy.
+            What appears in that bar depends on where you are. Setting a campaign up
+            surfaces the steps for setup; once it&rsquo;s live, reporting and results take
+            their place. That&rsquo;s progressive disclosure applied to navigation: you
+            see what&rsquo;s relevant to what you&rsquo;re doing, not everything the
+            platform can do. It let people move between strategic and operational contexts
+            without losing their place.
           </p>
 
           <ImagePlaceholder tint="bg-[#E9E4DE]" caption="Three-tier hierarchy and dual-layer navigation model" />
@@ -216,7 +219,7 @@ export default function NavigationCaseStudy() {
           <p className="font-serif text-2xl text-neutral-900 mt-8">
             This was not a visual refresh. It was a{' '}
             <span className="text-[#A47864] italic">fundamental redesign</span> of how the
-            platform worked and scaled.
+            platform was accessed.
           </p>
         </section>
 
@@ -233,9 +236,8 @@ export default function NavigationCaseStudy() {
             <p>
               The framework now underpins the whole Campaign Manager ecosystem, connecting{' '}
               <InlineLink href="/work/reporting">Reporting</InlineLink>,{' '}
-              <InlineLink href="/work/stock">stock and fulfilment</InlineLink>,
-              Integrations and whatever comes next, through one consistent, scalable
-              structure. That&rsquo;s the part I find most satisfying about this kind of
+              <InlineLink href="/work/stock">stock and fulfilment</InlineLink> and
+              Integrations through one consistent, scalable structure. That&rsquo;s the part I find most satisfying about this kind of
               work: not the new screens, but the fact that the next hundred features now
               have somewhere sensible to live.
             </p>
