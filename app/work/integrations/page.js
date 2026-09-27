@@ -68,7 +68,7 @@ export default function IntegrationsCaseStudy() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Product Design &middot; Senior Product Designer
+            Integrations &amp; Service Design &middot; Senior Product Designer
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Turning a technical bottleneck into a guided setup.
@@ -84,20 +84,20 @@ export default function IntegrationsCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Commercial, Product, Engineering</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Commercial, Product, Engineering</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Covers</p>
-              <p className="text-sm font-medium text-neutral-900">Seven integrations, one pattern</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Seven integrations, one pattern</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
               {/* TODO: add a real figure if you can get one (e.g. setup time, fewer Engineering requests) */}
-              <p className="text-sm font-medium text-neutral-900">A repeatable, self-serve setup flow</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">A repeatable, self-serve setup flow</p>
             </div>
           </div>
         </section>
