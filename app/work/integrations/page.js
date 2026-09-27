@@ -107,7 +107,7 @@ export default function IntegrationsCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              As part of the new Campaign Manager redesign, I led the redefinition of
+              In 2025, as part of the new Campaign Manager redesign, I led the redefinition of
               SoPost&rsquo;s integration setup, an essential part of campaign configuration
               that had never once been consistent.
             </p>
@@ -156,8 +156,8 @@ export default function IntegrationsCaseStudy() {
             types, from Meta to Bazaarvoice, with the same logic and visual hierarchy.
           </p>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-            I worked closely with Commercial, Product and Engineering to balance
-            simplicity for the person setting it up against technical accuracy.
+            I worked closely with our Product Manager, Commercial and Engineering to
+              balance simplicity for the person setting it up against technical accuracy.
           </p>
         </section>
 
