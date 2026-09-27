@@ -5,15 +5,14 @@ import {
   ArticleBody,
   ArticleBlock,
   ArticleHeading,
-  ArticleBullets,
   PullQuote,
-  Accent,
   ArticleLink,
 } from '../../caseStudiesData';
 
 export const metadata = {
   title: "The hard part of adopting ShadCN wasn't technical: Jade Parrish",
-  description: 'What co-leading a ShadCN rollout taught me about aligning design and code from day one, and why the hard part was never the technology.',
+  description:
+    'The first thing I did was read how the engineers were already writing CSS. Most of what worked came out of that.',
 };
 
 export default function ShadcnArticle() {
@@ -24,8 +23,8 @@ export default function ShadcnArticle() {
         title={<>The hard part of adopting ShadCN wasn&rsquo;t technical.</>}
         subtitle={
           <>
-            What co-leading a ShadCN rollout taught me about aligning design and code
-            from day one, and why the hard part was never the technology.
+            The first thing I did was read how the engineers were already writing CSS.
+            Most of what worked came out of that.
           </>
         }
       />
@@ -33,157 +32,104 @@ export default function ShadcnArticle() {
       <ArticleBody>
         <ArticleBlock>
           <p>
-            I&rsquo;ve worked with both structured, token-driven design systems and
-            newer, developer-first tools. I&rsquo;ve taken the same approach to two
-            different component frameworks at two companies, one of them ShadCN,
-            co-leading each with a Senior Engineer to align design and code from day
-            one. So this isn&rsquo;t a technical comparison. It&rsquo;s what I&rsquo;ve
-            learned about how teams actually work when they&rsquo;re balancing speed,
-            quality and limited time.
+            Before I changed anything in Figma, I went and audited how the engineers were
+            building and styling their CSS, and then aligned those conventions with
+            ShadCN.
           </p>
           <p>
-            None of this is a new tension. Every small team scaling past a handful of
-            components eventually asks whether more structure is worth the overhead. What
-            I can offer is what actually happened when I worked through it twice.
+            That turned out to matter more than any decision I made about components.
+            Design and code started from the same place, which gave us a common language
+            before there was anything to argue about. I wrote the documentation that went
+            with it, so the conventions were somebody&rsquo;s job rather than folklore.
           </p>
           <p>
-            The clearest win was practical: one shared set of styles between design and
-            engineering meant a single update instead of a dozen.
+            I have now done this twice, at two companies, with two different component
+            frameworks, co-leading each with a Senior Engineer. This is not a technical
+            comparison, and I am not going to tell you which framework to pick.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            The clearest result was arithmetic. Before, changing a colour or a spacing
+            value meant updating it in Figma, then in the CSS, then in however many
+            components had already drifted from both. After, it meant changing one shared
+            source and watching it propagate. One change rather than a dozen, every time.
+          </p>
+          <p>
+            That is the whole argument for doing it, and it is worth being unromantic
+            about. The reason I would do it again is not that it felt collaborative. It is
+            that it removed a recurring tax nobody had ever costed.
           </p>
         </ArticleBlock>
 
         <div>
-          <ArticleHeading>Start with how the engineers already work</ArticleHeading>
+          <ArticleHeading>The part that was actually hard</ArticleHeading>
           <ArticleBlock>
             <p>
-              Before changing anything in Figma, I audited how the engineers were
-              building and styling their CSS, then aligned those conventions with
-              ShadCN. That mattered more than any component choice. It meant design and
-              code started from the same place, and gave us a common language. I also
-              wrote the documentation that went with it.
+              ShadCN is developer-first, and it is copy-and-own, so the components live in
+              your codebase rather than behind a package you upgrade. For engineers that
+              is obviously good. For designers it can feel like the decisions are being
+              made somewhere you are not, by people reading a language you might not read,
+              and that is where the resistance actually comes from. Not from the
+              technology. From wondering whether you still have a say.
             </p>
             <p>
-              The codebase felt accessible rather than imposed. Developers could work
-              without friction, and I could update Figma components and tokens without
-              breaking anyone&rsquo;s flow. The result was genuine alignment between
-              design and engineering, not through meetings or handoffs, but through
-              shared ownership.
+              You do, and more of one than before. A framework that ships with sensible
+              defaults still needs somebody to decide hierarchy, accessibility,
+              interaction standards and naming. Nobody else in the room is going to do
+              that.
             </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>The hard part was cultural</ArticleHeading>
-          <ArticleBlock>
+            <PullQuote>
+              Without that, it turns into a collection of part-styled buttons.
+            </PullQuote>
             <p>
-              ShadCN gives designers flexibility, but it can also feel intimidating.
-              The framework is developer-first, so it&rsquo;s easy to assume you need to
-              read code to have a say, or that design decisions are being made in the
-              codebase before anyone has looked at them properly.
-            </p>
-            <p>
-              The truth is the opposite. ShadCN increases the need for design
-              leadership. Someone has to define hierarchy, accessibility, interaction
-              standards and naming conventions. Without that direction, it turns into a
-              collection of part-styled buttons.
-            </p>
-            <p>
-              There&rsquo;s a second reason design belongs in this. How something works
-              is a design question, not only an engineering one, and it should be treated
-              that way every time. Someone has to turn the decisions living in the
-              codebase into a story the rest of the team can follow. That&rsquo;s true
-              of{' '}
+              There is a second reason design belongs in it. How something works is a
+              design question and should be treated as one every time, and somebody has to
+              turn the decisions sitting in the codebase into an account the rest of the
+              team can follow. That is true of{' '}
               <ArticleLink href="/thinking/undocumented">any system</ArticleLink>, not
-              just this one.
-            </p>
-            <p>
-              So the challenge isn&rsquo;t technical adoption. It&rsquo;s confidence.
-              Designers have to see it not as automation, but as a shared foundation
-              they help shape.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>What traditional systems cost</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              Traditional design systems get framed as the grown-up option: shared
-              tokens, locked-down components, a formal contribution model. That does
-              create consistency, and there&rsquo;s a point where consistency is worth
-              paying for.
-            </p>
-            <p>
-              I&rsquo;m less sure size is the deciding factor, though. A central system
-              can become its own bottleneck at any scale, where every update turns into a
-              governance decision and the gap between design intent and what gets built
-              quietly widens. What really decides it is how much variation between
-              products you can live with, and how much time you&rsquo;re willing to spend
-              maintaining the process rather than improving the experience.
-            </p>
-            <p>
-              The friction isn&rsquo;t always the system itself. I&rsquo;ve worked on
-              teams where design input was welcome in principle but arrived too late to
-              change much in practice, and no amount of tooling fixes that on its own.
-              What this approach did was make the shared ground literal: the same
-              conventions, the same tokens, the same source. It&rsquo;s much harder to
-              keep design at arm&rsquo;s length when you&rsquo;re both editing the same
-              thing.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>What ShadCN gives you instead</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              ShadCN is built for movement. It&rsquo;s copy-and-own by design, so teams
-              can adapt components, align them to the brand and evolve the system without
-              waiting on releases or dependency updates. It isn&rsquo;t a design system
-              in the formal sense. It&rsquo;s a starting point that grows into what you
-              need, rather than something you inherit with a hundred rules you&rsquo;re
-              scared to break. It&rsquo;s pragmatic rather than perfect, and it
-              doesn&rsquo;t limit designers or developers.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>Finding the balance</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              The most successful teams I&rsquo;ve seen treat ShadCN as a flexible base,
-              then layer on system thinking as the product matures:
-            </p>
-            <ArticleBullets
-              items={[
-                'Start with ShadCN components to move quickly',
-                'Introduce tokens, spacing scales and semantic colours once patterns stabilise',
-                'Document what matters, not everything',
-                'Keep accessibility and naming consistent from the start',
-              ]}
-            />
-            <p>
-              That way the system stays flexible but grounded. It grows with the product
-              rather than ahead of it.
+              only this one.
             </p>
           </ArticleBlock>
         </div>
 
         <ArticleBlock>
-          <PullQuote>
-            Traditional systems can end up protecting the status quo.{' '}
-            <Accent>
-              Used well, ShadCN protects consistency and momentum at the same time.
-            </Accent>
-          </PullQuote>
           <p>
-            When your team is five people trying to build something that feels bigger,
-            momentum is everything. But the reason I&rsquo;d do this again isn&rsquo;t a
-            feeling, it&rsquo;s the maths. Before this, a colour or spacing change meant
-            updating it separately in Figma, in the CSS, and in however many components
-            had drifted from both. Afterwards, it meant updating one shared source and
-            watching it propagate. One change, not a dozen, every time.
+            I want to be fair to the alternative. Traditional design systems, with locked
+            components and a formal contribution model, do produce consistency, and there
+            is a point at which consistency is worth paying for. I am less convinced that
+            team size is what decides it. A central system can become its own bottleneck
+            at any scale, where every update turns into a governance decision and the
+            distance between design intent and shipped product quietly widens. What
+            actually decides it is how much variation between products you can live with,
+            and how much time you are willing to spend maintaining a process instead of
+            improving the thing itself.
+          </p>
+          <p>
+            And the friction is not always the system. I have worked on teams where design
+            input was welcome in principle and arrived too late to change anything in
+            practice, and no amount of tooling repairs that by itself.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            If you are doing this, the sequence that worked for me was to start with the
+            components as they come so the team keeps moving, and only introduce tokens,
+            spacing scales and semantic colours once the patterns have stopped changing
+            every week. Document the things that would otherwise be argued about twice,
+            and leave the rest. Fix accessibility and naming early, because both get
+            expensive to retrofit and neither gets easier to argue for later.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            What this approach did, more than anything a comparison table would show, was
+            make the shared ground literal. The same conventions, the same tokens, the
+            same source. It is much harder to keep design at arm&rsquo;s length when you
+            are both editing the same thing.
           </p>
         </ArticleBlock>
       </ArticleBody>
