@@ -82,32 +82,15 @@ function SectionLabel({ children }) {
 export default function PortfolioHomepage() {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
-      {/* Top Navigation */}
-      <header className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-8 sm:py-10 lg:py-12 flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-baseline">
-        <div className="space-y-1">
-          <h1 className="font-semibold tracking-[0.18em] text-xs uppercase text-neutral-900">
-            JADE PARRISH
-          </h1>
-          <p className="text-neutral-500 normal-case text-xs tracking-normal font-normal">
-            Human-centred service &amp; systems designer
-          </p>
-        </div>
-        <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 lg:gap-x-10 text-xs tracking-[0.15em] uppercase text-neutral-600">
-          <a href="/work" className="hover:text-[#8D6553] transition-colors">Work</a>
-          <a href="/thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
-          <a href="#about" className="hover:text-[#8D6553] transition-colors">About</a>
-          <a href="#contact" className="hover:text-[#8D6553] transition-colors">Contact</a>
-        </nav>
-      </header>
 
       <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Hero */}
         <section className="py-16 sm:py-20 lg:py-28 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-20 items-center border-b border-neutral-200/80">
           <div className="md:col-span-6 space-y-8">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               Better systems <br />
               create better <span className="italic text-[#A47864]">lives.</span>
-            </h2>
+            </h1>
             <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-lg font-normal">
               <p>Every day, people rely on services they didn&rsquo;t choose.</p>
               <p>
@@ -168,9 +151,9 @@ export default function PortfolioHomepage() {
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   About
                 </p>
-                <h3 className="text-2xl sm:text-3xl font-serif text-neutral-900 leading-snug">
+                <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 leading-snug">
                   I&rsquo;m a human-centred service and systems designer.
-                </h3>
+                </h2>
               </div>
 
               <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-2xl font-normal">
