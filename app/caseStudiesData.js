@@ -340,14 +340,6 @@ export function CaseStudyFooter({ currentSlug }) {
 export function ArticlePage({ slug, children }) {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
-      <header className="max-w-2xl mx-auto px-6 sm:px-8 py-8 sm:py-10">
-        <Link
-          href="/thinking"
-          className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-neutral-500 hover:text-[#8D6553] transition-colors"
-        >
-          <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
-        </Link>
-      </header>
 
       <main className="max-w-2xl mx-auto px-6 sm:px-8 pb-24">
         {children}
