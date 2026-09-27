@@ -96,12 +96,12 @@ export default function StockCaseStudy() {
               This one started somewhere unglamorous, and it wasn&rsquo;t on
               anyone&rsquo;s roadmap. I could see what the spreadsheets and email chains
               between SoPost and its fulfilment partners were costing us, so I put the
-              case to our CFO, our CTO and my manager, and got the go-ahead. The CFO knew
-              the operation inside out, so everything ran past him, and we built the
-              Warehouse Management System (WMS) together in 2024, replacing all of it with
-              one role-based system. Our Fulfilment Lead used it constantly with the
-              warehouses. Building it turned up something I wasn&rsquo;t expecting, real
-              discrepancies in the data behind stock and fulfilment.
+              case for a Warehouse Management System to our CFO, our CTO and my manager,
+              and got the go-ahead. Three of us built it in 2024: our CFO, who knew the
+              operation inside out, our Fulfilment Lead, who worked with the warehouses
+              day to day, and me. The WMS replaced all of that with one role-based system.
+              Building it turned up something I wasn&rsquo;t expecting, real discrepancies
+              in the data behind stock and fulfilment.
             </p>
             <p>
               I then audited Mission Control and Campaign Manager, and the message became
