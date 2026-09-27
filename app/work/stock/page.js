@@ -70,20 +70,20 @@ export default function StockCaseStudy() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900">Senior Product Designer</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Senior Product Designer</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900">Product, Commercial, Engineering, Fulfilment</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Product, Commercial, Engineering, Fulfilment</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Focus</p>
-              <p className="text-sm font-medium text-neutral-900">Shared stock across brands and campaigns</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Shared stock across brands and campaigns</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
               {/* TODO: swap in a real figure once you have one (e.g. hours saved, fewer manual checks) */}
-              <p className="text-sm font-medium text-neutral-900">Real-time stock and SLA visibility</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Real-time stock and SLA visibility</p>
             </div>
           </div>
         </section>
@@ -137,14 +137,21 @@ export default function StockCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                While the WMS improved operational tracking, Campaign Manager still
-                lacked a clear, consistent view of stock health. Stock was split into
-                partitions: separate amounts set aside for a particular campaign, brand or
-                product. How those splits were set up varied from brand to brand, so it was
-                genuinely hard to see which products, activities or fulfilment tasks were
-                drawing on the same stock.
-              </p>
+              <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <p>
+                  While the WMS improved operational tracking, Campaign Manager still
+                  lacked a clear, consistent view of stock health. There was a fulfilment
+                  dashboard already, but it was one page of figures set as text, with a
+                  pie chart. It told you what the numbers were, not whether anything
+                  needed doing.
+                </p>
+                <p>
+                  Stock was also split into partitions: separate amounts set aside for a
+                  particular campaign, brand or product. How those splits were set up
+                  varied from brand to brand, so it was genuinely hard to see which
+                  products, activities or fulfilment tasks were drawing on the same stock.
+                </p>
+              </div>
             </div>
 
             <div>
