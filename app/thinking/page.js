@@ -30,8 +30,9 @@ export default function ThinkingIndex() {
             Things I keep running into, written down.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] [text-wrap:pretty]">
-            Mostly about systems: why they get tangled, why the tangle is usually
-            undocumented rather than complex, and what it costs to leave it alone.
+            Mostly about systems: why they get confusing, how they end up
+            undocumented, and what it costs not to fix the foundations. Usually written
+            months later, because I&rsquo;m still overthinking it.
           </p>
         </section>
 
