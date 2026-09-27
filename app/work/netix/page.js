@@ -200,10 +200,77 @@ export default function NetIXCaseStudy() {
           </div>
         </section>
 
-        {/* Part 2: Post-Acquisition Rebrand */}
+        {/* Part 2: White-labelling */}
         <section className="py-12 border-b border-neutral-200/80">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
             Part Two
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
+            White-Labelling NetIX
+          </h2>
+
+          <div className="space-y-10">
+            <div>
+              <SubLabel>Context</SubLabel>
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                I had designed NetIX with future rebrands in mind, and that turned out to
+                matter sooner than I expected. Because the structure and the components
+                were consistent, the platform could carry somebody else&rsquo;s identity
+                without being rebuilt.
+              </p>
+            </div>
+
+            <div>
+              <SubLabel>IKEA Restaurants</SubLabel>
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                NetEDI were bidding for IKEA Restaurants, and I produced a partial
+                rebrand of NetIX in their brand inside a week, so the bid could show the
+                platform as their own tool rather than as somebody else&rsquo;s product.
+              </p>
+            </div>
+
+            <div>
+              <SubLabel>La-Z-Boy</SubLabel>
+              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <p>
+                  La-Z-Boy had been using the new NetIX interface for a while, and asked
+                  for the service to be rebranded for their in-house team to use. I
+                  worked to their brand guidelines, liaising with their Management and
+                  Marketing Teams, and it took a month.
+                </p>
+                <p>
+                  The loop was short because the work was structural rather than
+                  cosmetic. I would put updates up in Slack, they went out for approval,
+                  and then they were coded. Days, rather than sprints.
+                </p>
+              </div>
+
+              <ImagePlaceholder tint="bg-[#E7E2DC]" caption="NetIX white-labelled for the IKEA Restaurants bid and for La-Z-Boy" />
+            </div>
+
+            <div>
+              <SubLabel>Why it mattered</SubLabel>
+              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <p>
+                  Two brands, one in a week and one in a month, on a platform that had
+                  been a Silverlight application when I arrived.
+                </p>
+                <p>
+                  This is the argument I would make again anywhere. Designing for
+                  rebranding before anybody asks for it is not housekeeping. It is what
+                  lets one platform carry several organisations&rsquo; identities without
+                  being rebuilt each time, and it turns a rebrand from a project into a
+                  task.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Part 3: Post-Acquisition Rebrand */}
+        <section className="py-12 border-b border-neutral-200/80">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
+            Part Three
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
             Post-Acquisition Rebrand
@@ -212,12 +279,19 @@ export default function NetIXCaseStudy() {
           <div className="space-y-10">
             <div>
               <SubLabel>Context</SubLabel>
-              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                In late 2019, NetEDI was acquired by Cegedim Group, a SaaS
-                provider based in France. NetIX became part
-                of Cegedim&rsquo;s wider ecosystem, and I was asked to align the product
-                with their Sy platform branding.
-              </p>
+              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <p>
+                  In late 2019, NetEDI was acquired by Cegedim Group, a SaaS
+                  provider based in France. NetIX became part
+                  of Cegedim&rsquo;s wider ecosystem, and I was asked to align the product
+                  with their Sy platform branding.
+                </p>
+                <p>
+                  By then I had rebranded NetIX twice, so the mechanics were not the hard
+                  part. The hard part was that several colours in the parent
+                  company&rsquo;s palette did not meet WCAG 2.1 AA contrast ratios.
+                </p>
+              </div>
             </div>
 
             <div>
@@ -279,74 +353,6 @@ export default function NetIXCaseStudy() {
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
               </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Part 3: White-labelling */}
-        <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
-            Part Three
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
-            White-Labelling NetIX
-          </h2>
-
-          <div className="space-y-10">
-            <div>
-              <SubLabel>Context</SubLabel>
-              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                I had designed NetIX with future rebrands in mind, and that turned out to
-                matter more than I expected. Once colour and typography lived in one
-                place, the platform could carry somebody else&rsquo;s identity without
-                being rebuilt.
-              </p>
-            </div>
-
-            <div>
-              <SubLabel>La-Z-Boy</SubLabel>
-              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <p>
-                  La-Z-Boy had been using the new NetIX interface for a while, and asked
-                  for the service to be rebranded for their in-house team to use. I
-                  worked to their brand guidelines, liaising with their Management and
-                  Marketing Teams, and it took a month.
-                </p>
-                <p>
-                  The loop was short because the work was structural rather than
-                  cosmetic. I would put updates up in Slack, they went out for approval,
-                  and then they were coded. Days, rather than sprints.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <SubLabel>IKEA Restaurants</SubLabel>
-              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                Then it earned its keep commercially. NetEDI were bidding for IKEA
-                Restaurants, and I produced a partial rebrand of NetIX in their brand
-                inside a week, so the bid could show them the platform as their own tool
-                rather than as somebody else&rsquo;s product.
-              </p>
-
-              <ImagePlaceholder tint="bg-[#E7E2DC]" caption="NetIX white-labelled for La-Z-Boy and for the IKEA Restaurants bid" />
-            </div>
-
-            <div>
-              <SubLabel>Why it mattered</SubLabel>
-              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <p>
-                  Two brands, one in a month and one in a week, on a platform that had
-                  been a Silverlight application when I arrived.
-                </p>
-                <p>
-                  This is the argument I would make again anywhere. The token and
-                  accessibility work was not housekeeping, and it was not only about the
-                  screens it fixed. It is what let one platform carry several
-                  organisations&rsquo; identities without being rebuilt each time, and it
-                  turned a rebrand from a project into a task.
-                </p>
-              </div>
             </div>
           </div>
         </section>
