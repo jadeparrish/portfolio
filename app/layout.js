@@ -133,6 +133,26 @@ export default function RootLayout({ children }) {
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
+
+        {/* One header for the whole site. Lives here so every page gets it
+            without each page having to render its own. */}
+        <header className="border-b border-neutral-200/80">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-5 flex justify-between items-center gap-5">
+            <a
+              href="/"
+              className="text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] transition-colors"
+            >
+              Jade Parrish
+            </a>
+            <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 text-[11px] tracking-[0.15em] uppercase text-neutral-600">
+              <a href="/work" className="hover:text-[#8D6553] transition-colors">Work</a>
+              <a href="/thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
+              <a href="/#about" className="hover:text-[#8D6553] transition-colors">About</a>
+              <a href="/#contact" className="hover:text-[#8D6553] transition-colors">Contact</a>
+            </nav>
+          </div>
+        </header>
+
         <div id="main-content" tabIndex={-1}>
           {children}
         </div>
