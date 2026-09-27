@@ -27,7 +27,7 @@ export default function ThinkingIndex() {
             Thinking
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight [text-wrap:balance] text-neutral-900 mb-6">
-            Things I keep running into, written down.
+            Things I keep finding, written down.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] [text-wrap:pretty]">
             Mostly about systems: why they get confusing, how they end up
