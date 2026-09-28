@@ -130,7 +130,7 @@ export const thinkingList = [
     slug: 'shadcn',
     icon: Layers,
     kicker: 'Design Systems',
-    readTime: '4 min read',
+    readTime: '3 min read',
     title: 'The hard part of adopting ShadCN wasn’t technical.',
     description:
       'It looks like something you’d need to code to have a say in. You don’t.',
@@ -140,7 +140,7 @@ export const thinkingList = [
     slug: 'undocumented',
     icon: FileText,
     kicker: 'Systems Thinking',
-    readTime: '2 min read',
+    readTime: '3 min read',
     title: 'Most “complex” systems are just undocumented ones.',
     description:
       'Most systems aren’t complex. They’re full of sensible decisions nobody ever wrote down.',
@@ -388,14 +388,18 @@ export function ArticleTitle({ kicker, title, subtitle, illustration }) {
 
 export function ArticleBody({ children }) {
   return (
-    <article className="py-12 border-b border-neutral-200/80 space-y-14 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
+    <article className="py-12 border-b border-neutral-200/80 space-y-10 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
       {children}
     </article>
   );
 }
 
+/* Two gaps, and the difference between them is what does the work:
+   24px between paragraphs that belong together, 40px (ArticleBody's
+   space-y-10) where the piece moves on. It used to be 20 and 56, which
+   read as a hole once the headings came out. */
 export function ArticleBlock({ children }) {
-  return <div className="space-y-5">{children}</div>;
+  return <div className="space-y-6">{children}</div>;
 }
 
 export function ArticleHeading({ children }) {
