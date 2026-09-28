@@ -220,7 +220,7 @@ export default function IntegrationsCaseStudy() {
             </p>
             <p>
               The model is now the blueprint for integrations in Campaign Manager, so
-              SoPost can expand partner connectivity with the same clarity and reliability
+              SoPost can add new partners with the same clarity and reliability
               that underpin its{' '}
               <InlineLink href="/work/reporting">reporting</InlineLink> and{' '}
               <InlineLink href="/work/stock">fulfilment</InlineLink> systems.
