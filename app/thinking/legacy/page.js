@@ -37,16 +37,11 @@ export default function LegacyArticle() {
             On one product I worked on, the decision was to keep shipping new features
             directly on top of a system everybody already knew was struggling. The
             thinking was reasonable enough: keep moving, don&rsquo;t stop to rebuild.
-            What it meant in practice was that every new feature was also a fight with
-            the code underneath it, and that fight showed up as slipped dates and
-            fragile releases.
+            Every new feature was a fight with the code underneath it. We paid for that
+            in slipped dates and fragile releases.
           </p>
           <p>
             Before I left, we overhauled the whole thing anyway.
-          </p>
-          <p>
-            The rebuild was never avoided. It was postponed, at the cost of everything we
-            shipped badly in the meantime.
           </p>
         </ArticleBlock>
 
@@ -70,8 +65,7 @@ export default function LegacyArticle() {
           <ArticleHeading>Why organisations keep choosing to patch</ArticleHeading>
           <ArticleBlock>
             <p>
-              It is easy to frame this as two options and a wrong answer. In practice it
-              is rarely two of anything. Leadership is under real pressure to ship new
+              Leadership is under real pressure to ship new
               capability, because new features win deals and signal momentum, and pausing
               to repair the foundations looks from the outside like standing still. At
               the same time the foundations are already compromised enough that every new
@@ -90,25 +84,24 @@ export default function LegacyArticle() {
               ends up held together by workarounds that nobody remembers agreeing to.
             </p>
             <p>
-              I watched a version of this play out very literally. Design started working
-              in Shape Up cycles. Engineering stayed in sprints. There was never a point
-              where both sides tried the same way of working at the same time. Neither
-              choice was wrong on its own, but the result was two definitions of
-              &ldquo;done&rdquo; running on one product, and it added another seam between
-              two teams who needed to be closer, not further apart.
+              I watched this happen. We were all working in sprints, and then our Product
+              Manager decided design should move to Shape Up cycles while engineering
+              stayed where it was. Neither way of working is wrong on its own, but we
+              ended up with two definitions of &ldquo;done&rdquo; running on the same
+              product, and it put a seam between two teams who needed to be closer, not
+              further apart.
             </p>
           </ArticleBlock>
         </div>
 
         <ArticleBlock>
           <p>
-            The cost of all this never arrives in one piece, which is most of why it goes
-            unaddressed. It shows up as this feature taking longer, that bug taking a day
-            to trace. Each instance is small enough to absorb, so it gets absorbed, and
-            then every workaround left in place makes the next change slightly harder,
-            until something perfectly ordinary takes far more care than it should and
-            nobody can quite say why. By the time it is obvious enough for leadership to
-            notice, it has already cost more than fixing it early would have.
+            The cost shows up as this feature taking longer, that bug taking a day to
+            trace. Each instance is small enough to absorb, and then every workaround
+            left in place makes the next change slightly harder, until something
+            perfectly ordinary takes far more care than it should and nobody can really
+            say why. By the time it is obvious enough for leadership to notice, it has
+            already cost more than fixing it early would have.
           </p>
         </ArticleBlock>
 
@@ -163,12 +156,12 @@ export default function LegacyArticle() {
             unseen. Design attention tends to stop at the interface: does this flow make
             sense, is this state clear, is this accessible. Those questions matter, and
             they miss the operational layer underneath, where data moves between systems
-            and things go wrong quietly, weeks before anybody notices.
+            and things go wrong weeks before anybody notices.
           </p>
           <p>
             Mismatched refresh rates between two systems, which I found in the{' '}
             <ArticleLink href="/work/stock">stock and fulfilment work</ArticleLink>, were
-            never visible on any screen. They showed up as decks that didn&rsquo;t add up
+            never visible on any screen. They became decks that didn&rsquo;t add up
             and numbers nobody quite trusted. I have also found a commercial team working
             directly inside a developer tool, because it was the only place the figures
             they needed actually lived. Nothing about that tool was built for them, and
