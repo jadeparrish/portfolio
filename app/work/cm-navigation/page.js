@@ -222,8 +222,8 @@ export default function NavigationCaseStudy() {
             <p>
               This project turned SoPost&rsquo;s navigation from a collection of
               disconnected routes into a coherent, extensible system. By defining a clear
-              hierarchy and adding contextual layers, we gave people the sense of place,
-              sequence and control that any enterprise-grade SaaS experience needs.
+              hierarchy and adding contextual layers, we gave people a sense of place,
+              sequence and control.
             </p>
             <p>
               The framework now underpins the whole Campaign Manager ecosystem, connecting{' '}
