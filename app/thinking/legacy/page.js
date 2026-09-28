@@ -45,8 +45,8 @@ export default function LegacyArticle() {
             Before I left, we overhauled the whole thing anyway.
           </p>
           <p>
-            That is the part worth sitting with. The rebuild was never avoided. It was
-            postponed, at the cost of everything we shipped badly in the meantime.
+            The rebuild was never avoided. It was postponed, at the cost of everything we
+            shipped badly in the meantime.
           </p>
         </ArticleBlock>
 
