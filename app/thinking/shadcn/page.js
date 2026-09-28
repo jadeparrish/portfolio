@@ -12,7 +12,7 @@ import {
 export const metadata = {
   title: "The hard part of adopting ShadCN wasn't technical: Jade Parrish",
   description:
-    'The first thing I did was read how the engineers were already writing CSS. Most of what worked came out of that.',
+    'I read the engineers’ CSS before I opened Figma. Most of what worked came out of that.',
 };
 
 export default function ShadcnArticle() {
@@ -23,8 +23,8 @@ export default function ShadcnArticle() {
         title={<>The hard part of adopting ShadCN wasn&rsquo;t technical.</>}
         subtitle={
           <>
-            The first thing I did was read how the engineers were already writing CSS.
-            Most of what worked came out of that.
+            I read the engineers&rsquo; CSS before I opened Figma. Most of what worked
+            came out of that.
           </>
         }
       />
@@ -32,20 +32,18 @@ export default function ShadcnArticle() {
       <ArticleBody>
         <ArticleBlock>
           <p>
-            Before I changed anything in Figma, I went and audited how the engineers were
-            building and styling their CSS, and then aligned those conventions with
-            ShadCN.
+            I went through the CSS the engineers had already written, and aligned those
+            conventions with ShadCN.
           </p>
           <p>
             That turned out to matter more than any decision I made about components.
             Design and code started from the same place, which gave us a common language
-            before there was anything to argue about. I wrote the documentation that went
-            with it.
+            before there was anything to argue about. I then wrote the documentation that
+            went with it.
           </p>
           <p>
             I have now done this twice, at two companies, with two different component
-            frameworks, co-leading each with a Senior Engineer. This is not a technical
-            comparison, and I am not going to tell you which framework to pick.
+            frameworks, co-leading each with a Senior Engineer.
           </p>
         </ArticleBlock>
 
@@ -66,7 +64,7 @@ export default function ShadcnArticle() {
               your codebase rather than behind a package you upgrade. For engineers that
               is obviously good. For designers it can feel like the decisions are being
               made somewhere you are not, by people reading a language you might not
-              read. That is where the resistance comes from, and it is a question of
+              understand. That is where the resistance comes from, and it is a question of
               confidence.
             </p>
             <p>
@@ -75,7 +73,7 @@ export default function ShadcnArticle() {
               interaction standards and naming.
             </p>
             <PullQuote>
-              Without that, it turns into a collection of part-styled buttons.
+              Without that, it turns into a collection of, at best, part-styled buttons.
             </PullQuote>
             <p>
               There is a second reason design belongs in it. How something works is a
@@ -95,7 +93,7 @@ export default function ShadcnArticle() {
             is a point at which consistency is worth paying for. I am less convinced that
             team size is what decides it. A central system can become its own bottleneck
             at any scale, where every update turns into a governance decision and the
-            distance between design intent and shipped product quietly widens. What
+            distance between design intent and shipped product gradually widens. What
             actually decides it is how much variation between products you can live with,
             and how much time you are willing to spend maintaining a process instead of
             improving the thing itself.
@@ -114,7 +112,7 @@ export default function ShadcnArticle() {
             spacing scales and semantic colours once the patterns have stopped changing
             every week. Document the things that would otherwise be argued about twice,
             and leave the rest. Fix accessibility and naming early, because both get
-            expensive to retrofit and neither gets easier to argue for later.
+            expensive to sort in retrospect and neither gets easier to argue for later.
           </p>
         </ArticleBlock>
 
