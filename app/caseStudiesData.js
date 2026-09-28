@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Sparkles } from 'lucide-react';
 
-export const caseStudiesList = [
+/* Ordered by theme, because /work groups them that way. The two-digit
+   number is derived from position, so reordering or inserting a piece
+   can never leave a gap or a duplicate. */
+const work = [
   {
-    num: '01',
     slug: 'send',
+    group: 'service',
     title: 'Making SEND journeys easier for families to navigate',
     tag: 'Service Design',
     description:
@@ -16,21 +19,8 @@ export const caseStudiesList = [
     featured: false,
   },
   {
-    num: '02',
-    slug: 'commercial-value',
-    title: 'Helping commercial teams see the value they create',
-    tag: 'Commercial Product',
-    description:
-      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so our Commercial Team could demonstrate impact to brands instead of defending it.',
-    cta: 'View case study',
-    href: '/work/commercial-value',
-    tint: 'bg-[#E7E2DC]',
-    hasPage: true,
-    featured: false,
-  },
-  {
-    num: '03',
     slug: 'stock',
+    group: 'service',
     title: 'Bringing stock and fulfilment data into one clear view',
     tag: 'Operations & Service Design',
     description:
@@ -42,47 +32,8 @@ export const caseStudiesList = [
     featured: true,
   },
   {
-    num: '04',
-    slug: 'reporting',
-    title: 'Turning disconnected data into clearer decisions',
-    tag: 'Data & Service Design',
-    description:
-      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
-    cta: 'View case study',
-    href: '/work/reporting',
-    tint: 'bg-[#DDE3E6]',
-    hasPage: true,
-    featured: true,
-  },
-  {
-    num: '05',
-    slug: 'cm-navigation',
-    title: 'Giving a siloed platform a navigation that scales',
-    tag: 'Information Architecture',
-    description:
-      'Rebuilt a SaaS platform’s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
-    cta: 'View case study',
-    href: '/work/cm-navigation',
-    tint: 'bg-[#E4E1E8]',
-    hasPage: true,
-    featured: false,
-  },
-  {
-    num: '06',
-    slug: 'netix',
-    title: 'Making a legacy platform simple, accessible and built to scale',
-    tag: 'Enterprise Product & Rebrand',
-    description:
-      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%. Carried it through a rebrand across UK and French teams, then white-labelled it for La-Z-Boy and an IKEA bid, while advocating for WCAG 2.1 AA accessibility.',
-    cta: 'View case study',
-    href: '/work/netix',
-    tint: 'bg-[#E9E4DE]',
-    hasPage: true,
-    featured: true,
-  },
-  {
-    num: '07',
     slug: 'consent',
+    group: 'service',
     title: 'Turning a compliance risk into a simple first step',
     tag: 'Compliance & Service Design',
     description:
@@ -94,8 +45,60 @@ export const caseStudiesList = [
     featured: false,
   },
   {
-    num: '08',
+    slug: 'reporting',
+    group: 'data',
+    title: 'Turning disconnected data into clearer decisions',
+    tag: 'Data & Service Design',
+    description:
+      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
+    cta: 'View case study',
+    href: '/work/reporting',
+    tint: 'bg-[#DDE3E6]',
+    hasPage: true,
+    featured: true,
+  },
+  {
+    slug: 'commercial-value',
+    group: 'data',
+    title: 'Helping commercial teams see the value they create',
+    tag: 'Commercial Product',
+    description:
+      'Designed a way to show the long-term value of a campaign, plus comparison tables that put results side by side, so our Commercial Team could demonstrate impact to brands instead of defending it.',
+    cta: 'View case study',
+    href: '/work/commercial-value',
+    tint: 'bg-[#E7E2DC]',
+    hasPage: true,
+    featured: false,
+  },
+  {
+    slug: 'netix',
+    group: 'systems',
+    title: 'Making a legacy platform simple, accessible and built to scale',
+    tag: 'Enterprise Product & Rebrand',
+    description:
+      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%. Carried it through a rebrand across UK and French teams, then white-labelled it for La-Z-Boy and an IKEA bid, while advocating for WCAG 2.1 AA accessibility.',
+    cta: 'View case study',
+    href: '/work/netix',
+    tint: 'bg-[#E9E4DE]',
+    hasPage: true,
+    featured: true,
+  },
+  {
+    slug: 'cm-navigation',
+    group: 'systems',
+    title: 'Giving a siloed platform a navigation that scales',
+    tag: 'Information Architecture',
+    description:
+      'Rebuilt a SaaS platform’s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
+    cta: 'View case study',
+    href: '/work/cm-navigation',
+    tint: 'bg-[#E4E1E8]',
+    hasPage: true,
+    featured: false,
+  },
+  {
     slug: 'notifications',
+    group: 'systems',
     title: 'Designing notifications that scale beyond a single alert',
     tag: 'Systems Design',
     description:
@@ -107,8 +110,8 @@ export const caseStudiesList = [
     featured: false,
   },
   {
-    num: '09',
     slug: 'integrations',
+    group: 'systems',
     title: 'Turning a technical bottleneck into a guided setup',
     tag: 'Integrations & Service Design',
     description:
@@ -120,6 +123,12 @@ export const caseStudiesList = [
     featured: false,
   },
 ];
+
+export const caseStudiesList = work.map((item, i) => ({
+  ...item,
+  num: String(i + 1).padStart(2, '0'),
+}));
+
 
 /* The thinking pieces, in the same order as the homepage. Adding a new
    piece here puts it into every article's "Read next" automatically.
