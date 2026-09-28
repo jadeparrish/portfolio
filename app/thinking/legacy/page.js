@@ -6,7 +6,6 @@ import {
   ArticleBlock,
   ArticleHeading,
   PullQuote,
-  Accent,
   ArticleLink,
 } from '../../caseStudiesData';
 
@@ -113,8 +112,7 @@ export default function LegacyArticle() {
             reviewed and promoted.
           </p>
           <PullQuote>
-            Preventing a problem well means that, from the outside,{' '}
-            <Accent>nothing happened.</Accent>
+            Preventing a problem well means that, from the outside, nothing happened.
           </PullQuote>
           <p>
             Shipping something new is a story anybody can tell in a meeting. That
