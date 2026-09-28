@@ -212,11 +212,10 @@ export default function IntegrationsCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This work turned a real technical bottleneck into a guided, scalable system
-              that matches what people expect from modern SaaS tools. By defining reusable
-              patterns, improving feedback loops and aligning language across integration
-              types, it made complex configuration approachable for everyone, without
-              losing the technical precision each system needs.
+              This work turned a real technical bottleneck into a guided, self-serve flow.
+              Seven integrations now share one pattern, so somebody connecting Meta finds
+              the same shape as somebody connecting Bazaarvoice, and neither of them has
+              to involve Engineering to do it.
             </p>
             <p>
               The model is now the blueprint for integrations in Campaign Manager, so
