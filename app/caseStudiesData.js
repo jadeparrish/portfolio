@@ -377,7 +377,9 @@ export function ArticleTitle({ kicker, title, subtitle, illustration }) {
       <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight [text-wrap:balance] text-neutral-900 mb-6">
         {title}
       </h1>
-      <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] [text-wrap:pretty]">
+      {/* The standfirst was 20px against 18px body, barely a step up. At 22px
+          it reads as a tier of its own without competing with the h1. */}
+      <p className="text-neutral-600 text-xl sm:text-[22px] leading-[1.55] [text-wrap:pretty]">
         {subtitle}
       </p>
       {/* Illustration slot: pass one in and it sits under the standfirst. */}
@@ -388,23 +390,23 @@ export function ArticleTitle({ kicker, title, subtitle, illustration }) {
 
 export function ArticleBody({ children }) {
   return (
-    <article className="py-12 border-b border-neutral-200/80 space-y-10 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
+    <article className="py-12 border-b border-neutral-200/80 space-y-7 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
       {children}
     </article>
   );
 }
 
-/* Two gaps, and the difference between them is what does the work:
-   24px between paragraphs that belong together, 40px (ArticleBody's
-   space-y-10) where the piece moves on. It used to be 20 and 56, which
-   read as a hole once the headings came out. */
+/* One gap, 28px, between every paragraph in the piece, whether or not
+   they sit in the same block. An unmarked bigger gap reads as a mistake
+   rather than as a pause, so only a heading breaks the flow now. Blocks
+   still exist to group paragraphs with a heading, not to space them. */
 export function ArticleBlock({ children }) {
-  return <div className="space-y-6">{children}</div>;
+  return <div className="space-y-7">{children}</div>;
 }
 
 export function ArticleHeading({ children }) {
   return (
-    <h2 className="text-2xl sm:text-[28px] font-serif font-normal text-neutral-900 tracking-tight leading-[1.3] [text-wrap:balance] mb-5">
+    <h2 className="text-2xl sm:text-[28px] font-serif font-normal text-neutral-900 tracking-tight leading-[1.3] [text-wrap:balance] mt-6 mb-5">
       {children}
     </h2>
   );
@@ -423,9 +425,11 @@ export function ArticleBullets({ items }) {
   );
 }
 
+/* Level with the section heading at 28px, not above it. A pull quote is
+   emphasis; it shouldn't outrank the structure. */
 export function PullQuote({ children }) {
   return (
-    <p className="font-serif text-[26px] sm:text-[30px] text-neutral-900 leading-[1.35] [text-wrap:balance] py-6">
+    <p className="font-serif text-[24px] sm:text-[28px] text-neutral-900 leading-[1.35] [text-wrap:balance] py-6">
       {children}
     </p>
   );
