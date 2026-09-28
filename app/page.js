@@ -89,7 +89,7 @@ export default function PortfolioHomepage() {
 
       <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Hero */}
-        <section className="py-16 sm:py-20 lg:py-28 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-20 items-center border-b border-neutral-200/80">
+        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-20 items-center border-b border-neutral-200/80">
           <div className="md:col-span-6 space-y-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               Better systems <br />
