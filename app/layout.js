@@ -153,7 +153,10 @@ export default function RootLayout({ children }) {
           </div>
         </header>
 
-        <div id="main-content" tabIndex={-1}>
+        {/* The gap between the header rule and whatever a page starts with
+            lives here, once, rather than being repeated on twelve pages.
+            The homepage hero tops this up a little to keep its own rhythm. */}
+        <div id="main-content" tabIndex={-1} className="pt-12 lg:pt-16">
           {children}
         </div>
       </body>
