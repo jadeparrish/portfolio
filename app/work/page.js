@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { caseStudiesList, IndexFooter, SiteFooter } from '../caseStudiesData';
 
 export const metadata = {
@@ -8,6 +8,16 @@ export const metadata = {
   description:
     'Case studies in service design, systems and product: reporting, stock and fulfilment, navigation, consent, notifications and integrations.',
 };
+
+/* Grouped by the kind of problem rather than by how long each piece is,
+   because somebody arrives here asking whether I have done their sort of
+   work, not which of these is the longest. Order matches caseStudiesList,
+   so the numbers still run straight down the page. */
+const groups = [
+  { id: 'service', label: 'Service design' },
+  { id: 'data', label: 'Data and reporting' },
+  { id: 'systems', label: 'Systems and platform' },
+];
 
 function WorkRow({ item }) {
   const inner = (
@@ -64,11 +74,23 @@ export default function WorkIndex() {
           </p>
         </section>
 
-        <div className="py-12 border-b border-neutral-200/80 divide-y divide-neutral-200/70">
-          {caseStudiesList.map((item) => (
-            <WorkRow key={item.slug} item={item} />
-          ))}
-        </div>
+        {groups.map((group) => {
+          const items = caseStudiesList.filter((item) => item.group === group.id);
+          if (items.length === 0) return null;
+
+          return (
+            <section key={group.id} className="py-12 border-b border-neutral-200/80">
+              <h2 className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-8">
+                {group.label}
+              </h2>
+              <div className="divide-y divide-neutral-200/70">
+                {items.map((item) => (
+                  <WorkRow key={item.slug} item={item} />
+                ))}
+              </div>
+            </section>
+          );
+        })}
 
         <IndexFooter />
       </main>
