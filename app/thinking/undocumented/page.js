@@ -4,28 +4,26 @@ import {
   ArticleTitle,
   ArticleBody,
   ArticleBlock,
-  ArticleHeading,
-  ArticleBullets,
   PullQuote,
-  Accent,
   ArticleLink,
 } from '../../caseStudiesData';
 
 export const metadata = {
   title: "Most \"complex\" systems are just undocumented ones: Jade Parrish",
-  description: 'Why complexity gets mistaken for expertise, and why the real craft is simplifying a service and telling a clear story about how it works.',
+  description:
+    'A genuinely complex system is rare. What is common is a pile of reasonable decisions that nobody ever wrote down.',
 };
 
 export default function UndocumentedArticle() {
   return (
     <ArticlePage slug="undocumented">
       <ArticleTitle
-        kicker={<>Systems Thinking &middot; 2 min read</>}
+        kicker={<>Systems Thinking &middot; 3 min read</>}
         title={<>Most &ldquo;complex&rdquo; systems are just undocumented ones.</>}
         subtitle={
           <>
-            Why complexity gets mistaken for expertise, and why the real craft is
-            simplifying a service and telling a clear story about how it works.
+            A genuinely complex system is rare. What is common is a pile of reasonable
+            decisions that nobody ever wrote down.
           </>
         }
       />
@@ -33,112 +31,105 @@ export default function UndocumentedArticle() {
       <ArticleBody>
         <ArticleBlock>
           <p>
-            Ask almost any team how their service actually works, and they&rsquo;ll
-            describe a maze: exceptions, workarounds, and a process map that only makes
-            sense to the person walking you through it. There&rsquo;s a quiet temptation
-            to read that maze as sophistication, to treat a service as complex because
-            it&rsquo;s hard to explain.
+            I once interviewed eight people about reporting at the same company, and got
+            eight different answers about what reporting was.
           </p>
           <p>
-            In my experience auditing services and internal tools, that&rsquo;s rarely
-            true. What looks like complexity is usually a series of reasonable decisions,
-            made under pressure, that were never written down or joined up. The
-            workarounds became &ldquo;standard practice&rdquo; long before anyone
-            stepped back to ask why, which is exactly what I found mapping{' '}
-            <ArticleLink href="/work/netix">NetIX&rsquo;s workflows</ArticleLink> before
-            its rebuild, and again auditing{' '}
-            <ArticleLink href="/work/stock">stock and reporting data</ArticleLink>{' '}
-            at another company.
+            Not eight opinions on whether it was any good. Eight definitions. To
+            Operations it meant fulfilment: what had shipped, what hadn&rsquo;t, what was
+            stuck in a warehouse. To Customer Success it meant engagement figures they
+            could put in front of a brand. To Engineering it meant exports. Every one of
+            them was right about their own job, and not one of them had ever had a reason
+            to discover that the others meant something else by the same word.
           </p>
           <p>
-            None of this is a new observation. Technical debt and legibility have been
-            written about for years. What I can add is that it&rsquo;s been true every
-            time I&rsquo;ve looked.
+            Everybody told me reporting at that company was complicated. It wasn&rsquo;t.
+            It was undocumented.
           </p>
         </ArticleBlock>
 
-        <div>
-          <ArticleHeading>The trap of adding without mapping</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              It&rsquo;s easy to make a service more complicated. Anyone can add another
-              exception, another spreadsheet, another handoff to solve a problem in front
-              of them today. When teams are under pressure, these additions pile up
-              without anyone owning the whole picture.
-            </p>
-            <p>The result isn&rsquo;t true complexity. It&rsquo;s just noise:</p>
-            <ArticleBullets
-              items={[
-                'Simple rules get buried under exceptions built for one-off cases',
-                'The reasoning behind a decision lives only in one person’s head',
-                'Every change feels risky, because no one can see how the parts connect',
-              ]}
-            />
-            <p>
-              Making something intricate takes very little effort. Making it
-              understandable takes real skill.
-            </p>
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>Cleverness is simplification</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              The best designers and engineers I&rsquo;ve worked with aren&rsquo;t the
-              ones who produce the most intricate solution. They&rsquo;re the ones who
-              can take a tangle of edge cases, distil it to its core logic, and explain
-              it to a room of stakeholders in five minutes.
-            </p>
-            <p>Cleverness looks like:</p>
-            <ArticleBullets
-              items={[
-                'Choosing the shared, boring pattern over the bespoke one, because it lowers the load on everyone else',
-                'Turning a process only one person understands into a map anyone on the team can follow',
-                'Accepting that if you can’t sketch how a service works on a napkin, you probably don’t understand it yet',
-              ]}
-            />
-          </ArticleBlock>
-        </div>
-
-        <div>
-          <ArticleHeading>Systems are stories</ArticleHeading>
-          <ArticleBlock>
-            <p>
-              A process tells people what to do. Documentation and structure tell people
-              why it matters. When a service has no clear story, every new person joining
-              has to become a detective, piecing it together from old tickets,
-              half-remembered decisions and whoever happens to still be around.
-            </p>
-            <p>Treat documentation and structure as storytelling, and things change:</p>
-            <ArticleBullets
-              items={[
-                'Intent becomes obvious: someone new can follow a request end to end without a guided tour',
-                'Boundaries become clear: teams know exactly where a new piece of work belongs',
-                'Maintenance becomes routine: people spend less time working out how something functions, and more time making it better',
-              ]}
-            />
-            <p>
-              That last one matters more than it sounds. A team that understands its own
-              system spends its time improving it rather than working around it, which
-              is the same reason{' '}
-              <ArticleLink href="/thinking/legacy">
-                fixing the foundations
-              </ArticleLink>{' '}
-              tends to pay for itself.
-            </p>
-          </ArticleBlock>
-        </div>
+        <ArticleBlock>
+          <p>
+            The same{' '}
+            <ArticleLink href="/work/reporting">audit</ArticleLink> turned up why
+            nobody&rsquo;s numbers ever matched. Reports were being pulled from Campaign
+            Manager, from spreadsheets, from Google Docs, and from an internal tool called
+            Mission Control, and those sources refreshed at different rates. Two people
+            could run what they believed was the same report an hour apart, get different
+            totals, and both be correct.
+          </p>
+          <p>
+            That had been true for years. It had never been written down. There was no
+            document anywhere saying these two numbers will disagree and here is the
+            reason, so the people who noticed assumed they had done something wrong, and
+            the people who didn&rsquo;t notice carried on and built decks out of it.
+          </p>
+        </ArticleBlock>
 
         <ArticleBlock>
-          <PullQuote>
-            Complexity is easy. <Accent>Clarity takes discipline.</Accent>
-          </PullQuote>
           <p>
-            Give a team shared structure, and encourage them to tell the story of how
-            their service actually works, and the &ldquo;complex&rdquo; system tends to
-            disappear. What&rsquo;s left is something clear and reliable, and the real
-            cleverness of the people who made it that way.
+            I had seen the same thing at NetEDI. Mapping the workflows before{' '}
+            <ArticleLink href="/work/netix">rebuilding NetIX</ArticleLink>, I kept
+            finding steps that nobody could account for. Not bad steps. Steps that had
+            been a sensible response to something, once, and had since quietly become what
+            the support team called standard practice. Nobody could tell me why. Only that
+            it was how it was done, and that it worked, mostly.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            This is what I mean when I say most complex systems aren&rsquo;t. A complex
+            system is one where the parts interact in ways you can&rsquo;t predict even
+            when you understand every part. That is rare, and when you meet one you
+            know about it. What turns up far more often is a system where every individual
+            decision was reasonable, made under time pressure by somebody with a good
+            reason, and where the reason went unrecorded.
+          </p>
+          <p>
+            The distinction is worth making because the two need completely different
+            responses. Real complexity has to be managed, carefully and forever. The other
+            thing just has to be written down.
+          </p>
+          <p>
+            It is also why services drift in one direction. Anybody can add an exception,
+            a spreadsheet, another handoff, to solve the problem sitting in front of them
+            this afternoon, and they are usually right to.
+          </p>
+          <PullQuote>
+            Nobody is ever given the job of going back and saying what the whole thing now
+            does.
+          </PullQuote>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            The cost of that lands on whoever arrives next. With no clear account of how a
+            service works, every new person has to turn detective, piecing it together
+            from old tickets, half-remembered decisions and whoever happens to still be
+            around. Then that person leaves, and it starts again, and each round of it
+            makes the service look a little more complicated than it is.
+          </p>
+          <p>
+            It is also the reason{' '}
+            <ArticleLink href="/thinking/legacy">fixing the foundations</ArticleLink>{' '}
+            tends to pay for itself. A team that understands its own system spends its
+            time improving it. A team that doesn&rsquo;t spends its time working around
+            it.
+          </p>
+        </ArticleBlock>
+
+        <ArticleBlock>
+          <p>
+            I don&rsquo;t think any of this needs a methodology. The test I use is whether
+            I can sketch how a service works on a napkin. If I can&rsquo;t, I don&rsquo;t
+            understand it yet, and usually neither does anybody else, and that is the
+            finding rather than a step on the way to one.
+          </p>
+          <p>
+            None of this is a new observation. People have been writing about technical
+            debt and legibility for years. What I can add is that it has been true every
+            single time I have looked.
           </p>
         </ArticleBlock>
       </ArticleBody>
