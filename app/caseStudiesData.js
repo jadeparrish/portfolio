@@ -45,6 +45,19 @@ const work = [
     featured: false,
   },
   {
+    slug: 'crm-review',
+    group: 'service',
+    title: 'Rebuilding a customer review around the people doing it',
+    tag: 'Workflow & Service Design',
+    description:
+      'Joined an in-house transformation team to rebuild the software staff used for customer reviews, running workshops with the people doing the job and designing the workflow before the interface.',
+    cta: 'View case study',
+    href: '/work/crm-review',
+    tint: 'bg-[#E5E1DB]',
+    hasPage: true,
+    featured: false,
+  },
+  {
     slug: 'reporting',
     group: 'data',
     title: 'Turning disconnected data into clearer decisions',
