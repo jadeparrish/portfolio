@@ -229,11 +229,8 @@ export default function NotificationsCaseStudy() {
               downloads.
             </p>
             <p>
-              The framework reduces operational risk, saves time, and gives teams a shared
-              structure for surfacing critical events consistently. Beyond stock
-              monitoring, it now connects across systems, from fulfilment and reporting to
-              campaign setup, and provides a blueprint for proactive communication
-              throughout the product.
+              Beyond stock monitoring, it now connects across systems, from fulfilment
+              and reporting to campaign setup.
             </p>
           </div>
         </section>
