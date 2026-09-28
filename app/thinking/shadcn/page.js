@@ -49,7 +49,7 @@ export default function ShadcnArticle() {
 
         <ArticleBlock>
           <p>
-            The clearest result was arithmetic. Before, changing a colour or a spacing
+            Before, changing a colour or a spacing
             value meant updating it in Figma, then in the CSS, then in however many
             components had already drifted from both. After, it meant changing one shared
             source and watching it propagate. One change rather than a dozen, every time.
