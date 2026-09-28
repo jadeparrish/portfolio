@@ -37,9 +37,9 @@ export default function ShadcnArticle() {
           </p>
           <p>
             That turned out to matter more than any decision I made about components.
-            Design and code started from the same place, which gave us a common language
-            before there was anything to argue about. I then wrote the documentation that
-            went with it.
+            Design and code started from the same place. We had the same words for the
+            same things before there was anything to argue about. I then wrote the
+            documentation that went with it.
           </p>
           <p>
             I have now done this twice, at two companies, with two different component
