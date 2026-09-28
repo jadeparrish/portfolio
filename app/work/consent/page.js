@@ -144,8 +144,7 @@ export default function ConsentCaseStudy() {
           />
           <p className="font-serif text-2xl text-neutral-900 mt-8">
             This wasn&rsquo;t just a visual redesign. It was a{' '}
-            <span className="text-[#A47864] italic">compliance and systems change</span>,
-            anchored in design.
+            <span className="text-[#A47864] italic">compliance and systems change</span>.
           </p>
         </section>
 
@@ -205,11 +204,6 @@ export default function ConsentCaseStudy() {
               I&rsquo;ve done. It set out one way for SoPost to handle consent globally,
               built to strengthen legal compliance for enterprise clients, and it taught me
               again that the smallest screen in a flow can carry the most risk.
-            </p>
-            <p>
-              It also reinforced how design can act as the link between policy, technology
-              and trust, translating regulatory requirements into clear, usable
-              experiences.
             </p>
           </div>
         </section>
