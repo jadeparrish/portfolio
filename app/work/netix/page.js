@@ -239,8 +239,9 @@ export default function NetIXCaseStudy() {
                   Marketing Teams, and it took a month.
                 </p>
                 <p>
-                  The loop was short because the work was structural rather than
-                  cosmetic. I would put updates up in Slack, they went out for approval,
+                  The loop was short because the components were consistent, so a
+                  rebrand meant restyling a system rather than redrawing every screen. I
+                  would post the rebranded screens in Slack, they went out for approval,
                   and then they were coded. Days, rather than sprints.
                 </p>
               </div>
@@ -249,18 +250,20 @@ export default function NetIXCaseStudy() {
             </div>
 
             <div>
-              <SubLabel>Why it mattered</SubLabel>
+              <SubLabel>The edge it gave us</SubLabel>
               <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <p>
-                  Two brands, one in a week and one in a month, on a platform that had
-                  been a Silverlight application when I arrived.
+                  Being able to do this gave NetEDI something to sell. In a bid we could
+                  show a prospect the platform already wearing their brand, which is a
+                  different conversation from asking them to imagine it. For a client
+                  already using it, we could hand over something that looked like their
+                  own tool rather than somebody else&rsquo;s software.
                 </p>
                 <p>
-                  This is the argument I would make again anywhere. Designing for
-                  rebranding before anybody asks for it is not housekeeping. It is what
-                  lets one platform carry several organisations&rsquo; identities without
-                  being rebuilt each time, and it turns a rebrand from a project into a
-                  task.
+                  Two brands, one in a week and one in a month, on a platform that had
+                  been a Silverlight application when I arrived. The speed came from the
+                  structure underneath, which had been built for this before anybody
+                  asked for it.
                 </p>
               </div>
             </div>
