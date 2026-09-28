@@ -429,7 +429,7 @@ export function ArticleBullets({ items }) {
    emphasis; it shouldn't outrank the structure. */
 export function PullQuote({ children }) {
   return (
-    <p className="font-serif text-[24px] sm:text-[28px] text-neutral-900 leading-[1.35] [text-wrap:balance] py-6">
+    <p className="font-serif italic text-[24px] sm:text-[28px] text-[#8D6553] leading-[1.35] [text-wrap:balance] py-6">
       {children}
     </p>
   );
