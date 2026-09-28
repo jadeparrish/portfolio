@@ -164,9 +164,11 @@ export default function PortfolioHomepage() {
                 <p>
                   Over 15 years I&rsquo;ve moved from graphic design, through web, into
                   senior product design, picking up service design and systems thinking
-                  along the way. If there&rsquo;s a thread through all of it, it&rsquo;s
-                  that I can&rsquo;t leave a complex process alone. I have to understand
-                  why it&rsquo;s confusing, and then I want to fix it.
+                  along the way. The web years were at Rentalcars.com, designing and
+                  building A/B tests, which is where I learned to expect a design
+                  decision to be measured. If there&rsquo;s a thread through all of it,
+                  it&rsquo;s that I can&rsquo;t leave a complex process alone. I have to
+                  understand why it&rsquo;s confusing, and then I want to fix it.
                 </p>
                 <p>
                   My work usually ends up spanning teams, touchpoints and organisational
