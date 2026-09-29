@@ -403,6 +403,7 @@ export default function NetIXCaseStudy() {
             ]}
             name="Chris Lowe"
             role="Support &amp; Development Director, NetEDI"
+            href="https://www.linkedin.com/in/chris-lowe-4124b843/"
           />
         </section>
 
