@@ -28,6 +28,7 @@ function WorkRow({ item }) {
       <div className="flex-1">
         <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium mb-2">
           {item.tag}
+          {item.year && <> &middot; {item.year}</>}
         </p>
         <h2 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug tracking-tight [text-wrap:balance] transition-colors group-hover:text-[#8D6553]">
           {item.title}
