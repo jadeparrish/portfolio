@@ -209,9 +209,9 @@ export default function NavigationCaseStudy() {
             ]}
           />
           <p className="font-serif text-2xl text-neutral-900 mt-8">
-            This was not a visual refresh. It was a{' '}
-            <span className="text-[#A47864] italic">fundamental redesign</span> of how the
-            platform was accessed.
+            The redesign changed{' '}
+            <span className="text-[#A47864] italic">how people reached things</span>, not
+            how those things looked.
           </p>
         </section>
 
@@ -220,18 +220,16 @@ export default function NavigationCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This project turned SoPost&rsquo;s navigation from a collection of
-              disconnected routes into a coherent, extensible system. By defining a clear
-              hierarchy and adding contextual layers, we gave people a sense of place,
-              sequence and control.
+              I grouped things by what somebody was trying to do rather than by which team
+              owned them, and most of the structure came out of that one decision. After
+              it, people could tell where they were without being told.
             </p>
             <p>
-              The framework now underpins the whole Campaign Manager ecosystem, connecting{' '}
+              The framework now underpins the whole of Campaign Manager, connecting{' '}
               <InlineLink href="/work/reporting">Reporting</InlineLink>,{' '}
               <InlineLink href="/work/stock">stock and fulfilment</InlineLink> and
-              Integrations through one consistent, scalable structure. That&rsquo;s the part I find most satisfying about this kind of
-              work: not the new screens, but the fact that the next hundred features now
-              have somewhere sensible to live.
+              Integrations through one structure. What I find satisfying about this kind of
+              work is that the next hundred features now have somewhere sensible to live.
             </p>
           </div>
         </section>
