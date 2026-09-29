@@ -138,9 +138,9 @@ export default function NotificationsCaseStudy() {
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>My Role</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-            With our Product Manager, I led the design definition of the system, aligning
-            Product, Engineering and CSMs around a shared model for how notifications
-            should be structured, triggered and displayed. That included:
+            With our Product Manager, I led the design definition of the system, getting
+            Product, Engineering and CSMs to one shared model for what sends a
+            notification and where it appears. That included:
           </p>
           <Bullets
             items={[
@@ -212,8 +212,8 @@ export default function NotificationsCaseStudy() {
           </p>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             It was engineered to scale, with a clear extension path to approvals, campaign
-            status changes and integrations. Success was to be measured through user
-            satisfaction, adoption and reduced helpdesk contact.
+            status changes and integrations. We agreed up front to judge it on whether
+            people turned it on and left it on, and on whether helpdesk contact dropped.
           </p>
         </section>
 
@@ -222,11 +222,9 @@ export default function NotificationsCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This work created the foundation for SoPost&rsquo;s first unified, scalable
-              notification framework. Customer Success told us early on it was working:
-              real-time notifications saved hours of manual checking, cut the room for
-              human error, and headed off brand relationship issues caused by missed data
-              downloads.
+              Customer Success told us early on it was working. They stopped having to
+              open the campaign list to find out whether something had run out, and they
+              stopped hearing about it from the brand first.
             </p>
             <p>
               Beyond stock monitoring, it now connects across systems, from fulfilment
