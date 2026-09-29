@@ -141,6 +141,7 @@ export default function ShadcnArticle() {
           }
           name="Kirt Rainford"
           role="Senior Engineer, SoPost"
+          href="https://www.linkedin.com/in/kirt-rainford-5921ab5a/"
         />
       </div>
     </ArticlePage>
