@@ -268,10 +268,9 @@ export default function ReportingCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              The biggest change wasn&rsquo;t the dashboards. It was that people trusted
-              the numbers again. The tools were joined up, Engineering and the Commercial
-              Team were working from the same definitions, and reporting stopped being
-              something you rebuilt by hand every time.
+              People trusted the numbers again. The tools were joined up, Engineering and
+              the Commercial Team were working from the same definitions, and reporting
+              stopped being something you rebuilt by hand every time.
             </p>
             <p>
               It became the foundation for everything that followed. The stock work, the
