@@ -85,7 +85,7 @@ export default function DebtAdviceCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">A template the brands after it were built from</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Higher completion, fewer drop-offs</p>
             </div>
           </div>
         </section>
@@ -108,8 +108,9 @@ export default function DebtAdviceCaseStudy() {
             </p>
             <p>
               There were two of us designing it, one senior to me, and the work was
-              split between us. When he left I took it over as Debt Design Lead. It ran
-              for a year.
+              split between us. When he left I took it over as Debt Design Lead. The
+              first build took a year. I stayed across the group&rsquo;s debt brands
+              until 2017.
             </p>
           </div>
 
@@ -160,6 +161,10 @@ export default function DebtAdviceCaseStudy() {
                   a design one, and getting it wrong would have meant showing people
                   solutions they could not have.
                 </p>
+                <p>
+                  More people finished the redesigned journey than had finished the one
+                  before it, and fewer dropped out partway through.
+                </p>
               </div>
             </div>
 
@@ -207,9 +212,10 @@ export default function DebtAdviceCaseStudy() {
                 <p>
                   When the work on Debt Advisory Centre finished, the group wanted a site
                   for another of its brands, IVA Advisory Centre. I did that one on my
-                  own, and built it as a template rather than a one-off: responsive
-                  layouts the developers could replicate and rebrand quickly, delivered in
-                  two weeks including build and test.
+                  own, and built it as a template rather than a one-off. White label,
+                  essentially: one journey that could wear a different brand, with
+                  responsive layouts the developers could replicate and rebrand quickly.
+                  Two weeks including build and test.
                 </p>
                 <p>
                   The group was spinning debt brands up as experiments, to find out which
