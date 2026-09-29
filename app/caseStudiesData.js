@@ -475,11 +475,28 @@ export function ArticleBullets({ items }) {
    support. Deliberately a different species from PullQuote: upright and
    near-black rather than italic mocha, so a reader can tell at a glance
    which voice they are in. */
-export function Testimonial({ quote, name, role }) {
+export function Testimonial({ quote, name, role, href }) {
   /* Pass an array when the quote runs to more than one paragraph, so nothing
      has to be spliced together to fit. Quote marks open on the first and
      close on the last. */
   const paragraphs = Array.isArray(quote) ? quote : [quote];
+
+  /* The underline stays on rather than waiting for hover. The name is only one
+     step darker than the role beside it, about 1.87:1, nowhere near the 3:1
+     that would let colour carry the link on its own. Without a permanent
+     underline there is nothing telling a reader it can be clicked at all. */
+  const attribution = href ? (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-neutral-800 underline decoration-1 decoration-neutral-400 underline-offset-[3px] hover:text-[#8D6553] hover:decoration-[#8D6553] transition-colors"
+    >
+      {name}
+    </a>
+  ) : (
+    <span className="text-neutral-800">{name}</span>
+  );
 
   return (
     <figure>
@@ -493,7 +510,7 @@ export function Testimonial({ quote, name, role }) {
         ))}
       </blockquote>
       <figcaption className="mt-5 text-[11px] uppercase tracking-[0.15em] font-medium text-neutral-600">
-        <span className="text-neutral-800">{name}</span> &middot; {role}
+        {attribution} &middot; {role}
       </figcaption>
     </figure>
   );
