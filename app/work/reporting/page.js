@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Turning disconnected data into clearer decisions: Jade Parrish',
@@ -277,6 +277,20 @@ export default function ReportingCaseStudy() {
               people simply couldn&rsquo;t agree on the numbers anymore.
             </p>
           </div>
+        </section>
+
+        <section className="py-12 border-b border-neutral-200/80">
+          <Testimonial
+            quote={
+              <>
+            I had the pleasure of working with Jade for nearly three years at SoPost,
+            where she was a driving force behind the evolution of our design and
+            reporting capabilities.
+              </>
+            }
+            name="Isabel Llamas"
+            role="Senior Product Manager, SoPost"
+          />
         </section>
 
         <CaseStudyFooter currentSlug="reporting" />
