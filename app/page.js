@@ -164,7 +164,7 @@ export default function PortfolioHomepage() {
                 <p>
                   Over 15 years I&rsquo;ve moved from graphic design, through web, into
                   senior product design, picking up service design and systems thinking
-                  along the way. The web years were at Rentalcars.com, designing and
+                  along the way. In the web years I was at Rentalcars.com, designing and
                   building A/B tests, which is where I learned to expect a design
                   decision to be measured. If there&rsquo;s a thread through all of it,
                   it&rsquo;s that I can&rsquo;t leave a complex process alone. I have to
@@ -257,6 +257,7 @@ export default function PortfolioHomepage() {
                   <div className="space-y-2 lg:max-w-lg">
                     <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium">
                       {item.tag}
+                      {item.year && <> &middot; {item.year}</>}
                     </p>
                     <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553]">
                       {item.title}
