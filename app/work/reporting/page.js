@@ -292,6 +292,7 @@ export default function ReportingCaseStudy() {
             }
             name="Isabel Llamas"
             role="Senior Product Manager, SoPost"
+            href="https://www.linkedin.com/in/isabelllamasroman/"
           />
         </section>
 
