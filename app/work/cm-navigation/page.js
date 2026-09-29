@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Giving a siloed platform a navigation that scales: Jade Parrish',
@@ -234,6 +234,20 @@ export default function NavigationCaseStudy() {
               have somewhere sensible to live.
             </p>
           </div>
+        </section>
+
+        <section className="py-12 border-b border-neutral-200/80">
+          <Testimonial
+            quote={
+              <>
+            From day one, Jade impressed me with her attention to detail and the quality
+            of her designs, which made frontend building almost a copy-and-paste
+            exercise.
+              </>
+            }
+            name="Juan Arboleda Polo"
+            role="Senior Platform Engineer, SoPost"
+          />
         </section>
 
         <CaseStudyFooter currentSlug="cm-navigation" />
