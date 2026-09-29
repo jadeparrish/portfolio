@@ -213,8 +213,8 @@ export default function CommercialValueCaseStudy() {
                 ]}
               />
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
-                The pilot wasn&rsquo;t about dashboards for their own sake. It tested
-                whether the approach could be understood, trusted and scaled.
+                The pilot was there to find out whether people outside the team could read
+                the numbers and believe them.
               </p>
             </div>
 
@@ -236,8 +236,8 @@ export default function CommercialValueCaseStudy() {
             <div>
               <SubLabel>Impact</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-2">
-                Incremental revenue and trust uplift became early, defensible indicators:
-                a bridge between immediate results and sustained growth.
+                Incremental revenue and trust uplift became figures the Commercial Team
+                could put in front of a brand and defend.
               </p>
               <p className="font-serif text-2xl text-neutral-900">
                 It changed the conversation internally. We stopped asking{' '}
@@ -373,9 +373,7 @@ export default function CommercialValueCaseStudy() {
               compare?&rdquo;
             </p>
             <p>
-              Both taught me the same lesson. Good design isn&rsquo;t about how the
-              data looks. It&rsquo;s about how quickly someone can trust it enough to act on
-              it.
+              What I found was that a number nobody trusts is worse than no number.
             </p>
           </div>
         </section>
