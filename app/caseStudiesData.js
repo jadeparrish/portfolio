@@ -26,7 +26,7 @@ const work = [
     title: 'Turning a compliance risk into a simple first step',
     tag: 'Compliance & Service Design',
     description:
-      'Led a cross-functional review of how feedback journeys captured consent, then designed one global pattern that protects users and brands without adding friction.',
+      'Led a review of how feedback journeys captured consent, then designed one global pattern that protects users and brands without adding friction.',
     cta: 'View case study',
     href: '/work/consent',
     tint: 'bg-[#E6E2E9]',
