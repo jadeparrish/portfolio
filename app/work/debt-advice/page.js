@@ -107,8 +107,9 @@ export default function DebtAdviceCaseStudy() {
               because financial advice in the UK is not something you can design freely.
             </p>
             <p>
-              I started as one of two designers on it and took it over as Debt Design
-              Lead when our Design Lead left. It ran for a year.
+              There were two of us designing it, one senior to me, and the work was
+              split between us. When he left I took it over as Debt Design Lead. It ran
+              for a year.
             </p>
           </div>
 
