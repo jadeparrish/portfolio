@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Turning a debt enquiry into something people could act on: Jade Parrish',
@@ -246,6 +246,22 @@ export default function DebtAdviceCaseStudy() {
               that makes sense.
             </p>
           </div>
+        </section>
+
+        <section className="py-12 border-b border-neutral-200/80">
+          <Testimonial
+            quote={
+              <>
+            Jade has delivered work from simple landing page optimisation design tweaks,
+            to full website redesigns with full end to end journeys. Jade always has an
+            interest in the business side of her work and wants to understand how
+            it&rsquo;s performing analytically and from a customer experience point of
+            view.
+              </>
+            }
+            name="Michael Mangan"
+            role="Head of UX &amp; Design, Think Money Group"
+          />
         </section>
 
         <CaseStudyFooter currentSlug="debt-advice" />
