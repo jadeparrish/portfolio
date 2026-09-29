@@ -57,7 +57,7 @@ export default function CommercialValueCaseStudy() {
         {/* Title */}
         <section className="pb-8 border-b border-neutral-200/80">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Commercial Product &middot; Senior Product Designer
+            Commercial Product &middot; 2025
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
             Helping commercial teams see the value they create.
