@@ -16,7 +16,7 @@ import {
   Heart,
   Image as ImageIcon,
 } from 'lucide-react';
-import { caseStudiesList, thinkingList, SiteFooter } from './caseStudiesData';
+import { caseStudiesList, thinkingList, SiteFooter, Testimonial } from './caseStudiesData';
 
 const whatIDo = [
   {
@@ -191,6 +191,22 @@ export default function PortfolioHomepage() {
                   &ldquo;I want the systems people depend on to actually work for
                   them, not against them.&rdquo;
                 </blockquote>
+              </div>
+
+              <div className="pt-8 border-t border-neutral-200/80">
+                <Testimonial
+                  quote={
+                    <>
+                      She played a key role in shaping major initiatives including our
+                      ShadCN migration, Campaign Manager redesign, and early reporting
+                      improvements. Her documentation and communication with engineering
+                      were always clear and dependable, which helped move complex work
+                      forward smoothly.
+                    </>
+                  }
+                  name="Ade-Lee Adebiyi"
+                  role="Head of Design, SoPost"
+                />
               </div>
 
               <div className="pt-8 border-t border-neutral-200/80">
