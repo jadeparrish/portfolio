@@ -88,9 +88,9 @@ export default function NetIXCaseStudy() {
               and hard to find your way around.
             </p>
             <p>
-              As the Sole Product Designer, I was responsible for bringing clarity, structure and
-              usability to a deeply technical enterprise product used by clients including
-              DPD, Radley, Tangle Teezer and NHS Supply Chain.
+              I was the only designer on it. The product was deeply technical and used
+              every day by clients including DPD, Radley, Tangle Teezer and NHS Supply
+              Chain.
             </p>
             <p>
               The goal was to modernise the interface and improve usability for both
@@ -155,9 +155,8 @@ export default function NetIXCaseStudy() {
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Reusable tables with filtering and inline actions</li>
               </ul>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                The redesign prioritised hierarchy, whitespace and error prevention,
-                resulting in a modular system that could scale across devices and screen
-                sizes.
+                I built it as modules rather than pages, so the same pieces worked at any
+                screen size and a mistake was harder to make in the first place.
               </p>
 
               <ImagePlaceholder tint="bg-[#E3E6E1]" caption="Redesigned dashboard and process screens" />
@@ -335,13 +334,9 @@ export default function NetIXCaseStudy() {
                   designs through prototypes before any implementation began.
                 </p>
                 <p>
-                  Collaboration with Cegedim&rsquo;s product and engineering teams was
-                  critical. I travelled to France to work on-site with stakeholders and
-                  developers, reviewing accessibility
-                  adjustments, aligning with the French Marketing Team, and presenting
-                  progress to executive sponsors. This face-to-face collaboration
-                  accelerated decision-making and ensured design quality held up across
-                  both product ecosystems.
+                  I travelled to France to work on-site with Cegedim&rsquo;s stakeholders
+                  and developers, reviewing accessibility adjustments, sitting with the
+                  French Marketing Team, and presenting progress to executive sponsors.
                 </p>
               </div>
 
@@ -371,18 +366,13 @@ export default function NetIXCaseStudy() {
               design, with nobody else to hand the hard decisions to.
             </p>
             <p>
-              Working on-site with Cegedim in France gave me first-hand experience of
-              how international product teams align brand, accessibility and technical
-              delivery.
+              Working on-site with Cegedim in France was the first time I had done this
+              across two languages and two companies that had joined.
             </p>
             <p>
-              NetIX evolved from a legacy desktop app into a scalable platform that
-              customers described as faster, smarter and easier to use.
-              The work established a design and technical foundation for future
-              integrations, letting the company expand partner connectivity without
-              re-engineering setup logic each time. It also strengthened my ability to
-              lead design work across teams, languages and cultures, experience that
-              still shapes how I approach complex, system-wide projects today.
+              What NetIX left behind was a platform that could take a new partner without
+              anybody rebuilding the setup logic, and one that could be wearing a
+              prospect&rsquo;s brand inside a week.
             </p>
           </div>
         </section>
