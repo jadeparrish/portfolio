@@ -63,7 +63,7 @@ const work = [
     title: 'Turning a debt enquiry into something people could act on',
     tag: 'Research & Service Design',
     description:
-      'Designed a debt diagnostic and a personalised report for people who could not pay what they owed, researched by listening to the calls, then defined the template every debt brand after it was built from.',
+      'Designed a debt diagnostic and a personalised report for people who were struggling to repay their debts, researched by listening to the calls, then defined the template every debt brand after it was built from.',
     cta: 'View case study',
     href: '/work/debt-advice',
     tint: 'bg-[#E1E5E4]',
