@@ -95,7 +95,7 @@ export default function DebtAdviceCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              Debt Advisory Centre is one of the debt brands at Think Money Group. People
+              Debt Advisory Centre is one of the main debt brands at Think Money Group. People
               arrived at it because they were struggling to repay what they owed, usually
               after a change they had not chosen: a job lost, a relationship ended, hours
               cut.
@@ -198,12 +198,24 @@ export default function DebtAdviceCaseStudy() {
                   The project grew as it went. It came to include the brand, the website,
                   paid landing pages, and a blog section that I led the implementation of.
                 </p>
+              </div>
+            </div>
+
+            <div>
+              <SubLabel>The template</SubLabel>
+              <div className="space-y-5 text-neutral-700">
                 <p>
-                  Every time another debt brand needed a journey, it got rebuilt from
-                  scratch. That stopped with IVA Advisory Centre, which I defined: a
-                  responsive template the developers could replicate and rebrand quickly,
-                  delivered in two weeks including build and test. Everything that came
-                  after was built from it.
+                  When the work on Debt Advisory Centre finished, the group wanted a site
+                  for another of its brands, IVA Advisory Centre. I did that one on my
+                  own, and built it as a template rather than a one-off: responsive
+                  layouts the developers could replicate and rebrand quickly, delivered in
+                  two weeks including build and test.
+                </p>
+                <p>
+                  The group was spinning debt brands up as experiments, to find out which
+                  ones people responded to. Every site after IVA Advisory Centre was built
+                  from that template, so a new brand cost weeks rather than months to get
+                  in front of anybody.
                 </p>
               </div>
             </div>
