@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 
@@ -25,17 +24,6 @@ function Bullets({ items }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-function InlineLink({ href, children }) {
-  return (
-    <Link
-      href={href}
-      className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
-    >
-      {children}
-    </Link>
   );
 }
 
@@ -104,8 +92,8 @@ export default function IntegrationsCaseStudy() {
             </p>
             <p>
               Integrations let SoPost sync data with fulfilment partners, CRMs and ad
-              platforms such as Meta, Klaviyo and Bazaarvoice. The legacy setup was
-              confusing, error-prone and heavily dependent on Engineering support.
+              platforms such as Meta, Klaviyo and Bazaarvoice. Setting one up meant
+              guessing your way through it and usually calling an engineer.
             </p>
             <p>
               The goal was a guided, self-serve flow that felt as intuitive as the modern
@@ -121,7 +109,7 @@ export default function IntegrationsCaseStudy() {
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Understanding the Problem</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-            The previous integration flow was fragmented, inconsistent and opaque.
+            Every integration had been built separately, so no two behaved the same way.
           </p>
           <Bullets
             items={[
@@ -198,7 +186,7 @@ export default function IntegrationsCaseStudy() {
               'Introduces a clear, repeatable structure across every integration',
               'Lets teams configure integrations themselves, without Engineering',
               'Reduces setup errors through guided validation',
-              'Improves clarity, speed and confidence during connection setup',
+              'Tells somebody what has gone wrong while they can still fix it',
             ]}
           />
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
@@ -212,17 +200,13 @@ export default function IntegrationsCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This work turned a real technical bottleneck into a guided, self-serve flow.
               Seven integrations now share one pattern, so somebody connecting Meta finds
               the same shape as somebody connecting Bazaarvoice, and neither of them has
               to involve Engineering to do it.
             </p>
             <p>
-              The model is now the blueprint for integrations in Campaign Manager, so
-              SoPost can add new partners with the same clarity and reliability
-              that underpin its{' '}
-              <InlineLink href="/work/reporting">reporting</InlineLink> and{' '}
-              <InlineLink href="/work/stock">fulfilment</InlineLink> systems.
+              The model is now the blueprint for integrations in Campaign Manager, so a new
+              partner does not mean designing the flow again from scratch.
             </p>
           </div>
         </section>
