@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Bringing stock and fulfilment data into one clear view: Jade Parrish',
@@ -229,6 +229,24 @@ export default function StockCaseStudy() {
               it should say so, rather than waiting for someone to go and look.
             </p>
           </div>
+        </section>
+
+        <section className="py-12 border-b border-neutral-200/80">
+          <Testimonial
+            quote={
+              <>
+            She took the time to sit down with me and go through every aspect of what I
+            would need the system to be able to do, to ensure she understood exactly how
+            she could help. During the creating process she regularly checked in with me,
+            showing what she had accomplished so far and asking for user feedback. The end
+            product turned out to be everything I needed it to be and more, really reducing
+            the stress of a complicated role.
+              </>
+            }
+            name="Katie Mather"
+            role="Fulfilment Operations Specialist, SoPost"
+            href="https://www.linkedin.com/in/katie-mather-933583151/"
+          />
         </section>
 
         <CaseStudyFooter currentSlug="stock" />
