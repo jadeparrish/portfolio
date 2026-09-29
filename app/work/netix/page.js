@@ -165,10 +165,12 @@ export default function NetIXCaseStudy() {
 
             <div>
               <SubLabel>Outcome</SubLabel>
-              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-2">
+              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-8">
                 The new NetIX interface replaced Silverlight with a modern, modular
                 design system.
               </p>
+              {/* Equal air above and below: this line is a standalone statement,
+                  not the second half of the paragraph before it. */}
               <p className="font-serif text-2xl text-neutral-900 mb-8">
                 It reduced the time to create or update a process by over{' '}
                 <span className="text-[#A47864] italic">40 percent</span>, and
