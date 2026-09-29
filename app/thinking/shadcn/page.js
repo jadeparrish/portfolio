@@ -7,6 +7,7 @@ import {
   ArticleHeading,
   PullQuote,
   ArticleLink,
+  Testimonial,
 } from '../../caseStudiesData';
 
 export const metadata = {
@@ -125,6 +126,23 @@ export default function ShadcnArticle() {
           </p>
         </ArticleBlock>
       </ArticleBody>
+
+      <div className="py-12 border-b border-neutral-200/80">
+        <Testimonial
+          quote={
+            <>
+              Jade has advocated for and worked closely with frontend engineers in our
+              team to create our UI library and design system to standardise UI across
+              our services. She led the way with this initiative and helped us to make
+              critical technical decisions, improving the consistency of our platform
+              and improving our UI development experience. This has saved us countless
+              man hours and kept our UI consistent as we built out new features.
+            </>
+          }
+          name="Kirt Rainford"
+          role="Senior Engineer, SoPost"
+        />
+      </div>
     </ArticlePage>
   );
 }
