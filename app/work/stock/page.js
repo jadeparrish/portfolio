@@ -89,8 +89,8 @@ export default function StockCaseStudy() {
               between SoPost and its fulfilment partners were costing us, so I put the
               case for a Warehouse Management System to our CFO, our CTO and my manager,
               and got the go-ahead. The three of us built it in 2024: our CFO, who knew the
-              operation inside out, our Fulfilment Lead, who worked with the warehouses
-              day to day, and me. The WMS replaced all of that with one role-based system.
+              operation inside out, Katie in Fulfilment Operations, who worked with the
+              warehouses day to day, and me. The WMS replaced all of that with one role-based system.
               Building it turned up something I wasn&rsquo;t expecting, real discrepancies
               in the data behind stock and fulfilment.
             </p>
@@ -186,7 +186,7 @@ export default function StockCaseStudy() {
             <div>
               <SubLabel>Status</SubLabel>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                Our Fulfilment Lead tested the designs with her counterpart at our biggest
+                Katie tested the designs with her counterpart at our biggest
                 warehouse, and they rolled out in phases. They
                 informed the next phase of Campaign Manager reporting, bringing the same
                 clarity and hierarchy into brand-facing dashboards. The same stock
