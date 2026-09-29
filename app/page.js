@@ -206,6 +206,7 @@ export default function PortfolioHomepage() {
                   }
                   name="Ade-Lee Adebiyi"
                   role="Head of Design, SoPost"
+                  href="https://www.linkedin.com/in/ade-lee-adebiyi-a526a743/"
                 />
               </div>
 
