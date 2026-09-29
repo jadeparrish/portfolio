@@ -88,7 +88,7 @@ export default function ConsentCaseStudy() {
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               In 2025, after a global client raised concerns about data being stored before people
-              had agreed to the Terms and Conditions, I led a cross-functional review of how
+              had agreed to the Terms and Conditions, I led a review of how
               consent was captured across SoPost&rsquo;s feedback journeys.
             </p>
             <p>
@@ -123,7 +123,7 @@ export default function ConsentCaseStudy() {
             Moving consent upfront increases legal confidence, but it often causes a small
             drop in completions. To balance the two, I simplified the step, cut the copy,
             and made the nickname field optional or pre-filled, so the legal step felt
-            seamless rather than obstructive.
+            straightforward.
           </p>
         </section>
 
@@ -143,8 +143,9 @@ export default function ConsentCaseStudy() {
             ]}
           />
           <p className="font-serif text-2xl text-neutral-900 mt-8">
-            This wasn&rsquo;t just a visual redesign. It was a{' '}
-            <span className="text-[#A47864] italic">compliance and systems change</span>.
+            What changed was{' '}
+            <span className="text-[#A47864] italic">compliance and the systems behind it</span>,
+            not the look of the screen.
           </p>
         </section>
 
