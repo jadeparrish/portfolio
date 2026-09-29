@@ -247,6 +247,7 @@ export default function NavigationCaseStudy() {
             }
             name="Juan Arboleda Polo"
             role="Senior Platform Engineer, SoPost"
+            href="https://www.linkedin.com/in/juans-arboleda/"
           />
         </section>
 
