@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Making a legacy platform simple, accessible and built to scale: Jade Parrish',
@@ -383,6 +383,25 @@ export default function NetIXCaseStudy() {
               still shapes how I approach complex, system-wide projects today.
             </p>
           </div>
+        </section>
+
+        <section className="py-12 border-b border-neutral-200/80">
+          <Testimonial
+            quote={[
+              <>
+                I managed Jade at NetEDI and she quickly proved herself as a great
+                designer. She turns complex workflows into simple, reliable journeys and
+                balances strong product thinking with the detail needed to ship.
+              </>,
+              <>
+                Jade proactively sought feedback, worked brilliantly with engineering and
+                ops, and kept user needs at the centre of every decision. When the NeTIX
+                redesign was launched we got much positive feedback from our key brands.
+              </>,
+            ]}
+            name="Chris Lowe"
+            role="Support &amp; Development Director, NetEDI"
+          />
         </section>
 
         <CaseStudyFooter currentSlug="netix" />
