@@ -471,6 +471,34 @@ export function ArticleBullets({ items }) {
   );
 }
 
+/* Somebody else's words about the work, placed next to the claim they
+   support. Deliberately a different species from PullQuote: upright and
+   near-black rather than italic mocha, so a reader can tell at a glance
+   which voice they are in. */
+export function Testimonial({ quote, name, role }) {
+  /* Pass an array when the quote runs to more than one paragraph, so nothing
+     has to be spliced together to fit. Quote marks open on the first and
+     close on the last. */
+  const paragraphs = Array.isArray(quote) ? quote : [quote];
+
+  return (
+    <figure>
+      <blockquote className="font-serif text-xl sm:text-[22px] text-neutral-900 leading-[1.5] [text-wrap:pretty] space-y-5">
+        {paragraphs.map((paragraph, i) => (
+          <p key={i}>
+            {i === 0 && <>&ldquo;</>}
+            {paragraph}
+            {i === paragraphs.length - 1 && <>&rdquo;</>}
+          </p>
+        ))}
+      </blockquote>
+      <figcaption className="mt-5 text-[11px] uppercase tracking-[0.15em] font-medium text-neutral-600">
+        <span className="text-neutral-800">{name}</span> &middot; {role}
+      </figcaption>
+    </figure>
+  );
+}
+
 /* Level with the section heading at 28px, not above it. A pull quote is
    emphasis; it shouldn't outrank the structure. */
 export function PullQuote({ children }) {
