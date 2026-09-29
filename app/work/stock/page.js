@@ -139,7 +139,7 @@ export default function StockCaseStudy() {
                 <p>
                   Stock was also split into partitions: separate amounts set aside for a
                   particular campaign, brand or product. How those splits were set up
-                  varied from brand to brand, so it was genuinely hard to see which
+                  varied from brand to brand, so it was hard to see which
                   products, activities or fulfilment tasks were drawing on the same stock.
                 </p>
               </div>
@@ -209,12 +209,10 @@ export default function StockCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              This project turned stock and fulfilment from a hidden, spreadsheet-shaped
-              process into something transparent and data-driven. The Fulfilment Team told
-              us early on that it was working: real-time visibility and automation saved
-              hours of manual updates, cut the room for human error, and headed off issues
-              that could have damaged brand relationships when opt-in or dispatch data
-              wasn&rsquo;t downloaded in time.
+              Stock and fulfilment used to be a spreadsheet-shaped process that only a
+              handful of people could see into. Katie told us early on that it was
+              working: hours of manual updating gone, and very little chance of a mistyped
+              number reaching a brand before anyone caught it.
             </p>
             <p>
               The WMS gave partners and internal teams the same view of what was
