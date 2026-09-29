@@ -5,7 +5,7 @@ import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
 export const metadata = {
   title: 'Turning a debt enquiry into something people could act on: Jade Parrish',
   description:
-    'A debt diagnostic and a personalised report, for people working out what to do about money they could not pay back.',
+    'A debt diagnostic and a personalised report, for people working out how to repay what they owed, with the right support.',
 };
 
 function SectionLabel({ children }) {
@@ -63,8 +63,8 @@ export default function DebtAdviceCaseStudy() {
             Turning a debt enquiry into something people could act on.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
-            A debt diagnostic and a personalised report, for people working out what to
-            do about money they could not pay back.
+            A debt diagnostic and a personalised report, for people working out how to
+            repay what they owed, with the right support.
           </p>
         </section>
 
@@ -95,9 +95,10 @@ export default function DebtAdviceCaseStudy() {
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              Debt Advisory Centre was one of the debt brands at Think Money Group. People
-              arrived at it because they owed money they could not pay back, usually after
-              a change they had not chosen: a job lost, a relationship ended, hours cut.
+              Debt Advisory Centre is one of the debt brands at Think Money Group. People
+              arrived at it because they were struggling to repay what they owed, usually
+              after a change they had not chosen: a job lost, a relationship ended, hours
+              cut.
             </p>
             <p>
               The job was to take somebody in that position and get them to a point where
@@ -106,8 +107,8 @@ export default function DebtAdviceCaseStudy() {
               because financial advice in the UK is not something you can design freely.
             </p>
             <p>
-              I started as one of two designers on it and took it over as Debt Design Lead
-              when my co-designer left. It ran for a year.
+              I started as one of two designers on it and took it over as Debt Design
+              Lead when our Design Lead left. It ran for a year.
             </p>
           </div>
 
@@ -133,10 +134,9 @@ export default function DebtAdviceCaseStudy() {
                   with customers, and watched session recordings and heatmaps in Hotjar.
                 </p>
                 <p>
-                  None of that was a phase to get through. It was where every argument
-                  came from. If a decision on this project could not be traced back to
-                  something we had heard on a call or watched somebody do, it did not have
-                  much standing.
+                  That was where every argument came from. If a decision on this project
+                  could not be traced back to something we had heard on a call or watched
+                  somebody do, it did not have much standing.
                 </p>
               </div>
             </div>
@@ -176,10 +176,9 @@ export default function DebtAdviceCaseStudy() {
                 <p>
                   Then it set out the options side by side, from a debt management plan
                   through to bankruptcy, and said which ones they were less likely to
-                  need. That last part mattered more than it sounds. Bankruptcy is not
-                  free, you pay to go bankrupt, so somebody arriving with that word in
-                  their head and being shown in their own numbers that it was not the only
-                  road was being saved real money they did not have.
+                  need. That was key, because bankruptcy is not free. You pay to go
+                  bankrupt. So showing somebody in their own numbers that it was not the
+                  only road could save them money they did not have.
                 </p>
                 <Bullets
                   items={[
