@@ -207,9 +207,9 @@ export const thinkingList = [
     icon: Sparkles,
     kicker: 'Design & AI',
     readTime: 'Coming soon',
-    title: 'The prototype was never the expensive part.',
+    title: 'What Claude and Lovable leave for a designer to do.',
     description:
-      'A working screen is the cheap bit now. Knowing which screen to build still takes the same research it always did.',
+      'Notes from using both, and what each one still needs a person for.',
     hasPage: false,
   },
 ];
