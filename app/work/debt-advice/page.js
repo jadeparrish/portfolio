@@ -261,6 +261,7 @@ export default function DebtAdviceCaseStudy() {
             }
             name="Michael Mangan"
             role="Head of UX &amp; Design, Think Money Group"
+            href="https://www.linkedin.com/in/michael-mangan-470a1530/"
           />
         </section>
 
