@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Sparkles } fr
 const work = [
   {
     slug: 'send',
+    year: '2026 to 2027',
     group: 'service',
     title: 'Making SEND journeys easier for families to navigate',
     tag: 'Service Design',
@@ -20,6 +21,7 @@ const work = [
   },
   {
     slug: 'stock',
+    year: '2024 to 2025',
     group: 'service',
     title: 'Bringing stock and fulfilment data into one clear view',
     tag: 'Operations & Service Design',
@@ -33,6 +35,7 @@ const work = [
   },
   {
     slug: 'consent',
+    year: '2025',
     group: 'service',
     title: 'Turning a compliance risk into a simple first step',
     tag: 'Compliance & Service Design',
@@ -46,6 +49,7 @@ const work = [
   },
   {
     slug: 'crm-review',
+    year: '2016 to 2017',
     group: 'service',
     title: 'Rebuilding a customer review around the people doing it',
     tag: 'Workflow & Service Design',
@@ -59,6 +63,7 @@ const work = [
   },
   {
     slug: 'debt-advice',
+    year: '2014 to 2017',
     group: 'service',
     title: 'Turning a debt enquiry into something people could act on',
     tag: 'Research & Service Design',
@@ -72,6 +77,7 @@ const work = [
   },
   {
     slug: 'reporting',
+    year: '2024 to 2025',
     group: 'data',
     title: 'Turning disconnected data into clearer decisions',
     tag: 'Data & Service Design',
@@ -85,6 +91,7 @@ const work = [
   },
   {
     slug: 'commercial-value',
+    year: '2025',
     group: 'data',
     title: 'Helping commercial teams see the value they create',
     tag: 'Commercial Product',
@@ -98,6 +105,7 @@ const work = [
   },
   {
     slug: 'netix',
+    year: '2018 to 2022',
     group: 'systems',
     title: 'Making a legacy platform simple, accessible and built to scale',
     tag: 'Enterprise Product & Rebrand',
@@ -111,6 +119,7 @@ const work = [
   },
   {
     slug: 'cm-navigation',
+    year: '2025',
     group: 'systems',
     title: 'Giving a siloed platform a navigation that scales',
     tag: 'Information Architecture',
@@ -124,6 +133,7 @@ const work = [
   },
   {
     slug: 'notifications',
+    year: '2024 to 2025',
     group: 'systems',
     title: 'Designing notifications that scale beyond a single alert',
     tag: 'Systems Design',
@@ -137,6 +147,7 @@ const work = [
   },
   {
     slug: 'integrations',
+    year: '2025',
     group: 'systems',
     title: 'Turning a technical bottleneck into a guided setup',
     tag: 'Integrations & Service Design',
