@@ -373,7 +373,8 @@ export default function CommercialValueCaseStudy() {
               compare?&rdquo;
             </p>
             <p>
-              What I found was that a number nobody trusts is worse than no number.
+              Both pieces of work showed that good design isn&rsquo;t just about how data
+              looks. It&rsquo;s about how quickly people can trust it and act on it.
             </p>
           </div>
         </section>
