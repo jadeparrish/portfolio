@@ -89,10 +89,18 @@ export default function PortfolioHomepage() {
 
       <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Hero */}
-        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-20 items-center border-b border-neutral-200/80">
-          <div className="md:col-span-6 space-y-8">
+        {/* Two columns only from lg. At md the hero column was half a 12-column
+            grid, about 330px, which is too narrow for 48px display type: the
+            headline broke into four ragged lines. Stacked, it gets the full
+            width and the illustration sits under it. */}
+        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center border-b border-neutral-200/80">
+          <div className="lg:col-span-6 space-y-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
-              Better systems <br />
+              {/* The designed break only works once the column is wide enough to
+                  hold "Better systems" on one line. Below lg the hero column is
+                  half a 12-column grid, so forcing it there gives four ragged
+                  lines. Hidden means no break at all, so the text just flows. */}
+              Better systems <br className="hidden lg:inline" />
               create better <span className="italic text-[#A47864]">lives.</span>
             </h1>
             <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-lg font-normal">
@@ -103,14 +111,20 @@ export default function PortfolioHomepage() {
               </p>
             </div>
 
+            {/* Each dot travels with the label before it. As separate flex
+                children they could wrap onto a new line on their own, which
+                put a stray dot at the start of a row at tablet width. */}
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-neutral-500 tracking-wide">
-              <span>Public Sector</span>
-              <span className="w-1 h-1 rounded-full bg-neutral-300" />
-              <span>Healthcare</span>
-              <span className="w-1 h-1 rounded-full bg-neutral-300" />
-              <span>Education</span>
-              <span className="w-1 h-1 rounded-full bg-neutral-300" />
-              <span>Complex Digital Products</span>
+              {['Public Sector', 'Healthcare', 'Education', 'Complex Digital Products'].map(
+                (label, i, all) => (
+                  <span key={label} className="inline-flex items-center gap-x-6">
+                    {label}
+                    {i < all.length - 1 && (
+                      <span className="w-1 h-1 rounded-full bg-neutral-300" />
+                    )}
+                  </span>
+                )
+              )}
             </div>
 
             <div className="pt-2">
@@ -124,8 +138,8 @@ export default function PortfolioHomepage() {
           </div>
 
           {/* Hero illustration placeholder */}
-          <div className="md:col-span-6">
-            <div className="aspect-[4/3] w-full max-h-[320px] md:max-h-none rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
+          <div className="lg:col-span-6">
+            <div className="aspect-[4/3] w-full max-h-[320px] lg:max-h-none rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
               <ImageIcon className="w-6 h-6 text-neutral-300" strokeWidth={1.5} />
               <p className="text-xs uppercase tracking-[0.15em] text-neutral-600 font-medium">
                 Hero illustration: coming soon
