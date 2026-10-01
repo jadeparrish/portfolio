@@ -27,7 +27,7 @@ function SubLabel({ children }) {
 
 function ImagePlaceholder({ tint, caption }) {
   return (
-    <div className={`aspect-[16/9] w-full rounded-sm border border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
+    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
       <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
       <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
         Visual coming soon
