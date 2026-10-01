@@ -155,7 +155,10 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* About */}
-        <section id="about" className="py-20 lg:py-28 border-b border-neutral-200/80">
+        {/* py-16 lg:py-24, same as every other content section. This one was
+            py-20 lg:py-28, and because it ends on a short list of small mono
+            type the extra 16px read as a gap rather than as breathing room. */}
+        <section id="about" className="py-16 lg:py-24 border-b border-neutral-200/80">
           {/* Stacked until lg, like the hero. Side by side at tablet the text
               ran far longer than the photo and left a tall empty column beside
               it; stacked, the photo caps at max-w-xs and centres. */}
@@ -234,18 +237,24 @@ export default function PortfolioHomepage() {
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   Capabilities
                 </p>
+                {/* Same fix as the hero tags: each dot travels with the label
+                    before it, so a dot can never start a wrapped line. */}
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
-                  <span>Service Design</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Systems Thinking</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Product Design</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Accessibility</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Research</span>
-                  <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
-                  <span>Strategy</span>
+                  {[
+                    'Service Design',
+                    'Systems Thinking',
+                    'Product Design',
+                    'Accessibility',
+                    'Research',
+                    'Strategy',
+                  ].map((label, i, all) => (
+                    <span key={label} className="inline-flex items-center gap-x-3">
+                      {label}
+                      {i < all.length - 1 && (
+                        <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                      )}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
