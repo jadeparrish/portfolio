@@ -45,7 +45,7 @@ const work = [
     href: '/work/stock',
     tint: 'bg-[#E3E6E1]',
     hasPage: true,
-    featured: true,
+    featured: false,
   },
   {
     slug: 'crm-review',
@@ -68,12 +68,12 @@ const work = [
     title: 'Turning a debt enquiry into something people could act on',
     tag: 'Research & Service Design',
     description:
-      'Designed a debt diagnostic and a personalised report for people who were struggling to repay their debts, researched by listening to the calls, then defined the template every debt brand after it was built from.',
+      'Designed a debt diagnostic and a personalised report for people working out how to repay what they owed, researched by listening to the calls, then defined the template every debt brand after it was built from.',
     cta: 'View case study',
     href: '/work/debt-advice',
     tint: 'bg-[#E1E5E4]',
     hasPage: true,
-    featured: false,
+    featured: true,
   },
   {
     slug: 'commercial-value',
@@ -551,7 +551,9 @@ export function SiteFooter({ wide }) {
           wide ? 'max-w-7xl lg:px-12' : 'max-w-3xl'
         } mx-auto px-6 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4`}
       >
-        <p>&copy; {new Date().getFullYear()} Jade Parrish. Built with care.</p>
+        {/* Location sits here as well as on the contact block, so somebody who
+            lands straight on a case study still learns where I am. */}
+        <p>&copy; {new Date().getFullYear()} Jade Parrish, Lytham St Annes. Built with care.</p>
         <div className="flex gap-8 tracking-wider uppercase text-[11px] items-center">
           <a
             href="https://www.linkedin.com/in/jade-parrish/"
