@@ -220,11 +220,13 @@ export default function PortfolioHomepage() {
                 <Testimonial
                   quote={
                     <>
-                      She played a key role in shaping major initiatives including our
-                      ShadCN migration, Campaign Manager redesign, and early reporting
-                      improvements. Her documentation and communication with engineering
-                      were always clear and dependable, which helped move complex work
-                      forward smoothly.
+                      Jade approaches design with thoughtfulness and precision,
+                      particularly across projects that demand structure and data
+                      awareness. She played a key role in shaping major initiatives
+                      including our ShadCN migration, Campaign Manager redesign, and early
+                      reporting improvements. Her documentation and communication with
+                      engineering were always clear and dependable, which helped move
+                      complex work forward smoothly.
                     </>
                   }
                   name="Ade-Lee Adebiyi"
