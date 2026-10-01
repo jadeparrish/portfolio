@@ -63,15 +63,18 @@ const whoIWorkWith = [
     title: 'Education',
     description: 'Schools, colleges, trusts and education technology providers.',
   },
+  /* The order reads as priority, so this list runs most-wanted first. Product
+     work sits fourth rather than second: a genuine move up, without claiming it
+     outranks the NHS and education work the site is aimed at. */
+  {
+    icon: Users,
+    title: 'Product & Platform Teams',
+    description: 'Complex digital products, data-heavy workflows and design systems.',
+  },
   {
     icon: Heart,
     title: 'Charities & NFPs',
     description: 'Charities, cultural organisations and not-for-profits.',
-  },
-  {
-    icon: Users,
-    title: 'Enterprise Teams',
-    description: 'Complex product and operations teams.',
   },
 ];
 
@@ -153,9 +156,12 @@ export default function PortfolioHomepage() {
 
         {/* About */}
         <section id="about" className="py-20 lg:py-28 border-b border-neutral-200/80">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-10 lg:gap-16 items-start">
-            <div className="md:col-span-4">
-              <div className="aspect-[4/5] max-h-[460px] md:max-h-none w-full max-w-xs md:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm overflow-hidden">
+          {/* Stacked until lg, like the hero. Side by side at tablet the text
+              ran far longer than the photo and left a tall empty column beside
+              it; stacked, the photo caps at max-w-xs and centres. */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div className="lg:col-span-4">
+              <div className="aspect-[4/5] max-h-[460px] lg:max-h-none w-full max-w-xs lg:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm overflow-hidden">
                 <img
                   src={jadePhoto.src}
                   alt="Jade Parrish"
@@ -164,7 +170,7 @@ export default function PortfolioHomepage() {
               </div>
             </div>
 
-            <div className="md:col-span-8 space-y-8">
+            <div className="lg:col-span-8 space-y-8">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   About
