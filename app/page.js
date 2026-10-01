@@ -51,22 +51,22 @@ const whoIWorkWith = [
   {
     icon: Landmark,
     title: 'Public Sector',
-    description: 'Local and central government organisations.',
+    description: "Councils, departments, agencies and arm’s-length bodies.",
   },
   {
     icon: Stethoscope,
     title: 'NHS & Healthcare',
-    description: 'NHS trusts, ICSs and healthcare organisations.',
+    description: 'Trusts, ICSs, and the national bodies behind them.',
   },
   {
     icon: GraduationCap,
     title: 'Education',
-    description: 'Schools, trusts and education technology providers.',
+    description: 'Schools, colleges, trusts and education technology providers.',
   },
   {
     icon: Heart,
     title: 'Charities & NFPs',
-    description: 'Mission-led organisations creating social impact.',
+    description: 'Charities, cultural organisations and not-for-profits.',
   },
   {
     icon: Users,
@@ -414,6 +414,13 @@ export default function PortfolioHomepage() {
               hello@jadeparrish.me &rarr;
             </a>
           </div>
+          {/* Where I am belongs next to how much of me is available: both are
+              the practical questions somebody asks at the point of getting in
+              touch. #6E6E6E is 4.8:1 on paper, so it still clears AA. */}
+          <p className="text-sm text-[#6E6E6E]">
+            Based in Lytham St Annes. Local work across Blackpool and the Fylde,
+            remote anywhere else.
+          </p>
         </section>
       </main>
 
