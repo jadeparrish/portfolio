@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-5 flex justify-between items-center gap-5">
             <a
               href="/"
-              className="text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] whitespace-nowrap transition-colors"
             >
               Jade Parrish
             </a>
