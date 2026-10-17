@@ -1,6 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Turning a technical bottleneck into a guided setup: Jade Parrish',
@@ -24,18 +23,6 @@ function Bullets({ items }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-function ImagePlaceholder({ tint, caption }) {
-  return (
-    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
-      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
-        Visual coming soon
-      </p>
-      <p className="text-xs text-neutral-600">{caption}</p>
-    </div>
   );
 }
 
@@ -102,7 +89,7 @@ export default function IntegrationsCaseStudy() {
             </p>
           </div>
 
-          <ImagePlaceholder tint="bg-[#E3E6E1]" caption="Integrations Hub: available connections and their status" />
+          <Figure n="01" tint="bg-[#E3E6E1]" caption="Integrations Hub: available connections and their status" />
         </section>
 
         {/* Understanding the Problem */}
@@ -172,7 +159,7 @@ export default function IntegrationsCaseStudy() {
             errors.
           </p>
 
-          <ImagePlaceholder tint="bg-[#DDE3E6]" caption="Guided setup: permission prompt, validation and success states" />
+          <Figure n="02" tint="bg-[#DDE3E6]" caption="Guided setup: permission prompt, validation and success states" />
         </section>
 
         {/* Outcome */}
