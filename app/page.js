@@ -14,9 +14,8 @@ import {
   Stethoscope,
   GraduationCap,
   Heart,
-  Image as ImageIcon,
 } from 'lucide-react';
-import { caseStudiesList, thinkingList, SiteFooter, Testimonial } from './caseStudiesData';
+import { caseStudiesList, thinkingList, SiteFooter, Testimonial, Figure } from './caseStudiesData';
 
 const whatIDo = [
   {
@@ -98,6 +97,17 @@ export default function PortfolioHomepage() {
             width and the illustration sits under it. */}
         <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center border-b border-neutral-200/80">
           <div className="lg:col-span-6 space-y-8">
+            {/* Availability opens the hero rather than sitting in the header.
+                Contact is in the nav from every page and states it there, so
+                a strip on every page was saying it twice. Here it reads as
+                the first line of the pitch instead of site furniture.
+
+                The lamp never carries it alone: the words are always there,
+                which is what WCAG 1.4.1 asks for. */}
+            <p className="-mb-3 flex items-center gap-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.09em] text-[#5C7355]">
+              <span className="w-[7px] h-[7px] rounded-full bg-[#5C7355] ring-4 ring-[#5C7355]/15 flex-none" />
+              Available &middot; 2&ndash;3 days/week
+            </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               {/* The designed break only works once the column is wide enough to
                   hold "Better systems" on one line. Below lg the hero column is
@@ -140,17 +150,15 @@ export default function PortfolioHomepage() {
             </div>
           </div>
 
-          {/* Hero illustration placeholder */}
+          {/* The same frame the case studies use. No figure number: there is
+              only one figure on this page, and a number with nothing to count
+              is the problem we just took off the work index. */}
           <div className="lg:col-span-6">
-            <div className="aspect-[4/3] w-full max-h-[320px] lg:max-h-none rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
-              <ImageIcon className="w-6 h-6 text-neutral-300" strokeWidth={1.5} />
-              <p className="text-xs uppercase tracking-[0.15em] text-neutral-600 font-medium">
-                Hero illustration: coming soon
-              </p>
-              <p className="text-xs text-neutral-600 max-w-[220px]">
-                Hand-drawn systems ecosystem map
-              </p>
-            </div>
+            <Figure
+              caption="Hand-drawn systems ecosystem map"
+              ratio="aspect-[4/3]"
+              flush
+            />
           </div>
         </section>
 
@@ -283,12 +291,19 @@ export default function PortfolioHomepage() {
                 className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 items-start md:items-center py-10 lg:py-12 first:pt-0 last:pb-0"
               >
                 <div className="md:col-span-1 lg:col-span-3">
+                  {/* Same materials as a Figure -- the frame, the tint, the
+                      engraved plate, the mono empty state -- but no caption
+                      bar: the title and tag sit right beside it already. The
+                      number is the work item's, not a figure number, so it is
+                      set into the corner rather than labelled "Fig.". */}
                   <div
-                    className={`aspect-[4/3] max-h-[240px] md:max-h-none rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
+                    className={`relative aspect-[4/3] max-h-[240px] md:max-h-none border border-neutral-900/15 ${item.tint} flex items-center justify-center`}
                   >
-                    <span className="font-mono text-xl text-neutral-500">{item.num}</span>
-                    <span className="text-[10px] uppercase tracking-[0.15em] text-neutral-600">
-                      Visual coming soon
+                    <span className="absolute top-0 left-0 font-mono text-[10px] font-medium tracking-[0.16em] text-neutral-900 border-r border-b border-neutral-900/15 px-1.5 py-0.5">
+                      {item.num}
+                    </span>
+                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#5F5F5F]">
+                      Awaiting capture
                     </span>
                   </div>
                 </div>
