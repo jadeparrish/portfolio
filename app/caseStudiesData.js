@@ -594,3 +594,41 @@ export function SiteFooter({ wide }) {
     </footer>
   );
 }
+
+/* A framed figure: an engraved caption bar above the image well, the way a
+   plate is labelled on an instrument rather than captioned underneath like a
+   photograph. The label sits above because it tells you what you are about to
+   look at; a caption below tells you what you just saw.
+
+   Full-bleed on a phone and framed from sm up. The -mx-6 only works because
+   there is no w-full here: w-full pins the width to the padded container, so
+   the negative margin moves the box left without widening it.
+
+   With no children it renders its own empty state, which deliberately does
+   not look like a control: no icon, no button shape, just a production note
+   saying the capture has not happened yet. That note is #5F5F5F rather than
+   the #6A6A6A used on paper elsewhere, because it sits on a tint: the tints
+   run as dark as #DDE3E6, where #6A6A6A falls to 4.17:1. */
+export function Figure({ n, caption, tint = 'bg-[#F4F2EE]', ratio = 'aspect-[16/9]', children }) {
+  return (
+    <figure className="-mx-6 sm:mx-0 my-10 border-y sm:border-x border-neutral-900/15">
+      <figcaption className="flex items-baseline gap-3 px-4 sm:px-5 py-2.5 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
+        {n && (
+          <span className="flex-none font-mono text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-900 border border-neutral-900/20 px-1.5 py-0.5">
+            Fig.&nbsp;{n}
+          </span>
+        )}
+        <span className="text-xs text-[#6A6A6A] leading-relaxed [text-wrap:pretty]">
+          {caption}
+        </span>
+      </figcaption>
+      <div className={`${ratio} ${tint} flex items-center justify-center`}>
+        {children || (
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#5F5F5F]">
+            Awaiting capture
+          </span>
+        )}
+      </div>
+    </figure>
+  );
+}
