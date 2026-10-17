@@ -7,7 +7,6 @@ import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Sparkles } fr
 const work = [
   {
     slug: 'send',
-    state: 'upcoming',
     year: '2026 to 2027',
     group: 'service',
     title: 'Making SEND journeys easier for families to navigate',
@@ -22,7 +21,6 @@ const work = [
   },
   {
     slug: 'consent',
-    state: 'building',
     year: '2025',
     group: 'service',
     title: 'Turning a compliance risk into a simple first step',
@@ -37,7 +35,6 @@ const work = [
   },
   {
     slug: 'stock',
-    state: 'shipped',
     year: '2024 to 2025',
     group: 'service',
     title: 'Bringing stock and fulfilment data into one clear view',
@@ -52,7 +49,6 @@ const work = [
   },
   {
     slug: 'crm-review',
-    state: 'shipped',
     year: '2016 to 2017',
     group: 'service',
     title: 'Rebuilding a customer review around the people doing it',
@@ -67,7 +63,6 @@ const work = [
   },
   {
     slug: 'debt-advice',
-    state: 'shipped',
     year: '2014 to 2017',
     group: 'service',
     title: 'Turning a debt enquiry into something people could act on',
@@ -82,7 +77,6 @@ const work = [
   },
   {
     slug: 'commercial-value',
-    state: 'building',
     year: '2025',
     group: 'data',
     title: 'Helping commercial teams see the value they create',
@@ -97,7 +91,6 @@ const work = [
   },
   {
     slug: 'reporting',
-    state: 'shipped',
     year: '2024 to 2025',
     group: 'data',
     title: 'Turning disconnected data into clearer decisions',
@@ -112,7 +105,6 @@ const work = [
   },
   {
     slug: 'cm-navigation',
-    state: 'shipped',
     year: '2025',
     group: 'systems',
     title: 'Giving a siloed platform a navigation that scales',
@@ -127,7 +119,6 @@ const work = [
   },
   {
     slug: 'integrations',
-    state: 'shipped',
     year: '2025',
     group: 'systems',
     title: 'Turning a technical bottleneck into a guided setup',
@@ -142,7 +133,6 @@ const work = [
   },
   {
     slug: 'notifications',
-    state: 'shipped',
     year: '2024 to 2025',
     group: 'systems',
     title: 'Designing notifications that scale beyond a single alert',
@@ -157,7 +147,6 @@ const work = [
   },
   {
     slug: 'netix',
-    state: 'shipped',
     year: '2018 to 2022',
     group: 'systems',
     title: 'Making a legacy platform simple, accessible and built to scale',
@@ -182,10 +171,9 @@ export const caseStudiesList = work.map((item, i) => ({
    piece here puts it into every article's "Read next" automatically.
    hasPage: false renders it as Coming soon and keeps it out of Read next,
    so nothing ever links to a page that isn't there. */
-const thinking = [
+export const thinkingList = [
   {
     slug: 'shadcn',
-    state: 'live',
     icon: Layers,
     kicker: 'Design Systems',
     readTime: '3 min read',
@@ -196,7 +184,6 @@ const thinking = [
   },
   {
     slug: 'undocumented',
-    state: 'live',
     icon: FileText,
     kicker: 'Systems Thinking',
     readTime: '3 min read',
@@ -207,7 +194,6 @@ const thinking = [
   },
   {
     slug: 'legacy',
-    state: 'live',
     icon: Wrench,
     kicker: 'Product Strategy',
     readTime: '6 min read',
@@ -218,10 +204,9 @@ const thinking = [
   },
   {
     slug: 'cheap-screens',
-    state: 'writing',
     icon: Sparkles,
     kicker: 'Design & AI',
-    readTime: null,
+    readTime: 'Coming soon',
     title: 'What Claude and Lovable leave for a designer to do.',
     description:
       'Notes from using both, and what each one still needs a person for.',
@@ -258,7 +243,7 @@ export function CaseStudyNav({ currentSlug }) {
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2 flex items-center gap-1.5">
               <ArrowLeft className="w-3 h-3 transition-transform group-hover:-translate-x-1" /> Previous
             </p>
-            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#845D4D] transition-colors">
+            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#8D6553] transition-colors">
               {prev.title}
             </p>
           </Link>
@@ -270,7 +255,7 @@ export function CaseStudyNav({ currentSlug }) {
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2 flex items-center justify-end gap-1.5">
               Next <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
             </p>
-            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#845D4D] transition-colors">
+            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#8D6553] transition-colors">
               {next.title}
             </p>
           </Link>
@@ -292,7 +277,7 @@ function ContactCTA() {
         <div>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="group text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#845D4D] transition-colors"
+            className="group text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] transition-colors"
           >
             hello@jadeparrish.me{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1">
@@ -315,7 +300,7 @@ function ArticleNavCard({ article }) {
       <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2">
         {article.kicker} &middot; {article.readTime}
       </p>
-      <p className="text-sm font-serif text-neutral-800 leading-snug group-hover:text-[#845D4D] transition-colors">
+      <p className="text-sm font-serif text-neutral-800 leading-snug group-hover:text-[#8D6553] transition-colors">
         {article.title}
       </p>
     </Link>
@@ -357,7 +342,7 @@ export function ArticleFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/thinking"
-          className="group inline-flex py-2 -my-2 items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#845D4D] transition-colors"
+          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
         </Link>
@@ -374,7 +359,7 @@ export function IndexFooter() {
       <div className="text-center pt-4">
         <Link
           href="/"
-          className="group inline-flex py-2 -my-2 items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#845D4D] transition-colors"
+          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to home
         </Link>
@@ -394,7 +379,7 @@ export function CaseStudyFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/work"
-          className="group inline-flex py-2 -my-2 items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#845D4D] transition-colors"
+          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to selected work
         </Link>
@@ -505,7 +490,7 @@ export function Testimonial({ quote, name, role, href }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-neutral-800 underline decoration-1 decoration-neutral-400 underline-offset-[3px] hover:text-[#845D4D] hover:decoration-[#845D4D] transition-colors"
+      className="text-neutral-800 underline decoration-1 decoration-neutral-400 underline-offset-[3px] hover:text-[#8D6553] hover:decoration-[#8D6553] transition-colors"
     >
       {name}
     </a>
@@ -535,7 +520,7 @@ export function Testimonial({ quote, name, role, href }) {
    emphasis; it shouldn't outrank the structure. */
 export function PullQuote({ children }) {
   return (
-    <p className="font-serif italic text-[24px] sm:text-[28px] text-[#845D4D] leading-[1.35] [text-wrap:balance] py-6">
+    <p className="font-serif italic text-[24px] sm:text-[28px] text-[#8D6553] leading-[1.35] [text-wrap:balance] py-6">
       {children}
     </p>
   );
@@ -549,222 +534,10 @@ export function ArticleLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#845D4D] hover:text-[#845D4D] transition-colors"
+      className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
     >
       {children}
     </Link>
-  );
-}
-
-/* Numbered from position, like the work list, so inserting a piece can
-   never leave a gap or a duplicate. */
-export const thinkingList = thinking.map((item, i) => ({
-  ...item,
-  num: String(i + 1).padStart(2, '0'),
-}));
-
-
-/* ------------------------------------------------------------------
-   INSTRUMENTS
-
-   The rule underneath all of these: panels for data, paper for prose.
-   Nothing here ever sits under body copy. A second rule governs the
-   type: mono for a label you read once, ordinary type for anything you
-   actually read.
-   ------------------------------------------------------------------ */
-
-/* The one colour added to the palette. #5C7355 is 4.90:1 on paper and
-   4.65:1 on the panel tint, so it clears AA in both places. */
-const STATES = {
-  /* work */
-  shipped:  { word: 'Shipped',       tone: 'live'  },
-  building: { word: 'In build',      tone: 'dev'   },
-  upcoming: { word: 'Upcoming',      tone: 'queue' },
-  /* thinking */
-  live:     { word: 'Live',          tone: 'live'  },
-  writing:  { word: 'Being written', tone: 'dev'   },
-  planned:  { word: 'Planned',       tone: 'queue' },
-};
-
-const TONE = {
-  live:  { dot: 'bg-[#5C7355] ring-4 ring-[#5C7355]/15', text: 'text-[#5C7355]' },
-  dev:   { dot: 'bg-[#A47864] ring-4 ring-[#A47864]/15', text: 'text-[#845D4D]' },
-  queue: { dot: 'bg-transparent border border-neutral-400', text: 'text-[#6A6A6A]' },
-};
-
-/* A lamp never carries meaning by colour alone: the word is always
-   there, which also satisfies WCAG 1.4.1. `bare` drops the word where
-   the row already has a legend, keeping the indicator. */
-export function StateLamp({ state, bare }) {
-  const s = STATES[state];
-  if (!s) return null;
-  const t = TONE[s.tone];
-  return (
-    <span className={`inline-flex items-center gap-2 ${t.text}`}>
-      <span className={`w-[7px] h-[7px] rounded-full flex-none ${t.dot}`} />
-      {bare ? <span className="sr-only">{s.word}</span> : s.word}
-    </span>
-  );
-}
-
-/* The mark: a lowercase j in the site's own display face, with a drawn dot
-   rather than a typographic full stop, so it reads as a designed thing and
-   not as a sentence that stopped early.
-
-   The dot stays a constant mocha. It deliberately does NOT track
-   availability: the header already has a lamp doing that, and two live
-   indicators saying the same thing is the duplication we took out.
-
-   One definition, used by the header, the favicon and the OG card, so they
-   can never drift apart. */
-export function Mark({ size = 20, ink = '#1C1C1C', className = '' }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 64 64"
-      className={className}
-      aria-hidden="true"
-      focusable="false"
-      style={{ display: 'block', flex: 'none' }}
-    >
-      <text
-        x="27"
-        y="52"
-        textAnchor="middle"
-        fontFamily="Bricolage Grotesque, Georgia, serif"
-        fontWeight="600"
-        fontSize="62"
-        fill={ink}
-      >
-        j
-      </text>
-      <circle cx="48" cy="46" r="7" fill="#A47864" />
-    </svg>
-  );
-}
-
-/* An engraved legend plate. Short, read once, so mono earns its place. */
-export function Plate({ children, className = '' }) {
-  return (
-    <span
-      className={`inline-flex items-center gap-2.5 font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-[#6A6A6A] ${className}`}
-    >
-      {children}
-    </span>
-  );
-}
-
-/* The At a glance block, as an instrument cluster. */
-export function GlanceCluster({ state, children }) {
-  return (
-    <section className="border border-neutral-900/15 bg-[#F4F2EE] my-2">
-      <div className="flex items-center justify-between gap-4 px-4 sm:px-5 py-3 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
-        <Plate>At a glance</Plate>
-        {state && (
-          <span className="font-mono text-[10px] font-medium uppercase tracking-[0.18em]">
-            <StateLamp state={state} />
-          </span>
-        )}
-      </div>
-      <div className="grid grid-cols-2">{children}</div>
-    </section>
-  );
-}
-
-export function GlanceDial({ label, value, accent }) {
-  return (
-    <div className="px-4 sm:px-5 py-4 border-neutral-900/[0.09] [&:nth-child(odd)]:border-r [&:nth-child(-n+2)]:border-b">
-      <Plate className="mb-2">{label}</Plate>
-      <p
-        className={`text-sm sm:text-[15px] font-medium leading-relaxed [text-wrap:pretty] ${
-          accent ? 'text-[#845D4D]' : 'text-neutral-900'
-        }`}
-      >
-        {value}
-      </p>
-    </div>
-  );
-}
-
-/* A figure, framed and numbered the way technical documentation does it.
-   The label is mono because you read it once; the caption is sentence
-   case because it is telling you what you are looking at.
-
-   On a phone the whole frame bleeds to both edges and loses its side
-   borders, so it keeps the full-bleed we added a fortnight ago. */
-export function Figure({ n, caption, tint = 'bg-[#F4F2EE]', children }) {
-  return (
-    <figure className="-mx-6 sm:mx-0 my-9 border-y sm:border-x border-neutral-900/15">
-      <figcaption className="flex items-baseline gap-3 px-4 sm:px-5 py-2.5 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
-        {n && <Plate>Fig. {n}</Plate>}
-        <span className="text-xs text-[#6A6A6A] [text-wrap:pretty]">{caption}</span>
-      </figcaption>
-      <div className={`aspect-[16/9] flex items-center justify-center ${tint}`}>
-        {children || (
-          <span className="text-xs text-[#6A6A6A]">Visual coming soon</span>
-        )}
-      </div>
-    </figure>
-  );
-}
-
-/* One row of an index: lamp, number, title, year, and optionally a line of
-   description. The homepage passes the description because three pieces
-   deserve a sentence each; /work leaves it out because eleven don't.
-   One component either way, so the two can't drift apart.
-
-   Stacks the year under the title on a phone rather than squeezing three
-   columns into 375px. */
-export function IndexRow({ state, num, title, description, meta, href }) {
-  const dimmed = state === 'upcoming' || state === 'planned';
-
-  const body = (
-    <>
-      <span className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.14em] text-[#6A6A6A] pt-1.5">
-        <StateLamp state={state} bare />
-        {num}
-      </span>
-
-      <span className="space-y-2">
-        <span
-          className={`block font-serif text-[19px] sm:text-[21px] leading-snug tracking-tight ${
-            dimmed
-              ? 'text-[#6A6A6A]'
-              : 'text-neutral-900 group-hover:text-[#845D4D] transition-colors'
-          }`}
-        >
-          {title}
-        </span>
-        {description && (
-          <span className="block text-sm leading-relaxed text-[#6A6A6A] max-w-prose [text-wrap:pretty]">
-            {description}
-          </span>
-        )}
-      </span>
-
-      {meta && (
-        <span className="font-mono text-[10px] tracking-[0.1em] text-[#6A6A6A] whitespace-nowrap pt-1.5 col-start-2 sm:col-start-auto">
-          {meta}
-        </span>
-      )}
-    </>
-  );
-
-  /* The hover tint runs the full bleed of the row, which needs negative
-     margin and matching padding so the text stays on the same vertical. */
-  const grid =
-    'grid grid-cols-[52px_1fr] sm:grid-cols-[62px_1fr_auto] gap-x-4 gap-y-2 items-baseline py-5';
-
-  return href ? (
-    <Link
-      href={href}
-      className={`group -mx-3 px-3 rounded-sm hover:bg-neutral-900/[0.025] focus-visible:bg-neutral-900/[0.025] transition-colors ${grid}`}
-    >
-      {body}
-    </Link>
-  ) : (
-    <div className={grid}>{body}</div>
   );
 }
 
@@ -772,7 +545,7 @@ export function IndexRow({ state, num, title, description, meta, href }) {
    layout; everything else uses the narrower column. */
 export function SiteFooter({ wide }) {
   return (
-    <footer className="border-t border-neutral-200/80 py-10 text-xs text-[#6A6A6A] font-normal">
+    <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
       <div
         className={`${
           wide ? 'max-w-7xl lg:px-12' : 'max-w-3xl'
@@ -786,13 +559,13 @@ export function SiteFooter({ wide }) {
             href="https://www.linkedin.com/in/jade-parrish/"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-2 -my-2 hover:text-[#845D4D] transition-colors"
+            className="hover:text-[#8D6553] transition-colors"
           >
             LinkedIn
           </a>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="py-2 -my-2 hover:text-[#845D4D] transition-colors"
+            className="hover:text-[#8D6553] transition-colors"
           >
             Email
           </a>
@@ -800,7 +573,7 @@ export function SiteFooter({ wide }) {
               anchor element, so this works on every page with no JavaScript. */}
           <a
             href="#top"
-            className="inline-flex items-center gap-1.5 py-2 -my-2 hover:text-[#845D4D] transition-colors"
+            className="inline-flex items-center gap-1.5 hover:text-[#8D6553] transition-colors"
           >
             <ArrowUp className="w-3 h-3" /> Top
           </a>
