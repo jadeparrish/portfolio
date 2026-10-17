@@ -557,7 +557,7 @@ export function ArticleLink({ href, children }) {
    layout; everything else uses the narrower column. */
 export function SiteFooter({ wide }) {
   return (
-    <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
+    <footer className="border-t border-neutral-200/80 py-10 text-xs text-[#6A6A6A] font-normal">
       <div
         className={`${
           wide ? 'max-w-7xl lg:px-12' : 'max-w-3xl'
@@ -571,13 +571,13 @@ export function SiteFooter({ wide }) {
             href="https://www.linkedin.com/in/jade-parrish/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8D6553] transition-colors"
+            className="py-2 -my-2 hover:text-[#8D6553] transition-colors"
           >
             LinkedIn
           </a>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="hover:text-[#8D6553] transition-colors"
+            className="py-2 -my-2 hover:text-[#8D6553] transition-colors"
           >
             Email
           </a>
@@ -585,7 +585,7 @@ export function SiteFooter({ wide }) {
               anchor element, so this works on every page with no JavaScript. */}
           <a
             href="#top"
-            className="inline-flex items-center gap-1.5 hover:text-[#8D6553] transition-colors"
+            className="inline-flex items-center gap-1.5 py-2 -my-2 hover:text-[#8D6553] transition-colors"
           >
             <ArrowUp className="w-3 h-3" /> Top
           </a>
@@ -609,9 +609,15 @@ export function SiteFooter({ wide }) {
    saying the capture has not happened yet. That note is #5F5F5F rather than
    the #6A6A6A used on paper elsewhere, because it sits on a tint: the tints
    run as dark as #DDE3E6, where #6A6A6A falls to 4.17:1. */
-export function Figure({ n, caption, tint = 'bg-[#F4F2EE]', ratio = 'aspect-[16/9]', children }) {
+export function Figure({ n, caption, tint = 'bg-[#F4F2EE]', ratio = 'aspect-[16/9]', flush, children }) {
   return (
-    <figure className="-mx-6 sm:mx-0 my-10 border-y sm:border-x border-neutral-900/15">
+    <figure
+      className={
+        flush
+          ? 'border border-neutral-900/15'
+          : '-mx-6 sm:mx-0 my-10 border-y sm:border-x border-neutral-900/15'
+      }
+    >
       <figcaption className="flex items-baseline gap-3 px-4 sm:px-5 py-2.5 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
         {n && (
           <span className="flex-none font-mono text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-900 border border-neutral-900/20 px-1.5 py-0.5">
