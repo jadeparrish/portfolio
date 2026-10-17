@@ -106,7 +106,7 @@ export default function PortfolioHomepage() {
                 which is what WCAG 1.4.1 asks for. */}
             <p className="-mb-3 flex items-center gap-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.09em] text-[#5C7355]">
               <span className="w-[7px] h-[7px] rounded-full bg-[#5C7355] ring-4 ring-[#5C7355]/15 flex-none" />
-              Available &middot; 2&ndash;3 days/week
+              Available part-time &middot; 2 days/week
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               {/* The designed break only works once the column is wide enough to
@@ -439,7 +439,7 @@ export default function PortfolioHomepage() {
         {/* Contact */}
         <section id="contact" className="py-24 lg:py-32 text-center space-y-8">
           <div className="inline-block px-4 py-1.5 bg-[#A47864]/10 border border-[#A47864]/30 text-[#8D6553] rounded-full text-xs font-mono tracking-wide">
-            Open to Part-Time Roles &amp; Fractional Contracts (2&ndash;3 days/week)
+            Open to Part-Time Roles &amp; Fractional Contracts (2 days/week)
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 tracking-tight">
             Let&rsquo;s improve something together.
