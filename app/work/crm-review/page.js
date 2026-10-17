@@ -1,6 +1,5 @@
 import React from 'react';
-import { Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Rebuilding a customer review around the people doing it: Jade Parrish',
@@ -22,18 +21,6 @@ function SubLabel({ children }) {
       <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
       {children}
     </h3>
-  );
-}
-
-function ImagePlaceholder({ tint, caption }) {
-  return (
-    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
-      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
-        Visual coming soon
-      </p>
-      <p className="text-xs text-neutral-600">{caption}</p>
-    </div>
   );
 }
 
@@ -116,7 +103,7 @@ export default function CRMReviewCaseStudy() {
                 this, and what specifically made reviews slow. */}
           </div>
 
-          <ImagePlaceholder tint="bg-[#E7E2DC]" caption="The review process before the redesign" />
+          <Figure n="01" tint="bg-[#E7E2DC]" caption="The review process before the redesign" />
         </section>
 
         {/* The Work */}
@@ -166,7 +153,7 @@ export default function CRMReviewCaseStudy() {
               </div>
             </div>
 
-            <ImagePlaceholder tint="bg-[#E3E6E1]" caption="Income and expenditure capture" />
+            <Figure n="02" tint="bg-[#E3E6E1]" caption="Income and expenditure capture" />
 
             <div>
               <SubLabel>Outcome</SubLabel>
