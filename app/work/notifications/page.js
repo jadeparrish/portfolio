@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Designing notifications that scale beyond a single alert: Jade Parrish',
@@ -36,18 +35,6 @@ function InlineLink({ href, children }) {
     >
       {children}
     </Link>
-  );
-}
-
-function ImagePlaceholder({ tint, caption }) {
-  return (
-    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
-      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
-        Visual coming soon
-      </p>
-      <p className="text-xs text-neutral-600">{caption}</p>
-    </div>
   );
 }
 
@@ -111,7 +98,7 @@ export default function NotificationsCaseStudy() {
             </p>
           </div>
 
-          <ImagePlaceholder tint="bg-[#E8E3DC]" caption="Stock notifications: toast, email summary and Notifications area" />
+          <Figure n="01" tint="bg-[#E8E3DC]" caption="Stock notifications: toast, email summary and Notifications area" />
         </section>
 
         {/* The Problem */}
@@ -184,7 +171,7 @@ export default function NotificationsCaseStudy() {
             user control.
           </p>
 
-          <ImagePlaceholder tint="bg-[#DDE3E6]" caption="Notification hierarchy: toasts, alerts and history" />
+          <Figure n="02" tint="bg-[#DDE3E6]" caption="Notification hierarchy: toasts, alerts and history" />
         </section>
 
         {/* Outcome and Next Steps */}
