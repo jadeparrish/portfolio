@@ -189,9 +189,7 @@ export default function PortfolioHomepage() {
                   senior product design, picking up service design and systems thinking
                   along the way. In the web years I was at Rentalcars.com, designing and
                   building A/B tests, which is where I learned to expect a design
-                  decision to be measured. If there&rsquo;s a thread through all of it,
-                  it&rsquo;s that I can&rsquo;t leave a complex process alone. I have to
-                  understand why it&rsquo;s confusing, and then I want to fix it.
+                  decision to be measured.
                 </p>
                 <p>
                   My work usually ends up spanning teams, touchpoints and organisational
@@ -210,10 +208,6 @@ export default function PortfolioHomepage() {
                   the joined-up system, so nobody has to become the project manager just to
                   get through their day.
                 </p>
-                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
-                  &ldquo;I want the systems people depend on to actually work for
-                  them, not against them.&rdquo;
-                </blockquote>
               </div>
 
               <div className="pt-8 border-t border-neutral-200/80">
