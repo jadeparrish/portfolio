@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Making a legacy platform simple, accessible and built to scale: Jade Parrish',
@@ -22,18 +21,6 @@ function SubLabel({ children }) {
       <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
       {children}
     </h3>
-  );
-}
-
-function ImagePlaceholder({ tint, caption }) {
-  return (
-    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
-      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
-        Visual coming soon
-      </p>
-      <p className="text-xs text-neutral-600">{caption}</p>
-    </div>
   );
 }
 
@@ -99,7 +86,7 @@ export default function NetIXCaseStudy() {
             </p>
           </div>
 
-          <ImagePlaceholder tint="bg-[#E9E4DE]" caption="NetIX interface, before redesign" />
+          <Figure n="01" tint="bg-[#E9E4DE]" caption="NetIX interface, before redesign" />
         </section>
 
         {/* Part 1: Modernising NetIX */}
@@ -159,7 +146,7 @@ export default function NetIXCaseStudy() {
                 screen size and a mistake was harder to make in the first place.
               </p>
 
-              <ImagePlaceholder tint="bg-[#E3E6E1]" caption="Redesigned dashboard and process screens" />
+              <Figure n="02" tint="bg-[#E3E6E1]" caption="Redesigned dashboard and process screens" />
             </div>
 
             <div>
@@ -247,7 +234,7 @@ export default function NetIXCaseStudy() {
                 </p>
               </div>
 
-              <ImagePlaceholder tint="bg-[#E7E2DC]" caption="NetIX white-labelled for the IKEA Restaurants bid and for La-Z-Boy" />
+              <Figure n="03" tint="bg-[#E7E2DC]" caption="NetIX white-labelled for the IKEA Restaurants bid and for La-Z-Boy" />
             </div>
 
             <div>
@@ -340,7 +327,7 @@ export default function NetIXCaseStudy() {
                 </p>
               </div>
 
-              <ImagePlaceholder tint="bg-[#E4E1E8]" caption="Rebrand: before and after Cegedim alignment" />
+              <Figure n="04" tint="bg-[#E4E1E8]" caption="Rebrand: before and after Cegedim alignment" />
             </div>
 
             <div>
