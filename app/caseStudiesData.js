@@ -182,7 +182,7 @@ export const caseStudiesList = work.map((item, i) => ({
    piece here puts it into every article's "Read next" automatically.
    hasPage: false renders it as Coming soon and keeps it out of Read next,
    so nothing ever links to a page that isn't there. */
-export const thinkingList = [
+const thinking = [
   {
     slug: 'shadcn',
     state: 'live',
@@ -221,7 +221,7 @@ export const thinkingList = [
     state: 'writing',
     icon: Sparkles,
     kicker: 'Design & AI',
-    readTime: 'Coming soon',
+    readTime: null,
     title: 'What Claude and Lovable leave for a designer to do.',
     description:
       'Notes from using both, and what each one still needs a person for.',
@@ -258,7 +258,7 @@ export function CaseStudyNav({ currentSlug }) {
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2 flex items-center gap-1.5">
               <ArrowLeft className="w-3 h-3 transition-transform group-hover:-translate-x-1" /> Previous
             </p>
-            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#8D6553] transition-colors">
+            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#845D4D] transition-colors">
               {prev.title}
             </p>
           </Link>
@@ -270,7 +270,7 @@ export function CaseStudyNav({ currentSlug }) {
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2 flex items-center justify-end gap-1.5">
               Next <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
             </p>
-            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#8D6553] transition-colors">
+            <p className="text-sm font-serif text-neutral-800 group-hover:text-[#845D4D] transition-colors">
               {next.title}
             </p>
           </Link>
@@ -292,7 +292,7 @@ function ContactCTA() {
         <div>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="group text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] transition-colors"
+            className="group text-base sm:text-lg font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#845D4D] transition-colors"
           >
             hello@jadeparrish.me{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1">
@@ -315,7 +315,7 @@ function ArticleNavCard({ article }) {
       <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2">
         {article.kicker} &middot; {article.readTime}
       </p>
-      <p className="text-sm font-serif text-neutral-800 leading-snug group-hover:text-[#8D6553] transition-colors">
+      <p className="text-sm font-serif text-neutral-800 leading-snug group-hover:text-[#845D4D] transition-colors">
         {article.title}
       </p>
     </Link>
@@ -357,7 +357,7 @@ export function ArticleFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/thinking"
-          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
+          className="group inline-flex py-2 -my-2 items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#845D4D] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
         </Link>
@@ -374,7 +374,7 @@ export function IndexFooter() {
       <div className="text-center pt-4">
         <Link
           href="/"
-          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
+          className="group inline-flex py-2 -my-2 items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#845D4D] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to home
         </Link>
@@ -394,7 +394,7 @@ export function CaseStudyFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/work"
-          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
+          className="group inline-flex py-2 -my-2 items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#845D4D] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to selected work
         </Link>
@@ -505,7 +505,7 @@ export function Testimonial({ quote, name, role, href }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-neutral-800 underline decoration-1 decoration-neutral-400 underline-offset-[3px] hover:text-[#8D6553] hover:decoration-[#8D6553] transition-colors"
+      className="text-neutral-800 underline decoration-1 decoration-neutral-400 underline-offset-[3px] hover:text-[#845D4D] hover:decoration-[#845D4D] transition-colors"
     >
       {name}
     </a>
@@ -535,7 +535,7 @@ export function Testimonial({ quote, name, role, href }) {
    emphasis; it shouldn't outrank the structure. */
 export function PullQuote({ children }) {
   return (
-    <p className="font-serif italic text-[24px] sm:text-[28px] text-[#8D6553] leading-[1.35] [text-wrap:balance] py-6">
+    <p className="font-serif italic text-[24px] sm:text-[28px] text-[#845D4D] leading-[1.35] [text-wrap:balance] py-6">
       {children}
     </p>
   );
@@ -549,12 +549,20 @@ export function ArticleLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
+      className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#845D4D] hover:text-[#845D4D] transition-colors"
     >
       {children}
     </Link>
   );
 }
+
+/* Numbered from position, like the work list, so inserting a piece can
+   never leave a gap or a duplicate. */
+export const thinkingList = thinking.map((item, i) => ({
+  ...item,
+  num: String(i + 1).padStart(2, '0'),
+}));
+
 
 /* ------------------------------------------------------------------
    INSTRUMENTS
@@ -580,7 +588,7 @@ const STATES = {
 
 const TONE = {
   live:  { dot: 'bg-[#5C7355] ring-4 ring-[#5C7355]/15', text: 'text-[#5C7355]' },
-  dev:   { dot: 'bg-[#A47864] ring-4 ring-[#A47864]/15', text: 'text-[#8D6553]' },
+  dev:   { dot: 'bg-[#A47864] ring-4 ring-[#A47864]/15', text: 'text-[#845D4D]' },
   queue: { dot: 'bg-transparent border border-neutral-400', text: 'text-[#6A6A6A]' },
 };
 
@@ -596,6 +604,43 @@ export function StateLamp({ state, bare }) {
       <span className={`w-[7px] h-[7px] rounded-full flex-none ${t.dot}`} />
       {bare ? <span className="sr-only">{s.word}</span> : s.word}
     </span>
+  );
+}
+
+/* The mark: a lowercase j in the site's own display face, with a drawn dot
+   rather than a typographic full stop, so it reads as a designed thing and
+   not as a sentence that stopped early.
+
+   The dot stays a constant mocha. It deliberately does NOT track
+   availability: the header already has a lamp doing that, and two live
+   indicators saying the same thing is the duplication we took out.
+
+   One definition, used by the header, the favicon and the OG card, so they
+   can never drift apart. */
+export function Mark({ size = 20, ink = '#1C1C1C', className = '' }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 64 64"
+      className={className}
+      aria-hidden="true"
+      focusable="false"
+      style={{ display: 'block', flex: 'none' }}
+    >
+      <text
+        x="27"
+        y="52"
+        textAnchor="middle"
+        fontFamily="Bricolage Grotesque, Georgia, serif"
+        fontWeight="600"
+        fontSize="62"
+        fill={ink}
+      >
+        j
+      </text>
+      <circle cx="48" cy="46" r="7" fill="#A47864" />
+    </svg>
   );
 }
 
@@ -633,7 +678,7 @@ export function GlanceDial({ label, value, accent }) {
       <Plate className="mb-2">{label}</Plate>
       <p
         className={`text-sm sm:text-[15px] font-medium leading-relaxed [text-wrap:pretty] ${
-          accent ? 'text-[#8D6553]' : 'text-neutral-900'
+          accent ? 'text-[#845D4D]' : 'text-neutral-900'
         }`}
       >
         {value}
@@ -686,7 +731,7 @@ export function IndexRow({ state, num, title, description, meta, href }) {
           className={`block font-serif text-[19px] sm:text-[21px] leading-snug tracking-tight ${
             dimmed
               ? 'text-[#6A6A6A]'
-              : 'text-neutral-900 group-hover:text-[#8D6553] transition-colors'
+              : 'text-neutral-900 group-hover:text-[#845D4D] transition-colors'
           }`}
         >
           {title}
@@ -698,16 +743,18 @@ export function IndexRow({ state, num, title, description, meta, href }) {
         )}
       </span>
 
-      <span className="font-mono text-[10px] tracking-[0.1em] text-[#6A6A6A] whitespace-nowrap pt-1.5 col-start-2 sm:col-start-auto">
-        {meta}
-      </span>
+      {meta && (
+        <span className="font-mono text-[10px] tracking-[0.1em] text-[#6A6A6A] whitespace-nowrap pt-1.5 col-start-2 sm:col-start-auto">
+          {meta}
+        </span>
+      )}
     </>
   );
 
   /* The hover tint runs the full bleed of the row, which needs negative
      margin and matching padding so the text stays on the same vertical. */
   const grid =
-    'grid grid-cols-[52px_1fr] sm:grid-cols-[62px_1fr_auto] gap-x-4 gap-y-2 items-baseline py-5 border-b border-neutral-900/[0.09]';
+    'grid grid-cols-[52px_1fr] sm:grid-cols-[62px_1fr_auto] gap-x-4 gap-y-2 items-baseline py-5';
 
   return href ? (
     <Link
@@ -725,7 +772,7 @@ export function IndexRow({ state, num, title, description, meta, href }) {
    layout; everything else uses the narrower column. */
 export function SiteFooter({ wide }) {
   return (
-    <footer className="border-t border-neutral-200/80 py-10 text-xs text-neutral-500 font-normal">
+    <footer className="border-t border-neutral-200/80 py-10 text-xs text-[#6A6A6A] font-normal">
       <div
         className={`${
           wide ? 'max-w-7xl lg:px-12' : 'max-w-3xl'
@@ -739,13 +786,13 @@ export function SiteFooter({ wide }) {
             href="https://www.linkedin.com/in/jade-parrish/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8D6553] transition-colors"
+            className="py-2 -my-2 hover:text-[#845D4D] transition-colors"
           >
             LinkedIn
           </a>
           <a
             href="mailto:hello@jadeparrish.me"
-            className="hover:text-[#8D6553] transition-colors"
+            className="py-2 -my-2 hover:text-[#845D4D] transition-colors"
           >
             Email
           </a>
@@ -753,7 +800,7 @@ export function SiteFooter({ wide }) {
               anchor element, so this works on every page with no JavaScript. */}
           <a
             href="#top"
-            className="inline-flex items-center gap-1.5 hover:text-[#8D6553] transition-colors"
+            className="inline-flex items-center gap-1.5 py-2 -my-2 hover:text-[#845D4D] transition-colors"
           >
             <ArrowUp className="w-3 h-3" /> Top
           </a>
