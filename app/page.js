@@ -7,16 +7,20 @@ import {
   Search,
   Target,
   Users,
-  FileText,
-  Layers,
-  Wrench,
   Landmark,
   Stethoscope,
   GraduationCap,
   Heart,
-  Image as ImageIcon,
 } from 'lucide-react';
-import { caseStudiesList, thinkingList, SiteFooter, Testimonial } from './caseStudiesData';
+import {
+  caseStudiesList,
+  thinkingList,
+  SiteFooter,
+  Testimonial,
+  IndexRow,
+  Figure,
+  Plate,
+} from './caseStudiesData';
 
 const whatIDo = [
   {
@@ -140,17 +144,10 @@ export default function PortfolioHomepage() {
             </div>
           </div>
 
-          {/* Hero illustration placeholder */}
+          {/* The hero illustration is a systems ecosystem map, so it is
+              labelled as a figure rather than framed as artwork. */}
           <div className="lg:col-span-6">
-            <div className="aspect-[4/3] w-full max-h-[320px] lg:max-h-none rounded-sm border border-dashed border-neutral-300 bg-white/60 flex flex-col items-center justify-center gap-3 text-center px-8">
-              <ImageIcon className="w-6 h-6 text-neutral-300" strokeWidth={1.5} />
-              <p className="text-xs uppercase tracking-[0.15em] text-neutral-600 font-medium">
-                Hero illustration: coming soon
-              </p>
-              <p className="text-xs text-neutral-600 max-w-[220px]">
-                Hand-drawn systems ecosystem map
-              </p>
-            </div>
+            <Figure n="01" caption="Hand-drawn systems ecosystem map" />
           </div>
         </section>
 
@@ -235,13 +232,17 @@ export default function PortfolioHomepage() {
                 />
               </div>
 
-              <div className="pt-8 border-t border-neutral-200/80">
-                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
-                  Capabilities
-                </p>
-                {/* Same fix as the hero tags: each dot travels with the label
-                    before it, so a dot can never start a wrapped line. */}
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
+              {/* A bounded capability plate: a legend bolted to the panel
+                  rather than a loose line of labels. The engraved header sits
+                  above the list on a phone and beside it from sm up.
+
+                  Each dot still travels with the label before it, so a dot
+                  can never start a wrapped line. */}
+              <div className="flex flex-wrap border border-neutral-900/15 bg-[#F4F2EE]">
+                <div className="w-full sm:w-auto flex items-center px-4 py-3 border-b sm:border-b-0 sm:border-r border-neutral-900/[0.09] bg-neutral-900/[0.025]">
+                  <Plate>Capabilities</Plate>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 px-4 py-3 text-[13px] text-neutral-900">
                   {[
                     'Service Design',
                     'Systems Thinking',
@@ -250,10 +251,10 @@ export default function PortfolioHomepage() {
                     'Research',
                     'Strategy',
                   ].map((label, i, all) => (
-                    <span key={label} className="inline-flex items-center gap-x-3">
+                    <span key={label} className="inline-flex items-center gap-x-5">
                       {label}
                       {i < all.length - 1 && (
-                        <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                        <span className="w-[3px] h-[3px] rounded-full bg-[#A47864]" />
                       )}
                     </span>
                   ))}
@@ -267,13 +268,16 @@ export default function PortfolioHomepage() {
         <section className="py-16 lg:py-24 border-b border-neutral-200/80">
           <SectionLabel>How I Work</SectionLabel>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
-            {whatIDo.map((item) => (
-              <div key={item.title} className="space-y-4">
-                <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
-                <h3 className="font-serif text-xl font-normal text-neutral-900">
+            {/* Numbered rather than iconned. These three are a sequence, and
+                a number says so where a magnifying glass and a target did not.
+                No boxes: the section is prose, so it stays on paper. */}
+            {whatIDo.map((item, i) => (
+              <div key={item.title} className="space-y-3">
+                <Plate>{String(i + 1).padStart(2, '0')}</Plate>
+                <h3 className="font-serif text-xl font-normal text-neutral-900 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                <p className="text-sm text-neutral-600 leading-relaxed [text-wrap:pretty]">
                   {item.description}
                 </p>
               </div>
@@ -282,55 +286,23 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* Selected Work */}
+        {/* Rows rather than cards. The cards each carried a grey placeholder
+            box, so three of the site's empty states lived on the homepage
+            above the fold. Rows read faster, and the state lamp says more
+            than a thumbnail of nothing would. */}
         <section id="work" className="pt-16 lg:pt-24">
           <SectionLabel>Selected Work</SectionLabel>
-          <div className="divide-y divide-neutral-200/70">
+          <div className="border-t border-neutral-900/[0.09]">
             {caseStudies.map((item) => (
-              <div
+              <IndexRow
                 key={item.num}
-                className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 items-start md:items-center py-10 lg:py-12 first:pt-0 last:pb-0"
-              >
-                <div className="md:col-span-1 lg:col-span-3">
-                  <div
-                    className={`aspect-[4/3] max-h-[240px] md:max-h-none rounded-sm border border-neutral-200/80 ${item.tint} flex flex-col items-center justify-center gap-1`}
-                  >
-                    <span className="font-mono text-xl text-neutral-500">{item.num}</span>
-                    <span className="text-[10px] uppercase tracking-[0.15em] text-neutral-600">
-                      Visual coming soon
-                    </span>
-                  </div>
-                </div>
-
-                <div className="md:col-span-1 lg:col-span-9 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
-                  <div className="space-y-2 lg:max-w-lg">
-                    <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium">
-                      {item.tag}
-                      {item.year && <> &middot; {item.year}</>}
-                    </p>
-                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553]">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-
-                  <div className="shrink-0 lg:pt-1 lg:text-right">
-                    {item.href ? (
-                      <a
-                        href={item.href}
-                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#8D6553] group-hover:translate-x-1 transition-all"
-                      >
-                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#8D6553] transition-colors" />
-                      </a>
-                    ) : (
-                      <span className="inline-flex items-center gap-1.5 text-xs text-neutral-600 font-medium tracking-wider uppercase">
-                        {item.cta}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
+                state={item.state}
+                num={item.num}
+                title={item.title}
+                description={item.description}
+                meta={item.year}
+                href={item.href}
+              />
             ))}
           </div>
 
@@ -364,58 +336,21 @@ export default function PortfolioHomepage() {
         {/* What I'm Noticing */}
         <section id="thinking" className="pt-16 lg:pt-24">
           <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
-            {thoughts.map((article) => {
-              const inner = (
-                <>
-                  <article.icon
-                    className={`w-5 h-5 ${article.href ? 'text-[#A47864]' : 'text-neutral-300'}`}
-                    strokeWidth={1.5}
-                  />
-                  {/* A piece that isn't written yet sits back. #6E6E6E is
-                      4.8:1 on paper, so it reads as greyed out and still
-                      clears AA for small text. neutral-500 misses at 4.47. */}
-                  <h3
-                    className={`font-serif text-lg leading-snug ${
-                      article.href
-                        ? 'text-neutral-900 transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-neutral-500'
-                        : 'text-[#6E6E6E]'
-                    }`}
-                  >
-                    {article.title}
-                  </h3>
-                  {article.description && (
-                    <p
-                      className={`text-xs sm:text-sm leading-relaxed ${
-                        article.href ? 'text-neutral-600' : 'text-[#6E6E6E]'
-                      }`}
-                    >
-                      {article.description}
-                    </p>
-                  )}
-                  <p
-                    className={`text-[11px] font-mono ${
-                      article.href ? 'text-neutral-600' : 'text-[#6E6E6E]'
-                    }`}
-                  >
-                    {article.readTime}
-                  </p>
-                </>
-              );
-              return article.href ? (
-                <a
-                  key={article.title}
-                  href={article.href}
-                  className="group block border-t border-neutral-200/60 hover:border-[#A47864]/50 transition-colors pt-5 space-y-3"
-                >
-                  {inner}
-                </a>
-              ) : (
-                <div key={article.title} className="border-t border-neutral-200/60 pt-5 space-y-3">
-                  {inner}
-                </div>
-              );
-            })}
+          {/* The same row component as the work list. An unwritten piece no
+              longer needs its own greyed-out treatment: the hollow lamp and
+              the word already say where it is. */}
+          <div className="border-t border-neutral-900/[0.09]">
+            {thoughts.map((article) => (
+              <IndexRow
+                key={article.slug}
+                state={article.state}
+                num={article.num}
+                title={article.title}
+                description={article.description}
+                meta={article.readTime}
+                href={article.href}
+              />
+            ))}
           </div>
 
           <div className="mt-12 py-6 border-y border-neutral-200/80">
@@ -429,29 +364,38 @@ export default function PortfolioHomepage() {
           </div>
         </section>
 
-        {/* Contact */}
-        <section id="contact" className="py-24 lg:py-32 text-center space-y-8">
-          <div className="inline-block px-4 py-1.5 bg-[#A47864]/10 border border-[#A47864]/30 text-[#8D6553] rounded-full text-xs font-mono tracking-wide">
-            Open to Part-Time Roles &amp; Fractional Contracts (2&ndash;3 days/week)
+        {/* Contact, as the page's one readout block. The header already
+            carries availability as a state; here it is an invitation, so the
+            same fact is not said twice in the same words. */}
+        <section id="contact" className="py-16 lg:py-24">
+          <div className="border border-neutral-900/15 bg-[#F4F2EE]">
+            <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 sm:px-5 py-3 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
+              <Plate>Contact</Plate>
+              <p className="text-xs sm:text-[13px] text-[#8D6553]">
+                Open to part-time roles and fractional contracts
+              </p>
+            </div>
+
+            <div className="px-5 py-14 sm:py-20 text-center space-y-7">
+              <h2 className="text-3xl sm:text-4xl font-serif text-neutral-900 tracking-tight [text-wrap:balance]">
+                Let&rsquo;s improve something together.
+              </h2>
+              <a
+                href="mailto:hello@jadeparrish.me"
+                className="inline-block text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
+              >
+                hello@jadeparrish.me &rarr;
+              </a>
+            </div>
+
+            {/* Where I am belongs next to how much of me is available: both
+                are the practical questions somebody asks at the point of
+                getting in touch. */}
+            <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 sm:px-5 py-3 border-t border-neutral-900/[0.09]">
+              <Plate>Lytham St Annes</Plate>
+              <Plate>Local across Blackpool &amp; the Fylde &middot; remote anywhere else</Plate>
+            </div>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 tracking-tight">
-            Let&rsquo;s improve something together.
-          </h2>
-          <div className="pt-2">
-            <a
-              href="mailto:hello@jadeparrish.me"
-              className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] transition-colors"
-            >
-              hello@jadeparrish.me &rarr;
-            </a>
-          </div>
-          {/* Where I am belongs next to how much of me is available: both are
-              the practical questions somebody asks at the point of getting in
-              touch. #6E6E6E is 4.8:1 on paper, so it still clears AA. */}
-          <p className="text-sm text-[#6E6E6E]">
-            Based in Lytham St Annes. Local work across Blackpool and the Fylde,
-            remote anywhere else.
-          </p>
         </section>
       </main>
 
