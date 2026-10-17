@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
-import { thinkingList, IndexFooter, SiteFooter } from '../caseStudiesData';
+import { thinkingList, IndexFooter, SiteFooter, IndexRow, Plate, StateLamp } from '../caseStudiesData';
 
 export const metadata = {
   title: 'Thinking: Jade Parrish',
@@ -9,57 +7,15 @@ export const metadata = {
     'Writing on design systems, why complexity is usually just missing documentation, and why fixing the foundations tends to pay for itself.',
 };
 
-/* Mirrors WorkRow on /work: a piece without a page renders dimmed and
-   unclickable rather than linking somewhere that doesn't exist. */
-function ArticleRow({ article }) {
-  const inner = (
-    <>
-      <article.icon
-        className={`w-5 h-5 shrink-0 mt-1 ${
-          article.hasPage ? 'text-[#A47864]' : 'text-neutral-400'
-        }`}
-        strokeWidth={1.5}
-      />
-      <div className="flex-1">
-        <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium mb-2">
-          {article.kicker} &middot; {article.readTime}
-        </p>
-        <h2 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug tracking-tight [text-wrap:balance] transition-colors group-hover:text-[#8D6553]">
-          {article.title}
-        </h2>
-        <p className="mt-3 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
-          {article.description}
-        </p>
-        {article.hasPage && (
-          <p className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-neutral-900">
-            Read it
-            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-          </p>
-        )}
-      </div>
-    </>
-  );
-
-  const shell = 'group flex gap-5 py-10 first:pt-0';
-
-  return article.hasPage ? (
-    <Link href={`/thinking/${article.slug}`} className={shell}>
-      {inner}
-    </Link>
-  ) : (
-    <div className={`${shell} opacity-70`}>{inner}</div>
-  );
-}
-
 export default function ThinkingIndex() {
+  const live = thinkingList.filter((a) => a.state === 'live').length;
+
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
 
       <main className="max-w-2xl mx-auto px-6 sm:px-8 pb-24">
         <section className="pb-10 border-b border-neutral-200/80">
-          <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-5">
-            Thinking
-          </p>
+          <Plate className="mb-5">Thinking &middot; {live} live</Plate>
           <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-normal leading-[1.15] tracking-tight [text-wrap:balance] text-neutral-900 mb-6">
             Things I keep finding, written down.
           </h1>
@@ -70,10 +26,30 @@ export default function ThinkingIndex() {
           </p>
         </section>
 
-        <div className="py-12 border-b border-neutral-200/80 divide-y divide-neutral-200/70">
+        {/* The same row component as /work. A piece that isn't finished no
+            longer needs its own dimmed treatment: the amber lamp and the
+            words "Being written" say exactly where it is. */}
+        <div className="py-10 border-b border-neutral-200/80">
           {thinkingList.map((article) => (
-            <ArticleRow key={article.slug} article={article} />
+            <IndexRow
+              key={article.slug}
+              state={article.state}
+              num={article.num}
+              title={article.title}
+              description={article.description}
+              meta={article.readTime}
+              href={article.hasPage ? `/thinking/${article.slug}` : null}
+            />
           ))}
+        </div>
+
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border border-neutral-900/15 px-4 py-3 font-mono text-[10px] font-medium uppercase tracking-[0.18em]">
+          <Plate>Status</Plate>
+          <span className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <StateLamp state="live" />
+            <StateLamp state="writing" />
+            <StateLamp state="planned" />
+          </span>
         </div>
 
         <IndexFooter />
