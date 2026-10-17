@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Giving a siloed platform a navigation that scales: Jade Parrish',
@@ -36,18 +35,6 @@ function InlineLink({ href, children }) {
     >
       {children}
     </Link>
-  );
-}
-
-function ImagePlaceholder({ tint, caption }) {
-  return (
-    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
-      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
-        Visual coming soon
-      </p>
-      <p className="text-xs text-neutral-600">{caption}</p>
-    </div>
   );
 }
 
@@ -115,7 +102,7 @@ export default function NavigationCaseStudy() {
             </p>
           </div>
 
-          <ImagePlaceholder tint="bg-[#E4E1E8]" caption="The legacy navigation: parallel silos and duplicated entry points" />
+          <Figure n="01" tint="bg-[#E4E1E8]" caption="The legacy navigation: parallel silos and duplicated entry points" />
         </section>
 
         {/* Understanding the Problem */}
@@ -170,7 +157,7 @@ export default function NavigationCaseStudy() {
             operational contexts without losing their place.
           </p>
 
-          <ImagePlaceholder tint="bg-[#E9E4DE]" caption="Three-tier hierarchy and dual-layer navigation model" />
+          <Figure n="02" tint="bg-[#E9E4DE]" caption="Three-tier hierarchy and dual-layer navigation model" />
         </section>
 
         {/* Collaboration and Validation */}
