@@ -79,6 +79,12 @@ const globalStyles = `
   /* The skip link target shouldn't draw a ring around the whole page. */
   #main-content:focus { outline: none; }
 
+  /* Hash links (#about, #contact) otherwise land the heading flush against
+     the top edge with nothing above it, which reads as a broken jump rather
+     than an arrival. */
+  :target { scroll-margin-top: 2.5rem; }
+  [id] { scroll-margin-top: 2.5rem; }
+
   /* Skip link: invisible until tabbed to, then the first thing on the page. */
   .skip-link {
     position: absolute;
