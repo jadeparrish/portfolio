@@ -5,6 +5,36 @@ export const metadata = {
   description: 'Designing complex services and data systems that work better for everyone.',
 };
 
+/* The mark: a lowercase j in the site's display face with a drawn dot rather
+   than a typographic full stop, so it reads as a designed thing and not as a
+   sentence that stopped early. Defined here because the header is the only
+   place it appears in markup. */
+function Mark({ size = 19 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 64 64"
+      aria-hidden="true"
+      focusable="false"
+      style={{ display: 'block', flex: 'none' }}
+    >
+      <text
+        x="27"
+        y="52"
+        textAnchor="middle"
+        fontFamily="Bricolage Grotesque, Georgia, serif"
+        fontWeight="600"
+        fontSize="62"
+        fill="#1C1C1C"
+      >
+        j
+      </text>
+      <circle cx="48" cy="46" r="7" fill="#A47864" />
+    </svg>
+  );
+}
+
 /* Tailwind Play CDN reads this off the global `tailwind` object, so it has to
    run AFTER the CDN script has created it. Running it first throws a reference
    error and the whole config is silently dropped. */
@@ -137,19 +167,29 @@ export default function RootLayout({ children }) {
         {/* One header for the whole site. Lives here so every page gets it
             without each page having to render its own. */}
         <header className="border-b border-neutral-200/80">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-5 flex justify-between items-center gap-5">
+          {/* flex-wrap, so the availability readout drops to its own full-width
+              row on a phone instead of squeezing the nav. */}
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 sm:py-5 flex flex-wrap justify-between items-center gap-x-5 gap-y-2">
             <a
               href="/"
-              className="text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] whitespace-nowrap transition-colors"
+              className="py-2 -my-2 flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] whitespace-nowrap transition-colors"
             >
+              <Mark />
               Jade Parrish
             </a>
-            <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 text-[11px] tracking-[0.15em] uppercase text-neutral-600">
-              <a href="/work" className="hover:text-[#8D6553] transition-colors">Work</a>
-              <a href="/thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
-              <a href="/#about" className="hover:text-[#8D6553] transition-colors">About</a>
-              <a href="/#contact" className="hover:text-[#8D6553] transition-colors">Contact</a>
+            {/* Home is explicit rather than leaving the wordmark to carry it.
+                About and Contact are hash links back to the homepage, so from
+                a case study there was no plain way to say "take me to the
+                top of the site". py-2 -my-2 grows the tap target to 33px
+                without moving anything. */}
+            <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 sm:gap-x-8 text-[11px] tracking-[0.08em] sm:tracking-[0.15em] uppercase text-neutral-600">
+              <a href="/" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Home</a>
+              <a href="/work" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Work</a>
+              <a href="/thinking" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Thinking</a>
+              <a href="/#about" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">About</a>
+              <a href="/#contact" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Contact</a>
             </nav>
+
           </div>
         </header>
 
