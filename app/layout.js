@@ -1,31 +1,8 @@
 import React from 'react';
-import { Mark } from './caseStudiesData';
 
-/* metadataBase lets the relative image paths below resolve to absolute URLs,
-   which is what Slack, LinkedIn and iMessage need to render a preview card.
-   Without it a shared link is a bare line of text.
-
-   The icon and the card itself are files, not config: Next picks up
-   app/icon.png, app/apple-icon.png and app/opengraph-image.png by name. */
 export const metadata = {
-  metadataBase: new URL('https://www.jadeparrish.me'),
   title: 'Jade Parrish: Human-centred service & systems designer',
   description: 'Designing complex services and data systems that work better for everyone.',
-  openGraph: {
-    title: 'Jade Parrish: Human-centred service & systems designer',
-    description:
-      'Designing complex services and data systems that work better for everyone.',
-    url: 'https://www.jadeparrish.me',
-    siteName: 'Jade Parrish',
-    locale: 'en_GB',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Jade Parrish: Human-centred service & systems designer',
-    description:
-      'Designing complex services and data systems that work better for everyone.',
-  },
 };
 
 /* Tailwind Play CDN reads this off the global `tailwind` object, so it has to
@@ -160,36 +137,19 @@ export default function RootLayout({ children }) {
         {/* One header for the whole site. Lives here so every page gets it
             without each page having to render its own. */}
         <header className="border-b border-neutral-200/80">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 sm:py-5 flex flex-wrap justify-between items-center gap-x-5 gap-y-1">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-5 flex justify-between items-center gap-5">
             <a
               href="/"
-              className="group py-2 -my-2 flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#845D4D] whitespace-nowrap transition-colors"
+              className="text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] whitespace-nowrap transition-colors"
             >
-              <Mark size={19} />
               Jade Parrish
             </a>
             <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 text-[11px] tracking-[0.15em] uppercase text-neutral-600">
-              <a href="/work" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">Work</a>
-              <a href="/thinking" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">Thinking</a>
-              <a href="/#about" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">About</a>
-              <a href="/#contact" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">Contact</a>
+              <a href="/work" className="hover:text-[#8D6553] transition-colors">Work</a>
+              <a href="/thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
+              <a href="/#about" className="hover:text-[#8D6553] transition-colors">About</a>
+              <a href="/#contact" className="hover:text-[#8D6553] transition-colors">Contact</a>
             </nav>
-
-            {/* Availability, as a status readout rather than a sales line.
-                Most visitors arrive on a deep link and never see the homepage
-                contact block, so the one commercially useful fact about me
-                lives up here on every page instead.
-
-                A point larger and half the tracking of a label, because this
-                one is meant to be read rather than glanced at. On a phone it
-                drops to its own full-width row under the nav.
-
-                This is a status indicator, so it has to stay true: change it
-                the day the answer changes. */}
-            <span className="order-last w-full sm:w-auto sm:order-none flex items-center gap-2.5 mt-1 pt-3 sm:mt-0 sm:pt-0 border-t sm:border-t-0 border-neutral-200/80 font-mono text-[11px] font-medium uppercase tracking-[0.09em] text-[#5C7355] whitespace-nowrap">
-              <span className="w-[7px] h-[7px] rounded-full bg-[#5C7355] ring-4 ring-[#5C7355]/15 flex-none" />
-              Available &middot; 2&ndash;3 days/week
-            </span>
           </div>
         </header>
 
