@@ -475,7 +475,13 @@ export function ArticleBullets({ items }) {
    support. Deliberately a different species from PullQuote: upright and
    near-black rather than italic mocha, so a reader can tell at a glance
    which voice they are in. */
-export function Testimonial({ quote, name, role, href }) {
+/* `compact` is for a testimonial that follows body prose rather than closing
+   a page. At full size after the About paragraphs the quote outweighed Jade's
+   own words, which is the wrong way round on her own site. Just above body
+   size, the serif and the quote marks still mark it as somebody else talking
+   without it shouting over her. Case study pages pass nothing and keep the
+   large treatment, where the quote is the closing beat. */
+export function Testimonial({ quote, name, role, href, compact }) {
   /* Pass an array when the quote runs to more than one paragraph, so nothing
      has to be spliced together to fit. Quote marks open on the first and
      close on the last. */
@@ -500,7 +506,13 @@ export function Testimonial({ quote, name, role, href }) {
 
   return (
     <figure>
-      <blockquote className="font-serif text-xl sm:text-[22px] text-neutral-900 leading-[1.5] [text-wrap:pretty] space-y-5">
+      <blockquote
+        className={`font-serif text-neutral-900 [text-wrap:pretty] ${
+          compact
+            ? 'text-lg sm:text-[19px] leading-[1.6] space-y-4'
+            : 'text-xl sm:text-[22px] leading-[1.5] space-y-5'
+        }`}
+      >
         {paragraphs.map((paragraph, i) => (
           <p key={i}>
             {i === 0 && <>&ldquo;</>}
@@ -509,7 +521,7 @@ export function Testimonial({ quote, name, role, href }) {
           </p>
         ))}
       </blockquote>
-      <figcaption className="mt-5 text-[11px] uppercase tracking-[0.15em] font-medium text-neutral-600">
+      <figcaption className={`${compact ? 'mt-4' : 'mt-5'} text-[11px] uppercase tracking-[0.15em] font-medium text-neutral-600`}>
         {attribution} &middot; {role}
       </figcaption>
     </figure>
