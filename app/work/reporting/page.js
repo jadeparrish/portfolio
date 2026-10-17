@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
+import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Turning disconnected data into clearer decisions: Jade Parrish',
@@ -22,18 +21,6 @@ function SubLabel({ children }) {
       <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
       {children}
     </h3>
-  );
-}
-
-function ImagePlaceholder({ tint, caption }) {
-  return (
-    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
-      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
-        Visual coming soon
-      </p>
-      <p className="text-xs text-neutral-600">{caption}</p>
-    </div>
   );
 }
 
@@ -102,7 +89,7 @@ export default function ReportingCaseStudy() {
             </p>
           </div>
 
-          <ImagePlaceholder tint="bg-[#DDE3E6]" caption="Fragmented reporting, before the redesign" />
+          <Figure n="01" tint="bg-[#DDE3E6]" caption="Fragmented reporting, before the redesign" />
         </section>
 
         {/* Part 1: Auditing and Aligning the Foundations */}
@@ -237,7 +224,7 @@ export default function ReportingCaseStudy() {
                 shared.
               </p>
 
-              <ImagePlaceholder tint="bg-[#E7E2DC]" caption="Reporting Hub: unified structure and card layouts" />
+              <Figure n="02" tint="bg-[#E7E2DC]" caption="Reporting Hub: unified structure and card layouts" />
             </div>
 
             <div>
