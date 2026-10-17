@@ -106,7 +106,7 @@ export default function PortfolioHomepage() {
                 which is what WCAG 1.4.1 asks for. */}
             <p className="-mb-3 flex items-center gap-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.09em] text-[#5C7355]">
               <span className="w-[7px] h-[7px] rounded-full bg-[#5C7355] ring-4 ring-[#5C7355]/15 flex-none" />
-              Available part-time &middot; 2 days/week
+              Available part-time &middot; 2&ndash;3 days/week
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               {/* The designed break only works once the column is wide enough to
@@ -127,7 +127,7 @@ export default function PortfolioHomepage() {
             {/* Each dot travels with the label before it. As separate flex
                 children they could wrap onto a new line on their own, which
                 put a stray dot at the start of a row at tablet width. */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-neutral-500 tracking-wide">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-[#6A6A6A] tracking-wide">
               {['Public Sector', 'Healthcare', 'Education', 'Complex Digital Products'].map(
                 (label, i, all) => (
                   <span key={label} className="inline-flex items-center gap-x-6">
@@ -143,7 +143,7 @@ export default function PortfolioHomepage() {
             <div className="pt-2">
               <a
                 href="#work"
-                className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] hover:translate-x-0.5 transition-all"
+                className="inline-flex items-center gap-2.5 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] hover:translate-x-0.5 transition-all"
               >
                 View selected work <ArrowDownRight className="w-4 h-4 text-[#A47864]" />
               </a>
@@ -266,19 +266,43 @@ export default function PortfolioHomepage() {
         {/* How I Work */}
         <section className="py-16 lg:py-24 border-b border-neutral-200/80">
           <SectionLabel>How I Work</SectionLabel>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
-            {whatIDo.map((item) => (
-              <div key={item.title} className="space-y-4">
-                <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
-                <h3 className="font-serif text-xl font-normal text-neutral-900">
+
+          {/* A sequence drawn as one, rather than three things near each
+              other. The rail runs vertically on a phone and horizontally from
+              md up; each node sits on it with a paper fill so the line passes
+              behind rather than through.
+
+              The horizontal segments carry -mr-8 to bridge the grid gap, so
+              the line reaches the next node without anything being measured
+              by hand. The last step has no segment, because a process line
+              running off the end implies a step that isn't there. */}
+          <ol className="relative grid grid-cols-1 md:grid-cols-3 gap-y-9 md:gap-x-8">
+            <span
+              aria-hidden="true"
+              className="md:hidden absolute left-[13px] top-3 bottom-3 w-px bg-neutral-900/15"
+            />
+            {whatIDo.map((item, i, all) => (
+              <li key={item.title} className="relative pl-10 md:pl-0 space-y-3">
+                <div className="flex items-center gap-3">
+                  <span className="absolute left-0 top-0 md:static flex-none w-[27px] h-[27px] rounded-full border border-neutral-900/25 bg-[#F9F8F6] flex items-center justify-center font-mono text-[10px] font-medium text-neutral-900">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  {i < all.length - 1 && (
+                    <span
+                      aria-hidden="true"
+                      className="hidden md:block flex-1 h-px -mr-8 bg-neutral-900/15"
+                    />
+                  )}
+                </div>
+                <h3 className="font-serif text-xl font-normal text-neutral-900 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed [text-wrap:pretty]">
                   {item.description}
                 </p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </section>
 
         {/* Selected Work */}
@@ -326,7 +350,7 @@ export default function PortfolioHomepage() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="inline-flex items-center gap-1.5 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#8D6553] group-hover:translate-x-1 transition-all"
+                        className="inline-flex items-center gap-1.5 py-2 -my-2 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#8D6553] group-hover:translate-x-1 transition-all"
                       >
                         {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#8D6553] transition-colors" />
                       </a>
@@ -346,7 +370,7 @@ export default function PortfolioHomepage() {
           <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/work"
-              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
             >
               See all work ({caseStudiesList.length})
               <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
@@ -362,7 +386,7 @@ export default function PortfolioHomepage() {
               <div key={item.title} className="space-y-3">
                 <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
                 <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
-                <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
+                <p className="text-xs text-[#6A6A6A] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -428,7 +452,7 @@ export default function PortfolioHomepage() {
           <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/thinking"
-              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
             >
               All thinking
               <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
@@ -437,28 +461,49 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="py-24 lg:py-32 text-center space-y-8">
-          <div className="inline-block px-4 py-1.5 bg-[#A47864]/10 border border-[#A47864]/30 text-[#8D6553] rounded-full text-xs font-mono tracking-wide">
-            Open to Part-Time Roles &amp; Fractional Contracts (2 days/week)
+        {/* A modal, built from the same parts as a Figure: bordered panel,
+            engraved title bar, body, footer bar. Deliberately no close
+            button -- an X that dismisses nothing is the false affordance we
+            took out of the Capabilities box. What makes it read as a modal
+            is the panel and a real primary action, not fake chrome. */}
+        <section id="contact" className="py-24 lg:py-32">
+          <div className="max-w-xl mx-auto border border-neutral-900/15 bg-white/50">
+            <div className="flex items-center justify-between gap-4 px-4 sm:px-5 py-3 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
+              <span className="font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-neutral-900 border border-neutral-900/20 px-1.5 py-0.5">
+                Contact
+              </span>
+              <span className="flex items-center gap-2 font-mono text-[10px] font-medium uppercase tracking-[0.1em] text-[#5C7355] whitespace-nowrap">
+                <span className="w-[6px] h-[6px] rounded-full bg-[#5C7355] flex-none" />
+                Available part-time
+              </span>
+            </div>
+
+            <div className="px-6 sm:px-10 py-10 sm:py-12 text-center space-y-6">
+              <h2 className="text-3xl sm:text-4xl font-serif text-neutral-900 tracking-tight leading-tight [text-wrap:balance]">
+                Let&rsquo;s improve something together.
+              </h2>
+              <p className="text-[15px] text-[#6E6E6E] leading-relaxed max-w-sm mx-auto [text-wrap:pretty]">
+                Open to part-time roles and fractional contracts, two to three days a week.
+              </p>
+              <div className="pt-2">
+                <a
+                  href="mailto:hello@jadeparrish.me"
+                  className="group inline-flex items-center gap-2.5 bg-neutral-900 text-[#F9F8F6] px-6 py-3.5 text-sm font-medium tracking-wide hover:bg-[#8D6553] transition-colors"
+                >
+                  hello@jadeparrish.me
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </div>
+            </div>
+
+            {/* Where I am sits with how much of me there is: both are the
+                practical questions asked at the point of getting in touch. */}
+            <div className="px-4 sm:px-5 py-3 border-t border-neutral-900/15 bg-neutral-900/[0.025] text-center">
+              <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[#5F5F5F]">
+                Lytham St Annes &middot; Blackpool &amp; the Fylde &middot; Remote
+              </span>
+            </div>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 tracking-tight">
-            Let&rsquo;s improve something together.
-          </h2>
-          <div className="pt-2">
-            <a
-              href="mailto:hello@jadeparrish.me"
-              className="text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] transition-colors"
-            >
-              hello@jadeparrish.me &rarr;
-            </a>
-          </div>
-          {/* Where I am belongs next to how much of me is available: both are
-              the practical questions somebody asks at the point of getting in
-              touch. #6E6E6E is 4.8:1 on paper, so it still clears AA. */}
-          <p className="text-sm text-[#6E6E6E]">
-            Based in Lytham St Annes. Local work across Blackpool and the Fylde,
-            remote anywhere else.
-          </p>
         </section>
       </main>
 
