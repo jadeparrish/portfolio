@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mark } from './caseStudiesData';
 
 /* metadataBase lets the relative image paths below resolve to absolute URLs,
    which is what Slack, LinkedIn and iMessage need to render a preview card.
@@ -162,15 +163,16 @@ export default function RootLayout({ children }) {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 sm:py-5 flex flex-wrap justify-between items-center gap-x-5 gap-y-1">
             <a
               href="/"
-              className="text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] whitespace-nowrap transition-colors"
+              className="group py-2 -my-2 flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#845D4D] whitespace-nowrap transition-colors"
             >
+              <Mark size={19} />
               Jade Parrish
             </a>
             <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:gap-x-8 text-[11px] tracking-[0.15em] uppercase text-neutral-600">
-              <a href="/work" className="hover:text-[#8D6553] transition-colors">Work</a>
-              <a href="/thinking" className="hover:text-[#8D6553] transition-colors">Thinking</a>
-              <a href="/#about" className="hover:text-[#8D6553] transition-colors">About</a>
-              <a href="/#contact" className="hover:text-[#8D6553] transition-colors">Contact</a>
+              <a href="/work" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">Work</a>
+              <a href="/thinking" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">Thinking</a>
+              <a href="/#about" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">About</a>
+              <a href="/#contact" className="py-2 -my-2 hover:text-[#845D4D] transition-colors">Contact</a>
             </nav>
 
             {/* Availability, as a status readout rather than a sales line.
