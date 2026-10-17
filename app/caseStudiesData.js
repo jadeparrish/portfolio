@@ -499,6 +499,7 @@ export function Testimonial({ quote, name, role, href, compact }) {
       className="text-neutral-800 underline decoration-1 decoration-neutral-400 underline-offset-[3px] hover:text-[#8D6553] hover:decoration-[#8D6553] transition-colors"
     >
       {name}
+      <span className="sr-only"> (opens in a new tab)</span>
     </a>
   ) : (
     <span className="text-neutral-800">{name}</span>
@@ -574,6 +575,7 @@ export function SiteFooter({ wide }) {
             className="py-2 -my-2 hover:text-[#8D6553] transition-colors"
           >
             LinkedIn
+            <span className="sr-only"> (opens in a new tab)</span>
           </a>
           <a
             href="mailto:hello@jadeparrish.me"
