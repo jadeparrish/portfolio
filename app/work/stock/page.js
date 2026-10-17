@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import { CaseStudyFooter, SiteFooter, Testimonial } from '../../caseStudiesData';
+import { ArrowLeft } from 'lucide-react';
+import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Bringing stock and fulfilment data into one clear view: Jade Parrish',
@@ -22,18 +22,6 @@ function SubLabel({ children }) {
       <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
       {children}
     </h3>
-  );
-}
-
-function ImagePlaceholder({ tint, caption }) {
-  return (
-    <div className={`aspect-[16/9] -mx-6 sm:mx-0 rounded-none sm:rounded-sm border-y sm:border-x border-neutral-200/80 ${tint} flex flex-col items-center justify-center gap-2 my-10`}>
-      <ImageIcon className="w-6 h-6 text-neutral-600" strokeWidth={1.5} />
-      <p className="text-xs uppercase tracking-[0.15em] text-neutral-500 font-medium">
-        Visual coming soon
-      </p>
-      <p className="text-xs text-neutral-600">{caption}</p>
-    </div>
   );
 }
 
@@ -113,7 +101,7 @@ export default function StockCaseStudy() {
             </p>
           </div>
 
-          <ImagePlaceholder tint="bg-[#E3E6E1]" caption="Stock and fulfilment data before the redesign" />
+          <Figure n="01" tint="bg-[#E3E6E1]" caption="Stock and fulfilment data before the redesign" />
         </section>
 
         {/* The Work */}
@@ -166,7 +154,7 @@ export default function StockCaseStudy() {
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Designed dashboards for delivery times and dispatch status, so delays and anything needing attention surfaced on their own</li>
               </ul>
 
-              <ImagePlaceholder tint="bg-[#DDE3E6]" caption="Stock and SLA dashboard explorations" />
+              <Figure n="02" tint="bg-[#DDE3E6]" caption="Stock and SLA dashboard explorations" />
             </div>
 
             <div>
