@@ -194,14 +194,13 @@ export default function PortfolioHomepage() {
                 <p>
                   My work usually ends up spanning teams, touchpoints and organisational
                   boundaries, because that&rsquo;s where things break. I look past
-                  the screen to the wider system: where a handoff gets lost, where
-                  complexity gets quietly handed to a person instead of being designed away,
-                  and where a bit of structure would make everyone&rsquo;s day easier.
+                  the screen to the wider system: where a handoff gets lost, and where
+                  complexity gets quietly handed to a person instead of being designed away.
                 </p>
                 <p>
                   None of this is abstract to me. I&rsquo;m a parent to two children with
-                  SEND, and I know first-hand what that means in practice: because the
-                  systems around you don&rsquo;t talk to each other, the person with
+                  SEND: because the systems around you don&rsquo;t talk to each other,
+                  the person with
                   parental responsibility ends up being the project manager,
                   chasing every service and holding the whole picture together. I bring
                   that same instinct to my work: build
@@ -216,9 +215,7 @@ export default function PortfolioHomepage() {
                     <>
                       Jade approaches design with thoughtfulness and precision,
                       particularly across projects that demand structure and data
-                      awareness. She played a key role in shaping major initiatives
-                      including our ShadCN migration, Campaign Manager redesign, and early
-                      reporting improvements. Her documentation and communication with
+                      awareness. &hellip; Her documentation and communication with
                       engineering were always clear and dependable, which helped move
                       complex work forward smoothly.
                     </>
