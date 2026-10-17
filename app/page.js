@@ -100,7 +100,7 @@ export default function PortfolioHomepage() {
             grid, about 330px, which is too narrow for 48px display type: the
             headline broke into four ragged lines. Stacked, it gets the full
             width and the illustration sits under it. */}
-        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center border-b border-neutral-200/80">
+        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           <div className="lg:col-span-6 space-y-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
               {/* The designed break only works once the column is wide enough to
@@ -121,7 +121,7 @@ export default function PortfolioHomepage() {
             {/* Each dot travels with the label before it. As separate flex
                 children they could wrap onto a new line on their own, which
                 put a stray dot at the start of a row at tablet width. */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-neutral-500 tracking-wide">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-[#6A6A6A] tracking-wide">
               {['Public Sector', 'Healthcare', 'Education', 'Complex Digital Products'].map(
                 (label, i, all) => (
                   <span key={label} className="inline-flex items-center gap-x-6">
@@ -137,7 +137,7 @@ export default function PortfolioHomepage() {
             <div className="pt-2">
               <a
                 href="#work"
-                className="inline-flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] hover:translate-x-0.5 transition-all"
+                className="inline-flex items-center gap-2.5 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#845D4D] hover:translate-x-0.5 transition-all"
               >
                 View selected work <ArrowDownRight className="w-4 h-4 text-[#A47864]" />
               </a>
@@ -155,7 +155,7 @@ export default function PortfolioHomepage() {
         {/* py-16 lg:py-24, same as every other content section. This one was
             py-20 lg:py-28, and because it ends on a short list of small mono
             type the extra 16px read as a gap rather than as breathing room. */}
-        <section id="about" className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section id="about" className="py-16 lg:py-24">
           {/* Stacked until lg, like the hero. Side by side at tablet the text
               ran far longer than the photo and left a tall empty column beside
               it; stacked, the photo caps at max-w-xs and centres. */}
@@ -186,9 +186,7 @@ export default function PortfolioHomepage() {
                   senior product design, picking up service design and systems thinking
                   along the way. In the web years I was at Rentalcars.com, designing and
                   building A/B tests, which is where I learned to expect a design
-                  decision to be measured. If there&rsquo;s a thread through all of it,
-                  it&rsquo;s that I can&rsquo;t leave a complex process alone. I have to
-                  understand why it&rsquo;s confusing, and then I want to fix it.
+                  decision to be measured.
                 </p>
                 <p>
                   My work usually ends up spanning teams, touchpoints and organisational
@@ -207,10 +205,9 @@ export default function PortfolioHomepage() {
                   the joined-up system, so nobody has to become the project manager just to
                   get through their day.
                 </p>
-                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-lg">
-                  &ldquo;I want the systems people depend on to actually work for
-                  them, not against them.&rdquo;
-                </blockquote>
+                {/* The pull quote that sat here said the SEND paragraph's last
+                    line again in vaguer words, and took its landing with it.
+                    Paragraph three closes the section on its own. */}
               </div>
 
               <div className="pt-8 border-t border-neutral-200/80">
@@ -232,17 +229,18 @@ export default function PortfolioHomepage() {
                 />
               </div>
 
-              {/* A bounded capability plate: a legend bolted to the panel
-                  rather than a loose line of labels. The engraved header sits
-                  above the list on a phone and beside it from sm up.
+              {/* Just a labelled line of words. Boxed, with a header cell and
+                  a tinted ground, it read as a table header or a row of
+                  filters: a control you could press. Nothing here is
+                  pressable, so nothing here should look it.
 
                   Each dot still travels with the label before it, so a dot
                   can never start a wrapped line. */}
-              <div className="flex flex-wrap border border-neutral-900/15 bg-[#F4F2EE]">
-                <div className="w-full sm:w-auto flex items-center px-4 py-3 border-b sm:border-b-0 sm:border-r border-neutral-900/[0.09] bg-neutral-900/[0.025]">
-                  <Plate>Capabilities</Plate>
-                </div>
-                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 px-4 py-3 text-[13px] text-neutral-900">
+              <div className="space-y-3">
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600">
+                  Capabilities
+                </p>
+                <p className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[15px] text-neutral-900">
                   {[
                     'Service Design',
                     'Systems Thinking',
@@ -258,14 +256,14 @@ export default function PortfolioHomepage() {
                       )}
                     </span>
                   ))}
-                </div>
+                </p>
               </div>
             </div>
           </div>
         </section>
 
         {/* How I Work */}
-        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section className="py-16 lg:py-24">
           <SectionLabel>How I Work</SectionLabel>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
             {/* Numbered rather than iconned. These three are a sequence, and
@@ -308,10 +306,10 @@ export default function PortfolioHomepage() {
 
           {/* Sits in a band between two rules, 24px either side of the link,
               the same rhythm the More work summary had. */}
-          <div className="mt-12 py-6 border-y border-neutral-200/80">
+          <div className="mt-12 pt-8 border-t border-neutral-200/80">
             <a
               href="/work"
-              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#845D4D] transition-colors"
             >
               See all work ({caseStudiesList.length})
               <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
@@ -320,14 +318,14 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* Where I Can Help */}
-        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section className="py-16 lg:py-24">
           <SectionLabel>Where I Can Help</SectionLabel>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
             {whoIWorkWith.map((item) => (
               <div key={item.title} className="space-y-3">
                 <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
                 <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
-                <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
+                <p className="text-xs text-[#6A6A6A] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -353,10 +351,10 @@ export default function PortfolioHomepage() {
             ))}
           </div>
 
-          <div className="mt-12 py-6 border-y border-neutral-200/80">
+          <div className="mt-12 pt-8 border-t border-neutral-200/80">
             <a
               href="/thinking"
-              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="group inline-flex py-2 -my-2 items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#845D4D] transition-colors"
             >
               All thinking
               <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
@@ -371,7 +369,7 @@ export default function PortfolioHomepage() {
           <div className="border border-neutral-900/15 bg-[#F4F2EE]">
             <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 sm:px-5 py-3 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
               <Plate>Contact</Plate>
-              <p className="text-xs sm:text-[13px] text-[#8D6553]">
+              <p className="text-xs sm:text-[13px] text-[#845D4D]">
                 Open to part-time roles and fractional contracts
               </p>
             </div>
@@ -382,7 +380,7 @@ export default function PortfolioHomepage() {
               </h2>
               <a
                 href="mailto:hello@jadeparrish.me"
-                className="inline-block text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
+                className="inline-block text-lg sm:text-2xl font-serif text-neutral-900 underline underline-offset-8 decoration-neutral-500 hover:decoration-[#845D4D] hover:text-[#845D4D] transition-colors"
               >
                 hello@jadeparrish.me &rarr;
               </a>
