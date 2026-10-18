@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Sparkles } from 'lucide-react';
+import debtAdviceCard from './debt-advice-card.png';
 
 /* Ordered by theme, because /work groups them that way. The two-digit
    number is derived from position, so reordering or inserting a piece
@@ -72,6 +73,9 @@ const work = [
     cta: 'View case study',
     href: '/work/debt-advice',
     tint: 'bg-[#E1E5E4]',
+    image: debtAdviceCard,
+    imageAlt:
+      'A step of the debt diagnostic on a phone: the question How much do you owe your lenders in total, above six amount bands running from Under 2,000 pounds to Over 20,000 pounds.',
     hasPage: true,
     featured: true,
   },
