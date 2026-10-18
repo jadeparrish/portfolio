@@ -330,14 +330,28 @@ export default function PortfolioHomepage() {
                       number is the work item's, not a figure number, so it is
                       set into the corner rather than labelled "Fig.". */}
                   <div
-                    className={`relative aspect-[4/3] max-h-[240px] md:max-h-none border border-neutral-900/15 ${item.tint} flex items-center justify-center`}
+                    className={`relative aspect-[4/3] max-h-[240px] md:max-h-none overflow-hidden border border-neutral-900/15 ${item.tint} flex items-center justify-center`}
                   >
-                    <span className="absolute top-0 left-0 font-mono text-[10px] font-medium tracking-[0.16em] text-neutral-900 border-r border-b border-neutral-900/15 px-1.5 py-0.5">
+                    {item.image ? (
+                      <img
+                        src={item.image.src}
+                        alt={item.imageAlt || ''}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    ) : null}
+                    <span
+                      className={`absolute top-0 left-0 font-mono text-[10px] font-medium tracking-[0.16em] text-neutral-900 border-r border-b border-neutral-900/15 px-1.5 py-0.5 ${
+                        item.image ? 'bg-[#F9F8F6]' : ''
+                      }`}
+                    >
                       {item.num}
                     </span>
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#5F5F5F]">
-                      Awaiting capture
-                    </span>
+                    {!item.image && (
+                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#5F5F5F]">
+                        Awaiting capture
+                      </span>
+                    )}
                   </div>
                 </div>
 
