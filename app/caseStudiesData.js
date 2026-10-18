@@ -160,7 +160,7 @@ const work = [
       'Designed a debt diagnostic and a personalised report for people working out how to repay what they owed, researched by listening to the calls, then defined the template every debt brand after it was built from.',
     cta: 'View case study',
     href: '/work/debt-advice',
-    tint: 'bg-[#E1E5E4]',
+    tint: 'bg-[#E5E1D9]',
     image: debtAdviceCard,
     imageAlt:
       'Two screens from the debt diagnostic side by side. On the left, step two of four asks how much you owe, with six amount bands from under 2,000 pounds to over 20,000 pounds and one selected. On the right, the Money-smart report shows total monthly outgoings of 1,250 pounds broken into bars: rent or mortgage 500 pounds, debt payments 500 pounds and household bills 50 pounds, under the line it looks like you are spending more than you can afford.',
