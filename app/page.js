@@ -1,5 +1,6 @@
 import React from 'react';
 import jadePhoto from './jade-photo.jpg';
+import blueprint from './fulfilment-blueprint.png';
 import {
   ArrowDownRight,
   ArrowRight,
@@ -155,10 +156,18 @@ export default function PortfolioHomepage() {
               is the problem we just took off the work index. */}
           <div className="lg:col-span-6">
             <Figure
-              caption="Hand-drawn systems ecosystem map"
+              caption="Service blueprint: campaign fulfilment, mapped across roles, handoffs and systems"
               ratio="aspect-[4/3]"
               flush
-            />
+            >
+              {/* object-contain, not cover: a diagram cropped to fill its box
+                  loses the edges of the thing it is explaining. */}
+              <img
+                src={blueprint.src}
+                alt="A service blueprint of campaign fulfilment. Five phases run left to right: pre-sign, pre-launch, launch, post-launch and feedback. Seven layers run top to bottom: physical evidence, consumer, brand, account, operations, partner and systems, divided by the line of interaction, the line of visibility and the line of internal interaction. Seven handoffs are marked where work crosses between layers; three of those are also marked as fail points, two consumer and brand steps are marked as key touchpoints, and returns is marked as having no agreed process."
+                className="w-full h-full object-contain"
+              />
+            </Figure>
           </div>
         </section>
 
