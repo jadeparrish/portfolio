@@ -1,6 +1,5 @@
 import React from 'react';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
-import formJourney from '../../form-journey.png';
 
 export const metadata = {
   title: 'Turning a debt enquiry into something people could act on: Jade Parrish',
@@ -102,17 +101,7 @@ export default function DebtAdviceCaseStudy() {
             </p>
           </div>
 
-          <Figure
-            n="01"
-            tint="bg-[#E9E4DE]"
-            caption="The form journey: fourteen questions grouped into four steps, with every amount answered as a band rather than a figure"
-          >
-            <img
-              src={formJourney.src}
-              alt="The debt diagnostic laid out as four steps, labelled Intro, Debts, Outgoings and Income. Under each step is the phone screen that opens it and a list of what that step asks. Intro asks where you live, residential status and what you have experienced. Debts asks the number of lenders, the total owed, monthly repayments and other debts. Outgoings asks about household bills, day-to-day living, TV, internet and phone, and rent or mortgage. Income asks earnings after tax, benefits and assets over 1,000 pounds, then first name and email. Amounts are chosen from bands rather than typed, except monthly earnings."
-              className="w-full h-full object-cover"
-            />
-          </Figure>
+          <Figure n="01" tint="bg-[#E9E4DE]" caption="The form journey" />
         </section>
 
         {/* The Work */}
