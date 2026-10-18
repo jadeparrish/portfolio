@@ -101,7 +101,7 @@ const work = [
       'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
     cta: 'View case study',
     href: '/work/reporting',
-    tint: 'bg-[#DDE3E6]',
+    tint: 'bg-[#E5E2DC]',
     image: reportingCard,
     imageAlt:
       'The brand overview dashboard: a sidebar of campaign sections, an insights strip led by a low stock alert, four metrics including total orders of 46,900 and reach of 1.4 million, a chart comparing reach against engagement across six social channels, and a campaign performance table showing stock levels and status.',
