@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Sparkles } from 'lucide-react';
 import debtAdviceCard from './debt-advice-card.png';
+import reportingCard from './reporting-card.png';
 
 /* Ordered by theme, because /work groups them that way. The two-digit
    number is derived from position, so reordering or inserting a piece
@@ -35,50 +36,6 @@ const work = [
     featured: false,
   },
   {
-    slug: 'stock',
-    year: '2024 to 2025',
-    group: 'service',
-    title: 'Bringing stock and fulfilment data into one clear view',
-    tag: 'Operations & Service Design',
-    description:
-      'Untangled shared stock pools into a consistent view of stock health and fulfilment status, carrying the same clarity into Campaign Manager reporting.',
-    cta: 'View case study',
-    href: '/work/stock',
-    tint: 'bg-[#E3E6E1]',
-    hasPage: true,
-    featured: false,
-  },
-  {
-    slug: 'crm-review',
-    year: '2016 to 2017',
-    group: 'service',
-    title: 'Rebuilding a customer review around the people doing it',
-    tag: 'Workflow & Service Design',
-    description:
-      'Joined an in-house transformation team to rebuild the software staff used for customer reviews, running workshops with the people doing the job and designing the workflow before the interface.',
-    cta: 'View case study',
-    href: '/work/crm-review',
-    tint: 'bg-[#E5E1DB]',
-    hasPage: true,
-    featured: false,
-  },
-  {
-    slug: 'debt-advice',
-    year: '2014 to 2017',
-    group: 'service',
-    title: 'Turning a debt enquiry into something people could act on',
-    tag: 'Research & Service Design',
-    description:
-      'Designed a debt diagnostic and a personalised report for people working out how to repay what they owed, researched by listening to the calls, then defined the template every debt brand after it was built from.',
-    cta: 'View case study',
-    href: '/work/debt-advice',
-    tint: 'bg-[#E1E5E4]',
-    image: debtAdviceCard,
-    imageAlt:
-      'Two screens from the debt diagnostic side by side. On the left, step two of four asks how much you owe, with six amount bands from under 2,000 pounds to over 20,000 pounds and one selected. On the right, the Money-smart report shows total monthly outgoings of 1,250 pounds broken into bars: rent or mortgage 500 pounds, debt payments 500 pounds and household bills 50 pounds, under the line it looks like you are spending more than you can afford.',
-    featured: true,
-  },
-  {
     slug: 'commercial-value',
     year: '2025',
     group: 'data',
@@ -91,20 +48,6 @@ const work = [
     tint: 'bg-[#E7E2DC]',
     hasPage: true,
     featured: false,
-  },
-  {
-    slug: 'reporting',
-    year: '2024 to 2025',
-    group: 'data',
-    title: 'Turning disconnected data into clearer decisions',
-    tag: 'Data & Service Design',
-    description:
-      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
-    cta: 'View case study',
-    href: '/work/reporting',
-    tint: 'bg-[#DDE3E6]',
-    hasPage: true,
-    featured: true,
   },
   {
     slug: 'cm-navigation',
@@ -135,6 +78,37 @@ const work = [
     featured: false,
   },
   {
+    slug: 'stock',
+    year: '2024 to 2025',
+    group: 'service',
+    title: 'Bringing stock and fulfilment data into one clear view',
+    tag: 'Operations & Service Design',
+    description:
+      'Untangled shared stock pools into a consistent view of stock health and fulfilment status, carrying the same clarity into Campaign Manager reporting.',
+    cta: 'View case study',
+    href: '/work/stock',
+    tint: 'bg-[#E3E6E1]',
+    hasPage: true,
+    featured: false,
+  },
+  {
+    slug: 'reporting',
+    year: '2024 to 2025',
+    group: 'data',
+    title: 'Turning disconnected data into clearer decisions',
+    tag: 'Data & Service Design',
+    description:
+      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
+    cta: 'View case study',
+    href: '/work/reporting',
+    tint: 'bg-[#DDE3E6]',
+    image: reportingCard,
+    imageAlt:
+      'A brand overview dashboard. A sidebar lists overview, orders, stock, distribution, emails, clicks, consumers, feedback and ad performance. An insights strip leads with a low stock alert, above four metrics: total orders 46,900 up 20.1 per cent, reach 1.4 million, engagement rate 3.9 per cent, and cost per consumer 5.80 dollars. Below them a chart compares reach against engagement across six social channels with the figures for one channel called out, beside a conversion funnel running from 1.2 million reached down to 21 thousand claims, and a redemption time series.',
+    hasPage: true,
+    featured: true,
+  },
+  {
     slug: 'notifications',
     year: '2024 to 2025',
     group: 'systems',
@@ -160,6 +134,36 @@ const work = [
     href: '/work/netix',
     tint: 'bg-[#E9E4DE]',
     hasPage: true,
+    featured: true,
+  },
+  {
+    slug: 'crm-review',
+    year: '2016 to 2017',
+    group: 'service',
+    title: 'Rebuilding a customer review around the people doing it',
+    tag: 'Workflow & Service Design',
+    description:
+      'Joined an in-house transformation team to rebuild the software staff used for customer reviews, running workshops with the people doing the job and designing the workflow before the interface.',
+    cta: 'View case study',
+    href: '/work/crm-review',
+    tint: 'bg-[#E5E1DB]',
+    hasPage: true,
+    featured: false,
+  },
+  {
+    slug: 'debt-advice',
+    year: '2014 to 2017',
+    group: 'service',
+    title: 'Turning a debt enquiry into something people could act on',
+    tag: 'Research & Service Design',
+    description:
+      'Designed a debt diagnostic and a personalised report for people working out how to repay what they owed, researched by listening to the calls, then defined the template every debt brand after it was built from.',
+    cta: 'View case study',
+    href: '/work/debt-advice',
+    tint: 'bg-[#E1E5E4]',
+    image: debtAdviceCard,
+    imageAlt:
+      'Two screens from the debt diagnostic side by side. On the left, step two of four asks how much you owe, with six amount bands from under 2,000 pounds to over 20,000 pounds and one selected. On the right, the Money-smart report shows total monthly outgoings of 1,250 pounds broken into bars: rent or mortgage 500 pounds, debt payments 500 pounds and household bills 50 pounds, under the line it looks like you are spending more than you can afford.',
     featured: true,
   },
 ];
