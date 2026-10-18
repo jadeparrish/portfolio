@@ -75,8 +75,7 @@ const work = [
     tint: 'bg-[#E1E5E4]',
     image: debtAdviceCard,
     imageAlt:
-      'A step of the debt diagnostic on a phone: the question How much do you owe your lenders in total, above six amount bands running from Under 2,000 pounds to Over 20,000 pounds.',
-    hasPage: true,
+      'Two screens from the debt diagnostic side by side. On the left, step two of four asks how much you owe, with six amount bands from under 2,000 pounds to over 20,000 pounds and one selected. On the right, the Money-smart report shows total monthly outgoings of 1,250 pounds broken into bars: rent or mortgage 500 pounds, debt payments 500 pounds and household bills 50 pounds, under the line it looks like you are spending more than you can afford.',
     featured: true,
   },
   {
