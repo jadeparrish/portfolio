@@ -104,7 +104,7 @@ const work = [
     tint: 'bg-[#DDE3E6]',
     image: reportingCard,
     imageAlt:
-      'A brand overview dashboard. A sidebar lists overview, orders, stock, distribution, emails, clicks, consumers, feedback and ad performance. An insights strip leads with a low stock alert, above four metrics: total orders 46,900 up 20.1 per cent, reach 1.4 million, engagement rate 3.9 per cent, and cost per consumer 5.80 dollars. Below them a chart compares reach against engagement across six social channels with the figures for one channel called out, beside a conversion funnel running from 1.2 million reached down to 21 thousand claims, and a redemption time series.',
+      'The brand overview dashboard: a sidebar of campaign sections, an insights strip led by a low stock alert, four metrics including total orders of 46,900 and reach of 1.4 million, a chart comparing reach against engagement across six social channels, and a campaign performance table showing stock levels and status.',
     hasPage: true,
     featured: true,
   },
