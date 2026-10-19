@@ -96,8 +96,14 @@ export default function PortfolioHomepage() {
             grid, about 330px, which is too narrow for 48px display type: the
             headline broke into four ragged lines. Stacked, it gets the full
             width and the illustration sits under it. */}
-        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center border-b border-neutral-200/80">
-          <div className="lg:col-span-6 space-y-8">
+        {/* Three children rather than two, so the blueprint can sit between the
+            pitch and the sectors on a phone while still reading as one text
+            column at lg. Explicit rows rejoin the two halves in column 1; the
+            lg row gap is 8 because that is the space-y-8 the halves shared
+            when they were a single div, so desktop geometry does not move. */}
+        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-x-20 lg:gap-y-8 items-center border-b border-neutral-200/80">
+          {/* Phone, 1 of 3: availability, headline, what I do. */}
+          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-1 space-y-8">
             {/* Availability opens the hero rather than sitting in the header.
                 Contact is in the nav from every page and states it there, so
                 a strip on every page was saying it twice. Here it reads as
@@ -124,7 +130,32 @@ export default function PortfolioHomepage() {
                 work better for the people who depend on them.
               </p>
             </div>
+          </div>
 
+          {/* Phone, 2 of 3: the blueprint, directly under the pitch it
+              illustrates. The same frame the case studies use. No figure
+              number: there is only one figure on this page, and a number with
+              nothing to count is the problem we just took off the work index.
+              Spanning both rows keeps it centred against the full text column
+              at lg, exactly as it was when the text was one block. */}
+          <div className="lg:col-span-6 lg:col-start-7 lg:row-start-1 lg:row-span-2">
+            <Figure
+              caption="Service blueprint: campaign fulfilment, mapped across roles, handoffs and systems"
+              ratio="aspect-[4/3]"
+              flush
+            >
+              {/* object-contain, not cover: a diagram cropped to fill its box
+                  loses the edges of the thing it is explaining. */}
+              <img
+                src={blueprint.src}
+                alt="A service blueprint of campaign fulfilment. Five phases run left to right: pre-sign, pre-launch, launch, post-launch and feedback. Seven layers run top to bottom: physical evidence, consumer, brand, account, operations, partner and systems, divided by the line of interaction, the line of visibility and the line of internal interaction. Seven handoffs are marked where work crosses between layers; three of those are also marked as fail points, two consumer and brand steps are marked as key touchpoints, and returns is marked as having no agreed process."
+                className="w-full h-full object-contain"
+              />
+            </Figure>
+          </div>
+
+          {/* Phone, 3 of 3: who it is for, then the way into the work. */}
+          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-2 space-y-8">
             {/* Each dot travels with the label before it. As separate flex
                 children they could wrap onto a new line on their own, which
                 put a stray dot at the start of a row at tablet width. */}
@@ -149,25 +180,6 @@ export default function PortfolioHomepage() {
                 View selected work <ArrowDownRight className="w-4 h-4 text-[#A47864]" />
               </a>
             </div>
-          </div>
-
-          {/* The same frame the case studies use. No figure number: there is
-              only one figure on this page, and a number with nothing to count
-              is the problem we just took off the work index. */}
-          <div className="lg:col-span-6">
-            <Figure
-              caption="Service blueprint: campaign fulfilment, mapped across roles, handoffs and systems"
-              ratio="aspect-[4/3]"
-              flush
-            >
-              {/* object-contain, not cover: a diagram cropped to fill its box
-                  loses the edges of the thing it is explaining. */}
-              <img
-                src={blueprint.src}
-                alt="A service blueprint of campaign fulfilment. Five phases run left to right: pre-sign, pre-launch, launch, post-launch and feedback. Seven layers run top to bottom: physical evidence, consumer, brand, account, operations, partner and systems, divided by the line of interaction, the line of visibility and the line of internal interaction. Seven handoffs are marked where work crosses between layers; three of those are also marked as fail points, two consumer and brand steps are marked as key touchpoints, and returns is marked as having no agreed process."
-                className="w-full h-full object-contain"
-              />
-            </Figure>
           </div>
         </section>
 
