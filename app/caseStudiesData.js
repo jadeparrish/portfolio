@@ -622,16 +622,28 @@ export function SiteFooter({ wide }) {
    saying the capture has not happened yet. That note is #5F5F5F rather than
    the #6A6A6A used on paper elsewhere, because it sits on a tint: the tints
    run as dark as #DDE3E6, where #6A6A6A falls to 4.17:1. */
-export function Figure({ n, caption, tint = 'bg-[#F4F2EE]', ratio = 'aspect-[16/9]', flush, children }) {
+/* `mount` strengthens the frame without touching what is inside it. The hero
+   blueprint is white on #F9F8F6 paper behind a hairline at 1.37:1, so at page
+   scale the most important image on the site reads as an absence rather than
+   an object. This lifts the border to 1.72:1 and gives the caption bar enough
+   fill to act as a head. The image is left exactly as it is: white paper is
+   right for a service blueprint, it was the frame around it that was missing. */
+export function Figure({ n, caption, tint = 'bg-[#F4F2EE]', ratio = 'aspect-[16/9]', flush, mount, children }) {
   return (
     <figure
       className={
         flush
-          ? 'border border-neutral-900/15'
+          ? `border ${mount ? 'border-neutral-900/25' : 'border-neutral-900/15'}`
           : '-mx-6 sm:mx-0 my-10 border-y sm:border-x border-neutral-900/15'
       }
     >
-      <figcaption className="flex items-baseline gap-3 px-4 sm:px-5 py-2.5 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
+      <figcaption
+        className={`flex items-baseline gap-3 px-4 sm:px-5 py-2.5 border-b ${
+          mount
+            ? 'border-neutral-900/25 bg-neutral-900/[0.045]'
+            : 'border-neutral-900/15 bg-neutral-900/[0.025]'
+        }`}
+      >
         {n && (
           <span className="flex-none font-mono text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-900 border border-neutral-900/20 px-1.5 py-0.5">
             Fig.&nbsp;{n}
