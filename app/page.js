@@ -36,12 +36,14 @@ const whatIDo = [
   },
 ];
 
-/* No href for a piece that isn't written yet: the card below already
-   renders those as plain, dimmed and unclickable. */
-const thoughts = thinkingList.map((a) => ({
-  ...a,
-  href: a.hasPage ? `/thinking/${a.slug}` : null,
-}));
+/* Published pieces only. An unwritten one rendered dimmed and unclickable is
+   a dead end in the bottom-right corner, where the eye finishes the page, and
+   it was the most current-sounding title of the four -- so the one a visitor
+   most wanted to click was the one that went nowhere. The full list, written
+   or not, still lives on /thinking. */
+const thoughts = thinkingList
+  .filter((a) => a.hasPage)
+  .map((a) => ({ ...a, href: `/thinking/${a.slug}` }));
 
 /* The homepage shows three. Everything else lives on /work, so the two
    don't have to be kept in step by hand. */
@@ -143,6 +145,7 @@ export default function PortfolioHomepage() {
               caption="Service blueprint: campaign fulfilment, mapped across roles, handoffs and systems"
               ratio="aspect-[4/3]"
               flush
+              mount
             >
               {/* object-contain, not cover: a diagram cropped to fill its box
                   loses the edges of the thing it is explaining. */}
