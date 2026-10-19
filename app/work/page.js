@@ -23,7 +23,7 @@ function WorkRow({ item }) {
   const inner = (
     <>
       <div className="sm:w-16 shrink-0">
-        <span className="font-mono text-lg text-neutral-500">{item.num}</span>
+        <span className="font-mono text-lg text-[#6A6A6A]">{item.num}</span>
       </div>
       <div className="flex-1">
         <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium mb-2">
