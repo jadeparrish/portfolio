@@ -108,19 +108,19 @@ export default function ReportingCaseStudy() {
                 Reporting had become fragmented and unreliable.
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Mission Control was built for engineers, but Commercial were relying on it too</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Campaign Manager split reporting across multiple isolated pages</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Data inconsistencies eroded trust internally and with brands</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Mission Control was built for engineers, but Commercial were relying on it too</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Campaign Manager split reporting across multiple isolated pages</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Data inconsistencies eroded trust internally and with brands</li>
               </ul>
             </div>
 
             <div>
               <SubLabel>Challenges Identified</SubLabel>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Different refresh rates between systems created data mismatches</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Duplicated charts and conflicting metrics across tools</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> No shared understanding of how datasets connected</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Heavy manual effort to compile brand reports</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Different refresh rates between systems created data mismatches</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Duplicated charts and conflicting metrics across tools</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> No shared understanding of how datasets connected</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Heavy manual effort to compile brand reports</li>
               </ul>
             </div>
 
@@ -163,9 +163,9 @@ export default function ReportingCaseStudy() {
                 their workflows and captured pain points. The findings were consistent:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> People were piecing together insights across multiple tools</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Each team defined &ldquo;reporting&rdquo; differently (fulfilment vs engagement vs exports)</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> No one had a full, end-to-end picture of campaign performance</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> People were piecing together insights across multiple tools</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Each team defined &ldquo;reporting&rdquo; differently (fulfilment vs engagement vs exports)</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> No one had a full, end-to-end picture of campaign performance</li>
               </ul>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 That was enough to get the rebuild properly backed.
@@ -199,10 +199,10 @@ export default function ReportingCaseStudy() {
                 I defined a single Reporting Hub that could:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Unify data sources under one structure</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Standardise metrics, terminology and visualisation styles</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Simplify navigation, so people could find things without being told where they were</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Show where a number came from, so people could check it rather than take it on faith</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Unify data sources under one structure</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Standardise metrics, terminology and visualisation styles</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Simplify navigation, so people could find things without being told where they were</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Show where a number came from, so people could check it rather than take it on faith</li>
               </ul>
             </div>
 
@@ -212,11 +212,11 @@ export default function ReportingCaseStudy() {
                 I created a series of prototypes exploring:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Mapped how data moved between systems as it was, and as it needed to be</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Card-based layouts grouping metrics by performance type</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Standardised filters, comparison modes and accessibility patterns</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Error and low-data states, so a gap looked like a gap rather than a zero</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Early versions of the brand-level summaries, and the structures the ROI work would later need</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Mapped how data moved between systems as it was, and as it needed to be</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Card-based layouts grouping metrics by performance type</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Standardised filters, comparison modes and accessibility patterns</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Error and low-data states, so a gap looked like a gap rather than a zero</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Early versions of the brand-level summaries, and the structures the ROI work would later need</li>
               </ul>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 Each iteration was reviewed with Product, Commercial and Engineering to
