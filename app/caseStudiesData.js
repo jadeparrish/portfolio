@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ArrowUp, Layers, FileText, Wrench, Sparkles } from 'lucide-react';
 import debtAdviceCard from './debt-advice-card.png';
 import reportingCard from './reporting-card.png';
+import netixCard from './netix-card.png';
 
 /* Ordered by theme, because /work groups them that way. The two-digit
    number is derived from position, so reordering or inserting a piece
@@ -132,6 +133,9 @@ const work = [
       'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%. Carried it through a rebrand across UK and French teams, then white-labelled it for La-Z-Boy and an IKEA bid, while advocating for WCAG 2.1 AA accessibility.',
     cta: 'View case study',
     href: '/work/netix',
+    image: netixCard,
+    imageAlt:
+      'Two versions of the same shipping note screen, stacked. Above, the platform as it was: a blue title bar, a strip of small toolbar icons, two columns of bordered input boxes packed tightly together, collapsed section headers, and a dense grid with two highlighted quantity columns. Below, the rebuilt version: a dark grey bar, a single error summary panel outlined in red listing what needs fixing, a white card holding four labelled values, form fields with underlines where two show inline validation errors, and a table with one header row rather than a border around every cell.',
     tint: 'bg-[#E9E4DE]',
     hasPage: true,
     featured: true,
