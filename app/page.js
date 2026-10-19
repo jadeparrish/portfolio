@@ -103,7 +103,7 @@ export default function PortfolioHomepage() {
             when they were a single div, so desktop geometry does not move. */}
         <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-x-20 lg:gap-y-8 items-center border-b border-neutral-200/80">
           {/* Phone, 1 of 3: availability, headline, what I do. */}
-          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-1 space-y-8">
+          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-1 lg:self-end space-y-8">
             {/* Availability opens the hero rather than sitting in the header.
                 Contact is in the nav from every page and states it there, so
                 a strip on every page was saying it twice. Here it reads as
@@ -155,7 +155,7 @@ export default function PortfolioHomepage() {
           </div>
 
           {/* Phone, 3 of 3: who it is for, then the way into the work. */}
-          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-2 space-y-8">
+          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-2 lg:self-start space-y-8">
             {/* Each dot travels with the label before it. As separate flex
                 children they could wrap onto a new line on their own, which
                 put a stray dot at the start of a row at tablet width. */}
@@ -330,11 +330,17 @@ export default function PortfolioHomepage() {
         <section id="work" className="pt-16 lg:pt-24">
           <SectionLabel>Selected Work</SectionLabel>
           <div className="divide-y divide-neutral-200/70">
-            {caseStudies.map((item) => (
-              <div
-                key={item.num}
-                className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 items-start md:items-center py-10 lg:py-12 first:pt-0 last:pb-0"
-              >
+            {caseStudies.map((item) => {
+              /* The whole card is the link, the way a row on the work index
+                 is. Before this only the "Case study" label was clickable,
+                 so the title -- the obvious thing to click -- did nothing,
+                 and the hover styling on it was writing a cheque the markup
+                 could not cash. One anchor per card, not two, so the title
+                 and the label cannot read as separate destinations. */
+              const shell =
+                'group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 items-start md:items-center py-10 lg:py-12 first:pt-0 last:pb-0';
+              const inner = (
+                <>
                 <div className="md:col-span-1 lg:col-span-3">
                   {/* Same materials as a Figure -- the frame, the tint, the
                       engraved plate, the mono empty state -- but no caption
@@ -373,7 +379,7 @@ export default function PortfolioHomepage() {
                       {item.tag}
                       {item.year && <> &middot; {item.year}</>}
                     </p>
-                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553]">
+                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-1 decoration-[#8D6553]/40">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -382,22 +388,36 @@ export default function PortfolioHomepage() {
                   </div>
 
                   <div className="shrink-0 lg:pt-1 lg:text-right">
-                    {item.href ? (
-                      <a
-                        href={item.href}
-                        className="inline-flex items-center gap-1.5 py-2 -my-2 text-xs text-neutral-900 font-medium tracking-wider uppercase hover:text-[#8D6553] group-hover:translate-x-1 transition-all"
-                      >
-                        {item.cta} <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#8D6553] transition-colors" />
-                      </a>
-                    ) : (
-                      <span className="inline-flex items-center gap-1.5 text-xs text-neutral-600 font-medium tracking-wider uppercase">
-                        {item.cta}
-                      </span>
-                    )}
+                    {/* A label now, not a second anchor: the card around it
+                        carries the link. It still follows the hover so the
+                        card reacts as one piece. */}
+                    <span
+                      className={`inline-flex items-center gap-1.5 py-2 -my-2 text-xs font-medium tracking-wider uppercase transition-all ${
+                        item.href
+                          ? 'text-neutral-900 group-hover:text-[#8D6553] group-hover:translate-x-1'
+                          : 'text-neutral-600'
+                      }`}
+                    >
+                      {item.cta}
+                      {item.href && (
+                        <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#8D6553] transition-colors" />
+                      )}
+                    </span>
                   </div>
                 </div>
-              </div>
-            ))}
+                </>
+              );
+
+              return item.href ? (
+                <a key={item.num} href={item.href} className={shell}>
+                  {inner}
+                </a>
+              ) : (
+                <div key={item.num} className={`${shell} opacity-70`}>
+                  {inner}
+                </div>
+              );
+            })}
           </div>
 
           {/* Sits in a band between two rules, 24px either side of the link,
