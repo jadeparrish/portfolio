@@ -135,7 +135,7 @@ const work = [
     href: '/work/netix',
     image: netixCard,
     imageAlt:
-      'Two versions of the same shipping note screen, stacked. Above, the platform as it was: a blue title bar, a strip of small toolbar icons, two columns of bordered input boxes packed tightly together, collapsed section headers, and a dense grid with two highlighted quantity columns. Below, the rebuilt version: a dark grey bar, a single error summary panel outlined in red listing what needs fixing, a white card holding four labelled values, form fields with underlines where two show inline validation errors, and a table with one header row rather than a border around every cell.',
+      'The rebuilt platform showing a list of 617 documents. A dark grey bar runs across the top and a dark navigation rail down the left. Above the table sit filter chips and an open filter panel. The table lists reference dates, sellers, delivery locations and buyers, and its last two columns carry status pills in green, red, amber and grey reading complete, failed, held and pending. Paging controls sit along the bottom.',
     tint: 'bg-[#E9E4DE]',
     hasPage: true,
     featured: true,
