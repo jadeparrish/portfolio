@@ -25,7 +25,7 @@ const work = [
     slug: 'consent',
     year: '2025',
     group: 'service',
-    title: 'Turning a compliance risk into a simple first step',
+    title: 'Consent that protects users without adding friction',
     tag: 'Compliance & Service Design',
     description:
       'Led a review of how feedback journeys captured consent, then designed one global pattern that protects users and brands without adding friction.',
@@ -67,7 +67,7 @@ const work = [
     slug: 'integrations',
     year: '2025',
     group: 'systems',
-    title: 'Turning a technical bottleneck into a guided setup',
+    title: 'From developer ticket to guided setup',
     tag: 'Integrations & Service Design',
     description:
       'Turned seven separate integration setups into one guided, self-serve flow, so teams could connect platforms such as Meta and Klaviyo without Engineering.',
@@ -126,7 +126,7 @@ const work = [
     slug: 'netix',
     year: '2018 to 2022',
     group: 'systems',
-    title: 'Making a legacy platform simple, accessible and built to scale',
+    title: 'A legacy platform made simple, accessible and ready to scale',
     tag: 'Enterprise Product & Rebrand',
     description:
       'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%. Carried it through a rebrand across UK and French teams, then white-labelled it for La-Z-Boy and an IKEA bid, while advocating for WCAG 2.1 AA accessibility.',
@@ -154,7 +154,7 @@ const work = [
     slug: 'debt-advice',
     year: '2014 to 2017',
     group: 'service',
-    title: 'Turning a debt enquiry into something people could act on',
+    title: 'A debt enquiry that ends with a plan',
     tag: 'Research & Service Design',
     description:
       'Designed a debt diagnostic and a personalised report for people working out how to repay what they owed, researched by listening to the calls, then defined the template every debt brand after it was built from.',
