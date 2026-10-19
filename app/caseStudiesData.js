@@ -349,7 +349,7 @@ export function ArticleFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/thinking"
-          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
+          className="group inline-flex items-center gap-1.5 py-2 -my-2 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to thinking
         </Link>
@@ -366,7 +366,7 @@ export function IndexFooter() {
       <div className="text-center pt-4">
         <Link
           href="/"
-          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
+          className="group inline-flex items-center gap-1.5 py-2 -my-2 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to home
         </Link>
@@ -386,7 +386,7 @@ export function CaseStudyFooter({ currentSlug }) {
       <div className="text-center pt-4">
         <Link
           href="/work"
-          className="group inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
+          className="group inline-flex items-center gap-1.5 py-2 -my-2 text-xs uppercase tracking-[0.15em] font-medium text-neutral-600 hover:text-[#8D6553] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" /> Back to selected work
         </Link>
