@@ -30,13 +30,13 @@ function WorkRow({ item }) {
           {item.tag}
           {item.year && <> &middot; {item.year}</>}
         </p>
-        <h2 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug tracking-tight [text-wrap:balance] transition-colors group-hover:text-[#8D6553]">
+        <h2 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug tracking-tight [text-wrap:balance] transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-1 decoration-[#8D6553]/40">
           {item.title}
         </h2>
         <p className="mt-3 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
           {item.description}
         </p>
-        <p className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-neutral-900">
+        <p className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-neutral-900 transition-colors group-hover:text-[#8D6553]">
           {item.cta}
           {item.hasPage && (
             <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
