@@ -146,12 +146,12 @@ export default function StockCaseStudy() {
             <div>
               <SubLabel>Exploration</SubLabel>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Worked through the fulfilment flow diagrams to see what depended on what, who depended on it, and what was responsible for what</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Created dashboard sketches and interactive prototypes</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tested different ways of grouping stock, by product, by activity and by partition, looking for one that made sense however a campaign had been set up</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Tried nested and shared views, so you could see at a glance when several products or markets were drawing on the same stock</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Worked on colour, hierarchy and wording until bundles, single products and regional stock read as clearly different things</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Designed dashboards for delivery times and dispatch status, so delays and anything needing attention surfaced on their own</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Worked through the fulfilment flow diagrams to see what depended on what, who depended on it, and what was responsible for what</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Created dashboard sketches and interactive prototypes</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Tested different ways of grouping stock, by product, by activity and by partition, looking for one that made sense however a campaign had been set up</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Tried nested and shared views, so you could see at a glance when several products or markets were drawing on the same stock</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Worked on colour, hierarchy and wording until bundles, single products and regional stock read as clearly different things</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Designed dashboards for delivery times and dispatch status, so delays and anything needing attention surfaced on their own</li>
               </ul>
 
               <Figure n="02" tint="bg-[#DDE3E6]" caption="Stock and SLA dashboard explorations" />
@@ -163,11 +163,11 @@ export default function StockCaseStudy() {
                 The final designs introduced:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> One set of filters, by product, activity and partition</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Clear indicators showing used versus total stock</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Clear signposting wherever stock was shared, so nobody counted it twice</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Visible states for low stock or a missed delivery window</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Overview cards for how exports and dispatches were performing, flagging anything that needed action</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> One set of filters, by product, activity and partition</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Clear indicators showing used versus total stock</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Clear signposting wherever stock was shared, so nobody counted it twice</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Visible states for low stock or a missed delivery window</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Overview cards for how exports and dispatches were performing, flagging anything that needed action</li>
               </ul>
             </div>
 
