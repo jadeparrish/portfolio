@@ -29,7 +29,7 @@ function Bullets({ items }) {
     <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span aria-hidden="true" className="text-[#A47864]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#8D6553]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -115,7 +115,7 @@ export default function CommercialValueCaseStudy() {
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-3">
             Measuring long-term value
           </h2>
-          <p className="text-neutral-500 leading-relaxed mb-10">
+          <p className="text-[#6A6A6A] leading-relaxed mb-10">
             Moving the conversation from &ldquo;did it work?&rdquo; to &ldquo;what value
             did it create?&rdquo;
           </p>
@@ -243,7 +243,7 @@ export default function CommercialValueCaseStudy() {
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-3">
             Comparison tables
           </h2>
-          <p className="text-neutral-500 leading-relaxed mb-10">
+          <p className="text-[#6A6A6A] leading-relaxed mb-10">
             A faster, more consistent way to compare campaign performance.
           </p>
 
