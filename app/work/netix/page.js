@@ -107,10 +107,10 @@ export default function NetIXCaseStudy() {
                 people managing business operations.
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Complex terminology and poor hierarchy</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Minimal validation, feedback or error handling</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Inconsistent layouts and navigation</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> No scalability for tablet or desktop responsiveness</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Complex terminology and poor hierarchy</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Minimal validation, feedback or error handling</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Inconsistent layouts and navigation</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> No scalability for tablet or desktop responsiveness</li>
               </ul>
             </div>
 
@@ -136,10 +136,10 @@ export default function NetIXCaseStudy() {
                 From there, I designed new structures for:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Dashboards showing live order and invoice volumes at a glance</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Editor and process screens simplified for data entry and validation</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Document overviews with clear state, buyer and seller visibility</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Reusable tables with filtering and inline actions</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Dashboards showing live order and invoice volumes at a glance</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Editor and process screens simplified for data entry and validation</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Document overviews with clear state, buyer and seller visibility</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Reusable tables with filtering and inline actions</li>
               </ul>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 I built it as modules rather than pages, so the same pieces worked at any
@@ -166,20 +166,20 @@ export default function NetIXCaseStudy() {
               <div className="space-y-4">
                 <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
                   &ldquo;Looks 100 times better and is a lot easier to use.&rdquo;
-                  <footer className="mt-1 text-sm not-italic font-sans text-neutral-500">
+                  <footer className="mt-1 text-sm not-italic font-sans text-[#6A6A6A]">
                     &ndash; Origin Storage
                   </footer>
                 </blockquote>
                 <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
                   &ldquo;A better platform from a technology and compatibility point of
                   view.&rdquo;
-                  <footer className="mt-1 text-sm not-italic font-sans text-neutral-500">
+                  <footer className="mt-1 text-sm not-italic font-sans text-[#6A6A6A]">
                     &ndash; Radley
                   </footer>
                 </blockquote>
                 <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
                   &ldquo;More user-friendly. Looks very good, easy on the eye.&rdquo;
-                  <footer className="mt-1 text-sm not-italic font-sans text-neutral-500">
+                  <footer className="mt-1 text-sm not-italic font-sans text-[#6A6A6A]">
                     &ndash; A J Barbers
                   </footer>
                 </blockquote>
@@ -288,11 +288,11 @@ export default function NetIXCaseStudy() {
             <div>
               <SubLabel>Challenges</SubLabel>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Redesigning a product that had just launched</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Coordinating implementation between engineering teams in the UK, France and Egypt</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Redesigning a product that had just launched</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Coordinating implementation between engineering teams in the UK, France and Egypt</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
               </ul>
             </div>
 
@@ -337,8 +337,8 @@ export default function NetIXCaseStudy() {
                 usability while aligning it with Cegedim&rsquo;s broader SaaS suite.
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#A47864]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
               </ul>
             </div>
           </div>
