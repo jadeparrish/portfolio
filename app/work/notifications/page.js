@@ -44,7 +44,7 @@ export default function NotificationsCaseStudy() {
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
-        <section className="pb-8 border-b border-neutral-200/80">
+        <section className="pb-8 rule rule-10">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
             Systems Design &middot; 2024 to 2025
           </p>
@@ -58,7 +58,7 @@ export default function NotificationsCaseStudy() {
         </section>
 
         {/* At a Glance */}
-        <section className="py-8 border-b border-neutral-200/80">
+        <section className="py-8 rule rule-11">
           <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
@@ -81,7 +81,7 @@ export default function NotificationsCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-0">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -102,7 +102,7 @@ export default function NotificationsCaseStudy() {
         </section>
 
         {/* The Problem */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-1">
           <SectionLabel>The Problem</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             CSMs were checking stock balances by hand in Campaign Manager, with no
@@ -122,7 +122,7 @@ export default function NotificationsCaseStudy() {
         </section>
 
         {/* My Role */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-2">
           <SectionLabel>My Role</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             With our Product Manager, I led the design definition of the system, getting
@@ -146,7 +146,7 @@ export default function NotificationsCaseStudy() {
         </section>
 
         {/* Process */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-3">
           <SectionLabel>Process</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I began with quick sketches and low-fidelity prototypes to clarify scope and
@@ -175,7 +175,7 @@ export default function NotificationsCaseStudy() {
         </section>
 
         {/* Outcome and Next Steps */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-4">
           <SectionLabel>Outcome and Next Steps</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The framework has three parts. The first release, in 2025, focused on stock
@@ -205,7 +205,7 @@ export default function NotificationsCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-5">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
