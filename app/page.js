@@ -59,6 +59,17 @@ const caseStudies = caseStudiesList.filter((item) => item.featured);
    why the hero's "lives." is the same value. */
 const sectorColour = ['#3C70C9', '#135461', '#31814E', '#956B07', '#AA558D'];
 
+/* The hero's shorter list is the same taxonomy, abbreviated, so it takes the
+   same values. "Complex Digital Products" is "Product & Platform Teams", which
+   is why it is ochre and not plum: plum is Charities, and a colour that means
+   two things means nothing. */
+const heroSectors = [
+  { label: 'Public Sector', colour: sectorColour[0] },
+  { label: 'Healthcare', colour: sectorColour[1] },
+  { label: 'Education', colour: sectorColour[2] },
+  { label: 'Complex Digital Products', colour: sectorColour[3] },
+];
+
 const whoIWorkWith = [
   {
     icon: Landmark,
@@ -169,20 +180,31 @@ export default function PortfolioHomepage() {
 
           {/* Phone, 3 of 3: who it is for, then the way into the work. */}
           <div className="lg:col-span-6 lg:col-start-1 lg:row-start-2 lg:self-start space-y-8">
-            {/* Each dot travels with the label before it. As separate flex
-                children they could wrap onto a new line on their own, which
-                put a stray dot at the start of a row at tablet width. */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-[#6A6A6A] tracking-wide">
-              {['Public Sector', 'Healthcare', 'Education', 'Complex Digital Products'].map(
-                (label, i, all) => (
-                  <span key={label} className="inline-flex items-center gap-x-6">
-                    {label}
-                    {i < all.length - 1 && (
-                      <span className="w-1 h-1 rounded-full bg-neutral-300" />
-                    )}
-                  </span>
-                )
-              )}
+            {/* The same four categories as "Where I can help", carrying the
+                same colours, so a reader meets Public Sector blue here and
+                again further down the page. Complex Digital Products takes
+                ochre because it is Product & Platform Teams in that list.
+
+                The dot leads its label rather than separating two of them:
+                with four categories and three gaps, a separator always left
+                one category unmarked. 10px inside a pair against 28px between
+                pairs, so each mark reads as belonging to the words after it.
+
+                Dot and label stay in one flex child, otherwise a dot can wrap
+                onto a new line alone and start a row with a stray mark. The
+                dot is aria-hidden: the label already carries the meaning, and
+                colour is never the only thing saying what a category is. */}
+            <div className="flex flex-wrap items-center gap-x-7 gap-y-3 pt-2 text-xs text-[#6A6A6A] tracking-wide">
+              {heroSectors.map(({ label, colour }) => (
+                <span key={label} className="inline-flex items-center gap-x-2.5">
+                  <span
+                    aria-hidden="true"
+                    className="w-[5px] h-[5px] rounded-full flex-none"
+                    style={{ backgroundColor: colour }}
+                  />
+                  {label}
+                </span>
+              ))}
             </div>
 
             <div className="pt-2">
