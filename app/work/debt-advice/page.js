@@ -47,7 +47,7 @@ export default function DebtAdviceCaseStudy() {
             Research &amp; Service Design &middot; 2014 to 2017
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Turning a debt enquiry into something people could act on.
+            Telling people the truth about their money.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             A debt diagnostic and a personalised report, for people working out how to
