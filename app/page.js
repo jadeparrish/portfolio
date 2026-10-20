@@ -49,6 +49,16 @@ const thoughts = thinkingList
    don't have to be kept in step by hand. */
 const caseStudies = caseStudiesList.filter((item) => item.featured);
 
+/* Each sector is a category, so each icon carries a category colour rather
+   than all five sharing one grey. These are the diagram palette: every value
+   sits at or above 4.5:1 on paper, so one value works as both a mark and a
+   label on it, and the lightness varies between hues deliberately. An
+   isoluminant set gives a colour-blind viewer nothing to separate on.
+
+   Plum is the person in that palette, which is why it carries Charities, and
+   why the hero's "lives." is the same value. */
+const sectorColour = ['#3C70C9', '#135461', '#31814E', '#956B07', '#AA558D'];
+
 const whoIWorkWith = [
   {
     icon: Landmark,
@@ -440,9 +450,13 @@ export default function PortfolioHomepage() {
         <section className="py-16 lg:py-24 border-b border-neutral-200/80">
           <SectionLabel>Where I Can Help</SectionLabel>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
-            {whoIWorkWith.map((item) => (
+            {whoIWorkWith.map((item, i) => (
               <div key={item.title} className="space-y-3">
-                <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
+                <item.icon
+                  className="w-5 h-5"
+                  strokeWidth={1.5}
+                  style={{ color: sectorColour[i] }}
+                />
                 <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
                 <p className="text-xs text-[#6A6A6A] leading-relaxed">{item.description}</p>
               </div>
