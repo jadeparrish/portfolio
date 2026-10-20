@@ -70,7 +70,7 @@ export default function ThinkingIndex() {
           </p>
         </section>
 
-        <div className="py-12 rule rule-5 divide-y divide-neutral-200/70">
+        <div className="py-12 border-b border-neutral-200/80 divide-y divide-neutral-200/70">
           {thinkingList.map((article) => (
             <ArticleRow key={article.slug} article={article} />
           ))}
