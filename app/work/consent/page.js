@@ -33,7 +33,7 @@ export default function ConsentCaseStudy() {
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
-        <section className="pb-8 border-b border-neutral-200/80">
+        <section className="pb-8 rule rule-10">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
             Compliance &amp; Service Design &middot; 2025
           </p>
@@ -47,7 +47,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* At a Glance */}
-        <section className="py-8 border-b border-neutral-200/80">
+        <section className="py-8 rule rule-11">
           <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
@@ -70,7 +70,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-0">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -89,7 +89,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* The Problem */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-1">
           <SectionLabel>The Problem</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             In the existing flow, responses could be saved before people gave consent. For
@@ -104,7 +104,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* Implications */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-2">
           <SectionLabel>The Trade-Off</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             Moving consent upfront increases legal confidence, but it often causes a small
@@ -115,7 +115,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* My Role */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-3">
           <SectionLabel>My Role</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I led the audit and redesign end to end. That included:
@@ -137,7 +137,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* Process */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-4">
           <SectionLabel>Process</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             With our Product Manager, I analysed historic performance data for the
@@ -163,7 +163,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* Status / Next Steps */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-5">
           <SectionLabel>Rollout and Measures</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The new journeys were designed to roll out first to selected brand partners.
@@ -184,7 +184,7 @@ export default function ConsentCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-6">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
