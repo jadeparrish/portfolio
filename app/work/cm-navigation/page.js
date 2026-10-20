@@ -44,7 +44,7 @@ export default function NavigationCaseStudy() {
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
-        <section className="pb-8 border-b border-neutral-200/80">
+        <section className="pb-8 rule rule-7">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
             Information Architecture &middot; 2025
           </p>
@@ -58,7 +58,7 @@ export default function NavigationCaseStudy() {
         </section>
 
         {/* At a Glance */}
-        <section className="py-8 border-b border-neutral-200/80">
+        <section className="py-8 rule rule-8">
           <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
@@ -81,7 +81,7 @@ export default function NavigationCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-9">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -106,7 +106,7 @@ export default function NavigationCaseStudy() {
         </section>
 
         {/* Understanding the Problem */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-10">
           <SectionLabel>Understanding the Problem</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The legacy navigation had become fragmented and unintuitive.
@@ -125,7 +125,7 @@ export default function NavigationCaseStudy() {
         </section>
 
         {/* Redefining Hierarchy and Flow */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-11">
           <SectionLabel>Redefining Hierarchy and Flow</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I mapped the full product architecture and grouped actions by user intent, not
@@ -161,7 +161,7 @@ export default function NavigationCaseStudy() {
         </section>
 
         {/* Collaboration and Validation */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-0">
           <SectionLabel>Collaboration and Validation</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             Working with our Product Director and the Engineering leads, I tested early
@@ -182,7 +182,7 @@ export default function NavigationCaseStudy() {
         </section>
 
         {/* Outcome */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-1">
           <SectionLabel>Outcome</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The redesigned navigation delivered:
@@ -203,7 +203,7 @@ export default function NavigationCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-2">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -221,7 +221,7 @@ export default function NavigationCaseStudy() {
           </div>
         </section>
 
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-3">
           <Testimonial
             quote={
               <>
