@@ -20,7 +20,7 @@ function Bullets({ items }) {
     <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span aria-hidden="true" className="text-[#8D6553]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#49769E]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -131,7 +131,7 @@ export default function ConsentCaseStudy() {
           />
           <p className="font-serif text-2xl text-neutral-900 mt-8">
             What changed was{' '}
-            <span className="text-[#A47864] italic">compliance and the systems behind it</span>,
+            <span className="text-[#49769E] italic">compliance and the systems behind it</span>,
             not the look of the screen.
           </p>
         </section>
