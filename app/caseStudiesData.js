@@ -280,22 +280,45 @@ export function CaseStudyNav({ currentSlug }) {
 function ContactCTA() {
   return (
     <>
-      {/* Contact CTA: 48px below, 40px above. The heading's line-height adds ~8px of
-          invisible space above its letters, so pt-10 makes the gaps look equal. */}
-      <section className="pt-10 pb-12 rule rule-0 text-center space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 tracking-tight">
-          Let&rsquo;s improve something together.
-        </h2>
-        <div>
-          <a
-            href="mailto:hello@jadeparrish.me"
-            className="group text-base sm:text-lg font-serif text-neutral-900 underline decoration-[1.5px] underline-offset-4 decoration-neutral-500 transition-colors"
-          >
-            hello@jadeparrish.me{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1">
-              &rarr;
+      {/* The homepage panel at a smaller scale, rather than a different design.
+          Same frame, same head bar, same availability lamp, so a visitor who
+          lands straight on a case study gets the one commercial fact the
+          homepage gives them: part-time, two to three days a week.
+
+          Scaled down because this sits above "Next" and the reader is still
+          working through evidence, not yet deciding. Heading drops from
+          text-4xl to text-2xl, the button from px-6 py-3.5 to px-5 py-3, and
+          the location bar is dropped: where she is matters at the point of
+          getting in touch, not at the end of one case study. */}
+      <section className="pt-10 pb-12 rule rule-0">
+        <div className="max-w-lg mx-auto border border-neutral-900/15 bg-white/50">
+          <div className="flex items-center justify-between gap-4 px-4 py-2.5 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
+            <span className="font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-neutral-900 border border-neutral-900/20 px-1.5 py-0.5">
+              Contact
             </span>
-          </a>
+            <span className="flex items-center gap-2 font-mono text-[10px] font-medium uppercase tracking-[0.1em] text-[#5C7355] whitespace-nowrap">
+              <span className="w-[6px] h-[6px] rounded-full bg-[#5C7355] flex-none" />
+              Available part-time
+            </span>
+          </div>
+
+          <div className="px-6 sm:px-8 py-8 text-center space-y-4">
+            <h2 className="text-2xl sm:text-[26px] font-serif text-neutral-900 tracking-tight leading-tight [text-wrap:balance]">
+              Let&rsquo;s improve something together.
+            </h2>
+            <p className="text-[14px] text-[#6E6E6E] leading-relaxed max-w-xs mx-auto [text-wrap:pretty]">
+              Open to part-time roles and fractional contracts, two to three days a week.
+            </p>
+            <div className="pt-1">
+              <a
+                href="mailto:hello@jadeparrish.me"
+                className="group inline-flex items-center gap-2.5 bg-neutral-900 text-[#F9F8F6] px-5 py-3 text-[13px] font-medium tracking-wide hover:bg-[#49769E] transition-colors"
+              >
+                hello@jadeparrish.me
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </>
