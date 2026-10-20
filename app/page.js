@@ -272,7 +272,7 @@ export default function PortfolioHomepage() {
                 </p>
               </div>
 
-              <div className="pt-8 rule rule-t rule-0">
+              <div className="pt-8 border-t border-neutral-200/80">
                 <Testimonial
                   quote={
                     <>
@@ -290,7 +290,7 @@ export default function PortfolioHomepage() {
                 />
               </div>
 
-              <div className="pt-8 rule rule-t rule-1">
+              <div className="pt-8 border-t border-neutral-200/80">
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   Capabilities
                 </p>
@@ -464,7 +464,7 @@ export default function PortfolioHomepage() {
 
           {/* Sits in a band between two rules, 24px either side of the link,
               the same rhythm the More work summary had. */}
-          <div className="mt-12 py-6 rule rule-2">
+          <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/work"
               className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 transition-colors"
@@ -550,7 +550,7 @@ export default function PortfolioHomepage() {
             })}
           </div>
 
-          <div className="mt-12 py-6 rule rule-3">
+          <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/thinking"
               className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 transition-colors"
