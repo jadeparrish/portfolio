@@ -55,7 +55,7 @@ export default function NotFound() {
             I spend a good deal of this website arguing that{' '}
             <Link
               href="/thinking/undocumented"
-              className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
+              className="underline underline-offset-4 decoration-neutral-500 transition-colors"
             >
               most complex systems are just undocumented ones
             </Link>
@@ -68,7 +68,7 @@ export default function NotFound() {
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-6">
             Reflection
           </p>
-          <p className="font-serif italic text-[24px] sm:text-[28px] text-[#8D6553] leading-[1.35] [text-wrap:balance]">
+          <p className="font-serif italic text-[24px] sm:text-[28px] text-[#49769E] leading-[1.35] [text-wrap:balance]">
             Fix the link.
           </p>
         </section>
@@ -78,10 +78,10 @@ export default function NotFound() {
             <Link
               key={way.href}
               href={way.href}
-              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 transition-colors"
             >
               {way.label}
-              <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#49769E] transition-transform group-hover:translate-x-1" />
             </Link>
           ))}
         </nav>
