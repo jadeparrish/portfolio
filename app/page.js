@@ -124,7 +124,7 @@ export default function PortfolioHomepage() {
             column at lg. Explicit rows rejoin the two halves in column 1; the
             lg row gap is 8 because that is the space-y-8 the halves shared
             when they were a single div, so desktop geometry does not move. */}
-        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-x-20 lg:gap-y-8 items-center border-b border-neutral-200/80">
+        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-x-20 lg:gap-y-8 items-center rule rule-8">
           {/* Phone, 1 of 3: availability, headline, what I do. */}
           <div className="lg:col-span-6 lg:col-start-1 lg:row-start-1 lg:self-end space-y-8">
             {/* Availability opens the hero rather than sitting in the header.
@@ -221,7 +221,7 @@ export default function PortfolioHomepage() {
         {/* py-16 lg:py-24, same as every other content section. This one was
             py-20 lg:py-28, and because it ends on a short list of small mono
             type the extra 16px read as a gap rather than as breathing room. */}
-        <section id="about" className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section id="about" className="py-16 lg:py-24 rule rule-9">
           {/* Stacked until lg, like the hero. Side by side at tablet the text
               ran far longer than the photo and left a tall empty column beside
               it; stacked, the photo caps at max-w-xs and centres. */}
@@ -272,7 +272,7 @@ export default function PortfolioHomepage() {
                 </p>
               </div>
 
-              <div className="pt-8 border-t border-neutral-200/80">
+              <div className="pt-8 rule rule-t rule-0">
                 <Testimonial
                   quote={
                     <>
@@ -290,7 +290,7 @@ export default function PortfolioHomepage() {
                 />
               </div>
 
-              <div className="pt-8 border-t border-neutral-200/80">
+              <div className="pt-8 rule rule-t rule-1">
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   Capabilities
                 </p>
@@ -327,7 +327,7 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* How I Work */}
-        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section className="py-16 lg:py-24 rule rule-10">
           <SectionLabel>How I Work</SectionLabel>
 
           {/* A sequence drawn as one, rather than three things near each
@@ -464,7 +464,7 @@ export default function PortfolioHomepage() {
 
           {/* Sits in a band between two rules, 24px either side of the link,
               the same rhythm the More work summary had. */}
-          <div className="mt-12 py-6 border-y border-neutral-200/80">
+          <div className="mt-12 py-6 rule rule-2">
             <a
               href="/work"
               className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 transition-colors"
@@ -476,7 +476,7 @@ export default function PortfolioHomepage() {
         </section>
 
         {/* Where I Can Help */}
-        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+        <section className="py-16 lg:py-24 rule rule-11">
           <SectionLabel>Where I Can Help</SectionLabel>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
             {whoIWorkWith.map((item, i) => (
@@ -550,7 +550,7 @@ export default function PortfolioHomepage() {
             })}
           </div>
 
-          <div className="mt-12 py-6 border-y border-neutral-200/80">
+          <div className="mt-12 py-6 rule rule-3">
             <a
               href="/thinking"
               className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 transition-colors"
