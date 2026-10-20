@@ -62,7 +62,7 @@ export default function WorkIndex() {
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
-        <section className="pb-10 border-b border-neutral-200/80">
+        <section className="pb-10 rule rule-6">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-5">
             Selected work
           </p>
@@ -80,7 +80,7 @@ export default function WorkIndex() {
           if (items.length === 0) return null;
 
           return (
-            <section key={group.id} className="py-12 border-b border-neutral-200/80">
+            <section key={group.id} className="py-12 rule rule-7">
               <h2 className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-8">
                 {group.label}
               </h2>
