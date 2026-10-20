@@ -18,7 +18,7 @@ function SectionLabel({ children }) {
 function SubLabel({ children }) {
   return (
     <h3 className="flex items-center gap-2 text-sm uppercase tracking-[0.15em] font-semibold text-neutral-800 mb-4">
-      <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
+      <span className="w-1.5 h-1.5 rounded-full bg-[#49769E] flex-shrink-0" />
       {children}
     </h3>
   );
@@ -55,7 +55,7 @@ export default function NetIXCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-[#8D6553] [text-wrap:balance]">40%+ faster processes</p>
+              <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">40%+ faster processes</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Standards</p>
@@ -91,7 +91,7 @@ export default function NetIXCaseStudy() {
 
         {/* Part 1: Modernising NetIX */}
         <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part One
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
@@ -107,10 +107,10 @@ export default function NetIXCaseStudy() {
                 people managing business operations.
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Complex terminology and poor hierarchy</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Minimal validation, feedback or error handling</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Inconsistent layouts and navigation</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> No scalability for tablet or desktop responsiveness</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Complex terminology and poor hierarchy</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Minimal validation, feedback or error handling</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Inconsistent layouts and navigation</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> No scalability for tablet or desktop responsiveness</li>
               </ul>
             </div>
 
@@ -136,10 +136,10 @@ export default function NetIXCaseStudy() {
                 From there, I designed new structures for:
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Dashboards showing live order and invoice volumes at a glance</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Editor and process screens simplified for data entry and validation</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Document overviews with clear state, buyer and seller visibility</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Reusable tables with filtering and inline actions</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Dashboards showing live order and invoice volumes at a glance</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Editor and process screens simplified for data entry and validation</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Document overviews with clear state, buyer and seller visibility</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Reusable tables with filtering and inline actions</li>
               </ul>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 I built it as modules rather than pages, so the same pieces worked at any
@@ -159,7 +159,7 @@ export default function NetIXCaseStudy() {
                   not the second half of the paragraph before it. */}
               <p className="font-serif text-2xl text-neutral-900 mb-8">
                 It reduced the time to create or update a process by over{' '}
-                <span className="text-[#A47864] italic">40 percent</span>, and
+                <span className="text-[#49769E] italic">40 percent</span>, and
                 significantly decreased support requests.
               </p>
 
@@ -190,7 +190,7 @@ export default function NetIXCaseStudy() {
 
         {/* Part 2: White-labelling */}
         <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Two
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
@@ -260,7 +260,7 @@ export default function NetIXCaseStudy() {
 
         {/* Part 3: Post-Acquisition Rebrand */}
         <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Three
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
@@ -288,11 +288,11 @@ export default function NetIXCaseStudy() {
             <div>
               <SubLabel>Challenges</SubLabel>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Redesigning a product that had just launched</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Coordinating implementation between engineering teams in the UK, France and Egypt</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Redesigning a product that had just launched</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Balancing brand consistency with accessibility and usability</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Raising WCAG 2.1 AA contrast failures in the parent company&rsquo;s palette, and finding a way forward when the decision was to proceed</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Coordinating implementation between engineering teams in the UK, France and Egypt</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Introducing the first structured design tokens and variables into a legacy CSS codebase</li>
               </ul>
             </div>
 
@@ -337,8 +337,8 @@ export default function NetIXCaseStudy() {
                 usability while aligning it with Cegedim&rsquo;s broader SaaS suite.
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#8D6553]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
               </ul>
             </div>
           </div>
