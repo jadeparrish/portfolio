@@ -294,8 +294,16 @@ export default function PortfolioHomepage() {
                 <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
                   Capabilities
                 </p>
-                {/* Same fix as the hero tags: each dot travels with the label
-                    before it, so a dot can never start a wrapped line. */}
+                {/* A hairline rather than a dot: at this size a rule reads as
+                    structure, and it is the one separator that cannot be
+                    confused with the coloured category marks in the hero.
+                    These are capabilities, not categories, so no colour.
+
+                    The rule is bound to the word AFTER it and the two share a
+                    single flex child, so they can never be split. A trailing
+                    dot was what stranded a mark at the end of a wrapped line;
+                    this way a wrapped line opens with a rule and its word,
+                    which reads as deliberate. The first item has no rule. */}
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
                   {[
                     'Service Design',
@@ -304,12 +312,12 @@ export default function PortfolioHomepage() {
                     'Accessibility',
                     'Research',
                     'Strategy',
-                  ].map((label, i, all) => (
+                  ].map((label, i) => (
                     <span key={label} className="inline-flex items-center gap-x-3">
-                      {label}
-                      {i < all.length - 1 && (
-                        <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                      {i > 0 && (
+                        <span aria-hidden="true" className="w-3.5 h-px bg-neutral-300 flex-none" />
                       )}
+                      {label}
                     </span>
                   ))}
                 </div>
@@ -432,7 +440,7 @@ export default function PortfolioHomepage() {
                           : 'text-neutral-600'
                       }`}
                     >
-                      {item.cta}
+                      <span className="group-hover:underline underline-offset-4 decoration-2 decoration-neutral-500">{item.cta}</span>
                       {item.href && (
                         <ArrowRight className="w-3.5 h-3.5 text-neutral-600 transition-colors" />
                       )}
@@ -461,7 +469,7 @@ export default function PortfolioHomepage() {
               href="/work"
               className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 transition-colors"
             >
-              See all work ({caseStudiesList.length})
+              <span className="group-hover:underline underline-offset-4 decoration-2 decoration-neutral-500">See all work ({caseStudiesList.length})</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#49769E] transition-transform group-hover:translate-x-1" />
             </a>
           </div>
@@ -547,7 +555,7 @@ export default function PortfolioHomepage() {
               href="/thinking"
               className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 transition-colors"
             >
-              All thinking
+              <span className="group-hover:underline underline-offset-4 decoration-2 decoration-neutral-500">All thinking</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#49769E] transition-transform group-hover:translate-x-1" />
             </a>
           </div>
