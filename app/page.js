@@ -1,261 +1,572 @@
 import React from 'react';
-import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
+import jadePhoto from './jade-photo.jpg';
+import blueprint from './fulfilment-blueprint.png';
+import {
+  ArrowDownRight,
+  ArrowRight,
+  ArrowRightLeft,
+  Search,
+  Target,
+  Users,
+  FileText,
+  Layers,
+  Wrench,
+  Landmark,
+  Stethoscope,
+  GraduationCap,
+  Heart,
+} from 'lucide-react';
+import { caseStudiesList, thinkingList, SiteFooter, Testimonial, Figure } from './caseStudiesData';
 
-export const metadata = {
-  title: 'Telling people the truth about their money: Jade Parrish',
-  description:
-    'A debt diagnostic and a personalised report, for people working out how to repay what they owed, with the right support.',
-};
+const whatIDo = [
+  {
+    icon: Search,
+    title: 'Start with what exists',
+    description: 'Auditing how a service actually works, including the workarounds and handoffs, before jumping into sketching.',
+  },
+  {
+    icon: ArrowRightLeft,
+    title: 'Work across the gap',
+    description: 'Sitting between teams, tools and departments to fix the handoff, not just the screen.',
+  },
+  {
+    icon: Target,
+    title: 'Make the case, not just the mockup',
+    description: 'Framing decisions in terms leadership can act on: risk, time and outcome, not just usability.',
+  },
+];
+
+/* Published pieces only. An unwritten one rendered dimmed and unclickable is
+   a dead end in the bottom-right corner, where the eye finishes the page, and
+   it was the most current-sounding title of the four -- so the one a visitor
+   most wanted to click was the one that went nowhere. The full list, written
+   or not, still lives on /thinking. */
+const thoughts = thinkingList
+  .filter((a) => a.hasPage)
+  .map((a) => ({ ...a, href: `/thinking/${a.slug}` }));
+
+/* The homepage shows three. Everything else lives on /work, so the two
+   don't have to be kept in step by hand. */
+const caseStudies = caseStudiesList.filter((item) => item.featured);
+
+const whoIWorkWith = [
+  {
+    icon: Landmark,
+    title: 'Public Sector',
+    description: "Councils, departments, agencies and arm’s-length bodies.",
+  },
+  {
+    icon: Stethoscope,
+    title: 'NHS & Healthcare',
+    description: 'Trusts, ICSs, and the national bodies behind them.',
+  },
+  {
+    icon: GraduationCap,
+    title: 'Education',
+    description: 'Schools, colleges, trusts and education technology providers.',
+  },
+  /* The order reads as priority, so this list runs most-wanted first. Product
+     work sits fourth rather than second: a genuine move up, without claiming it
+     outranks the NHS and education work the site is aimed at. */
+  {
+    icon: Users,
+    title: 'Product & Platform Teams',
+    description: 'Complex digital products, data-heavy workflows and design systems.',
+  },
+  {
+    icon: Heart,
+    title: 'Charities & NFPs',
+    description: 'Charities, cultural organisations and not-for-profits.',
+  },
+];
 
 function SectionLabel({ children }) {
   return (
-    <h2 className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-6">
+    <h2 className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-10 lg:mb-12">
       {children}
     </h2>
   );
 }
 
-function SubLabel({ children }) {
-  return (
-    <h3 className="flex items-center gap-2 text-sm uppercase tracking-[0.15em] font-semibold text-neutral-800 mb-4">
-      <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
-      {children}
-    </h3>
-  );
-}
-
-function Bullets({ items }) {
-  return (
-    <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-      {items.map((item) => (
-        <li key={item} className="flex gap-3">
-          <span aria-hidden="true" className="text-[#8D6553]">&middot;</span>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-export default function DebtAdviceCaseStudy() {
+export default function PortfolioHomepage() {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
-      <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
-        {/* Title */}
-        <section className="pb-8 border-b border-neutral-200/80">
-          <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
-            Research &amp; Service Design &middot; 2014 to 2017
-          </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Telling people the truth about their money.
-          </h1>
-          <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
-            A debt diagnostic and a personalised report, for people working out how to
-            repay what they owed, with the right support.
-          </p>
-        </section>
 
-        {/* At a Glance */}
-        <section className="py-8 border-b border-neutral-200/80">
-          <div className="grid grid-cols-2 gap-x-6 gap-y-7">
-            <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Designer, then Debt Design Lead</p>
+      <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Hero */}
+        {/* Two columns only from lg. At md the hero column was half a 12-column
+            grid, about 330px, which is too narrow for 48px display type: the
+            headline broke into four ragged lines. Stacked, it gets the full
+            width and the illustration sits under it. */}
+        {/* Three children rather than two, so the blueprint can sit between the
+            pitch and the sectors on a phone while still reading as one text
+            column at lg. Explicit rows rejoin the two halves in column 1; the
+            lg row gap is 8 because that is the space-y-8 the halves shared
+            when they were a single div, so desktop geometry does not move. */}
+        <section className="pt-4 pb-16 sm:pt-6 sm:pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-x-20 lg:gap-y-8 items-center border-b border-neutral-200/80">
+          {/* Phone, 1 of 3: availability, headline, what I do. */}
+          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-1 lg:self-end space-y-8">
+            {/* Availability opens the hero rather than sitting in the header.
+                Contact is in the nav from every page and states it there, so
+                a strip on every page was saying it twice. Here it reads as
+                the first line of the pitch instead of site furniture.
+
+                The lamp never carries it alone: the words are always there,
+                which is what WCAG 1.4.1 asks for. */}
+            <p className="-mb-3 flex items-center gap-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.09em] text-[#5C7355]">
+              <span className="w-[7px] h-[7px] rounded-full bg-[#5C7355] ring-4 ring-[#5C7355]/15 flex-none" />
+              Available part-time &middot; 2&ndash;3 days/week
+            </p>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal leading-[1.12] tracking-tight text-neutral-900">
+              {/* The designed break only works once the column is wide enough to
+                  hold "Better systems" on one line. Below lg the hero column is
+                  half a 12-column grid, so forcing it there gives four ragged
+                  lines. Hidden means no break at all, so the text just flows. */}
+              Better systems <br className="hidden lg:inline" />
+              create better <span className="italic text-[#A47864]">lives.</span>
+            </h1>
+            <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-lg font-normal">
+              <p>Every day, people rely on services they didn&rsquo;t choose.</p>
+              <p>
+                I help organisations redesign services, products and processes so they
+                work better for the people who depend on them.
+              </p>
             </div>
-            <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Worked with</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">A second Designer, and the advisors taking the calls</p>
+          </div>
+
+          {/* Phone, 2 of 3: the blueprint, directly under the pitch it
+              illustrates. The same frame the case studies use. No figure
+              number: there is only one figure on this page, and a number with
+              nothing to count is the problem we just took off the work index.
+              Spanning both rows keeps it centred against the full text column
+              at lg, exactly as it was when the text was one block. */}
+          <div className="lg:col-span-6 lg:col-start-7 lg:row-start-1 lg:row-span-2">
+            <Figure
+              caption="Service blueprint: campaign fulfilment, mapped across roles, handoffs and systems"
+              ratio="aspect-[4/3]"
+              flush
+              mount
+            >
+              {/* object-contain, not cover: a diagram cropped to fill its box
+                  loses the edges of the thing it is explaining. */}
+              <img
+                src={blueprint.src}
+                alt="A service blueprint of campaign fulfilment. Five phases run left to right: pre-sign, pre-launch, launch, post-launch and feedback. Seven layers run top to bottom: physical evidence, consumer, brand, account, operations, partner and systems, divided by the line of interaction, the line of visibility and the line of internal interaction. Seven handoffs are marked where work crosses between layers; three of those are also marked as fail points, two consumer and brand steps are marked as key touchpoints, and returns is marked as having no agreed process."
+                className="w-full h-full object-contain"
+              />
+            </Figure>
+          </div>
+
+          {/* Phone, 3 of 3: who it is for, then the way into the work. */}
+          <div className="lg:col-span-6 lg:col-start-1 lg:row-start-2 lg:self-start space-y-8">
+            {/* Each dot travels with the label before it. As separate flex
+                children they could wrap onto a new line on their own, which
+                put a stray dot at the start of a row at tablet width. */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-xs text-[#6A6A6A] tracking-wide">
+              {['Public Sector', 'Healthcare', 'Education', 'Complex Digital Products'].map(
+                (label, i, all) => (
+                  <span key={label} className="inline-flex items-center gap-x-6">
+                    {label}
+                    {i < all.length - 1 && (
+                      <span className="w-1 h-1 rounded-full bg-neutral-300" />
+                    )}
+                  </span>
+                )
+              )}
             </div>
-            <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Focus</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Debt diagnostic and personalised report</p>
-            </div>
-            <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Higher completion, fewer drop-offs</p>
+
+            <div className="pt-2">
+              <a
+                href="#work"
+                className="inline-flex items-center gap-2.5 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] hover:translate-x-0.5 transition-all"
+              >
+                View selected work <ArrowDownRight className="w-4 h-4 text-[#A47864]" />
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Setting the Scene */}
-        <section className="py-12 border-b border-neutral-200/80">
-          <SectionLabel>Setting the Scene</SectionLabel>
-          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-            <p>
-              Debt Advisory Centre is one of the main debt brands at Think Money Group. People
-              arrived at it because they were struggling to repay what they owed, usually
-              after a change they had not chosen: a job lost, a relationship ended, hours
-              cut.
-            </p>
-            <p>
-              The job was to take somebody in that position and get them to a point where
-              they understood their own situation and what could be done about it. That
-              meant a form journey and a personalised report, both of them regulated,
-              because financial advice in the UK is not something you can design freely.
-            </p>
-            <p>
-              There were two of us designing it, one senior to me, and the work was
-              split between us. When he left I took it over as Debt Design Lead. The
-              first build took a year. I stayed across the group&rsquo;s debt brands
-              until 2017.
-            </p>
-          </div>
-
-          <Figure n="01" tint="bg-[#E9E4DE]" caption="The form journey" />
-        </section>
-
-        {/* The Work */}
-        <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
-            The Work
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-10">
-            Asking hard questions gently, then answering them
-          </h2>
-
-          <div className="space-y-10 text-[17px] sm:text-[18px] leading-[1.75]">
-            <div>
-              <SubLabel>Research</SubLabel>
-              <div className="space-y-5 text-neutral-700">
-                <p>
-                  Research ran throughout rather than at the start. We listened to calls
-                  in the call centre, ran workshops with the advisors taking them, tested
-                  with customers, and watched session recordings and heatmaps in Hotjar.
-                </p>
-                <p>
-                  That was where every argument came from. If a decision on this project
-                  could not be traced back to something we had heard on a call or watched
-                  somebody do, it did not have much standing.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <SubLabel>The form journey</SubLabel>
-              <div className="space-y-5 text-neutral-700">
-                <p>
-                  What we built was a debt diagnostic. Somebody answered questions about
-                  what they owed, what they spent and what they earned, across four steps,
-                  and it worked out where they stood and signposted them to the help that
-                  fitted. Every question in it is one most people would rather not answer,
-                  so the work was in asking them without making anybody feel judged for
-                  the answer.
-                </p>
-                <p>
-                  It opened by asking where in the UK they lived, because the options
-                  available to somebody in Scotland are not the same as the options
-                  available to somebody in England. That is a legal difference rather than
-                  a design one, and getting it wrong would have meant showing people
-                  solutions they could not have.
-                </p>
-                <p>
-                  More people finished the redesigned journey than had finished the one
-                  before it, and fewer dropped out partway through.
-                </p>
-              </div>
-            </div>
-
-            <Figure n="02" tint="bg-[#E3E6E1]" caption="The personalised report" />
-
-            <div>
-              <SubLabel>The report</SubLabel>
-              <div className="space-y-5 text-neutral-700">
-                <p>
-                  What came back was a personalised report, built from what they had just
-                  told us. It gave them a monthly budget summary, income against
-                  outgoings, and a breakdown of where the money went: housing, council
-                  tax, travel, other debt, phone and internet, day to day living.
-                </p>
-                <p>
-                  Then it set out the options side by side, from a debt management plan
-                  through to bankruptcy, and said which ones they were less likely to
-                  need. That was key, because bankruptcy is not free. You pay to go
-                  bankrupt. So showing somebody in their own numbers that it was not the
-                  only road could save them money they did not have.
-                </p>
-                <Bullets
-                  items={[
-                    'Their own figures, not a generic example',
-                    'Every option shown, including the ones that would cost them to take',
-                    'A clear next step, and a person to talk to about it',
-                  ]}
+        {/* About */}
+        {/* py-16 lg:py-24, same as every other content section. This one was
+            py-20 lg:py-28, and because it ends on a short list of small mono
+            type the extra 16px read as a gap rather than as breathing room. */}
+        <section id="about" className="py-16 lg:py-24 border-b border-neutral-200/80">
+          {/* Stacked until lg, like the hero. Side by side at tablet the text
+              ran far longer than the photo and left a tall empty column beside
+              it; stacked, the photo caps at max-w-xs and centres. */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div className="lg:col-span-4">
+              <div className="aspect-[4/5] max-h-[460px] lg:max-h-none w-full max-w-xs lg:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm overflow-hidden">
+                <img
+                  src={jadePhoto.src}
+                  alt="Jade Parrish"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
-            <div>
-              <SubLabel>And the rest of it</SubLabel>
-              <div className="space-y-5 text-neutral-700">
+            <div className="lg:col-span-8 space-y-8">
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
+                  About
+                </p>
+                <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 leading-snug">
+                  I&rsquo;m a human-centred service and systems designer.
+                </h2>
+              </div>
+
+              <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-2xl font-normal">
                 <p>
-                  The project grew as it went. It came to include the brand, the website,
-                  paid landing pages, and a blog section that I led the implementation of.
+                  Over 15 years I&rsquo;ve moved from graphic design, through web, into
+                  senior product design, picking up service design and systems thinking
+                  along the way. In the web years I was at Rentalcars.com, designing and
+                  building A/B tests, which is where I learned to expect a design
+                  decision to be measured.
+                </p>
+                <p>
+                  My work usually ends up spanning teams, touchpoints and organisational
+                  boundaries, because that&rsquo;s where things break. I look past
+                  the screen to the wider system: where a handoff gets lost, and where
+                  complexity gets quietly handed to a person instead of being designed away.
+                </p>
+                <p>
+                  None of this is abstract to me. I&rsquo;m a parent to two children with
+                  SEND: because the systems around you don&rsquo;t talk to each other,
+                  the person with
+                  parental responsibility ends up being the project manager,
+                  chasing every service and holding the whole picture together. I bring
+                  that same instinct to my work: build
+                  the joined-up system, so nobody has to become the project manager just to
+                  get through their day.
                 </p>
               </div>
-            </div>
 
-            <div>
-              <SubLabel>The template</SubLabel>
-              <div className="space-y-5 text-neutral-700">
-                <p>
-                  When the work on Debt Advisory Centre finished, the group wanted a site
-                  for another of its brands, IVA Advisory Centre. I did that one on my
-                  own, and built it as a template rather than a one-off. White label,
-                  essentially: one journey that could wear a different brand, with
-                  responsive layouts the developers could replicate and rebrand quickly.
-                  Two weeks including build and test.
+              <div className="pt-8 border-t border-neutral-200/80">
+                <Testimonial
+                  quote={
+                    <>
+                      Jade approaches design with thoughtfulness and precision,
+                      particularly across projects that demand structure and data
+                      awareness. &hellip; Her documentation and communication with
+                      engineering were always clear and dependable, which helped move
+                      complex work forward smoothly.
+                    </>
+                  }
+                  name="Ade-Lee Adebiyi"
+                  role="Head of Design, SoPost"
+                  href="https://www.linkedin.com/in/ade-lee-adebiyi-a526a743/"
+                  compact
+                />
+              </div>
+
+              <div className="pt-8 border-t border-neutral-200/80">
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-3">
+                  Capabilities
                 </p>
-                <p>
-                  The group was spinning debt brands up as experiments, to find out which
-                  ones people responded to. Every site after IVA Advisory Centre was built
-                  from that template, so a new brand cost weeks rather than months to get
-                  in front of anybody.
-                </p>
+                {/* Same fix as the hero tags: each dot travels with the label
+                    before it, so a dot can never start a wrapped line. */}
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:text-sm text-neutral-800 font-mono tracking-wider">
+                  {[
+                    'Service Design',
+                    'Systems Thinking',
+                    'Product Design',
+                    'Accessibility',
+                    'Research',
+                    'Strategy',
+                  ].map((label, i, all) => (
+                    <span key={label} className="inline-flex items-center gap-x-3">
+                      {label}
+                      {i < all.length - 1 && (
+                        <span className="w-1 h-1 rounded-full bg-neutral-400 translate-y-[3px]" />
+                      )}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Reflection */}
-        <section className="py-12 border-b border-neutral-200/80">
-          <SectionLabel>Reflection</SectionLabel>
-          <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-            <p>
-              This is the closest I have come to designing a public service without it
-              being one. Somebody in difficulty, a set of options they did not know they
-              had, rules about what could be said to them, and a form standing between the
-              two.
-            </p>
-            <p>
-              What I took from it is that the report was the product. The journey only
-              existed to make the report possible, and the report only worked because it
-              used their numbers rather than an example. People will tell you a great deal
-              about their situation if they can see it coming back to them as something
-              that makes sense.
-            </p>
+        {/* How I Work */}
+        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>How I Work</SectionLabel>
+
+          {/* A sequence drawn as one, rather than three things near each
+              other. The rail runs vertically on a phone and horizontally from
+              md up; each node sits on it with a paper fill so the line passes
+              behind rather than through.
+
+              The horizontal segments carry -mr-8 to bridge the grid gap, so
+              the line reaches the next node without anything being measured
+              by hand. The last step has no segment, because a process line
+              running off the end implies a step that isn't there. */}
+          <ol className="relative grid grid-cols-1 md:grid-cols-3 gap-y-9 md:gap-x-8">
+            <span
+              aria-hidden="true"
+              className="md:hidden absolute left-[13px] top-3 bottom-3 w-px bg-neutral-900/15"
+            />
+            {whatIDo.map((item, i, all) => (
+              <li key={item.title} className="relative pl-10 md:pl-0 space-y-3">
+                <div className="flex items-center gap-3">
+                  <span className="absolute left-0 top-0 md:static flex-none w-[27px] h-[27px] rounded-full border border-neutral-900/25 bg-[#F9F8F6] flex items-center justify-center font-mono text-[10px] font-medium text-neutral-900">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  {i < all.length - 1 && (
+                    <span
+                      aria-hidden="true"
+                      className="hidden md:block flex-1 h-px -mr-8 bg-neutral-900/15"
+                    />
+                  )}
+                </div>
+                <h3 className="font-serif text-xl font-normal text-neutral-900 leading-snug">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed [text-wrap:pretty]">
+                  {item.description}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {/* Selected Work */}
+        <section id="work" className="pt-16 lg:pt-24">
+          <SectionLabel>Selected Work</SectionLabel>
+          <div className="divide-y divide-neutral-200/70">
+            {caseStudies.map((item) => {
+              /* The whole card is the link, the way a row on the work index
+                 is. Before this only the "Case study" label was clickable,
+                 so the title -- the obvious thing to click -- did nothing,
+                 and the hover styling on it was writing a cheque the markup
+                 could not cash. One anchor per card, not two, so the title
+                 and the label cannot read as separate destinations. */
+              const shell =
+                'group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 items-start md:items-center py-10 lg:py-12 first:pt-0 last:pb-0';
+              const inner = (
+                <>
+                <div className="md:col-span-1 lg:col-span-3">
+                  {/* Same materials as a Figure -- the frame, the tint, the
+                      engraved plate, the mono empty state -- but no caption
+                      bar: the title and tag sit right beside it already. The
+                      number is the work item's, not a figure number, so it is
+                      set into the corner rather than labelled "Fig.". */}
+                  <div
+                    className={`relative aspect-[4/3] max-h-[240px] md:max-h-none overflow-hidden border border-neutral-900/15 ${item.tint} flex items-center justify-center`}
+                  >
+                    {item.image ? (
+                      <img
+                        src={item.image.src}
+                        alt={item.imageAlt || ''}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    ) : null}
+                    <span
+                      className={`absolute top-0 left-0 font-mono text-[10px] font-medium tracking-[0.16em] text-neutral-900 border-r border-b border-neutral-900/15 px-1.5 py-0.5 ${
+                        item.image ? 'bg-[#F9F8F6]' : ''
+                      }`}
+                    >
+                      {item.num}
+                    </span>
+                    {!item.image && (
+                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#5F5F5F]">
+                        Awaiting capture
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="md:col-span-1 lg:col-span-9 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
+                  <div className="space-y-2 lg:max-w-lg">
+                    <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium">
+                      {item.tag}
+                      {item.year && <> &middot; {item.year}</>}
+                    </p>
+                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-1 decoration-[#8D6553]/40">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+
+                  <div className="shrink-0 lg:pt-1 lg:text-right">
+                    {/* A label now, not a second anchor: the card around it
+                        carries the link. It still follows the hover so the
+                        card reacts as one piece. */}
+                    <span
+                      className={`inline-flex items-center gap-1.5 py-2 -my-2 text-xs font-medium tracking-wider uppercase transition-all ${
+                        item.href
+                          ? 'text-neutral-900 group-hover:text-[#8D6553] group-hover:translate-x-1'
+                          : 'text-neutral-600'
+                      }`}
+                    >
+                      {item.cta}
+                      {item.href && (
+                        <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#8D6553] transition-colors" />
+                      )}
+                    </span>
+                  </div>
+                </div>
+                </>
+              );
+
+              return item.href ? (
+                <a key={item.num} href={item.href} className={shell}>
+                  {inner}
+                </a>
+              ) : (
+                <div key={item.num} className={`${shell} opacity-70`}>
+                  {inner}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Sits in a band between two rules, 24px either side of the link,
+              the same rhythm the More work summary had. */}
+          <div className="mt-12 py-6 border-y border-neutral-200/80">
+            <a
+              href="/work"
+              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+            >
+              See all work ({caseStudiesList.length})
+              <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
+            </a>
           </div>
         </section>
 
-        <section className="py-12 border-b border-neutral-200/80">
-          <Testimonial
-            quote={
-              <>
-            Jade has delivered work from simple landing page optimisation design tweaks,
-            to full website redesigns with full end to end journeys. Jade always has an
-            interest in the business side of her work and wants to understand how
-            it&rsquo;s performing analytically and from a customer experience point of
-            view.
-              </>
-            }
-            name="Michael Mangan"
-            role="Head of UX &amp; Design, Think Money Group"
-            href="https://www.linkedin.com/in/michael-mangan-470a1530/"
-          />
+        {/* Where I Can Help */}
+        <section className="py-16 lg:py-24 border-b border-neutral-200/80">
+          <SectionLabel>Where I Can Help</SectionLabel>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
+            {whoIWorkWith.map((item) => (
+              <div key={item.title} className="space-y-3">
+                <item.icon className="w-5 h-5 text-neutral-600" strokeWidth={1.5} />
+                <h3 className="text-sm font-medium text-neutral-900">{item.title}</h3>
+                <p className="text-xs text-[#6A6A6A] leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
-        <CaseStudyFooter currentSlug="debt-advice" />
+        {/* What I'm Noticing */}
+        <section id="thinking" className="pt-16 lg:pt-24">
+          <SectionLabel>What I&rsquo;m Noticing</SectionLabel>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
+            {thoughts.map((article) => {
+              const inner = (
+                <>
+                  <article.icon
+                    className={`w-5 h-5 ${article.href ? 'text-[#A47864]' : 'text-neutral-300'}`}
+                    strokeWidth={1.5}
+                  />
+                  {/* A piece that isn't written yet sits back. #6E6E6E is
+                      4.8:1 on paper, so it reads as greyed out and still
+                      clears AA for small text. neutral-500 misses at 4.47. */}
+                  <h3
+                    className={`font-serif text-lg leading-snug ${
+                      article.href
+                        ? 'text-neutral-900 transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-neutral-500'
+                        : 'text-[#6E6E6E]'
+                    }`}
+                  >
+                    {article.title}
+                  </h3>
+                  {article.description && (
+                    <p
+                      className={`text-xs sm:text-sm leading-relaxed ${
+                        article.href ? 'text-neutral-600' : 'text-[#6E6E6E]'
+                      }`}
+                    >
+                      {article.description}
+                    </p>
+                  )}
+                  <p
+                    className={`text-[11px] font-mono ${
+                      article.href ? 'text-neutral-600' : 'text-[#6E6E6E]'
+                    }`}
+                  >
+                    {article.readTime}
+                  </p>
+                </>
+              );
+              return article.href ? (
+                <a
+                  key={article.title}
+                  href={article.href}
+                  className="group block border-t border-neutral-200/60 hover:border-[#A47864]/50 transition-colors pt-5 space-y-3"
+                >
+                  {inner}
+                </a>
+              ) : (
+                <div key={article.title} className="border-t border-neutral-200/60 pt-5 space-y-3">
+                  {inner}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-12 py-6 border-y border-neutral-200/80">
+            <a
+              href="/thinking"
+              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+            >
+              All thinking
+              <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
+            </a>
+          </div>
+        </section>
+
+        {/* Contact */}
+        {/* A modal, built from the same parts as a Figure: bordered panel,
+            engraved title bar, body, footer bar. Deliberately no close
+            button -- an X that dismisses nothing is the false affordance we
+            took out of the Capabilities box. What makes it read as a modal
+            is the panel and a real primary action, not fake chrome. */}
+        <section id="contact" className="py-24 lg:py-32">
+          <div className="max-w-xl mx-auto border border-neutral-900/15 bg-white/50">
+            <div className="flex items-center justify-between gap-4 px-4 sm:px-5 py-3 border-b border-neutral-900/15 bg-neutral-900/[0.025]">
+              <span className="font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-neutral-900 border border-neutral-900/20 px-1.5 py-0.5">
+                Contact
+              </span>
+              <span className="flex items-center gap-2 font-mono text-[10px] font-medium uppercase tracking-[0.1em] text-[#5C7355] whitespace-nowrap">
+                <span className="w-[6px] h-[6px] rounded-full bg-[#5C7355] flex-none" />
+                Available part-time
+              </span>
+            </div>
+
+            <div className="px-6 sm:px-10 py-10 sm:py-12 text-center space-y-6">
+              <h2 className="text-3xl sm:text-4xl font-serif text-neutral-900 tracking-tight leading-tight [text-wrap:balance]">
+                Let&rsquo;s improve something together.
+              </h2>
+              <p className="text-[15px] text-[#6E6E6E] leading-relaxed max-w-sm mx-auto [text-wrap:pretty]">
+                Open to part-time roles and fractional contracts, two to three days a week.
+              </p>
+              <div className="pt-2">
+                <a
+                  href="mailto:hello@jadeparrish.me"
+                  className="group inline-flex items-center gap-2.5 bg-neutral-900 text-[#F9F8F6] px-6 py-3.5 text-sm font-medium tracking-wide hover:bg-[#8D6553] transition-colors"
+                >
+                  hello@jadeparrish.me
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </div>
+            </div>
+
+            {/* Where I am sits with how much of me there is: both are the
+                practical questions asked at the point of getting in touch. */}
+            <div className="px-4 sm:px-5 py-3 border-t border-neutral-900/15 bg-neutral-900/[0.025] text-center">
+              <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[#5F5F5F]">
+                Lytham St Annes &middot; Blackpool &amp; the Fylde &middot; Remote
+              </span>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <SiteFooter />
+      {/* Footer: shared with every other page, so it can't drift. */}
+      <SiteFooter wide />
     </div>
   );
 }
