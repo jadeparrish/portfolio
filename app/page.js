@@ -123,7 +123,7 @@ export default function PortfolioHomepage() {
                   half a 12-column grid, so forcing it there gives four ragged
                   lines. Hidden means no break at all, so the text just flows. */}
               Better systems <br className="hidden lg:inline" />
-              create better <span className="italic text-[#A47864]">lives.</span>
+              create better <span className="italic text-[#AA558D]">lives.</span>
             </h1>
             <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-lg font-normal">
               <p>Every day, people rely on services they didn&rsquo;t choose.</p>
