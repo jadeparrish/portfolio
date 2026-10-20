@@ -39,7 +39,7 @@ function WorkRow({ item }) {
         <p className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-neutral-900 transition-colors">
           <span className="group-hover:underline underline-offset-4 decoration-2 decoration-neutral-500">{item.cta}</span>
           {item.hasPage && (
-            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="w-3.5 h-3.5 text-[#49769E] transition-transform group-hover:translate-x-1" />
           )}
         </p>
       </div>
