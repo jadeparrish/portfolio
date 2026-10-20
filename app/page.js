@@ -442,7 +442,7 @@ export default function PortfolioHomepage() {
                     >
                       <span className="group-hover:underline underline-offset-4 decoration-2 decoration-neutral-500">{item.cta}</span>
                       {item.href && (
-                        <ArrowRight className="w-3.5 h-3.5 text-neutral-600 transition-colors" />
+                        <ArrowRight className="w-3.5 h-3.5 text-[#49769E] transition-colors" />
                       )}
                     </span>
                   </div>
