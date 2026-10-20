@@ -281,7 +281,7 @@ function ContactCTA() {
     <>
       {/* Contact CTA: 48px below, 40px above. The heading's line-height adds ~8px of
           invisible space above its letters, so pt-10 makes the gaps look equal. */}
-      <section className="pt-10 pb-12 border-b border-neutral-200/80 text-center space-y-6">
+      <section className="pt-10 pb-12 rule rule-0 text-center space-y-6">
         <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 tracking-tight">
           Let&rsquo;s improve something together.
         </h2>
@@ -427,7 +427,7 @@ export function ArticlePage({ slug, children }) {
 
 export function ArticleTitle({ kicker, title, subtitle, illustration }) {
   return (
-    <section className="pb-10 border-b border-neutral-200/80">
+    <section className="pb-10 rule rule-1">
       <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-5">
         {kicker}
       </p>
@@ -447,7 +447,7 @@ export function ArticleTitle({ kicker, title, subtitle, illustration }) {
 
 export function ArticleBody({ children }) {
   return (
-    <article className="py-12 border-b border-neutral-200/80 space-y-7 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
+    <article className="py-12 rule rule-2 space-y-7 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
       {children}
     </article>
   );
@@ -569,7 +569,7 @@ export function ArticleLink({ href, children }) {
    layout; everything else uses the narrower column. */
 export function SiteFooter({ wide }) {
   return (
-    <footer className="border-t border-neutral-200/80 py-10 text-xs text-[#6A6A6A] font-normal">
+    <footer className="rule rule-t rule-3 py-10 text-xs text-[#6A6A6A] font-normal">
       <div
         className={`${
           wide ? 'max-w-7xl lg:px-12' : 'max-w-3xl'
