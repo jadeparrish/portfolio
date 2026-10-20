@@ -127,7 +127,7 @@ export default function ShadcnArticle() {
         </ArticleBlock>
       </ArticleBody>
 
-      <div className="py-12 rule rule-6">
+      <div className="py-12 border-b border-neutral-200/80">
         <Testimonial
           quote={
             <>
