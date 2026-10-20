@@ -78,7 +78,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 rule rule-6">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -108,7 +108,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Part 1: ROI Impact Dashboard */}
-        <section className="py-12 rule rule-7">
+        <section className="py-12 border-b border-neutral-200/80">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part One
           </p>
@@ -236,7 +236,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Part 2: Comparison Tables */}
-        <section className="py-12 rule rule-8">
+        <section className="py-12 border-b border-neutral-200/80">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Two
           </p>
@@ -349,7 +349,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 rule rule-9">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
