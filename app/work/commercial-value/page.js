@@ -18,7 +18,7 @@ function SectionLabel({ children }) {
 function SubLabel({ children }) {
   return (
     <h3 className="flex items-center gap-2 text-sm uppercase tracking-[0.15em] font-semibold text-neutral-800 mb-4">
-      <span className="w-1.5 h-1.5 rounded-full bg-[#A47864] flex-shrink-0" />
+      <span className="w-1.5 h-1.5 rounded-full bg-[#49769E] flex-shrink-0" />
       {children}
     </h3>
   );
@@ -29,7 +29,7 @@ function Bullets({ items }) {
     <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span aria-hidden="true" className="text-[#8D6553]">&middot;</span> {item}
+          <span aria-hidden="true" className="text-[#49769E]">&middot;</span> {item}
         </li>
       ))}
     </ul>
@@ -85,7 +85,7 @@ export default function CommercialValueCaseStudy() {
               Once reporting had a real foundation (that&rsquo;s the{' '}
               <Link
                 href="/work/reporting"
-                className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#8D6553] hover:text-[#8D6553] transition-colors"
+                className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#49769E] hover:text-[#49769E] transition-colors"
               >
                 Reporting Area Redesign
               </Link>
@@ -109,7 +109,7 @@ export default function CommercialValueCaseStudy() {
 
         {/* Part 1: ROI Impact Dashboard */}
         <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part One
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-3">
@@ -228,7 +228,7 @@ export default function CommercialValueCaseStudy() {
               </p>
               <p className="font-serif text-2xl text-neutral-900">
                 It changed the conversation internally. We stopped asking{' '}
-                <span className="text-[#A47864] italic">&ldquo;did it work?&rdquo;</span>{' '}
+                <span className="text-[#49769E] italic">&ldquo;did it work?&rdquo;</span>{' '}
                 and started asking what value it would create.
               </p>
             </div>
@@ -237,7 +237,7 @@ export default function CommercialValueCaseStudy() {
 
         {/* Part 2: Comparison Tables */}
         <section className="py-12 border-b border-neutral-200/80">
-          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#8D6553] mb-2">
+          <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Two
           </p>
           <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900 mb-3">
