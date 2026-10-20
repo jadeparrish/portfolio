@@ -2,7 +2,7 @@ import React from 'react';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'Turning a debt enquiry into something people could act on: Jade Parrish',
+  title: 'Telling people the truth about their money: Jade Parrish',
   description:
     'A debt diagnostic and a personalised report, for people working out how to repay what they owed, with the right support.',
 };
