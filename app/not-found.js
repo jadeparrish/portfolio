@@ -23,7 +23,7 @@ export default function NotFound() {
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#1C1C1C] font-sans antialiased selection:bg-neutral-200">
       <main className="max-w-2xl mx-auto px-6 sm:px-8 pb-24">
-        <section className="pb-8 border-b border-neutral-200/80">
+        <section className="pb-8 rule rule-4">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-5 font-mono">
             404 &middot; Not Found
           </p>
@@ -32,7 +32,7 @@ export default function NotFound() {
           </h1>
         </section>
 
-        <section className="py-8 border-b border-neutral-200/80">
+        <section className="py-8 rule rule-5">
           <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             {glance.map(([label, value]) => (
               <div key={label}>
@@ -47,7 +47,7 @@ export default function NotFound() {
           </div>
         </section>
 
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-6">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-6">
             Setting the Scene
           </p>
@@ -64,7 +64,7 @@ export default function NotFound() {
           </p>
         </section>
 
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-7">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-6">
             Reflection
           </p>
