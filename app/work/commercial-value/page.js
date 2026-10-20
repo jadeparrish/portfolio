@@ -85,7 +85,7 @@ export default function CommercialValueCaseStudy() {
               Once reporting had a real foundation (that&rsquo;s the{' '}
               <Link
                 href="/work/reporting"
-                className="underline underline-offset-4 decoration-neutral-500 transition-colors"
+                className="underline decoration-[1.5px] underline-offset-4 decoration-neutral-500 transition-colors"
               >
                 Reporting Area Redesign
               </Link>
