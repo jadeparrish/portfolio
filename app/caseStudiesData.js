@@ -447,7 +447,7 @@ export function ArticleTitle({ kicker, title, subtitle, illustration }) {
 
 export function ArticleBody({ children }) {
   return (
-    <article className="py-12 rule rule-2 space-y-7 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
+    <article className="py-12 border-b border-neutral-200/80 space-y-7 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
       {children}
     </article>
   );
@@ -569,7 +569,7 @@ export function ArticleLink({ href, children }) {
    layout; everything else uses the narrower column. */
 export function SiteFooter({ wide }) {
   return (
-    <footer className="rule rule-t rule-3 py-10 text-xs text-[#6A6A6A] font-normal">
+    <footer className="border-t border-neutral-200/80 py-10 text-xs text-[#6A6A6A] font-normal">
       <div
         className={`${
           wide ? 'max-w-7xl lg:px-12' : 'max-w-3xl'
