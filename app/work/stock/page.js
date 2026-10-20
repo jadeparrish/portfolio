@@ -88,7 +88,7 @@ export default function StockCaseStudy() {
               no single, central reporting hub. That audit became the{' '}
               <Link
                 href="/work/reporting"
-                className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#49769E] hover:text-[#49769E] transition-colors"
+                className="underline underline-offset-4 decoration-neutral-500 transition-colors"
               >
                 Reporting Area Redesign
               </Link>
@@ -181,7 +181,7 @@ export default function StockCaseStudy() {
                 visibility also led into a{' '}
                 <Link
                   href="/work/notifications"
-                  className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#49769E] hover:text-[#49769E] transition-colors"
+                  className="underline underline-offset-4 decoration-neutral-500 transition-colors"
                 >
                   scalable notification system
                 </Link>
