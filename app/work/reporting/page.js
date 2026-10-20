@@ -66,7 +66,7 @@ export default function ReportingCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 rule rule-10">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -93,7 +93,7 @@ export default function ReportingCaseStudy() {
         </section>
 
         {/* Part 1: Auditing and Aligning the Foundations */}
-        <section className="py-12 rule rule-11">
+        <section className="py-12 border-b border-neutral-200/80">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part One
           </p>
@@ -175,7 +175,7 @@ export default function ReportingCaseStudy() {
         </section>
 
         {/* Part 2: Redesigning the Reporting Experience */}
-        <section className="py-12 rule rule-0">
+        <section className="py-12 border-b border-neutral-200/80">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Two
           </p>
@@ -251,7 +251,7 @@ export default function ReportingCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 rule rule-1">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -267,7 +267,7 @@ export default function ReportingCaseStudy() {
           </div>
         </section>
 
-        <section className="py-12 rule rule-2">
+        <section className="py-12 border-b border-neutral-200/80">
           <Testimonial
             quote={
               <>
