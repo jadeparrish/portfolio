@@ -69,7 +69,7 @@ export default function IntegrationsCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 rule rule-8">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -93,7 +93,7 @@ export default function IntegrationsCaseStudy() {
         </section>
 
         {/* Understanding the Problem */}
-        <section className="py-12 rule rule-9">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Understanding the Problem</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             Every integration had been built separately, so no two behaved the same way.
@@ -109,7 +109,7 @@ export default function IntegrationsCaseStudy() {
         </section>
 
         {/* Process */}
-        <section className="py-12 rule rule-10">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Process</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             I mapped the whole flow end to end, to see where friction and validation errors
@@ -128,7 +128,7 @@ export default function IntegrationsCaseStudy() {
         </section>
 
         {/* Designing the New Flow */}
-        <section className="py-12 rule rule-11">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Designing the New Flow</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The redesign aimed to:
@@ -163,7 +163,7 @@ export default function IntegrationsCaseStudy() {
         </section>
 
         {/* Outcome */}
-        <section className="py-12 rule rule-0">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Outcome</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
             The new flow:
@@ -183,7 +183,7 @@ export default function IntegrationsCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 rule rule-1">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
