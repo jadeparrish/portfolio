@@ -128,7 +128,10 @@ const globalStyles = `
                   color .18s ease;
     }
   }
-  a       { text-decoration-thickness: 1px; }
+  /* One underline, everywhere: 1.5px at rest, 2px when hovered. Nothing else
+     changes on hover now that colour is reserved for categories, so this is
+     the whole affordance and it has to be the same on every link. */
+  a       { text-decoration-thickness: 1.5px; }
   a:hover { text-decoration-thickness: 2px; }
 
   /* Reduced motion: nothing moves, anywhere, including Tailwind's own
@@ -189,11 +192,11 @@ export default function RootLayout({ children }) {
                 top of the site". py-2 -my-2 grows the tap target to 33px
                 without moving anything. */}
             <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 sm:gap-x-8 text-[11px] tracking-[0.08em] sm:tracking-[0.15em] uppercase text-neutral-600">
-              <a href="/" className="py-2 -my-2 hover:underline underline-offset-4 transition-colors">Home</a>
-              <a href="/work" className="py-2 -my-2 hover:underline underline-offset-4 transition-colors">Work</a>
-              <a href="/thinking" className="py-2 -my-2 hover:underline underline-offset-4 transition-colors">Thinking</a>
-              <a href="/#about" className="py-2 -my-2 hover:underline underline-offset-4 transition-colors">About</a>
-              <a href="/#contact" className="py-2 -my-2 hover:underline underline-offset-4 transition-colors">Contact</a>
+              <a href="/" className="py-2 -my-2 hover:underline underline-offset-4 decoration-[1.5px] decoration-neutral-500 transition-colors">Home</a>
+              <a href="/work" className="py-2 -my-2 hover:underline underline-offset-4 decoration-[1.5px] decoration-neutral-500 transition-colors">Work</a>
+              <a href="/thinking" className="py-2 -my-2 hover:underline underline-offset-4 decoration-[1.5px] decoration-neutral-500 transition-colors">Thinking</a>
+              <a href="/#about" className="py-2 -my-2 hover:underline underline-offset-4 decoration-[1.5px] decoration-neutral-500 transition-colors">About</a>
+              <a href="/#contact" className="py-2 -my-2 hover:underline underline-offset-4 decoration-[1.5px] decoration-neutral-500 transition-colors">Contact</a>
             </nav>
 
           </div>
