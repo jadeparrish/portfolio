@@ -264,7 +264,7 @@ export function CaseStudyNav({ currentSlug }) {
         {next && (
           <Link href={`/work/${next.slug}`} className="group block">
             <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-2 flex items-center justify-end gap-1.5">
-              Next <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
+              Next <ArrowRight className="w-3 h-3 text-[#49769E] transition-transform group-hover:translate-x-1" />
             </p>
             <p className="text-sm font-serif text-neutral-800 transition-colors">
               {next.title}
