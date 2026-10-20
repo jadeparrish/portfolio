@@ -42,7 +42,7 @@ export default function CommercialValueCaseStudy() {
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
-        <section className="pb-8 border-b border-neutral-200/80">
+        <section className="pb-8 rule rule-4">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
             Commercial Product &middot; 2025
           </p>
@@ -56,7 +56,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* At a Glance */}
-        <section className="py-8 border-b border-neutral-200/80">
+        <section className="py-8 rule rule-5">
           <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
@@ -78,7 +78,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-6">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -108,7 +108,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Part 1: ROI Impact Dashboard */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-7">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part One
           </p>
@@ -236,7 +236,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Part 2: Comparison Tables */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-8">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Two
           </p>
@@ -349,7 +349,7 @@ export default function CommercialValueCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-9">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
