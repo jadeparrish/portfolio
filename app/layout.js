@@ -30,7 +30,7 @@ function Mark({ size = 19 }) {
       >
         j
       </text>
-      <circle cx="48" cy="46" r="7" fill="#A47864" />
+      <circle cx="48" cy="46" r="7" fill="#49769E" />
     </svg>
   );
 }
@@ -51,7 +51,7 @@ const tailwindConfigScript = `
         colors: {
           paper: '#F9F8F6',
           ink: '#1C1C1C',
-          mocha: '#A47864',
+          mocha: '#49769E',
         },
       },
     },
@@ -71,7 +71,7 @@ const globalStyles = `
   button:focus-visible,
   summary:focus-visible,
   [tabindex]:focus-visible {
-    outline: 2px solid #A47864;
+    outline: 2px solid #49769E;
     outline-offset: 3px;
     border-radius: 2px;
   }
@@ -178,7 +178,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 sm:py-5 flex flex-wrap justify-between items-center gap-x-5 gap-y-2">
             <a
               href="/"
-              className="py-2 -my-2 flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#8D6553] whitespace-nowrap transition-colors"
+              className="py-2 -my-2 flex items-center gap-2.5 text-xs uppercase tracking-[0.18em] font-semibold text-neutral-900 hover:text-[#49769E] whitespace-nowrap transition-colors"
             >
               <Mark />
               Jade Parrish
@@ -189,11 +189,11 @@ export default function RootLayout({ children }) {
                 top of the site". py-2 -my-2 grows the tap target to 33px
                 without moving anything. */}
             <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 sm:gap-x-8 text-[11px] tracking-[0.08em] sm:tracking-[0.15em] uppercase text-neutral-600">
-              <a href="/" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Home</a>
-              <a href="/work" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Work</a>
-              <a href="/thinking" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Thinking</a>
-              <a href="/#about" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">About</a>
-              <a href="/#contact" className="py-2 -my-2 hover:text-[#8D6553] transition-colors">Contact</a>
+              <a href="/" className="py-2 -my-2 hover:text-[#49769E] transition-colors">Home</a>
+              <a href="/work" className="py-2 -my-2 hover:text-[#49769E] transition-colors">Work</a>
+              <a href="/thinking" className="py-2 -my-2 hover:text-[#49769E] transition-colors">Thinking</a>
+              <a href="/#about" className="py-2 -my-2 hover:text-[#49769E] transition-colors">About</a>
+              <a href="/#contact" className="py-2 -my-2 hover:text-[#49769E] transition-colors">Contact</a>
             </nav>
 
           </div>
