@@ -18,6 +18,11 @@ import {
 } from 'lucide-react';
 import { caseStudiesList, thinkingList, SiteFooter, Testimonial, Figure } from './caseStudiesData';
 
+/* Matches the blueprint markers below: teal an artefact that exists,
+   red the handoff that breaks, green a decision. Same values as the
+   sector colours and the figures. */
+const stepColour = ['#135461', '#853225', '#31814E'];
+
 const whatIDo = [
   {
     icon: Search,
@@ -330,33 +335,96 @@ export default function PortfolioHomepage() {
         <section className="py-16 lg:py-24 rule rule-10">
           <SectionLabel>How I Work</SectionLabel>
 
-          {/* A sequence drawn as one, rather than three things near each
-              other. The rail runs vertically on a phone and horizontally from
-              md up; each node sits on it with a paper fill so the line passes
-              behind rather than through.
+          {/* The three steps as a blueprint fragment, in the vocabulary of
+              the hero: a line of visibility with the work crossing it. Start
+              with what exists sits above, in the part of the service people
+              see; work across the gap drops backstage; make the case surfaces
+              again where decisions happen.
 
-              The horizontal segments carry -mr-8 to bridge the grid gap, so
-              the line reaches the next node without anything being measured
-              by hand. The last step has no segment, because a process line
-              running off the end implies a step that isn't there. */}
+              Colour is from the diagram palette and means what it means
+              everywhere else: teal for an artefact that already exists, red
+              for the handoff that breaks, green for the path that works.
+              Shape repeats the same information, because red and ochre
+              collapse to one olive under deuteranopia, so colour can never be
+              the only thing carrying it.
+
+              The drawn version is md and up. Below that it falls back to the
+              vertical rail, which is the same information in a shape that
+              survives 390px. */}
+
+          {/* Blueprint, md and up */}
+          <svg
+            viewBox="0 0 1200 190"
+            className="hidden md:block w-full h-auto mb-2"
+            role="img"
+            aria-label="A service blueprint fragment. Three steps cross the line of visibility. Start with what exists sits above the line, in the part of the service people see. Work across the gap sits below it, in the backstage region the person using a service never sees. Make the case rises above the line again."
+          >
+
+            <line
+              x1="0" y1="95" x2="1200" y2="95"
+              stroke="#1C1C1C" strokeOpacity="0.3" strokeWidth="1" strokeDasharray="6 5"
+            />
+            {/* The plain labels define the technical one. "Line of visibility" is
+                the vocabulary, but a commissioner should not have to already
+                know it to read the diagram. They sit in the right third, which
+                the path leaves empty. */}
+            <text
+              x="1196" y="62" textAnchor="end"
+              fontFamily="IBM Plex Mono, monospace" fontSize="9"
+              letterSpacing="1.5" fill="#6A6A6A"
+            >
+              WHAT PEOPLE SEE
+            </text>
+            <text
+              x="1196" y="88" textAnchor="end"
+              fontFamily="IBM Plex Mono, monospace" fontSize="9"
+              letterSpacing="1.5" fill="#6A6A6A"
+            >
+              LINE OF VISIBILITY
+            </text>
+            <text
+              x="1196" y="118" textAnchor="end"
+              fontFamily="IBM Plex Mono, monospace" fontSize="9"
+              letterSpacing="1.5" fill="#6A6A6A"
+            >
+              WHAT THEY DON&rsquo;T
+            </text>
+
+            {/* the path through the service */}
+            <path
+              d="M 12 52 C 150 52, 230 52, 300 86 C 360 115, 360 150, 422 150 C 486 150, 486 115, 548 86 C 640 44, 700 52, 832 52"
+              fill="none" stroke="#135461" strokeWidth="1.5" strokeOpacity="0.6"
+            />
+
+            {/* 01 an artefact that already exists */}
+            <rect x="5" y="45" width="14" height="14" fill="#F9F8F6" stroke="#135461" strokeWidth="2.5" />
+            {/* 02 the handoff, where it breaks */}
+            <rect x="415" y="143" width="14" height="14" fill="#853225" transform="rotate(45 422 150)" />
+            {/* 03 a decision */}
+            <circle cx="832" cy="52" r="7.5" fill="#31814E" />
+          </svg>
+
           <ol className="relative grid grid-cols-1 md:grid-cols-3 gap-y-9 md:gap-x-8">
             <span
               aria-hidden="true"
               className="md:hidden absolute left-[13px] top-3 bottom-3 w-px bg-neutral-900/15"
             />
-            {whatIDo.map((item, i, all) => (
+            {whatIDo.map((item, i) => (
               <li key={item.title} className="relative pl-10 md:pl-0 space-y-3">
-                <div className="flex items-center gap-3">
-                  <span className="absolute left-0 top-0 md:static flex-none w-[27px] h-[27px] rounded-full border border-neutral-900/25 bg-[#F9F8F6] flex items-center justify-center font-mono text-[10px] font-medium text-neutral-900">
+                <span
+                  aria-hidden="true"
+                  className="absolute left-0 top-0 md:static md:mb-3 md:flex flex-none w-[26px] h-[26px] bg-[#F9F8F6] flex items-center justify-center font-mono text-[10px] font-medium"
+                  style={{
+                    border: `2px solid ${stepColour[i]}`,
+                    color: stepColour[i],
+                    borderRadius: i === 2 ? 999 : 2,
+                    transform: i === 1 ? 'rotate(45deg)' : 'none',
+                  }}
+                >
+                  <span style={{ transform: i === 1 ? 'rotate(-45deg)' : 'none' }}>
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  {i < all.length - 1 && (
-                    <span
-                      aria-hidden="true"
-                      className="hidden md:block flex-1 h-px -mr-8 bg-neutral-900/15"
-                    />
-                  )}
-                </div>
+                </span>
                 <h3 className="font-serif text-xl font-normal text-neutral-900 leading-snug">
                   {item.title}
                 </h3>
