@@ -30,7 +30,7 @@ export default function NetIXCaseStudy() {
 
       <main className="max-w-3xl mx-auto px-6 sm:px-8 pb-24">
         {/* Title */}
-        <section className="pb-8 border-b border-neutral-200/80">
+        <section className="pb-8 rule rule-2">
           <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-neutral-600 mb-4">
             Enterprise Product &amp; Rebrand &middot; 2018 to 2022
           </p>
@@ -43,7 +43,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* At a Glance */}
-        <section className="py-8 border-b border-neutral-200/80">
+        <section className="py-8 rule rule-3">
           <div className="grid grid-cols-2 gap-x-6 gap-y-7">
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Role</p>
@@ -65,7 +65,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-4">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -90,7 +90,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* Part 1: Modernising NetIX */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-5">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part One
           </p>
@@ -189,7 +189,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* Part 2: White-labelling */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-6">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Two
           </p>
@@ -259,7 +259,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* Part 3: Post-Acquisition Rebrand */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-7">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             Part Three
           </p>
@@ -345,7 +345,7 @@ export default function NetIXCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-8">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -364,7 +364,7 @@ export default function NetIXCaseStudy() {
           </div>
         </section>
 
-        <section className="py-12 border-b border-neutral-200/80">
+        <section className="py-12 rule rule-9">
           <Testimonial
             quote={[
               <>
