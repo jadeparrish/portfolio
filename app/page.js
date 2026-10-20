@@ -182,18 +182,17 @@ export default function PortfolioHomepage() {
           <div className="lg:col-span-6 lg:col-start-1 lg:row-start-2 lg:self-start space-y-8">
             {/* The same four categories as "Where I can help", carrying the
                 same colours, so a reader meets Public Sector blue here and
-                again further down the page. Complex Digital Products takes
-                ochre because it is Product & Platform Teams in that list.
+                again further down the page.
 
                 The dot leads its label rather than separating two of them:
                 with four categories and three gaps, a separator always left
                 one category unmarked. 10px inside a pair against 28px between
-                pairs, so each mark reads as belonging to the words after it.
+                pairs, so each mark belongs to the words after it.
 
                 Dot and label stay in one flex child, otherwise a dot can wrap
                 onto a new line alone and start a row with a stray mark. The
-                dot is aria-hidden: the label already carries the meaning, and
-                colour is never the only thing saying what a category is. */}
+                dot is aria-hidden: the label already carries the meaning, so
+                colour is never the only thing naming a category. */}
             <div className="flex flex-wrap items-center gap-x-7 gap-y-3 pt-2 text-xs text-[#6A6A6A] tracking-wide">
               {heroSectors.map(({ label, colour }) => (
                 <span key={label} className="inline-flex items-center gap-x-2.5">
@@ -210,7 +209,7 @@ export default function PortfolioHomepage() {
             <div className="pt-2">
               <a
                 href="#work"
-                className="inline-flex items-center gap-2.5 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:translate-x-0.5 transition-all"
+                className="inline-flex items-center gap-2.5 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:underline underline-offset-4 decoration-[1.5px] decoration-neutral-500 hover:translate-x-0.5 transition-all"
               >
                 View selected work <ArrowDownRight className="w-4 h-4 text-[#49769E]" />
               </a>
@@ -414,7 +413,7 @@ export default function PortfolioHomepage() {
                       {item.tag}
                       {item.year && <> &middot; {item.year}</>}
                     </p>
-                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group- group-hover:underline underline-offset-4 decoration-1 decoration-[#49769E]/40">
+                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:underline underline-offset-4 decoration-2 decoration-neutral-500">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -429,13 +428,13 @@ export default function PortfolioHomepage() {
                     <span
                       className={`inline-flex items-center gap-1.5 py-2 -my-2 text-xs font-medium tracking-wider uppercase transition-all ${
                         item.href
-                          ? 'text-neutral-900 group- group-hover:translate-x-1'
+                          ? 'text-neutral-900 group-hover:translate-x-1'
                           : 'text-neutral-600'
                       }`}
                     >
                       {item.cta}
                       {item.href && (
-                        <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group- transition-colors" />
+                        <ArrowRight className="w-3.5 h-3.5 text-neutral-600 transition-colors" />
                       )}
                     </span>
                   </div>
@@ -503,7 +502,7 @@ export default function PortfolioHomepage() {
                   <h3
                     className={`font-serif text-lg leading-snug ${
                       article.href
-                        ? 'text-neutral-900 transition-colors group- group-hover:underline underline-offset-4 decoration-neutral-500'
+                        ? 'text-neutral-900 transition-colors group-hover:underline decoration-2 underline-offset-4 decoration-neutral-500'
                         : 'text-[#6E6E6E]'
                     }`}
                   >
