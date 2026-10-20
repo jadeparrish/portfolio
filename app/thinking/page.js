@@ -24,14 +24,14 @@ function ArticleRow({ article }) {
         <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 font-medium mb-2">
           {article.kicker} &middot; {article.readTime}
         </p>
-        <h2 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug tracking-tight [text-wrap:balance] transition-colors group- group-hover:underline underline-offset-4 decoration-1 decoration-[#49769E]/40">
+        <h2 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug tracking-tight [text-wrap:balance] transition-colors group-hover:underline underline-offset-4 decoration-2 decoration-neutral-500">
           {article.title}
         </h2>
         <p className="mt-3 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] [text-wrap:pretty]">
           {article.description}
         </p>
         {article.hasPage && (
-          <p className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-neutral-900 transition-colors group-">
+          <p className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-neutral-900 transition-colors">
             Read it
             <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
           </p>
