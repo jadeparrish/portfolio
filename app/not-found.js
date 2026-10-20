@@ -55,7 +55,7 @@ export default function NotFound() {
             I spend a good deal of this website arguing that{' '}
             <Link
               href="/thinking/undocumented"
-              className="underline underline-offset-4 decoration-neutral-500 transition-colors"
+              className="underline decoration-[1.5px] underline-offset-4 decoration-neutral-500 transition-colors"
             >
               most complex systems are just undocumented ones
             </Link>
