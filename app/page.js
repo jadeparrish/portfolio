@@ -133,7 +133,7 @@ export default function PortfolioHomepage() {
                   half a 12-column grid, so forcing it there gives four ragged
                   lines. Hidden means no break at all, so the text just flows. */}
               Better systems <br className="hidden lg:inline" />
-              create better <span className="italic text-[#AA558D]">lives.</span>
+              create better <span className="italic text-[#49769E]">lives.</span>
             </h1>
             <div className="space-y-5 text-neutral-600 text-[17px] sm:text-[18px] leading-[1.75] max-w-lg font-normal">
               <p>Every day, people rely on services they didn&rsquo;t choose.</p>
@@ -188,9 +188,9 @@ export default function PortfolioHomepage() {
             <div className="pt-2">
               <a
                 href="#work"
-                className="inline-flex items-center gap-2.5 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] hover:translate-x-0.5 transition-all"
+                className="inline-flex items-center gap-2.5 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#49769E] hover:translate-x-0.5 transition-all"
               >
-                View selected work <ArrowDownRight className="w-4 h-4 text-[#A47864]" />
+                View selected work <ArrowDownRight className="w-4 h-4 text-[#49769E]" />
               </a>
             </div>
           </div>
@@ -392,7 +392,7 @@ export default function PortfolioHomepage() {
                       {item.tag}
                       {item.year && <> &middot; {item.year}</>}
                     </p>
-                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-1 decoration-[#8D6553]/40">
+                    <h3 className="font-serif text-xl sm:text-2xl text-neutral-900 leading-snug transition-colors group-hover:text-[#49769E] group-hover:underline underline-offset-4 decoration-1 decoration-[#49769E]/40">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -407,13 +407,13 @@ export default function PortfolioHomepage() {
                     <span
                       className={`inline-flex items-center gap-1.5 py-2 -my-2 text-xs font-medium tracking-wider uppercase transition-all ${
                         item.href
-                          ? 'text-neutral-900 group-hover:text-[#8D6553] group-hover:translate-x-1'
+                          ? 'text-neutral-900 group-hover:text-[#49769E] group-hover:translate-x-1'
                           : 'text-neutral-600'
                       }`}
                     >
                       {item.cta}
                       {item.href && (
-                        <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#8D6553] transition-colors" />
+                        <ArrowRight className="w-3.5 h-3.5 text-neutral-600 group-hover:text-[#49769E] transition-colors" />
                       )}
                     </span>
                   </div>
@@ -438,10 +438,10 @@ export default function PortfolioHomepage() {
           <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/work"
-              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#49769E] transition-colors"
             >
               See all work ({caseStudiesList.length})
-              <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#49769E] transition-transform group-hover:translate-x-1" />
             </a>
           </div>
         </section>
@@ -472,7 +472,7 @@ export default function PortfolioHomepage() {
               const inner = (
                 <>
                   <article.icon
-                    className={`w-5 h-5 ${article.href ? 'text-[#A47864]' : 'text-neutral-300'}`}
+                    className={`w-5 h-5 ${article.href ? 'text-[#49769E]' : 'text-neutral-300'}`}
                     strokeWidth={1.5}
                   />
                   {/* A piece that isn't written yet sits back. #6E6E6E is
@@ -481,7 +481,7 @@ export default function PortfolioHomepage() {
                   <h3
                     className={`font-serif text-lg leading-snug ${
                       article.href
-                        ? 'text-neutral-900 transition-colors group-hover:text-[#8D6553] group-hover:underline underline-offset-4 decoration-neutral-500'
+                        ? 'text-neutral-900 transition-colors group-hover:text-[#49769E] group-hover:underline underline-offset-4 decoration-neutral-500'
                         : 'text-[#6E6E6E]'
                     }`}
                   >
@@ -509,7 +509,7 @@ export default function PortfolioHomepage() {
                 <a
                   key={article.title}
                   href={article.href}
-                  className="group block border-t border-neutral-200/60 hover:border-[#A47864]/50 transition-colors pt-5 space-y-3"
+                  className="group block border-t border-neutral-200/60 hover:border-[#49769E]/50 transition-colors pt-5 space-y-3"
                 >
                   {inner}
                 </a>
@@ -524,10 +524,10 @@ export default function PortfolioHomepage() {
           <div className="mt-12 py-6 border-y border-neutral-200/80">
             <a
               href="/thinking"
-              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#8D6553] transition-colors"
+              className="group inline-flex items-center gap-2 py-2 -my-2 text-xs uppercase tracking-[0.18em] font-medium text-neutral-900 hover:text-[#49769E] transition-colors"
             >
               All thinking
-              <ArrowRight className="w-3.5 h-3.5 text-[#A47864] transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#49769E] transition-transform group-hover:translate-x-1" />
             </a>
           </div>
         </section>
@@ -560,7 +560,7 @@ export default function PortfolioHomepage() {
               <div className="pt-2">
                 <a
                   href="mailto:hello@jadeparrish.me"
-                  className="group inline-flex items-center gap-2.5 bg-neutral-900 text-[#F9F8F6] px-6 py-3.5 text-sm font-medium tracking-wide hover:bg-[#8D6553] transition-colors"
+                  className="group inline-flex items-center gap-2.5 bg-neutral-900 text-[#F9F8F6] px-6 py-3.5 text-sm font-medium tracking-wide hover:bg-[#49769E] transition-colors"
                 >
                   hello@jadeparrish.me
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
