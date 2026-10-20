@@ -31,7 +31,7 @@ function InlineLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="underline underline-offset-4 decoration-neutral-500 hover:decoration-[#49769E] hover:text-[#49769E] transition-colors"
+      className="underline underline-offset-4 decoration-neutral-500 transition-colors"
     >
       {children}
     </Link>
