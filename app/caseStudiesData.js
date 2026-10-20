@@ -158,7 +158,7 @@ const work = [
     slug: 'debt-advice',
     year: '2014 to 2017',
     group: 'service',
-    title: 'A debt enquiry that ends with a plan',
+    title: 'Telling people the truth about their money',
     tag: 'Research & Service Design',
     description:
       'Designed a debt diagnostic and a personalised report for people working out how to repay what they owed, researched by listening to the calls, then defined the template every debt brand after it was built from.',
