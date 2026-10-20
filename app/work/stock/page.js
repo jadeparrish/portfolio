@@ -68,7 +68,7 @@ export default function StockCaseStudy() {
         </section>
 
         {/* Setting the Scene */}
-        <section className="py-12 rule rule-5">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Setting the Scene</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -105,7 +105,7 @@ export default function StockCaseStudy() {
         </section>
 
         {/* The Work */}
-        <section className="py-12 rule rule-6">
+        <section className="py-12 border-b border-neutral-200/80">
           <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#49769E] mb-2">
             The Work
           </p>
@@ -193,7 +193,7 @@ export default function StockCaseStudy() {
         </section>
 
         {/* Reflection */}
-        <section className="py-12 rule rule-7">
+        <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
@@ -217,7 +217,7 @@ export default function StockCaseStudy() {
           </div>
         </section>
 
-        <section className="py-12 rule rule-8">
+        <section className="py-12 border-b border-neutral-200/80">
           <Testimonial
             quote={
               <>
