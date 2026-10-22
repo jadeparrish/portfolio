@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CaseStudyFooter, SiteFooter, Figure } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'Turning a compliance risk into a simple first step: Jade Parrish',
+  title: 'Consent that protects users without adding friction: Jade Parrish',
   description: 'Standardising how and when consent is captured, with one compliant pattern that works globally.',
 };
 
@@ -38,7 +38,7 @@ export default function ConsentCaseStudy() {
             Compliance &amp; Service Design &middot; 2025
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Turning a compliance risk into a simple first step.
+            Consent that protects users without adding friction.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Standardising how and when consent is captured, with one pattern that
