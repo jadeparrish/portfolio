@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'Making a legacy platform simple, accessible and built to scale: Jade Parrish',
+  title: 'A legacy platform made simple, accessible and ready to scale: Jade Parrish',
   description: 'Transforming a legacy EDI platform into a scalable, accessible SaaS product.',
 };
 
@@ -35,7 +35,7 @@ export default function NetIXCaseStudy() {
             Enterprise Product &amp; Rebrand &middot; 2018 to 2022
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Making a legacy platform simple, accessible and built to scale.
+            A legacy platform made simple, accessible and ready to scale.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Transforming a legacy EDI platform into a scalable, accessible SaaS product.
