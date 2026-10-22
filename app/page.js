@@ -232,7 +232,19 @@ export default function PortfolioHomepage() {
               it; stacked, the photo caps at max-w-xs and centres. */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             <div className="lg:col-span-4">
-              <div className="aspect-[4/5] max-h-[460px] lg:max-h-none w-full max-w-xs lg:max-w-none mx-auto bg-neutral-100 border border-neutral-200 rounded-sm overflow-hidden">
+              {/* Square, and the frame takes #DEDEDB, the same value the drawn
+                  section rules use. It was neutral-200, the one cool grey on
+                  warm paper, and rounded-sm, the only rounded corner on the
+                  site.
+
+                  The border stays rather than going altogether: this photo is
+                  backlit, so its top-left corner averages #E8EBF0 and sits at
+                  1.13:1 against paper. Without an edge the image dissolves into
+                  the page at that corner, while the bottom (14.51:1) and right
+                  (5.22:1) hold themselves. The placeholder fill goes with it,
+                  since it was cool grey and is never seen once the photo
+                  loads. */}
+              <div className="aspect-[4/5] max-h-[460px] lg:max-h-none w-full max-w-xs lg:max-w-none mx-auto border border-[#DEDEDB] overflow-hidden">
                 <img
                   src={jadePhoto.src}
                   alt="Jade Parrish"
