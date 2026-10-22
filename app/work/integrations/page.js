@@ -2,7 +2,7 @@ import React from 'react';
 import { CaseStudyFooter, SiteFooter, Figure } from '../../caseStudiesData';
 
 export const metadata = {
-  title: 'Turning a technical bottleneck into a guided setup: Jade Parrish',
+  title: 'From developer ticket to guided setup: Jade Parrish',
   description: 'A guided, self-serve flow that simplifies complex technical connections across seven integrations.',
 };
 
@@ -37,7 +37,7 @@ export default function IntegrationsCaseStudy() {
             Integrations &amp; Service Design &middot; 2025
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Turning a technical bottleneck into a guided setup.
+            From developer ticket to guided setup.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             A guided, self-serve flow that simplifies complex technical connections for
