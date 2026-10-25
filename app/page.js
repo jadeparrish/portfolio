@@ -535,7 +535,7 @@ export default function PortfolioHomepage() {
                   {inner}
                 </a>
               ) : (
-                <div key={item.num} className={`${shell} opacity-70`}>
+                <div key={item.num} className={`${shell} opacity-85`}>
                   {inner}
                 </div>
               );
