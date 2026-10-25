@@ -47,7 +47,7 @@ function ArticleRow({ article }) {
       {inner}
     </Link>
   ) : (
-    <div className={`${shell} opacity-70`}>{inner}</div>
+    <div className={`${shell} opacity-85`}>{inner}</div>
   );
 }
 
