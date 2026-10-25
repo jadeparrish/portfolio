@@ -53,7 +53,11 @@ function WorkRow({ item }) {
       {inner}
     </Link>
   ) : (
-    <div className={`${shell} opacity-70`}>{inner}</div>
+    /* 85, not 70: at 70 the dimming blended neutral-700 body text to #787777
+       (4.20:1) and the neutral-600 label to #848483 (3.52:1), both under AA.
+       axe reads the computed colour, so the source looked fine. 85 measures
+       6.31:1 and still reads as not-yet-written. */
+    <div className={`${shell} opacity-85`}>{inner}</div>
   );
 }
 
