@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 import Image from 'next/image';
+import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 import fig01 from '../../reporting-fig-01.png';
 
 export const metadata = {
@@ -91,7 +91,21 @@ export default function ReportingCaseStudy() {
             </p>
           </div>
 
-          <Figure n="01" tint="bg-[#DDE3E6]" caption="Fragmented reporting, before the redesign" />
+          {/* The drawn blueprint, so the ratio comes from the artwork rather than
+              16:9, and the tint goes to paper because the figure paints its own. */}
+          <Figure
+            n="01"
+            ratio="aspect-[1408/1230]"
+            tint="bg-[#F9F8F6]"
+            caption="Before the redesign: one report for the brand, two systems that disagreed, and whatever each market built to bridge the gap. Figures are illustrative."
+          >
+            <Image
+              src={fig01}
+              alt="A service blueprint of reporting before the redesign. The brand receives one performance report. Below the line of visibility, two systems of record, Mission Control and Campaign Manager, are marked with a fail point because their numbers did not agree. Below those sit three workarounds built by teams: spreadsheets kept per market across North America, Australia, the UK, France and Germany, Google Docs with numbers pasted in, and Looker boards spun up ad hoc. Everything passes through a single step, assembled by hand every time, which cost up to eight hours of Commercial’s time on one complex brand report."
+              placeholder="blur"
+              className="w-full h-auto"
+            />
+          </Figure>
         </section>
 
         {/* Part 1: Auditing and Aligning the Foundations */}
