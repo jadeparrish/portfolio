@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
-import fig01 from '../../reporting-fig-01.png';
 
 export const metadata = {
   title: 'Turning disconnected data into clearer decisions: Jade Parrish',
@@ -91,20 +89,91 @@ export default function ReportingCaseStudy() {
             </p>
           </div>
 
-          {/* The drawn blueprint, so the ratio comes from the artwork rather than
-              16:9, and the tint goes to paper because the figure paints its own. */}
+          {/* Fig 01 is drawn inline rather than uploaded as an image. Vercel's
+              optimizer re-encodes uploads as lossy WebP (the live URL was
+              w=1920&q=75), which pulls apart hairlines and 9px mono. Vector
+              skips the optimizer, stays sharp at any density, and is ~7KB
+              against ~99KB.
+
+              ratio="" because the drawing sets its own height. The 600px
+              floor plus horizontal scroll is for phones: 1408 units inside
+              375px would set the lane labels below 5px. */}
           <Figure
             n="01"
-            ratio="aspect-[1408/1230]"
+            ratio=""
             tint="bg-[#F9F8F6]"
             caption="Before the redesign: one report for the brand, two systems that disagreed, and whatever each market built to bridge the gap. Figures are illustrative."
           >
-            <Image
-              src={fig01}
-              alt="A service blueprint of reporting before the redesign. The brand receives one performance report. Below the line of visibility, two systems of record, Mission Control and Campaign Manager, are marked with a fail point because their numbers did not agree. Below those sit three workarounds built by teams: spreadsheets kept per market across North America, Australia, the UK, France and Germany, Google Docs with numbers pasted in, and Looker boards spun up ad hoc. Everything passes through a single step, assembled by hand every time, which cost up to eight hours of Commercial’s time on one complex brand report."
-              placeholder="blur"
-              className="w-full h-auto"
-            />
+            <div className="w-full">
+              <div className="overflow-x-auto">
+                <svg
+                viewBox="0 0 1408 1230"
+                className="block w-full min-w-[600px] h-auto"
+                role="img"
+                aria-label="A service blueprint of reporting before the redesign. The brand receives one performance report. Below the line of visibility, two systems of record, Mission Control and Campaign Manager, are marked with a fail point because their numbers did not agree. Below those sit three workarounds built by teams: spreadsheets kept per market across North America, Australia, the UK, France and Germany, Google Docs with numbers pasted in, and Looker boards spun up ad hoc. Everything passes through a single step, assembled by hand every time, which cost up to eight hours of Commercial's time on one complex brand report."
+              >
+                  <rect x="80" y="236" width="1248" height="224" fill="#1C1C1C" opacity="0.025"/>
+                  <rect x="80" y="840" width="1248" height="140" fill="#1C1C1C" opacity="0.025"/>
+                  <line x1="80" y1="60" x2="1328" y2="60" stroke="#1C1C1C" strokeOpacity="0.1" strokeWidth="1"/>
+                  <line x1="80" y1="460" x2="1328" y2="460" stroke="#1C1C1C" strokeOpacity="0.1" strokeWidth="1"/>
+                  <line x1="80" y1="840" x2="1328" y2="840" stroke="#1C1C1C" strokeOpacity="0.1" strokeWidth="1"/>
+                  <line x1="80" y1="980" x2="1328" y2="980" stroke="#1C1C1C" strokeOpacity="0.1" strokeWidth="1"/>
+                  <line x1="340" y1="60" x2="340" y2="980" stroke="#1C1C1C" strokeOpacity="0.1" strokeWidth="1"/>
+                  <text x="104" y="154.0" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="2.4" fill="#6A6A6A">BRAND</text>
+                  <path d="M 360 100 H 820 V 174 C 737 196, 663 152, 590 174 C 517 196, 433 152, 360 174 Z" fill="#FFFFFF" stroke="#1C1C1C" strokeWidth="1.5"/>
+                  <text x="386" y="148" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="29" fontWeight="600" fill="#1C1C1C">One performance report</text>
+                  <line x1="80" y1="236" x2="1328" y2="236" stroke="#1C1C1C" strokeOpacity="0.35" strokeWidth="1.5" strokeDasharray="9 7"/>
+                  <text x="1328" y="225" textAnchor="end" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="2.4" fill="#6A6A6A">LINE OF VISIBILITY</text>
+                  <text x="104" y="354.0" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="2.4" fill="#6A6A6A">SYSTEMS OF RECORD</text>
+                  <rect x="360" y="276" width="440" height="104" fill="#FFFFFF" stroke="#1C1C1C" strokeWidth="1.5"/>
+                  <text x="386" y="318" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="29" fontWeight="600" fill="#1C1C1C">Mission Control</text>
+                  <text x="386" y="348" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="21" fill="#6A6A6A" opacity="1">built for engineers</text>
+                  <rect x="888" y="276" width="440" height="104" fill="#FFFFFF" stroke="#1C1C1C" strokeWidth="1.5"/>
+                  <text x="914" y="318" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="29" fontWeight="600" fill="#1C1C1C">Campaign Manager</text>
+                  <text x="914" y="348" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="21" fill="#6A6A6A" opacity="1">reporting split across pages</text>
+                  <rect x="829" y="313" width="30" height="30" rx="4" fill="#956B07"/>
+                  <text x="844" y="335" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" fontWeight="600" fill="#FFFFFF">!</text>
+                  <text x="844" y="410" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="1.3" fill="#6A6A6A">the numbers did not agree</text>
+                  <text x="104" y="656.0" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="2.4" fill="#6A6A6A">WORKAROUNDS</text>
+                  <rect x="360" y="500" width="968" height="104" fill="#FFFFFF" stroke="#1C1C1C" strokeWidth="1.5" strokeDasharray="7 5"/>
+                  <text x="386" y="542" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="29" fontWeight="600" fill="#1C1C1C">Spreadsheets</text>
+                  <text x="386" y="572" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="21" fill="#6A6A6A" opacity="1">personal and team-shared</text>
+                  <rect x="386" y="620" width="202" height="40" rx="20.0" fill="#1C1C1C" opacity="0.055"/>
+                  <text x="487.0" y="646.0" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="1.8" fill="#404040">NORTH AMERICA</text>
+                  <rect x="602" y="620" width="152" height="40" rx="20.0" fill="#1C1C1C" opacity="0.055"/>
+                  <text x="678.0" y="646.0" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="1.8" fill="#404040">AUSTRALIA</text>
+                  <rect x="768" y="620" width="63" height="40" rx="20.0" fill="#1C1C1C" opacity="0.055"/>
+                  <text x="799.5" y="646.0" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="1.8" fill="#404040">UK</text>
+                  <rect x="845" y="620" width="114" height="40" rx="20.0" fill="#1C1C1C" opacity="0.055"/>
+                  <text x="902.0" y="646.0" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="1.8" fill="#404040">FRANCE</text>
+                  <rect x="973" y="620" width="126" height="40" rx="20.0" fill="#1C1C1C" opacity="0.055"/>
+                  <text x="1036.0" y="646.0" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="1.8" fill="#404040">GERMANY</text>
+                  <rect x="360" y="704" width="468" height="104" fill="#FFFFFF" stroke="#1C1C1C" strokeWidth="1.5" strokeDasharray="7 5"/>
+                  <text x="386" y="746" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="29" fontWeight="600" fill="#1C1C1C">Google Docs</text>
+                  <text x="386" y="776" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="21" fill="#6A6A6A" opacity="1">numbers pasted in</text>
+                  <rect x="860" y="704" width="468" height="104" fill="#FFFFFF" stroke="#1C1C1C" strokeWidth="1.5" strokeDasharray="7 5"/>
+                  <text x="886" y="746" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="29" fontWeight="600" fill="#1C1C1C">Looker boards</text>
+                  <text x="886" y="776" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="21" fill="#6A6A6A" opacity="1">spun up ad hoc</text>
+                  <text x="104" y="916.0" fontFamily="IBM Plex Mono, monospace" fontSize="18" letterSpacing="2.4" fill="#6A6A6A">ASSEMBLY</text>
+                  <rect x="360" y="862" width="900" height="96" fill="#1C1C1C"/>
+                  <text x="386" y="919.0" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="29" fontWeight="600" fill="#FFFFFF">Assembled by hand, every time</text>
+                  <rect x="1276" y="895" width="30" height="30" rx="4" fill="#956B07"/>
+                  <text x="1291" y="917" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" fontWeight="600" fill="#FFFFFF">!</text>
+                  <text x="104" y="1052" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="46" fontWeight="600" fill="#1C1C1C">Up to 8 hours</text>
+                  <text x="104" y="1092" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="23" fill="#404040">of Commercial&rsquo;s time on a single complex brand report</text>
+                  <rect x="104" y="1151" width="30" height="30" rx="4" fill="#956B07"/>
+                  <text x="119" y="1173" textAnchor="middle" fontFamily="IBM Plex Mono, monospace" fontSize="18" fontWeight="600" fill="#FFFFFF">!</text>
+                  <text x="148" y="1173" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="21" fill="#404040">Fail point</text>
+                  <rect x="300" y="1154" width="38" height="24" fill="#FFFFFF" stroke="#1C1C1C" strokeWidth="1.5" strokeDasharray="7 5"/>
+                  <text x="352" y="1173" fontFamily="Instrument Sans, ui-sans-serif, sans-serif" fontSize="21" fill="#404040">Built by teams, owned by no one</text>
+                </svg>
+              </div>
+              {/* The figure is cropped on a phone rather than shrunk, so say so.
+                  Without this the right edge reads as the drawing ending. */}
+              <p className="sm:hidden px-4 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.16em] text-[#6A6A6A]">
+                Scroll to see the rest
+              </p>
+            </div>
           </Figure>
         </section>
 
