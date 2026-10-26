@@ -102,7 +102,7 @@ export default function ReportingCaseStudy() {
             n="01"
             ratio=""
             tint="bg-[#F9F8F6]"
-            caption="Before the redesign: one report for the brand, two systems that disagreed, and whatever each market built to bridge the gap. Figures are illustrative."
+            caption="Before the redesign: one report for the brand, two systems that disagreed, and whatever each market built to optimise their own workflows. Figures are illustrative."
           >
             <div className="w-full">
               <div className="overflow-x-auto">
