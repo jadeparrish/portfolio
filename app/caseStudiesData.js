@@ -99,7 +99,7 @@ const work = [
     title: 'Turning disconnected data into clearer decisions',
     tag: 'Data & Service Design',
     description:
-      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, cutting reporting time by over 50% and giving teams a shared, trusted view for decisions.',
+      'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, halving the time a complex brand report took and giving teams a shared, trusted view for decisions.',
     cta: 'View case study',
     href: '/work/reporting',
     tint: 'bg-[#E5E2DC]',
