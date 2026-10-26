@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
+import Image from 'next/image';
+import fig01 from '../../reporting-fig-01.png';
 
 export const metadata = {
   title: 'Turning disconnected data into clearer decisions: Jade Parrish',
