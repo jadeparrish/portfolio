@@ -56,7 +56,7 @@ export default function ReportingCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">50%+ faster reporting</p>
+              <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">8 hour reports, halved</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Backed by</p>
@@ -77,10 +77,10 @@ export default function ReportingCaseStudy() {
             <p>
               Before this work, results were scattered across Campaign Manager,
               spreadsheets, standalone Looker dashboards, Google Docs, and a complex
-              internal tool called Mission Control. Each used different data refresh
-              rates, so totals rarely matched. Reports were time-consuming to compile and
-              confidence in the numbers was
-              low.
+              internal tool called Mission Control. Mission Control and Campaign Manager
+              refreshed at different rates, so their totals did not match, and everything
+              built from them became inconsistent and sometimes incorrect. Reports were
+              time-consuming to compile and confidence in the numbers was low.
             </p>
             <p>
               The goal was to bring all reporting into one reliable suite, so every team
@@ -102,7 +102,7 @@ export default function ReportingCaseStudy() {
             n="01"
             ratio=""
             tint="bg-[#F9F8F6]"
-            caption="Before the redesign: one report for the brand, two systems that disagreed, and the tools each market built to optimise their own workflows. Figures are illustrative."
+            caption="Before the redesign: one report for the brand, two systems that disagreed, and the tools each market built to optimise their own workflows."
           >
             <div className="w-full">
               <div className="overflow-x-auto">
@@ -213,11 +213,13 @@ export default function ReportingCaseStudy() {
               <SubLabel>Process</SubLabel>
               <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <p>
-                  The audit started with the people using the data. Commercial Team
-                  members in different countries kept coming to me with gaps and
-                  differences in their numbers, which made their decks hard to understand
-                  and talk through. Building the WMS had already uncovered discrepancies
-                  in the data, including mismatched refresh rates between the two systems.
+                  The audit started with the people using the data. Commercial sat across
+                  North America, Australia, the UK, France and Germany, and each market had
+                  settled into its own way of reporting. They kept coming to me with gaps
+                  and differences in their numbers, which made their decks hard to
+                  understand and talk through. Building the WMS had already uncovered
+                  discrepancies in the data, including mismatched refresh rates between
+                  the two systems.
                 </p>
                 <p>
                   I audited every existing reporting view across Campaign Manager and
@@ -321,10 +323,9 @@ export default function ReportingCaseStudy() {
               {/* Equal air above and below: this line is a standalone statement,
                   not the second half of the paragraph before it. */}
               <p className="font-serif text-2xl text-neutral-900 mb-8">
-                It reduced reporting time by over{' '}
-                <span className="text-[#49769E] italic">50 percent</span>, and
-                introduced consistent visual language and data standards across every
-                team.
+                A complex brand report took up to eight hours to assemble. The redesign{' '}
+                <span className="text-[#49769E] italic">halved it</span>, and introduced
+                consistent visual language and data standards across every team.
               </p>
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 The work carried on well past 2024. That foundation became SoPost&rsquo;s
