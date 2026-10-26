@@ -1,6 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
+import figOverview from '../../reporting-overview.png';
+import figAudience from '../../reporting-audience.png';
 
 export const metadata = {
   title: 'Turning disconnected data into clearer decisions: Jade Parrish',
@@ -311,7 +314,30 @@ export default function ReportingCaseStudy() {
                 shared.
               </p>
 
-              <Figure n="02" tint="bg-[#E7E2DC]" caption="Reporting Hub: unified structure and card layouts" />
+              {/* Two figures rather than one. The full page is 0.765 wide to tall, so
+                  at the 704 this column gives it came out 920 tall: past a laptop
+                  viewport, with 7px body text. Cut into the sections it reads at
+                  the same scale and half the height. The funnel section below this
+                  is left out because it was never finished.
+
+                  quality 95 because the default 75 softens labels this small. */}
+              <Figure
+                n="02"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="The brand overview as proposed: summary metrics, channel performance and campaign stock in one structure. Designed in 2025 and not built, and the figures in it are illustrative."
+              >
+                <Image src={figOverview} alt="The brand overview as proposed. A left navigation lists Overview, Orders, Stock, Distribution, Emails, Clicks, Consumers, Feedback and Ad performance. An insights strip carries a low stock alert and a top campaign. Below it, four summary cards give total orders, reach, engagement rate and cost per consumer, beside a chart comparing reach against engagement across six social channels. A campaign performance table then lists five products with their region, channel, stock, usage and stock status. Section headings are still placeholders, because the page was a proposal rather than a built screen." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
+
+              <Figure
+                n="03"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="Further down the same page: audience, geographic redemption and revenue by market."
+              >
+                <Image src={figAudience} alt="The next section of the same page. On the left, four cards give primary audience, top channel, most engaged segment and growth opportunity. On the right, a geographic redemption map of the United Kingdom with a tooltip showing samples sent, redemptions and redemption rate, and beneath it revenue for four locations in dollars, pounds and euros." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
             </div>
 
             <div>
