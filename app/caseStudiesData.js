@@ -105,7 +105,7 @@ const work = [
     tint: 'bg-[#E5E2DC]',
     image: reportingCard,
     imageAlt:
-      'The brand overview dashboard: a sidebar of campaign sections, an insights strip led by a low stock alert, four metrics including total orders of 46,900 and reach of 1.4 million, a chart comparing reach against engagement across six social channels, and a campaign performance table showing stock levels and status.',
+      'The brand overview dashboard: a sidebar of campaign sections, an insights strip led by a low stock alert, four metrics including total orders of 84,200 and reach of 1.2 million, a chart comparing reach against engagement across six social channels, and a campaign performance table showing stock levels and status.',
     hasPage: true,
     featured: true,
   },
