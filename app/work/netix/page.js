@@ -171,14 +171,17 @@ export default function NetIXCaseStudy() {
                   location in the list, which named a real NHS site twelve
                   times. The shipping note is cut below the Shipping Units
                   table, where the original carries two empty tables and a row
-                  of zeroes. */}
+                  of zeroes, and the page's error summary panel is spliced out
+                  above it. The inline field errors stay, so the validation
+                  design still shows without a block of red dominating the
+                  figure. */}
               <Figure
                 n="02"
                 ratio=""
                 tint="bg-[#F9F8F6]"
                 caption="The shipping note rebuilt, above the filtered document list. Both shots date from after the 2019 rebrand, which is why the logo reads a Cegedim Product. The structure is the one set here."
               >
-                <Image src={figScreens} alt="Two rebuilt NetIX screens, one above the other. The first is the shipping note: a dark header bar, then a pink panel listing five validation errors in plain language, each naming the field it belongs to. Below it the document itself, with buyer, seller and delivery location across the top, then underlined fields for references and dates, and a Shipping Units table listing six numbered rows with product code, prices and quantities. The second screen is the document list: a dark navigation rail down the left, a row of filter chips above the table with one filter panel open on a contains rule, and a table of documents carrying reference dates, seller, delivery location and buyer, its last two columns holding status pills in green, red, amber and grey reading complete, failed, held and pending." quality={95} placeholder="blur" className="w-full h-auto" />
+                <Image src={figScreens} alt="Two rebuilt NetIX screens, one above the other. The first is the shipping note: a dark header bar above the document, with buyer, seller, delivery location and ordering location across the top, then underlined fields for references and dates, one of them marked in red with the message value is required, and a Shipping Units table listing six numbered rows with product code, prices and quantities. The second screen is the document list: a dark navigation rail down the left, a row of filter chips above the table with one filter panel open on a contains rule, and a table of documents carrying reference dates, seller, delivery location and buyer, its last two columns holding status pills in green, red, amber and grey reading complete, failed, held and pending." quality={95} placeholder="blur" className="w-full h-auto" />
               </Figure>
             </div>
 
