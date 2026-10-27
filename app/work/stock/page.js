@@ -175,8 +175,9 @@ export default function StockCaseStudy() {
               <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 Katie tested the designs with her counterpart at our biggest
                 warehouse, and they rolled out in phases. They
-                informed the next phase of Campaign Manager reporting, bringing the same
-                clarity and hierarchy into brand-facing dashboards. The same stock
+                informed the next phase of Campaign Manager reporting, and the same
+                clarity and hierarchy carried into the brand-facing dashboards designed
+                for it. The same stock
                 visibility also led into a{' '}
                 <Link
                   href="/work/notifications"
@@ -206,9 +207,8 @@ export default function StockCaseStudy() {
             <p>
               The WMS gave partners and internal teams the same view of what was
               happening. The stock and fulfilment work carried that into reporting.
-              Between them, campaigns went out faster and with fewer surprises, and it set
-              a pattern for how SoPost designs across systems rather than one screen at a
-              time.
+              Between them, campaigns went out with fewer surprises, and it was the first
+              time I had designed across systems rather than one screen at a time.
             </p>
             <p>
               It also fed directly into the notification system that came next, which
