@@ -51,15 +51,15 @@ export default function NetIXCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Clients</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">DPD, Radley, La-Z-Boy, NHS Supply Chain +1</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">DPD, Radley, Tangle Teezer, NHS Supply Chain</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">40%+ faster processes</p>
+              <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">Silverlight replaced, white-labelled twice</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Standards</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">EDI, PEPPOL, WCAG 2.1 AA</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">EDI, PEPPOL</p>
             </div>
           </div>
         </section>
@@ -158,12 +158,20 @@ export default function NetIXCaseStudy() {
               {/* Equal air above and below: this line is a standalone statement,
                   not the second half of the paragraph before it. */}
               <p className="font-serif text-2xl text-neutral-900 mb-8">
-                It reduced the time to create or update a process by over{' '}
-                <span className="text-[#49769E] italic">40 percent</span>, and
-                significantly decreased support requests.
+                The feedback was about how it looked and how easy it had become. On a
+                system people had been{' '}
+                <span className="text-[#49769E] italic">stuck with for years</span>, that
+                was the point.
               </p>
 
               <div className="space-y-4">
+                <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
+                  &ldquo;I like the status column as it is really easy to see files
+                  processing.&rdquo;
+                  <footer className="mt-1 text-sm not-italic font-sans text-[#6A6A6A]">
+                    &ndash; DPD
+                  </footer>
+                </blockquote>
                 <blockquote className="border-l-2 border-neutral-300 pl-4 py-1 italic font-serif text-neutral-800 text-[17px] sm:text-[18px]">
                   &ldquo;Looks 100 times better and is a lot easier to use.&rdquo;
                   <footer className="mt-1 text-sm not-italic font-sans text-[#6A6A6A]">
@@ -338,7 +346,7 @@ export default function NetIXCaseStudy() {
               </p>
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Introduced consistent visual hierarchy and colour usage</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Established structured colour tokens and typography scales, so contrast could be corrected centrally rather than screen by screen</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Established structured colour tokens and typography scales, mapped between Figma and the CSS and shipped in code, so contrast could be corrected centrally rather than screen by screen</li>
               </ul>
             </div>
           </div>
@@ -353,8 +361,9 @@ export default function NetIXCaseStudy() {
               design, with nobody else to hand the hard decisions to.
             </p>
             <p>
-              Working on-site with Cegedim in France was the first time I had done this
-              across two languages and two companies that had joined.
+              Working on-site with Cegedim in France was the first time I had designed
+              across two languages, and across two companies that had only just been
+              joined together.
             </p>
             <p>
               What NetIX left behind was a platform that could take a new partner without
