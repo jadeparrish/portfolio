@@ -166,17 +166,19 @@ export default function NetIXCaseStudy() {
               </p>
 
               {/* Two screens rather than one: a single screen cannot show a
-                  system. The delivery locations, references and supplier names
-                  on the dashboard are invented, and the crop stops above the
-                  Top 10 and Bottom 10 Suppliers charts, which ranked twenty
-                  real companies by performance. */}
+                  system. Both are the NetEDIStarter test tenant, so there is
+                  almost nothing to redact; the one swap is the delivery
+                  location in the list, which named a real NHS site twelve
+                  times. The shipping note is cut below the Shipping Units
+                  table, where the original carries two empty tables and a row
+                  of zeroes. */}
               <Figure
                 n="02"
                 ratio=""
                 tint="bg-[#F9F8F6]"
-                caption="The same vocabulary across two screens: stat and list cards on the dashboard, the same tables and filters on the product view. Companies and references in the lists are invented."
+                caption="The shipping note rebuilt, above the filtered document list. Both shots date from after the 2019 rebrand, which is why the logo reads a Cegedim Product. The structure is the one set here."
               >
-                <Image src={figScreens} alt="Two redesigned NetIX screens, one above the other. The first is a dashboard: a dark navigation rail down the left, a welcome bar, then four stat cards reading orders fulfilled, total orders, order fill rate and sellers, and beneath them a card listing the latest advance shipping notices with success and failure pills, beside a doughnut chart breaking validation into successful, timeliness and data issues. The second screen is a product overview: the same navigation rail, a filter panel with seller, buyer and property pickers above a table of products listing seller code, description, traded unit EAN, tax code, unit price and last updated, each row ending in edit, view and delete buttons, with paging controls along the bottom." quality={95} placeholder="blur" className="w-full h-auto" />
+                <Image src={figScreens} alt="Two rebuilt NetIX screens, one above the other. The first is the shipping note: a dark header bar, then a pink panel listing five validation errors in plain language, each naming the field it belongs to. Below it the document itself, with buyer, seller and delivery location across the top, then underlined fields for references and dates, and a Shipping Units table listing six numbered rows with product code, prices and quantities. The second screen is the document list: a dark navigation rail down the left, a row of filter chips above the table with one filter panel open on a contains rule, and a table of documents carrying reference dates, seller, delivery location and buyer, its last two columns holding status pills in green, red, amber and grey reading complete, failed, held and pending." quality={95} placeholder="blur" className="w-full h-auto" />
               </Figure>
             </div>
 
