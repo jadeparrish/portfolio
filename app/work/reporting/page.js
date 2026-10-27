@@ -61,7 +61,7 @@ export default function ReportingCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">8 hour reports, halved</p>
+              <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">Up to 8 hours, halved</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Audit found</p>
