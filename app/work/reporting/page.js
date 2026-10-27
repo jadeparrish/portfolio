@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
 import figAudit from '../../reporting-audit.png';
 import figOrders from '../../reporting-orders.png';
+import figHub from '../../reporting-overview.png';
 
 export const metadata = {
   title: 'Turning disconnected data into clearer decisions: Jade Parrish',
@@ -376,6 +377,20 @@ export default function ReportingCaseStudy() {
                 </Link>{' '}
                 so the components were real rather than drawn. This is as far as it got.
               </p>
+
+              {/* Where it was heading when the role ended. It belongs here rather
+                  than in Part Two: it postdates the work that shipped, and the
+                  paragraph above is already the 2025 one. Without it that
+                  paragraph promises a new hub layout and shows nothing. */}
+              <Figure
+                n="04"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="The hub as proposed: summary metrics, channel performance and campaign stock in one structure. Designed in 2025 and not built, and the figures in it are illustrative."
+              >
+                <Image src={figHub} alt="The proposed hub, its brand overview page. A left navigation lists Overview, Orders, Stock, Distribution, Emails, Clicks, Consumers, Feedback and Ad performance. An insights strip carries a low stock alert and a top campaign. Below it, four summary cards give total orders, reach, engagement rate and cost per consumer, beside a chart comparing reach against engagement across six social channels. A campaign performance table then lists five products with their region, channel, stock, usage and stock status. Several section headings are still placeholders, because the page was a proposal rather than a built screen." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
+
 
 
             </div>
