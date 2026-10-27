@@ -96,7 +96,7 @@ const work = [
     slug: 'reporting',
     year: '2024 to 2025',
     group: 'data',
-    title: 'Turning disconnected data into clearer decisions',
+    title: 'Getting everyone back to the same numbers',
     tag: 'Data & Service Design',
     description:
       'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, halving the time a complex brand report took and giving teams a shared, trusted view for decisions.',
