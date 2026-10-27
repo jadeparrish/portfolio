@@ -205,9 +205,9 @@ export default function NotificationsCaseStudy() {
             What came back was qualitative rather than measured. A Customer Success
             Manager told me the stock notifications had changed how media agencies
             worked: they no longer had to ask her, or go and look at the dashboard, to
-            know when to turn ads off. Someone on another team said the same thing in
-            different words, that having the notifications in the product saved her team
-            a lot of time. Nobody was tracking helpdesk contact, so the number we agreed
+            know when to turn ads off. A second Customer Success Manager, on a different
+            team, said the same thing in different words: having the notifications in the
+            product saved her team a lot of time. Nobody was tracking helpdesk contact, so the number we agreed
             to judge it on does not exist.
           </p>
         </section>
