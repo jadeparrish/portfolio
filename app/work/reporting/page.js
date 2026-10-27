@@ -63,8 +63,8 @@ export default function ReportingCaseStudy() {
               <p className="text-sm font-medium text-[#49769E] [text-wrap:balance]">8 hour reports, halved</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Backed by</p>
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">CTO-approved initiative</p>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Audit found</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Stock overstated by 80%</p>
             </div>
           </div>
         </section>
@@ -192,25 +192,22 @@ export default function ReportingCaseStudy() {
 
           <div className="space-y-10">
             <div>
-              <SubLabel>Problem</SubLabel>
-              <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-                Reporting had become fragmented and unreliable.
-              </p>
-              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Mission Control was built for engineers, but Commercial were relying on it too</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Campaign Manager split reporting across multiple isolated pages</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Data inconsistencies eroded trust internally</li>
-              </ul>
-            </div>
-
-            <div>
-              <SubLabel>Challenges Identified</SubLabel>
-              <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Different refresh rates between systems created data mismatches</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Duplicated charts and conflicting metrics across tools</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> No shared understanding of how datasets connected</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Heavy manual effort to compile brand reports</li>
-              </ul>
+              <SubLabel>What was wrong</SubLabel>
+              <div className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
+                <p>
+                  Reporting had become fragmented and unreliable. Mission Control was
+                  built for engineers, and Commercial had ended up relying on it anyway.
+                  Campaign Manager split reporting across isolated pages. Between them the
+                  two systems refreshed at different rates, duplicated charts, and
+                  disagreed on metrics that shared a name, and nobody held a clear picture
+                  of how the datasets connected.
+                </p>
+                <p>
+                  The effect was cumulative. Every brand report had to be compiled by hand
+                  from sources that did not agree, which took hours and left the numbers
+                  open to question once they arrived.
+                </p>
+              </div>
             </div>
 
             <div>
@@ -407,9 +404,9 @@ export default function ReportingCaseStudy() {
               stopped being something you rebuilt by hand every time.
             </p>
             <p>
-              It became the foundation for everything that followed. The stock work, the
-              ROI dashboards, all of it traces back to one audit that started because
-              people simply couldn&rsquo;t agree on the numbers anymore.
+              It became the foundation for everything that followed. The stock work and
+              the ROI dashboards both trace back to that audit. What started as an
+              argument about whose numbers were right ended with one set everybody used.
             </p>
           </div>
         </section>
