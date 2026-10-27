@@ -130,7 +130,7 @@ const work = [
     title: 'A legacy platform made simple, accessible and ready to scale',
     tag: 'Enterprise Product & Rebrand',
     description:
-      'Took full ownership of an outdated enterprise platform end-to-end, cutting process creation time by over 40%. Carried it through a rebrand across UK and French teams, then white-labelled it for La-Z-Boy and an IKEA bid, while advocating for WCAG 2.1 AA accessibility.',
+      'Took full ownership of an outdated enterprise platform end-to-end, replacing Silverlight with a modular interface. Carried it through a rebrand across UK and French teams, then white-labelled it for La-Z-Boy and an IKEA bid, while advocating for WCAG 2.1 AA accessibility.',
     cta: 'View case study',
     href: '/work/netix',
     image: netixCard,
