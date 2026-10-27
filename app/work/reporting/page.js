@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
-import figOverview from '../../reporting-overview.png';
-import figAudience from '../../reporting-audience.png';
+import figAudit from '../../reporting-audit.png';
+import figOrders from '../../reporting-orders.png';
 
 export const metadata = {
   title: 'Turning disconnected data into clearer decisions: Jade Parrish',
@@ -242,6 +242,19 @@ export default function ReportingCaseStudy() {
                   engineering, build Commercial reporting of their own, and treat that as
                   product work rather than maintenance.
                 </p>
+
+              {/* The artefact behind the claim the whole page rests on. The portrait
+                  has been cropped out and the figures changed, with the ratio
+                  between reported and actual preserved, so the discrepancy is
+                  unaltered. The caption says exactly that. */}
+              <Figure
+                n="02"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="A page from the audit: a Customer Success Director&rsquo;s commentary on Mission Control, including two campaigns where the stock it reported was close to double what was actually there. The figures are changed, the discrepancies are not."
+              >
+                <Image src={figAudit} alt="A page from the Mission Control audit. A Customer Success Director's comments are pinned around a screenshot of a campaign page in Mission Control. Two of them record the stock discrepancy: on one campaign the system reported 61,400 samples with 42,800 remaining when there were really 34,000 to start and 15,600 left, and on another it reported 34,200 with 23,100 remaining against 19,500 and 8,400. Her other comments say she uses only the approved filter, that the data excludes customer service samples, that these stats are the ones referenced in campaign reports, that Campaign Manager is a better place to gather top level stats, and that she cannot see what samples remain for a particular activation without going elsewhere." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
               </div>
             </div>
 
@@ -314,6 +327,19 @@ export default function ReportingCaseStudy() {
                 shared.
               </p>
 
+              {/* The shipped page. Every figure in it is replaced: the brands are
+                  public, the numbers are not. The supplied screen also contradicted
+                  itself, so the replacements are internally consistent. */}
+              <Figure
+                n="03"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="Orders as shipped: one page per reporting area, card-based, with filters, a time series and a rejection breakdown in a shared structure. Figures are illustrative."
+              >
+                <Image src={figOrders} alt="The Orders page as shipped in Campaign Manager. A left navigation lists Campaign Overview, Orders, Activities, Email, Feedback, Reviews and Demographics. The page carries filters for date range, activity and product, with the product filter open as a dialog. Order overview shows submitted, approved against a cap, and dispatched. Below it a chart plots approved and dispatched orders over time with a hover readout, and under that a row breaking order rejections into duplicate, intelligent filter, invalid address and other." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
+
+
             </div>
 
             <div>
@@ -351,32 +377,6 @@ export default function ReportingCaseStudy() {
                 so the components were real rather than drawn. This is as far as it got.
               </p>
 
-              {/* The 2025 hub, which belongs here rather than in Part Two: it postdates the
-                  work that shipped, and the paragraph above is already the 2025 one.
-                  Two figures rather than one. The full page is 0.765 wide to tall, so
-                  at the 704 this column gives it came out 920 tall: past a laptop
-                  viewport, with 7px body text. Cut into the sections it reads at
-                  the same scale and half the height. The funnel section below this
-                  is left out because it was never finished.
-
-                  quality 95 because the default 75 softens labels this small. */}
-              <Figure
-                n="02"
-                ratio=""
-                tint="bg-[#F9F8F6]"
-                caption="The hub&rsquo;s brand overview as proposed: summary metrics, channel performance and campaign stock in one structure. Designed in 2025 and not built, and the figures in it are illustrative."
-              >
-                <Image src={figOverview} alt="The brand overview as proposed. A left navigation lists Overview, Orders, Stock, Distribution, Emails, Clicks, Consumers, Feedback and Ad performance. An insights strip carries a low stock alert and a top campaign. Below it, four summary cards give total orders, reach, engagement rate and cost per consumer, beside a chart comparing reach against engagement across six social channels. A campaign performance table then lists five products with their region, channel, stock, usage and stock status. Section headings are still placeholders, because the page was a proposal rather than a built screen." quality={95} placeholder="blur" className="w-full h-auto" />
-              </Figure>
-
-              <Figure
-                n="03"
-                ratio=""
-                tint="bg-[#F9F8F6]"
-                caption="Further down the same page: audience, geographic redemption and revenue by market."
-              >
-                <Image src={figAudience} alt="The next section of the same page. On the left, four cards give primary audience, top channel, most engaged segment and growth opportunity. On the right, a geographic redemption map of the United Kingdom with a tooltip showing samples sent, redemptions and redemption rate, and beneath it revenue for four locations in dollars, pounds and euros." quality={95} placeholder="blur" className="w-full h-auto" />
-              </Figure>
 
             </div>
           </div>
