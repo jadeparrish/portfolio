@@ -7,8 +7,9 @@ import figOrders from '../../reporting-orders.png';
 import figHub from '../../reporting-overview.png';
 
 export const metadata = {
-  title: 'Turning disconnected data into clearer decisions: Jade Parrish',
-  description: 'Consolidating fragmented insights into a single reporting suite for brands and internal teams.',
+  title: 'Getting everyone back to the same numbers: Jade Parrish',
+  description:
+    'Why the Commercial team stopped trusting the reporting, and what it took to give them one set of numbers.',
 };
 
 function SectionLabel({ children }) {
@@ -39,7 +40,7 @@ export default function ReportingCaseStudy() {
             Data &amp; Service Design &middot; 2024 to 2025
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.15] tracking-tight text-neutral-900 mb-6">
-            Turning disconnected data into clearer decisions.
+            Getting everyone back to the same numbers.
           </h1>
           <p className="text-neutral-600 text-lg sm:text-xl leading-[1.6] max-w-xl">
             Bringing reporting scattered across five tools into one place that brands
