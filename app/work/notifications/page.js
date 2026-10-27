@@ -74,8 +74,7 @@ export default function NotificationsCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              {/* TODO: swap in a real figure if you can get one (e.g. hours saved per week, fewer missed downloads) */}
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Hours of manual checking saved</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Agencies stopped checking by hand</p>
             </div>
           </div>
         </section>
@@ -201,6 +200,15 @@ export default function NotificationsCaseStudy() {
             It was engineered to scale, with a clear extension path to approvals, campaign
             status changes and integrations. We agreed up front to judge it on whether
             people turned it on and left it on, and on whether helpdesk contact dropped.
+          </p>
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
+            What came back was qualitative rather than measured. A Customer Success
+            Manager told me the stock notifications had changed how media agencies
+            worked: they no longer had to ask her, or go and look at the dashboard, to
+            know when to turn ads off. Someone on another team said the same thing in
+            different words, that having the notifications in the product saved her team
+            a lot of time. Nobody was tracking helpdesk contact, so the number we agreed
+            to judge it on does not exist.
           </p>
         </section>
 
