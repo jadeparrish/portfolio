@@ -105,7 +105,7 @@ const work = [
     tint: 'bg-[#E5E2DC]',
     image: reportingCard,
     imageAlt:
-      'The brand overview dashboard: a sidebar of campaign sections, an insights strip led by a low stock alert, four metrics including total orders of 84,200 and reach of 1.2 million, a chart comparing reach against engagement across six social channels, and a campaign performance table showing stock levels and status.',
+      'The Orders page from the rebuilt reporting area: a sidebar listing campaign overview, orders, activities, email, feedback, reviews and demographics, filters for date range, activity and product with the product filter open, three summary cards giving orders submitted, approved and dispatched, and a chart of approved and dispatched orders over time.',
     hasPage: true,
     featured: true,
   },
