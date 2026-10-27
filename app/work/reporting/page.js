@@ -74,8 +74,8 @@ export default function ReportingCaseStudy() {
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               In 2024, I led the redesign of SoPost&rsquo;s Reporting Area. The honest
-              version is that nobody trusted the numbers anymore, and I got to be the
-              person who went and found out why.
+              version is that the Commercial team didn&rsquo;t trust the numbers anymore,
+              and I got to be the person who went and found out why.
             </p>
             <p>
               Before this work, results were scattered across Campaign Manager,
@@ -198,7 +198,7 @@ export default function ReportingCaseStudy() {
               <ul className="space-y-4 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Mission Control was built for engineers, but Commercial were relying on it too</li>
                 <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Campaign Manager split reporting across multiple isolated pages</li>
-                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Data inconsistencies eroded trust internally and with brands</li>
+                <li className="flex gap-3"><span aria-hidden="true" className="text-[#49769E]">&middot;</span> Data inconsistencies eroded trust internally</li>
               </ul>
             </div>
 
@@ -387,7 +387,7 @@ export default function ReportingCaseStudy() {
           <SectionLabel>Reflection</SectionLabel>
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
-              People trusted the numbers again. The tools were joined up, Engineering and
+              Staff trusted the numbers again. The tools were joined up, Engineering and
               the Commercial Team were working from the same definitions, and reporting
               stopped being something you rebuilt by hand every time.
             </p>
