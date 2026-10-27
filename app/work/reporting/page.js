@@ -242,6 +242,7 @@ export default function ReportingCaseStudy() {
                   engineering, build Commercial reporting of their own, and treat that as
                   product work rather than maintenance.
                 </p>
+              </div>
 
               {/* The artefact behind the claim the whole page rests on. The portrait
                   has been cropped out and the figures changed, with the ratio
@@ -251,11 +252,10 @@ export default function ReportingCaseStudy() {
                 n="02"
                 ratio=""
                 tint="bg-[#F9F8F6]"
-                caption="A page from the audit: a Customer Success Director&rsquo;s commentary on Mission Control, including two campaigns where the stock it reported was close to double what was actually there. The figures are changed, the discrepancies are not."
+                caption="A page from the audit: a Customer Success Director&rsquo;s commentary on Mission Control, including two campaigns where the stock it reported was close to double what was actually there. The figures are changed."
               >
                 <Image src={figAudit} alt="A page from the Mission Control audit. A Customer Success Director's comments are pinned around a screenshot of a campaign page in Mission Control. Two of them record the stock discrepancy: on one campaign the system reported 61,400 samples with 42,800 remaining when there were really 34,000 to start and 15,600 left, and on another it reported 34,200 with 23,100 remaining against 19,500 and 8,400. Her other comments say she uses only the approved filter, that the data excludes customer service samples, that these stats are the ones referenced in campaign reports, that Campaign Manager is a better place to gather top level stats, and that she cannot see what samples remain for a particular activation without going elsewhere." quality={95} placeholder="blur" className="w-full h-auto" />
               </Figure>
-              </div>
             </div>
 
             <div>
