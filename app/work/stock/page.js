@@ -61,7 +61,6 @@ export default function StockCaseStudy() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              {/* TODO: swap in a real figure once you have one (e.g. hours saved, fewer manual checks) */}
               <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Real-time stock and SLA visibility</p>
             </div>
           </div>
@@ -186,7 +185,9 @@ export default function StockCaseStudy() {
                   scalable notification system
                 </Link>
                 , first released in 2025, so teams are alerted when stock runs low
-                instead of checking balances by hand.
+                instead of checking balances by hand. A Customer Success Manager later
+                said that was the part media agencies felt most: they stopped having to
+                ask her, or check the dashboard, to know when to turn ads off.
               </p>
             </div>
           </div>
