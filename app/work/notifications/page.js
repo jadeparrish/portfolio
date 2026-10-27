@@ -4,7 +4,7 @@ import { CaseStudyFooter, SiteFooter, Figure } from '../../caseStudiesData';
 
 export const metadata = {
   title: 'Designing notifications that scale beyond a single alert: Jade Parrish',
-  description: 'A flexible, three-part notification framework, starting with stock alerts and built to extend across the platform.',
+  description: 'A flexible, threeå-part notification framework, starting with stock alerts and built to extend across the platform.',
 };
 
 function SectionLabel({ children }) {
@@ -193,8 +193,10 @@ export default function NotificationsCaseStudy() {
           </p>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             Since that first rollout, the system has grown to include data lifecycle
-            notifications for opt-in data, and commenting within the campaign builder.
-            That was the first real proof of its flexibility as a platform-wide framework.
+            notifications for opt-in data. Commenting within the campaign builder was
+            designed on the same framework and had not shipped by the time I left. That
+            it stretched to both was the first real proof of its flexibility as a
+            platform-wide framework.
           </p>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-4">
             It was engineered to scale, with a clear extension path to approvals, campaign
@@ -223,7 +225,7 @@ export default function NotificationsCaseStudy() {
             </p>
             <p>
               Beyond stock monitoring, it now connects across systems, from fulfilment
-              and reporting to campaign setup.
+              to campaign setup.
             </p>
           </div>
         </section>
