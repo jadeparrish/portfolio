@@ -57,7 +57,7 @@ const work = [
     title: 'Giving a siloed platform a navigation that scales',
     tag: 'Information Architecture',
     description:
-      'Rebuilt a SaaS platform’s navigation, mapping actions by user intent rather than department. Introduced a three-tier hierarchy that let the product grow without needing to be restructured again.',
+      'Redesigned a SaaS platform’s navigation, mapping actions by user intent rather than department. A three-tier hierarchy that lets the product grow without needing to be restructured again. Signed off, not built.',
     cta: 'View case study',
     href: '/work/cm-navigation',
     tint: 'bg-[#E4E1E8]',
@@ -96,7 +96,7 @@ const work = [
     slug: 'reporting',
     year: '2024 to 2025',
     group: 'data',
-    title: 'Getting everyone back to the same numbers',
+    title: 'Turning disconnected data into clearer decisions',
     tag: 'Data & Service Design',
     description:
       'Audited reporting scattered across spreadsheets, standalone dashboards and two disconnected systems, then rebuilt it all into a single hub, halving the time a complex brand report took and giving teams a shared, trusted view for decisions.',
