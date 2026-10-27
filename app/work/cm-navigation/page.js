@@ -73,9 +73,8 @@ export default function NavigationCaseStudy() {
               <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Internal teams and Customer Success</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Outcome</p>
-              {/* TODO: swap in a real figure if you can get one (e.g. task time, fewer support questions) */}
-              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">A structure that scales without restructuring</p>
+              <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-600 mb-1.5">Status</p>
+              <p className="text-sm font-medium text-neutral-900 [text-wrap:balance]">Signed off, not built</p>
             </div>
           </div>
         </section>
@@ -185,20 +184,23 @@ export default function NavigationCaseStudy() {
         <section className="py-12 border-b border-neutral-200/80">
           <SectionLabel>Outcome</SectionLabel>
           <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mb-4">
-            The redesigned navigation delivered:
+            The agreed framework defines:
           </p>
           <Bullets
             items={[
               'A unified, scalable framework underpinning every Campaign Manager module',
               'A clear separation between organisation, campaign and reporting levels',
-              'Reduced cognitive load and better wayfinding',
+              'Lower cognitive load and clearer wayfinding',
               'A foundation for future permissions and role-based access',
             ]}
           />
           <p className="font-serif text-2xl text-neutral-900 mt-8">
-            The redesign changed{' '}
-            <span className="text-[#49769E] italic">how people reached things</span>, not
-            how those things looked.
+            The redesign is about{' '}
+            <span className="text-[#49769E] italic">how people reach things</span>, not
+            how those things look.
+          </p>
+          <p className="text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75] mt-8">
+            The framework was signed off. It had not been built by the time I left.
           </p>
         </section>
 
@@ -208,15 +210,16 @@ export default function NavigationCaseStudy() {
           <div className="space-y-5 text-neutral-700 text-[17px] sm:text-[18px] leading-[1.75]">
             <p>
               I grouped things by what somebody was trying to do rather than by which team
-              owned them, and most of the structure came out of that one decision. After
-              it, people could tell where they were without being told.
+              owned them, and most of the structure came out of that one decision. In
+              testing, people could tell where they were without being told.
             </p>
             <p>
-              The framework now underpins the whole of Campaign Manager, connecting{' '}
+              It was designed to underpin the whole of Campaign Manager, connecting{' '}
               <InlineLink href="/work/reporting">Reporting</InlineLink>,{' '}
               <InlineLink href="/work/stock">stock and fulfilment</InlineLink> and
               Integrations through one structure. What I find satisfying about this kind of
-              work is that the next hundred features now have somewhere sensible to live.
+              work is that, built, the next hundred features would have somewhere sensible
+              to live.
             </p>
           </div>
         </section>
