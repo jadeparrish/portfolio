@@ -102,7 +102,7 @@ const whoIWorkWith = [
   {
     icon: Heart,
     title: 'Charities & NFPs',
-    description: 'Charities, cultural organisations and not-for-profits.',
+    description: 'Housing associations, grant-makers, membership bodies and social enterprises.',
   },
 ];
 
