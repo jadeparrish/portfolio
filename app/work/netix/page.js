@@ -1,6 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CaseStudyFooter, SiteFooter, Testimonial, Figure } from '../../caseStudiesData';
+import figLegacy from '../../netix-legacy.png';
+import figScreens from '../../netix-screens.png';
+import figWhiteLabel from '../../netix-whitelabel.png';
+import figEmail from '../../netix-accessibility-email.png';
+import figTokens from '../../netix-tokens.png';
 
 export const metadata = {
   title: 'A legacy platform made simple, accessible and ready to scale: Jade Parrish',
@@ -86,7 +92,20 @@ export default function NetIXCaseStudy() {
             </p>
           </div>
 
-          <Figure n="01" tint="bg-[#E9E4DE]" caption="NetIX interface, before redesign" />
+          {/* The brands stay, because NetEDI's client list is published. The data
+              attached to them does not: the addresses, trading codes, pallet
+              identifiers and references are all invented and internally
+              consistent, and a real person's email address has gone from the
+              header bar. The browser chrome went with the crop, because the
+              bookmarks bar was a client list in its own right. */}
+          <Figure
+            n="01"
+            ratio=""
+            tint="bg-[#F9F8F6]"
+            caption="NetIX before the redesign: a shipping note in the Silverlight application. The companies are real. The addresses, codes and references are not."
+          >
+            <Image src={figLegacy} alt="The old NetIX shipping note. A dark blue title bar reads NeTIX Professional version 3.0, with a Powered By NetEDI badge at the right. Beneath it two columns of bordered form fields hold the supplier's and the buyer's name, address, postal area, province, post code and trading codes, each with a small information button beside it. Below those sit three collapsed grey bars for ordering location, delivery location and the shipping note header. At the bottom a dense table lists three pallets, each opening into its own nested row of columns for order number, product code, description, quantities, pallet number and container." quality={95} placeholder="blur" className="w-full h-auto" />
+          </Figure>
         </section>
 
         {/* Part 1: Modernising NetIX */}
@@ -146,7 +165,19 @@ export default function NetIXCaseStudy() {
                 screen size and a mistake was harder to make in the first place.
               </p>
 
-              <Figure n="02" tint="bg-[#E3E6E1]" caption="Redesigned dashboard and process screens" />
+              {/* Two screens rather than one: a single screen cannot show a
+                  system. The delivery locations, references and supplier names
+                  on the dashboard are invented, and the crop stops above the
+                  Top 10 and Bottom 10 Suppliers charts, which ranked twenty
+                  real companies by performance. */}
+              <Figure
+                n="02"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="The same vocabulary across two screens: stat and list cards on the dashboard, the same tables and filters on the product view. Companies and references in the lists are invented."
+              >
+                <Image src={figScreens} alt="Two redesigned NetIX screens, one above the other. The first is a dashboard: a dark navigation rail down the left, a welcome bar, then four stat cards reading orders fulfilled, total orders, order fill rate and sellers, and beneath them a card listing the latest advance shipping notices with success and failure pills, beside a doughnut chart breaking validation into successful, timeliness and data issues. The second screen is a product overview: the same navigation rail, a filter panel with seller, buyer and property pickers above a table of products listing seller code, description, traded unit EAN, tax code, unit price and last updated, each row ending in edit, view and delete buttons, with paging controls along the bottom." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
             </div>
 
             <div>
@@ -242,7 +273,14 @@ export default function NetIXCaseStudy() {
                 </p>
               </div>
 
-              <Figure n="03" tint="bg-[#E7E2DC]" caption="NetIX white-labelled for the IKEA Restaurants bid and for La-Z-Boy" />
+              <Figure
+                n="03"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="The same product, two brands: NetIX as the La-Z-Boy UK Dealer Portal, and NetIX as De IKEA Mat Nav for the bid."
+              >
+                <Image src={figWhiteLabel} alt="Two sign-in screens side by side, the same screen wearing two brands. On the left, the La-Z-Boy version: a white navigation bar carrying the La-Z-Boy wordmark, then a deep blue page holding a white sign-in card headed Your NetEDI account, beside a tinted photograph of a reclining sofa captioned La-Z-Boy UK Dealer Portal with phone, email and web details. On the right, the IKEA version: a yellow page patterned with line drawings of food, the IKEA logo above a white sign-in card headed De IKEA Mat Nav, with a yellow log in button and a blue register bar across the foot of the card." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
             </div>
 
             <div>
@@ -335,7 +373,14 @@ export default function NetIXCaseStudy() {
                 </p>
               </div>
 
-              <Figure n="04" tint="bg-[#E4E1E8]" caption="Rebrand: before and after Cegedim alignment" />
+              <Figure
+                n="04"
+                ratio=""
+                tint="bg-[#F9F8F6]"
+                caption="The query I raised in writing, before the palette was implemented. The aqua values carry their results: PASS, LARGE TEXT AND GRAPHICAL OBJECTS ONLY, and FAIL."
+              >
+                <Image src={figEmail} alt="An email headed Colour Palette Accessibility Query. It explains that the colours have been picked from the Sy user interface code and accessibility tested along the way, that the mid-range colours are not recognised as accessible in line with WCAG 2.1 level AA, and asks for the values to be checked before they are implemented in NetIX. Beneath the message sits a block of CSS holding eight aqua custom properties with their hex values. One is annotated PASS, one LARGE TEXT AND GRAPHICAL OBJECTS ONLY, and one FAIL." quality={95} placeholder="blur" className="w-full h-auto" />
+              </Figure>
             </div>
 
             <div>
